@@ -8,6 +8,13 @@ xpermalink: /syllabus/
 ### {{ site.course.number }}: {{ site.course.title }}
 Instructor: {{ site.course.instructor }}
 
+## Overview
+
+Let’s create a new kind of Library.
+
+In this studio course, teams will leverage the Library’s resources and institutional mandate to demonstrate the future of Olin’s Library and public libraries writ large.
+
+This course will focus on creating, developing, and deploying projects that the Library will host. Our aim is to create systems, artifacts, and spaces that escape the semester and impact the Olin community beyond the semester.
 
 ### Official Course Description
 
@@ -25,8 +32,6 @@ Untapped information flows through the campus - from email to slack channels
 This is a studio course, with occasional readings and discussion around production development and operations as well as libraries. Topics will be guided by the specific projects chosen. Projects will be developed by individuals and teams, we will meet regularly to understand the goals and interactions between the projects. Instructors will guide learning of software development that supports both prototyping and robust working systems, as well as design methods.
 
 Students need not have taken Software Design, but should be comfortable coding. Talk to me if you have questions.
-
-## Overview
 
 ## Objectives
 
