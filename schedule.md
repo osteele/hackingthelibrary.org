@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Class Schedule"
+permalink: schedule/
 ---
 
 # {{ site.course.number }} Schedule
