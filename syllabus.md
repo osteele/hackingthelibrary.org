@@ -5,7 +5,9 @@ permalink: syllabus/
 ---
 
 ## Syllabus
+
 ### {{ site.course.number }}: {{ site.course.title }}
+
 Instructor: {{ site.course.instructor }}
 
 ## Overview
