@@ -1,6 +1,6 @@
 # Hacking the Library web site
 
-The source (eventually) to [hacking-the-library.org](http://hacking-the-library.org).
+The source (eventually) to [hackingthelibrary.org](http://hackingthelibrary.org).
 
 ## Setup
 
