@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Syllabus"
-xpermalink: /syllabus/
+permalink: /syllabus/
 ---
 
 ## Syllabus
