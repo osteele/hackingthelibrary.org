@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: assignments/
+xclass: assignment-types
+title: Assignments
+---
+
+<ol>
+{% for assignment in site.assignments %}
+  <li>{{ assignment.title }} – due {{ assignment.due }}</li>
+{% endfor %}
+</ol>

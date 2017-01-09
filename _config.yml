@@ -1,0 +1,23 @@
+# Site settings
+title: "Hacking the Library"
+email: steele@osteele.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://hacking-the-library.org" # the base hostname & protocol for your site
+timezone: America/New_York
+
+# Build settings
+# markdown: kramdown
+# kramdown:
+#   input: GFM
+
+# highligher: pygments
+
+collections:
+  assignments:
+    output: true
+    permalink: /assignments/:path/
+
+course:
+  title: "Special Topics in Computing: Hacking the Library"
+  number: "ENGR3599"
+  instructor: "Oliver Steele"
