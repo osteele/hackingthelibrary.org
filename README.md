@@ -2,6 +2,8 @@
 
 The source (eventually) to [hackingthelibrary.org](http://hackingthelibrary.org).
 
+Currently previewed at [olin-library.github.io/hackingthelibrary.org/](https://olin-library.github.io/hackingthelibrary.org/).
+
 ## Setup
 
 [Install Jekyll](https://jekyllrb.com/docs/installation/)
@@ -18,6 +20,8 @@ Alternate:
 
 1b. `docker-compose up`
 
-## Deploy
+## Publish
 
-    git push
+1. git push
+2. Browse to [olin-library.github.io/hackingthelibrary.org/](https://olin-library.github.io/hackingthelibrary.org/)
+
