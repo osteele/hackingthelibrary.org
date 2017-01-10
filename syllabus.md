@@ -4,12 +4,6 @@ title: "Syllabus"
 permalink: syllabus/
 ---
 
-## Syllabus
-
-### {{ site.course.number }}: {{ site.course.title }}
-
-Instructor: {{ site.course.instructor }}
-
 ## Overview
 
 Let’s create a new kind of Library.

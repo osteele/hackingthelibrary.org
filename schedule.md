@@ -4,8 +4,6 @@ title: "Class Schedule"
 permalink: schedule/
 ---
 
-# {{ site.course.number }} Schedule
-
 The course is divided into two-week sprints.
 
 The first sprint is the development of a prototype and pitch (below). Students form 1-3 person temporary teams for this sprint.
