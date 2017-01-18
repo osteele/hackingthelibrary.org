@@ -2,19 +2,12 @@
 title: "Hacking the Library"
 email: steele@osteele.com
 description: >
-  Let’s create a new kind of Library. In this studio course, teams will leverage the Library’s resources and institutional mandate to demonstrate the future of Olin’s Library and public libraries writ large. This course will focus on creating, developing, and deploying projects that the Library will host. Our aim is to create systems, artifacts, and spaces that escape the semester and impact the Olin community beyond the semester.
+  Let’s create a new kind of Library.
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://hacking-the-library.org" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+# url: "http://hackingthelibrary.org"
 timezone: America/New_York
 github_username:  olin-library
-
-# Build settings
-# markdown: kramdown
-# kramdown:
-#   input: GFM
-
-# highligher: pygments
 
 collections:
   assignments:
