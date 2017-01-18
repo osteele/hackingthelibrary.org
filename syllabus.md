@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Syllabus"
+layout: page
+title: Syllabus
 permalink: syllabus/
 ---
 
@@ -43,4 +43,3 @@ Students need not have taken Software Design, but should be comfortable coding. 
 * Privacy and security tradeoffs
 * Accessibility requirements and tradeoffs.
 * Development, staging and production environments
-

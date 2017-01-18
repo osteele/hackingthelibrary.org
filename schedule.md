@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "Class Schedule"
+layout: page
+title: Class Schedule
 permalink: schedule/
 ---
 
