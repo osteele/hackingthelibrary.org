@@ -1,8 +1,7 @@
 # Hacking the Library web site
 
-The source (eventually) to [hackingthelibrary.org](http://hackingthelibrary.org).
+The source to <http://hackingthelibrary.org>.
 
-Currently previewed at [olin-library.github.io/hackingthelibrary.org/](https://olin-library.github.io/hackingthelibrary.org/).
 
 ## Setup
 
@@ -10,18 +9,19 @@ Currently previewed at [olin-library.github.io/hackingthelibrary.org/](https://o
 
 Alternate: Install [Docker Compose](https://docs.docker.com/compose/install/)
 
+
 ## Develop
 
-
 1. `jekyll serve`
-2. Browse to [localhost:4000](http://localhost:4000)
+2. Browse to <http://localhost:4000>
 
 Alternate:
 
-1b. `docker-compose up`
+1. `docker-compose up`
+2. Browse to <http://localhost:4000>
+
 
 ## Publish
 
 1. git push
-2. Browse to [olin-library.github.io/hackingthelibrary.org/](https://olin-library.github.io/hackingthelibrary.org/)
-
+2. Browse to <http://hackingthelibrary.org>
