@@ -32,6 +32,11 @@ This installs Python 3 (accessible via python3) alongside with the existing Pyth
 This installs both Python 3 (which this year’s SoftDes students are using), and Python 2.
 
 
+## Clone the repository
+
+Clone <https://github.com/olinlibrary/htl-lab1> to your own account.
+
+
 ## Make it pretty
 
 Improve the visual appearance of the application.
