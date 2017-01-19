@@ -4,8 +4,9 @@ title: Readings
 date: 2017-01-18
 ---
 
-All the following are recommended.
-Over the course of the semester, we will choose selections from some of them.
+The following are optional but recommended.
+Over the course of the semester, we will choose selections from some of them (at which point those selections become
+non-optional).
 
 ### Architecture and Design
 
@@ -23,5 +24,4 @@ Over the course of the semester, we will choose selections from some of them.
 
 ### Libraries
 
-* Everything is miscellaneous
-* Tucker, V.M. (Ed.). (2017). Information retrieval system design: Principles & practice (4th ed)
+* Everything is Miscellaneous: The Power of the New Digital Disorder, David Weinberger
