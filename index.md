@@ -30,7 +30,7 @@ Faculty:
 
 * Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>Office hours [by appointment](http://meetme.so/osteele).
 
-Library:
+Staff:
 
 * Jeff Goldenson <jeffrey.goldenson@olin.edu>
 * Emily Ferrier <emily.ferrier@olin.edu>
