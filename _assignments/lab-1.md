@@ -20,13 +20,15 @@ Future labs will build on this code to help you develop skills that will be usef
 
 For this assignment, you will need a laptop with Python 3 installed.
 
-Verify that Python 3 is installed: type `python3` into bash.
+Verify that Python 3 is installed by running `python3` from your command line.
 
 If Python 3 is not installed, you have several alternatives:
 
-a. Install [Anaconda](https://www.continuum.io/downloads). This is one-click install available for Linux, macOS, and Windows. Allen’s classes now use Python 3 with Anaconda.
-b. If you have a Ubuntu from SoftDes, run `sudo apt-get install -y python3 python3-pip python3-tk python3-dev`. This installs Python 3 (accessible via python3) alongside with the existing Python 2.6 (accessible via python [without a number]).
-c. If you’ve lost your Ubuntu and would like it back, follow the [Get Set](http://softdes.website/assignments/setup-your-environment/) instructions from this year’s SoftDes class
+* Install [Anaconda](https://www.continuum.io/downloads).
+This is a one-click installer, available for Linux, macOS, and Windows.
+* If you have a Ubuntu from SoftDes: Run `sudo apt-get install -y python3 python3-pip python3-tk python3-dev`.
+This installs Python 3 (accessible via python3) alongside with the existing Python 2.6 (accessible via python [without a number]).
+* If you’ve lost your Ubuntu and would like it back: Follow the [Get Set](http://softdes.website/assignments/setup-your-environment/) instructions from this year’s SoftDes class.
 This installs both Python 3 (which this year’s SoftDes students are using), and Python 2.
 
 
