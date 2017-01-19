@@ -6,6 +6,6 @@ title: Assignments
 
 <ol>
 {% for assignment in site.assignments %}
-  <li>{{ assignment.title }} – due {{ assignment.due }}</li>
+  <li><a href="{{assignment.url}}">{{ assignment.title }} – due {{ assignment.due }}</a></li>
 {% endfor %}
 </ol>
