@@ -2,6 +2,7 @@
 layout: default
 title: "Assignment 1"
 due: 2017-01-31
+published: false
 ---
 
 ## Assignment 1: Prototype and Pitch
