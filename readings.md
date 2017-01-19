@@ -10,18 +10,18 @@ non-optional).
 
 ### Architecture and Design
 
-* Code/Space, Rob Kitchin
-* The Gift, Lewis Hyde
-* The Edition
+* *Code/Space*, Rob Kitchin
+* *The Gift*, Lewis Hyde
+* *The Edition*
 
 ### Software Development
 
-* Continuous Delivery, Jez Humble and David Farley
-* Continuous Integration: Improving Software Quality and Reducing Risk, Paul M Duvall, Steve Matyas, Andrew Glover
-* Release It!, Michael Nygard
-* Patterns of Enterprise Application Development, Martin Fowler
-* UML Distilled, Martin Fowler
+* *Continuous Delivery*, Jez Humble and David Farley
+* *Continuous Integration: Improving Software Quality and Reducing Risk*, Paul M Duvall, Steve Matyas, Andrew Glover
+* *Release It!*, Michael Nygard
+* *Patterns of Enterprise Application Development*, Martin Fowler
+* *UML Distilled*, Martin Fowler
 
 ### Libraries
 
-* Everything is Miscellaneous: The Power of the New Digital Disorder, David Weinberger
+* *Everything is Miscellaneous: The Power of the New Digital Disorder*, David Weinberger
