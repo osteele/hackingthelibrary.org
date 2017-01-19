@@ -10,6 +10,9 @@ timezone: America/New_York
 github_username:  olin-library
 
 collections:
+  days:
+    output: true
+    permalink: /days/:path/
   assignments:
     output: true
     permalink: /assignments/:path/
