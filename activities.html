@@ -5,7 +5,7 @@ title: In-Class Activities
 ---
 
 <ul>
-{% for day in site.days %}
-  <li><a href="{{ day.url }}">{{ day.title }} – {{ day.date | date: '%B %d' }}</a></li>
-{% endfor %}
+  {% for day in site.days %}
+    <li><a href="{{ day.url }}">{{ day.title }}</a> ({{ day.date | date: '%d %b' }}) – {{ day.description }}</li>
+  {% endfor %}
 </ul>
