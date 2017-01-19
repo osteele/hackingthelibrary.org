@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Class Calendar
+title: Calendar
 permalink: calendar/
 ---
 
