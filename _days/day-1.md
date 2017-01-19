@@ -19,7 +19,8 @@ title: Day 1
 
 ### For Monday
 
-* Read [_Everything is Miscellaneous: The Power of the New Digital Disorder_](http://example.com/link/to/article.pdf), by David Weinberger
+* Read a selection from _Everything is Miscellaneous: The Power of the New Digital Disorder_, by David Weinberger.
+(The selection and a link to the content will be provided.)
 * Review the [Course Policy]({% link policies.md %})
 
 
