@@ -26,11 +26,15 @@ The course meets Monday / Thursday 10:50-12:30pm in the Library
 
 ## Contact
 
-Instructor: Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>Office hours [by appointment](http://meetme.so/osteele).
+Faculty:
+
+* Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>Office hours [by appointment](http://meetme.so/osteele).
 
 Library:
 
 * Jeff Goldenson <jeffrey.goldenson@olin.edu>
 * Emily Ferrier <emily.ferrier@olin.edu>
 
-NINJA: Duncan Hall <duncan.hall@students.olin.edu>
+NINJA:
+
+* Duncan Hall <duncan.hall@students.olin.edu>
