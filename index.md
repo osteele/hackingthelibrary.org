@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Hacking the Library
-  ---
+---
 
 {% if site.categories.announcement %}
 ## Announcements
@@ -12,6 +12,7 @@ title: Hacking the Library
 {% endfor %}
 {% endif %}
 
+
 ## Overview
 
 Let’s create a new kind of Library.
@@ -20,6 +21,16 @@ In this studio course, teams will leverage the Library’s resources and institu
 
 This course will focus on creating, developing, and deploying projects that the Library will host. Our aim is to create systems, artifacts, and spaces that escape the semester and impact the Olin community beyond the semester.
 
-## Meeting Times
+The course meets Monday / Thursday 10:50-12:30pm in the Library
 
-MR 10:50-12:30pm in the library
+
+## Contact
+
+Instructor: Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>Office hours [by appointment](http://meetme.so/osteele).
+
+Library:
+
+* Jeff Goldenson <jeffrey.goldenson@olin.edu>
+* Emily Ferrier <emily.ferrier@olin.edu>
+
+NINJA: Duncan Hall <duncan.hall@students.olin.edu>
