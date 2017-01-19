@@ -3,12 +3,14 @@ layout: default
 title: Hacking the Library
 ---
 
+{% if site.categories.announcement %}
 ## Announcements
 
 {% for post in site.categories.announcement limit:1 %}
 {{ post.title }}
 {{ post.content }}
 {% endfor %}
+{% endif %}
 
 ## Overview
 

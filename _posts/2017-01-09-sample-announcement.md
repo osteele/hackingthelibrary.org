@@ -3,6 +3,7 @@ layout: post
 date: 2017-01-09T18:49:40Z
 title: "Sample Announcement"
 categories: announcement
+published: false
 ---
 
 This is an example announcement.
