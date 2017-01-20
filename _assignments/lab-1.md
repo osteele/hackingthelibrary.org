@@ -77,6 +77,7 @@ These deliverables are due by the start of class on Thursday 26 January.
 
     1. Plus: Consider the repository as it was originally delivered to you. What aspects of the repository helped you run and contribute to it?
     2. Delta. What aspects could have been improved?
+    3. How long did it take you? This is not assessed; it helps us calibrate future assignments.
     3. Honor code. Verify that any help you received and code you did not write that you incorporated is credited in the README and/or the source files.
 
 4. (Optional) Show off your work. Email me a screenshot of your application by 10am. We'll have a slide show at the start of class.
