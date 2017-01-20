@@ -19,8 +19,8 @@ title: Day 1
 
 ### For Monday
 
-* Read a selection from [_Library As Platform_, by David Weinberger & _The API at the Center of the Museum_, Seb Chan]({% link images/BookClubI.pdf %}). Consider questions on the cover page, we will discuss these and run an exercise during class. 
-* Review the [Course Policy]({% link policies.md %})
+1. Read a selection from [_Library As Platform_, by David Weinberger & _The API at the Center of the Museum_, Seb Chan]({% link images/BookClubI.pdf %}). Consider the questions on the cover page. We will discuss these and run an exercise during class. 
+2. Review the [Course Policy]({% link policies.md %}).
 
 
 ### For Thursday
