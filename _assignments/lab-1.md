@@ -1,11 +1,9 @@
 ---
-layout: default
 title: Lab 1
 date: 2017-01-18
 due: 2017-01-26
 ---
 
-# {{ page.title }} – due {{ page.due }}
 
 ## Overview
 

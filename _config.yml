@@ -21,3 +21,10 @@ course:
   title: "Special Topics in Computing: Hacking the Library"
   number: "ENGR3599"
   instructor: "Oliver Steele"
+
+defaults:
+  -
+    scope:
+      path: _assignments
+    values:
+      layout: assignment
