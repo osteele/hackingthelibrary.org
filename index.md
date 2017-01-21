@@ -3,6 +3,7 @@ layout: default
 title: Hacking the Library
 ---
 
+
 {% if site.categories.announcement %}
 ## Announcements
 
@@ -28,7 +29,8 @@ The course meets Monday / Thursday 10:50-12:30pm in the Library
 
 Faculty:
 
-* Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>Office hours [by appointment](http://meetme.so/osteele).
+* Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>
+Office hours [by appointment](http://meetme.so/osteele).
 
 Staff:
 
@@ -37,4 +39,6 @@ Staff:
 
 NINJA:
 
-* Duncan Hall <duncan.hall@students.olin.edu>
+* Duncan Hall <duncan.hall@students.olin.edu><br/>
+Office hours: 7-9 PM Sundays and Wednesdays WH3 AL
+([<i class="fa fa-calendar"></i> iCalendar](webcal://p09-calendars.icloud.com/published/2/0HsmJrKvrRZCQrGupJdLvCGi_CPXDbXA5HFworPq2R6wR4MiDQ9YI7I7lImLsjfBOWL_ntnAvSu2UgbHWy9j-79snfX5BNcKNYJFb6ptsgM))
