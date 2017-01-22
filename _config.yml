@@ -7,12 +7,11 @@ description: >
 baseurl: "/" # the subpath of your site, e.g. /blog/
 # url: "http://hackingthelibrary.org"
 timezone: America/New_York
-github_username:  olin-library
 
 collections:
   days:
     output: true
-    permalink: /days/:path/
+    permalink: /day/:path/
   assignments:
     output: true
     permalink: /assignments/:path/
@@ -20,11 +19,21 @@ collections:
 course:
   title: "Special Topics in Computing: Hacking the Library"
   number: "ENGR3599"
-  instructor: "Oliver Steele"
 
 defaults:
-  -
-    scope:
-      path: _assignments
+  - scope:
+      path: ""
+      type: assignments
     values:
       layout: assignment
+  - scope:
+      path: ""
+      type: days
+    values:
+      layout: assignment
+
+gems:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

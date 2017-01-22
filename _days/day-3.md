@@ -1,6 +1,5 @@
 ---
 date: '2017-01-24'
-layout: post
 description: Harvard Depository
 title: Day 3
 published: false

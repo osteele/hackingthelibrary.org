@@ -1,8 +1,8 @@
 ---
 date: '2017-01-19'
-layout: post
 description: Course Overview
 title: Day 1
+redirect_from: /day/day-1/
 ---
 
 ## In Class
@@ -19,7 +19,7 @@ title: Day 1
 
 ### For Monday
 
-1. Read a selection from [_Library As Platform_, by David Weinberger & _The API at the Center of the Museum_, Seb Chan]({% link images/BookClubI.pdf %}). Consider the questions on the cover page. We will discuss these and run an exercise during class. 
+1. Read a selection from [_Library As Platform_, by David Weinberger & _The API at the Center of the Museum_, Seb Chan]({% link images/BookClubI.pdf %}). Consider the questions on the cover page. We will discuss these and run an exercise during class.
 2. Review the [Course Policy]({% link policies.md %}).
 
 

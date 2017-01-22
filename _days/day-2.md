@@ -1,6 +1,5 @@
 ---
 date: '2017-01-23'
-layout: post
 title: Day 2
 published: false
 ---

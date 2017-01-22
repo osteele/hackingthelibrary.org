@@ -5,7 +5,8 @@ The source to <http://hackingthelibrary.org>.
 
 ## Setup
 
-[Install Jekyll](https://jekyllrb.com/docs/installation/)
+1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
+2. `gem install jekyll-redirect-from`
 
 Alternate: Install [Docker Compose](https://docs.docker.com/compose/install/)
 
