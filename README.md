@@ -26,3 +26,13 @@ Alternate:
 
 1. git push
 2. Browse to <http://hackingthelibrary.org>
+
+
+## Copyright and Credits
+
+The course material is Copyright (c) 2017 by the Franklin W. Olin College of Engineering.
+
+The web site uses:
+
+* A modified copy of the [Hyde Theme](http://hyde.getpoole.com)
+* [Font Awesome](http://fontawesome.io) icons
