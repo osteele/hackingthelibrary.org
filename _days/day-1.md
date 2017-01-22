@@ -20,7 +20,7 @@ redirect_from: /day/day-1/
 ### For Monday
 
 1. Read a selection from [_Library As Platform_, by David Weinberger & _The API at the Center of the Museum_, Seb Chan]({% link images/BookClubI.pdf %}). Consider the questions on the cover page. We will discuss these and run an exercise during class.
-2. Review the [Course Policy]({% link policies.md %}).
+2. Review the [Course Policy]({% link _pages/policies.md %}).
 
 
 ### For Thursday

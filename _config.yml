@@ -15,10 +15,13 @@ collections:
   assignments:
     output: true
     permalink: /assignments/:path/
+  pages:
+    output: true
+    permalink: /:path/
 
 course:
   title: "Special Topics in Computing: Hacking the Library"
-  number: "ENGR3599"
+  number: ENGR3599
 
 defaults:
   - scope:
@@ -31,6 +34,11 @@ defaults:
       type: days
     values:
       layout: assignment
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
 gems:
   - jekyll-redirect-from
