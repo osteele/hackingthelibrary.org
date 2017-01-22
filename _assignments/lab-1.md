@@ -1,6 +1,7 @@
 ---
 title: Lab 1
-date: 2017-01-18
+description: Course survey – our first web app
+date: 2017-01-22
 due: 2017-01-26
 ---
 
@@ -35,7 +36,7 @@ This installs both Python 3 (which this year’s SoftDes students are using), an
 Clone <https://github.com/olinlibrary/htl-lab1> to your own account.
 
 
-## Make it pretty
+## Make it beautiful
 
 Improve the visual appearance of the application.
 
@@ -49,7 +50,7 @@ on a Content Delivery Network (CDN) – there's links [here](https://www.bootstr
 Advanced: make the pages look like (somewhat like) <http://www.olin.edu/course-listing/>.
 
 
-## Add functionality
+## Make it functional
 
 Do at least two of:
 
