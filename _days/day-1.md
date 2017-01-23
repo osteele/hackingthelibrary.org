@@ -1,5 +1,6 @@
 ---
-date: '2017-01-19'
+date: 2017-01-19
+class_date: 2017-01-19
 description: Course Overview
 title: Day 1
 redirect_from: /day/day-1/
