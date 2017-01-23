@@ -4,6 +4,13 @@ title: Readings
 date: 2017-01-18
 ---
 
+## Reading Club
+
+Monday 23 January
+: Read a selection from {{site.data.readings.platform.reading}}{{site.data.readings.platform.assignment}}
+
+## Optional Readings
+
 The following are optional but recommended.
 Over the course of the semester, we will choose selections from some of them (at which point those selections become
 non-optional).
