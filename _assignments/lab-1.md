@@ -85,7 +85,7 @@ Upload a screenshot of your application, and add a link to it from your README, 
 show it in a gallery show on Thursday.
 
 For an example, see the [`screenshot-example` branch](https://github.com/olinlibrary/htl-lab1/tree/screenshot)
-of the Lab 1 repository. The the Markdown syntax to including an image in your `README.md`
+of the Lab 1 repository. The [Markdown syntax](https://guides.github.com/features/mastering-markdown/) to including an image in your `README.md`
 is:
 
 `{% raw %}![](./docs/screenshot.png){% endraw %}`.
