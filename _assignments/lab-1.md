@@ -64,19 +64,26 @@ Do at least two of:
 * Something else – if you aren't sure whether your idea has enough to it, ask.
 
 
-## Deliverables
+## What to Submit
 
 These deliverables are due by the start of class on Thursday 26 January.
 
 1. GitHub repository. Your fork of the lab repository should contain a executable application that includes at least one “make it pretty” extension, and at least one functional extension.
 
-2. Documentation. Your repository's README should now incude your name as a contributor, and should describe the estensions that you made.
+2. Documentation. Your repository's README should now incude your name as a contributor, and should describe the extensions that you made.
 
-3. Reflection. By the start of class on Thursday, submit the form that will be provided on this page. The form will have three questions:
+3. Reflection. By the start of class on Thursday, submit [this form](https://goo.gl/forms/u5Chh6EOm2Ty2zxJ3).
+It containsthe following questions:
 
-    1. Plus: Consider the repository as it was originally delivered to you. What aspects of the repository helped you run and contribute to it?
-    2. Delta. What aspects could have been improved?
-    3. How long did it take you? This is not assessed; it helps us calibrate future assignments.
+    1. What aspects of the project as delivered to you helped you run it and extend it? (Plus)
+    2. What aspects could have been improved? (Delta)
+    3. How long did you spend on the assignment? This is not assessed; it helps us calibrate future assignments.
     3. Honor code. Verify that any help you received and code you did not write that you incorporated is credited in the README and/or the source files.
 
-4. (Optional) Show off your work. Email me a screenshot of your application by 10am. We'll have a slide show at the start of class.
+4. (Optional) Show off your work.
+Upload a screenshot of your application, and add a link to it from your README, and we'll
+show it in a gallery show on Thursday.
+
+For an example, see the [`screenshot-example` branch](https://github.com/olinlibrary/htl-lab1/tree/screenshot)
+of the Lab 1 repository. The the Markdown syntax to including an image in your `README.md`
+is `{% raw %}![](./docs/screenshot.png){% endraw %}`.

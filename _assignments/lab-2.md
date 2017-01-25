@@ -134,11 +134,12 @@ in a browser. Or:
 You should see an “Application Error” page.
 
 
-## Configuring Your Server to Accept Remote Connections
+## CWhy Doesn't it Work (2)? Configuring Your Server to Accept Remote Connections
 
 By default, your application only accepts HTTP requests from the same machine.
-This is because it uses `127.0.0.1` as the host. This is appropriate for
-local development, but does not make for a web server in the cloud.
+This is because it uses `127.0.0.1` as the host.
+
+This is appropriate for local development, but does not make for a web server in the cloud.
 
 Add a `host` argument to the last line of `server.py` as below, commit the change,
 push to Heroku, and test again. You should see your application.
