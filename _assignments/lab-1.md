@@ -86,4 +86,6 @@ show it in a gallery show on Thursday.
 
 For an example, see the [`screenshot-example` branch](https://github.com/olinlibrary/htl-lab1/tree/screenshot)
 of the Lab 1 repository. The the Markdown syntax to including an image in your `README.md`
-is `{% raw %}![](./docs/screenshot.png){% endraw %}`.
+is:
+
+`{% raw %}![](./docs/screenshot.png){% endraw %}`.
