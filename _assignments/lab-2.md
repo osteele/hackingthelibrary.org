@@ -1,7 +1,7 @@
 ---
 title: Lab 2
 description: Deploying to the cloud
-date: 2017-01-25
+date: 2017-01-26
 due: 2017-02-02
 ---
 
