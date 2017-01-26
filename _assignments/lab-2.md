@@ -5,12 +5,13 @@ date: 2017-01-25
 due: 2017-02-02
 ---
 
-[Under Construction]
-
 ## Overview
 
 In this assignment, you will deploy the web application from [Lab 1]( {% link _assignments/lab-1.md %}) to the cloud, so that users can visit it at a public
 URL.
+
+As with Lab 1, track your time.
+
 
 ## Create an account on Heroku
 
@@ -134,7 +135,7 @@ in a browser. Or:
 You should see an “Application Error” page.
 
 
-## CWhy Doesn't it Work (2)? Configuring Your Server to Accept Remote Connections
+## Why Doesn't it Work (2)? Configuring Your Server to Accept Remote Connections
 
 By default, your application only accepts HTTP requests from the same machine.
 This is because it uses `127.0.0.1` as the host.
@@ -147,3 +148,31 @@ push to Heroku, and test again. You should see your application.
 ```
     app.run(host='0.0.0.0', debug=True, port=port)
 ```
+
+
+## (Optional) Going Beyond
+
+Some things you can do to learn more and/or have more fun:
+
+* Add more functionality to the application. ([Seaborn](http://seaborn.pydata.org)? [D3](https://d3js.org)?)
+* Modify your server so that it binds to `0.0.0.0` on Heroku but `127.0.0.1`
+on your laptop (even when you run it on your laptop with `heroku local`). This will be the topic of Lab 3.
+* Add an `app.json` file, and a ![](https://www.herokucdn.com/deploy/button.svg) button. [Instructions](https://devcenter.heroku.com/articles/heroku-button).
+
+
+## What to Turn In
+
+1. Complete the survey (link TBD).
+
+2. Add a link from your GitHub repo to your (Heroku) application URL.
+
+Here's how to add the link:
+Open your repo page on GitHub. Near the top of the page is an Edit button;
+this discloses text entry fields for a project Description and Website.
+
+![]({% link images/repo-description-1.png %})
+
+Paste your application URL into the Website field, and Save.
+
+
+![]({% link images/repo-description-2.png  %})
