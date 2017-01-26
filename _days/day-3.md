@@ -1,8 +1,8 @@
 ---
 date: '2017-01-24'
+class_date: 2017-01-24
 description: Harvard Depository
 title: Day 3
-published: false
 ---
 
 ## In Class
