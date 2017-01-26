@@ -103,6 +103,9 @@ Create the following files with these contents:
 `requirements.txt`
 : I'm going to make you fish for this one. What Python packages does your applicaiton
 depend on? Put the list of packages in this file, one per line.
+**Note:** Your application does *not* need to run `scripts/scrape_course_catalog.py`.
+This was run offline to create the `data/olin-courses-16-17.csv` file; it
+doesn't to run online on the web server.
 
 Test your `Procfile` locally. The following line has the same effect as
 `python server.py`, but uses the same `Procfile` that Heroku uses to do this.
