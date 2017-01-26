@@ -130,7 +130,7 @@ Do you do this in one two ways:
 in the `git push` output above. Open `https://htl-lab-osteele.herokuapp.com/`
 in a browser. Or:
 
-2. `heroku app:open` does this automatically.
+2. `heroku apps:open` does this automatically.
 
 You should see an “Application Error” page.
 
