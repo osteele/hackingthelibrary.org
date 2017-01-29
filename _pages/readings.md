@@ -6,8 +6,11 @@ date: 2017-01-18
 
 ## Reading Club
 
-Monday 23 January
-: Read a selection from {{site.data.readings.platform.reading}}{{site.data.readings.platform.assignment}}
+{% for reading in site.data.readings %}
+{{reading[1].due | date: '%A, %B %-d' }}
+: {{reading[1].preamble}} {{reading[1].reading}}{{reading[1].assignment}})
+{% endfor %}
+
 
 ## Optional Readings
 
@@ -32,3 +35,8 @@ non-optional).
 ### Libraries
 
 * *Everything is Miscellaneous: The Power of the New Digital Disorder*, David Weinberger
+
+### Fiction
+
+* _A Canticle for Leibowitz_,  Walter M. Miller, Jr.
+* "The Library of Babel", Jorge Luis Borges.
