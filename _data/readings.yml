@@ -10,7 +10,7 @@ platform:
 design_patterns:
   preamble: Skim
   reading: >
-    [Excerpts from](/files/BookClubII-readings.pdf) _A Pattern Language_, Christopher Alexander.
+    [excerpts from](/files/BookClubII-readings.pdf) _A Pattern Language_, Christopher Alexander.
     _Design Patterns: Elements of Reusable Object-Oriented Software_, by Erich Gamma et al.
     _Holub on Patterns: Learning Design Patterns by Looking at Code_, by Allen Holub.
   due: 2017-01-30
