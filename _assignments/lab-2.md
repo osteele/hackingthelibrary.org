@@ -95,7 +95,7 @@ The starter code for Lab 1 uses features from Python 3, so it is necessary to ov
 Create the following files with these contents:
 
 `Procfile`
-: `web: python server.py`
+: `web: python3 server.py`
 
 `runtime.txt`
 : `python-3.5.2`
