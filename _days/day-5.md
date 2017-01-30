@@ -8,7 +8,7 @@ title: Day 5
 ## In Class
 
 1. Book Club: {{site.data.readings.design_patterns.reading}}
-2. Fill out the [Mini-Project 1 Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
+2. Complete the [Mini-Project 1 Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
 2. Studio
 
 ## Homework
