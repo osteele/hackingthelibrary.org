@@ -2,12 +2,14 @@
 layout: default
 ---
 
+<a href="/">Home</a> / <a href="{% link _pages/assignments.md %}">Assignments</a> / {{ page.title }}
+
 <h1>{{ page.title }}</h1>
 <p><i>Due
   {% if page.parts %}
-    {{ page.parts[0].due_date | date: '%a, %b %d' }} – {{ page.parts[-1].due_date | date: '%a, %b %d' }}
+    {{ page.parts[0].due_date | date: '%a, %b %d' }} – {{ page.parts[-1].due_date | date: '%a, %b %-d' }}
   {% else %}
-    {{ page.due_date | date: '%a, %b %d' }}
+    {{ page.due_date | date: '%A, %b %-d' }}
   {% endif %}
 </i></p>
 
