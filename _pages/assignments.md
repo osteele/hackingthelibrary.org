@@ -10,7 +10,7 @@ title: Assignments
   <dt><a href="{{ assignment.url }}">{{ assignment.title }}</a></dt>
   <dd>{{ assignment.description }}<ul>
   {% for part in assignment.parts %}
-    <li><a href="{{ assignment.url }}#{{ part.tag }}">{{ part.name }} – due <b>{{ part.due_date | date: '%a, %b %d' }}</b></a></li>
+    <li><a href="{{ assignment.url }}#{{ part.tag }}">{{ part.name }} – due <b>{{ part.due_date | date: '%a, %b %-d' }}</b></a></li>
   {% endfor %}
   </ul></dd>
 
