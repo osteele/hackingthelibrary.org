@@ -1,6 +1,6 @@
 ---
 title: Mini-Project 1
-description: 'The first of two mini-projects'
+description: 'first mini-project'
 date: 2017-01-26
 due_date: 2017-02-09
 parts:
