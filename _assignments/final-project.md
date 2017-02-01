@@ -1,11 +1,27 @@
 ---
 layout: default
-title: Assignment 1
-due: 2017-01-31
+title: Final Project
+due_date: 2017-01-31
 published: false
+parts:
+  - name: Project Proposal
+    due_date: 2017-01-30
+    tag: project-proposal
+  - name: Sprint 1 Review
+    due_date: 2017-02-02
+    tag: part-1
+  - name: Feature Complete
+    due_date: 2017-02-02
+    tag: part-1
+  - name: Deliverables
+    due_date: 2017-02-02
+    tag: part-1
+  - name: Final
+    due_date: 2017-02-02
+    tag: part-1
 ---
 
-## Assignment 1: Prototype and Pitch
+## Prototype and Pitch
 
 For the first sprint, students divide into two-person teams (possibly with 1- or 3-person exceptions allowed).
 

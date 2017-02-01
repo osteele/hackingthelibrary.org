@@ -2,7 +2,7 @@
 title: Lab 1
 description: Course survey – our first web app
 date: 2017-01-22
-due: 2017-01-26
+due_date: 2017-01-26
 ---
 
 
