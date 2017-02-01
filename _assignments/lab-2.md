@@ -5,6 +5,8 @@ date: 2017-01-26
 due_date: 2017-02-02
 ---
 
+{% include toc %}
+
 ## Overview
 
 In this assignment, you will deploy the web application from [Lab 1]( {% link _assignments/lab-1.md %}) to the cloud, so that users can visit it at a public
@@ -166,7 +168,7 @@ on your laptop (even when you run it on your laptop with `heroku local`). This w
 
 ## What to Turn In
 
-1. Complete the survey (link TBD).
+1. Complete the [survey](https://goo.gl/forms/DIXcfapK8cPVtjL93) before class on {{ page.due_date | date: '%A, %-d %b'}}.
 
 2. Add a link from your GitHub repo to your (Heroku) application URL.
 
@@ -177,6 +179,5 @@ this discloses text entry fields for a project Description and Website.
 ![]({% link images/repo-description-1.png %})
 
 Paste your application URL into the Website field, and Save.
-
 
 ![]({% link images/repo-description-2.png  %})
