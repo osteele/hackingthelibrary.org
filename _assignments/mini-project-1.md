@@ -15,8 +15,6 @@ parts:
     tag: part-2
 ---
 
-[Under construction]
-
 ## Project Proposal
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
@@ -33,3 +31,5 @@ parts:
 ## Part 2
 
 <i>Due {{ page.parts[2].due_date | date: '%a %b %-d' }}</i>
+
+{% include construction %}
