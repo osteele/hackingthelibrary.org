@@ -9,6 +9,15 @@
       <p class="lead">{{ site.description }}</p>
     </div>
 
+    {% if site.gcse_id %}
+    <div id="search">
+        <form role="search" method="get" action="/search/">
+            <input id="searchString" name="searchString" type="text">
+            <input id="searchButton" name="googleSearchName" type="submit" value="Search">
+        </form>
+    </div>
+    {% endif %}
+
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
