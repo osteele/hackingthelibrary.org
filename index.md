@@ -40,5 +40,5 @@ Staff:
 NINJA:
 
 * Duncan Hall <duncan.hall@students.olin.edu><br/>
-Office hours: 7-9 PM Sundays and Wednesdays WH3 AL
+Office hours: 7-9 PM Sundays and 5-7 Wednesdays WH3 AL
 ([<i class="fa fa-calendar"></i> iCalendar](webcal://p09-calendars.icloud.com/published/2/0HsmJrKvrRZCQrGupJdLvCGi_CPXDbXA5HFworPq2R6wR4MiDQ9YI7I7lImLsjfBOWL_ntnAvSu2UgbHWy9j-79snfX5BNcKNYJFb6ptsgM))
