@@ -32,4 +32,14 @@ parts:
 
 <i>Due {{ page.parts[2].due_date | date: '%a %b %-d' }}</i>
 
-{% include construction %}
+The repository should answer the questions below. It can do this in the README, documentation in a doc folder, at readthedocs.org, or in GitHub pages.
+
+(If it’s not in the README, the README should link to it.)
+
+The big idea is that someone should be able to understand what your project does, and pick up where you left off. (“Someone” could be a future version of yourself.)
+
+* What is the vision?
+* What does the software do? (Including screenshots.)
+* How does the code works – how it is organized, what is the data flow?
+How to run the code. Installation and usage instructions work on instructor machines. You may assume Linux and Python 3.
+* Known issues. ideas for what to do next, brief descriptions of how to do some of those things, and more functionality. These can be textual, or they can be GitHub Issues.
