@@ -14,7 +14,7 @@ title: Day 6
 
 ## Homework
 
-1. Read TBD for Monday February 13.
+1. For Monday February 13: {{site.data.readings.twelve_factor.reading}}
 2. Lab 3 (TBD) is due Thursday February 9.
 3. Mini-Project 1 final deliverable is due Thursday February 9.
 

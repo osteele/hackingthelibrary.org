@@ -14,3 +14,10 @@ design_patterns:
     _Design Patterns: Elements of Reusable Object-Oriented Software_, by Erich Gamma et al.
     _Holub on Patterns: Learning Design Patterns by Looking at Code_, by Allen Holub.
   due: 2017-01-30
+
+twelve_factor:
+  reading: >
+    Read the introduction to [The Twelve-Factor App](https://12factor.net), and sections II, III,
+    V, and VI. Think about whether, how, and why these apply to (1) the Labs, and (2) your mini-projects.
+    <br/>[There may also be a design or library reading. If so, it will be announced in Slack by the end of Friday.]
+  due: 2017-02-06
