@@ -25,9 +25,6 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
-<i>You may stop working on Part 1, regardless of state of completion, after eight hours of out-of-class, minus however long the lab work and readings took. (Your total out-of-class time is not required to total more than eight hours.)
-If your work is incomplete because you ran out of time, please make this known to me.</i>
-
 * Demonstrable code in a GitHub repository.
 * A five-minute project review presentation.
 
@@ -35,7 +32,7 @@ If your work is incomplete because you ran out of time, please make this known t
 
 <i>Due {{ page.parts[2].due_date | date: '%a %b %-d' }}</i>
 
-<i>You may stop working on Part 2, regardless of state of completion, after eight hours of out-of-class, minus however long the lab work and readings took. (Your total out-of-class time is not required to total more than eight hours.)
+<i>You may stop working on Part 2, regardless of state of completion, after eight hours of out-of-class effort, minus however long the lab work and readings took. (Your total out-of-class time is not required to total more than eight hours.)
 If your work is incomplete because you ran out of time, please make this known to me.</i>
 
 The repository should answer the questions below. It can do this in the README, documentation in a doc folder, at readthedocs.org, or in GitHub pages.
