@@ -18,7 +18,8 @@ title: Assignments
 {% else %}
 
 <dt>{{ assignment.due_date | date: '%a, %b %-d' }}</dt>
-<dd><a href="{{ assignment.url }}">{{ assignment.title }}: {{ assignment.description }}</a></dd>
+<dd><a href="{{ assignment.url }}">{{ assignment.title }}</a>
+<p>{{ assignment.description }}</p></dd>
 
 {% endif %}
 {% endfor %}

@@ -1,6 +1,6 @@
 ---
-title: Lab 1
-description: Course survey – our first web app
+title: 'Lab 1: A Web App'
+description: 'In which we decorate and extend a course listing application.'
 date: 2017-01-22
 due_date: 2017-01-26
 ---

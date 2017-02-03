@@ -19,5 +19,5 @@ twelve_factor:
   reading: >
     Read the introduction to [The Twelve-Factor App](https://12factor.net), and sections II, III,
     V, and VI. Think about whether, how, and why these apply to (1) the Labs, and (2) your mini-projects.
-    Also think (3) analogies between the twelve factors, and libraries and other institutions. 
+    Also consider (3) analogies between the twelve factors, and libraries and other institutions. 
   due: 2017-02-06
