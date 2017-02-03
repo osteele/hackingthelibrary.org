@@ -16,4 +16,4 @@ title: Day 7
 ## Homework
 
 1. [Mini-Project 1 final deliverable]({% link _assignments/mini-project-1.md %}#part-2) is due Thursday February 9.
-2. [Lab 3]({{ link _assignments/lab-3.md }}) is due Monday February 13.
+2. [Lab 3]({% link _assignments/lab-3.md %}) is due Monday February 13.
