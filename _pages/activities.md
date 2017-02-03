@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Class Notes
+title: Lesson Plans
 ---
 
 {% for day in site.days reversed %}
-[{{day.title}} – {{day.class_date | date: '%A, %-d %B'}}]({{day.url}})
+[{{day.title}} – {{day.class_date | date: '%a, %b %-d'}}]({{day.url}})
 : {{day.description}}
 {% endfor %}
