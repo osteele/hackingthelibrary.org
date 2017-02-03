@@ -110,7 +110,7 @@ To set an environment variable for a single command, use the syntax:
 
 Only the first command prints `world`. The `HELLO` environment variable is set within an environment that is only used for programs executed in that line.
 
-### [Optional] Part 4: Setting an environment variable for all future terminal sessions
+### [Optional] Part 3: Setting an environment variable for all future terminal sessions
 
 Print the value of your `SHELL` environment variable. If it ends in `bash`, your shell (that runs in your terminal) is **bash**. If it ends in `zsh`, your shell is **zsh**. It's probably one of those two.
 
@@ -123,7 +123,7 @@ Now any new terminal will start with `LAB_NO` already set. Test this by creating
 
 \* The bash and zsh documentation recommends that you define environment variables in the *first* file in their respective lists of startup files: `.bash_profile` for bash, `.zshenv` for zsh. I more commonly see  them added to `.bashrc` and `.zshrc`, and the installation instructions for many utilties instruct you to plac definitions there.
 
-### Part 5: Getting and setting environment variables on Heroku
+### Part 4: Getting and setting environment variables on Heroku
 
 The above syntax lets you set or get environment variables on your laptop (or another machine that you have logged into). They are useful for testing that your program reads environment variables; we'll get to that below.
 
@@ -138,7 +138,7 @@ $ heroku config # prints all the environment variables
 ENVIRONMENT: production
 ```
 
-### [Optional] Part 6: Gotchas
+### [Optional] Part 5: Gotchas
 
 * Setting an environment variable in one terminal doesn't set it in another.
 * Environment values are strings, not integers or Boolean values (even when they look otherwise). `LAB_NO=3 python3 -c 'import os; print(2 * os.environ["LAB_NO"])'` may surprise you. (Try it!)
