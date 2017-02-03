@@ -1,5 +1,5 @@
 ---
-date: '2017-01-30'
+date: 2017-01-30
 description: MP1 Mid-Project Presentation
 class_date: 2017-02-02
 title: Day 6

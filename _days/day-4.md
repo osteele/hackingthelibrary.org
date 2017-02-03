@@ -1,5 +1,5 @@
 ---
-date: '2017-01-26'
+date: 2017-01-26
 description: Lab 1 Gallery; MP1 Kick-off
 class_date: 2017-01-26
 title: Day 4

@@ -1,5 +1,5 @@
 ---
-date: '2017-01-30'
+date: 2017-01-30
 description: Design Patterns
 class_date: 2017-01-30
 title: Day 5
