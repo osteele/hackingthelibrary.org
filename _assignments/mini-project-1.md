@@ -1,7 +1,7 @@
 ---
 title: Mini-Project 1
 description: 'first mini-project'
-date: 2017-01-26
+date: 2017-02-03
 due_date: 2017-02-09
 parts:
   - name: Project Proposal
@@ -25,12 +25,16 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
+<i>You may stop working on Part 1 eight hours out of class minus however long the lab work and readings took. (Your total out-of-class time is not required to total more than eight hours.)</i>
+
 * Demonstrable code in a GitHub repository.
 * A five-minute project review presentation.
 
 ## Part 2
 
 <i>Due {{ page.parts[2].due_date | date: '%a %b %-d' }}</i>
+
+<i>You may stop working on Part 1 eight hours out of class minus however long the lab work and readings took. (Your total out-of-class time is not required to total more than eight hours.)</i>
 
 The repository should answer the questions below. It can do this in the README, documentation in a doc folder, at readthedocs.org, or in GitHub pages.
 
