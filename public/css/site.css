@@ -1,3 +1,9 @@
+/* theme overrides */
+.sidebar { background: white; color: gray; margin-top: 160px; }
+.sidebar .sidebar-about { display: none; }
+.sidebar a { color: gray; }
+
+/* new elements */
 .under-construction { margin: 20pt; border: 1px solid gray; background: #e8e8e8; }
 .under-construction img { float: left; margin: 10px; }
 .under-construction:after { clear: both; }
@@ -9,4 +15,4 @@
 	content: " ";
 	clear: both;
 	height: 0;
-	}
+}
