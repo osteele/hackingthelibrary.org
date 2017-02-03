@@ -7,7 +7,7 @@ due_date: 2017-02-13
 
 ## Overview
 
-*Spend no more than 40 minutes on this lab without checking in with your NINJA. Spend no more than 90 minutes total.*
+*Spend no more than 40 minutes on this lab without checking in with your NINJA. Spend no more than 90 minutes total. If your work is incomplete because you ran out of time, please make this known to me.*
 
 In this assignment, you will configure the server application from [Lab 2]( {% link _assignments/lab-2.md %})
 to run in different [deployment environments](https://en.wikipedia.org/wiki/Deployment_environment).
