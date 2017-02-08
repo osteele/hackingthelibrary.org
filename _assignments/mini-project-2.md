@@ -19,6 +19,7 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
+* Choose a *different* topic, and find a *different* team mate(s), from the first mini-project.
 * Complete the [Mini-Project 1 Kick-Off Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
 
 
@@ -30,6 +31,9 @@ parts:
 
 * Demonstrable code in a GitHub repository.
 * A five-minute project review presentation.
+
+You may start from other otherwise incorporate code from MP1, so long as you are working on a different topic and
+you attribute any contributions.
 
 
 ## Part 2
