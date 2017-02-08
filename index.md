@@ -20,22 +20,20 @@ title: Hacking the Library
 
 ---
 
-## Contact
+## Office Hours
 
-Faculty:
+Oliver Steele <oliver.steele@olin.edu> MH262
 
-* Oliver Steele <oliver.steele@olin.edu>, MH262.<br/>
-Office hours [by appointment](http://meetme.so/osteele).
+Day    | Time          | Where | Notes
+------ | ------------- | -------
+W 2/8  | 1-3pm         | Library
+W 2/8  | 5:30-6:30pm   | Library
+Th 2/9 | 4:30-6pm      | Library | Depending on the weather
+F 2/8  | 9-11am        | Library | Alternate time if Thursday doesn't work
 
-Staff:
+Duncan Hall <duncan.hall@students.olin.edu><br/>
 
-* Jeff Goldenson <jeffrey.goldenson@olin.edu>
-* Emily Ferrier <emily.ferrier@olin.edu>
-
-NINJA:
-
-* Duncan Hall <duncan.hall@students.olin.edu><br/>
-Office hours: 7-9 PM Sundays and Wednesdays WH3 AL
+7-9 PM Sundays and Wednesdays WH3 AL<br>
 ([<i class="fa fa-calendar"></i> iCalendar](webcal://p09-calendars.icloud.com/published/2/0HsmJrKvrRZCQrGupJdLvCGi_CPXDbXA5HFworPq2R6wR4MiDQ9YI7I7lImLsjfBOWL_ntnAvSu2UgbHWy9j-79snfX5BNcKNYJFb6ptsgM))
 
 ---
