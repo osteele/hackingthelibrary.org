@@ -41,6 +41,7 @@ non-optional).
 * _Holub on Patterns: Learning Design Patterns by Looking at Code_, Allen Holub
 * ["Patterns in Enterprise Software"](https://www.martinfowler.com/articles/enterprisePatterns.html), Martin Fowler.
 A catalog of software pattern catalogs.
+* [Are Pattern Languages Missing Language Features](http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures).
 
 
 ### Libraries and Knowledge
