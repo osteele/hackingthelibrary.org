@@ -19,7 +19,7 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
-* Complete the [Mini-Project 1 Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
+* Complete the [Mini-Project 1 Kick-Off Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
 
 
 ## Part 1
