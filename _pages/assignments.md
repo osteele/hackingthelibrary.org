@@ -3,8 +3,10 @@ layout: page
 title: Assignments
 ---
 
+<i><small>[Newest to oldest.]</small></i>
+
 <dl>
-{% assign assignments = (site.assignments | filter: 'due_date' | sort: 'due_date') %}
+{% assign assignments = (site.assignments | filter: 'due_date' | sort: 'due_date' | reverse) %}
 {% for assignment in assignments %}
 {% if assignment.parts %}
 
@@ -25,9 +27,12 @@ title: Assignments
 {% endfor %}
 </dl>
 
+
 ## Readings
 
-{% for reading in site.data.readings %}
+<i><small>[Newest to oldest.]</small></i>
+
+{% for reading in site.data.readings reversed %}
 {{ reading[1].due | date: '%A, %B %-d' }}
 : {{ reading[1].preamble }} {{ reading[1].reading }}{{ reading[1].assignment }})
 {% endfor %}
