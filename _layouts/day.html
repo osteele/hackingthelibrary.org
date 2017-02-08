@@ -2,10 +2,12 @@
 layout: default
 ---
 
-<p><a href="/">Home</a> / <a href="{% link _pages/activities.md %}">Day</a> / {{ page.title }}</p>
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li><a href="{% link _pages/activities.md %}">Day</a></li>
+  <li class="active">{{ page.title }}</li>
+</ol>
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<h1>{{ page.title }}</h1>
+<p><small>{{ page.date | date_to_string }}</small></p>
+{{ content }}

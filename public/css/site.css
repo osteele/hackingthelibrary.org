@@ -8,6 +8,7 @@ dt { font-size: 20px; }
 dd { margin-left: 40px; }
 a:hover { text-decoration: underline; }
 a.active { font-weight: bold; }
+.sidebar-nav a { padding: 5px !important; }
 
 
 #logo {
