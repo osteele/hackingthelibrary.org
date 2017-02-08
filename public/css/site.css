@@ -1,18 +1,23 @@
-/* theme overrides */
-.sidebar { background: white; color: gray; margin-top: 160px; }
-.sidebar .sidebar-about { display: none; }
-.sidebar a { color: gray; }
+/* quick hacks to make this look like the Hyde theme that it replaced */
+p, li, dt, dd, h1, h2, h3, h4, h5, h6 {font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
+h1, h2, h3, h4, h5, h6 {font-size: 40px; font-weight: bold; }
+h2 { font-size: 30px; }
+p, li, dt, dd {font-size: 20px; line-height: 30px; }
+dt { font-size: 20px; }
+.navbar a { color: gray; }
+dd { margin-left: 40px; }
+a:hover { text-decoration: underline; }
+a.active { font-weight: bold; }
 
-/* new elements */
+
+#logo {
+	width: 1566px;
+	height: 187px;
+	display: block;
+	background: url("/images/HtL_Banner.svg") -2px 0 no-repeat;
+	background-size: 60%;
+}
+
 .under-construction { margin: 20pt; border: 1px solid gray; background: #e8e8e8; }
 .under-construction img { float: left; margin: 10px; }
 .under-construction:after { clear: both; }
-
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}

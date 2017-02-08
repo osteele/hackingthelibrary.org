@@ -24,6 +24,7 @@ title: Hacking the Library
 
 Oliver Steele <oliver.steele@olin.edu> MH262
 
+{:.table}
 Day    | Time          | Where | Notes
 ------ | ------------- | -------
 W 2/8  | 1-3pm         | Library
