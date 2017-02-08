@@ -52,4 +52,4 @@ A catalog of software pattern catalogs.
 
 * "The Library of Babel", Jorge Luis Borges. Magical realist fiction, around some issues involving cataloging a library that contains all possible boooks.
 * _A Canticle for Leibowitz_,  Walter M. Miller, Jr. Monks preserve scientific knowledge after an apocalpyse.
-  * _The Diamond Age_, Neal Stephenson. Features a (physical) interactive book, backed by AI, that attempts to impart contextually relevant knowledge.
+* _The Diamond Age_, Neal Stephenson. Features a (physical) interactive book, backed by AI, that attempts to impart contextually relevant knowledge.
