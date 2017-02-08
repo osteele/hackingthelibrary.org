@@ -1,17 +1,17 @@
 ---
-title: Mini-Project 1
-description: 'first mini-project'
+title: Mini-Project 2
+description: 'second mini-project'
 date: 2017-02-08
-due_date: 2017-02-09
+due_date: 2017-02-23
 parts:
   - name: Project Proposal
-    due_date: 2017-01-30
+    due_date: 2017-02-09
     tag: project-proposal
   - name: Part 1
-    due_date: 2017-02-02
+    due_date: 2017-02-16
     tag: part-1
   - name: Part 2
-    due_date: 2017-02-09
+    due_date: 2017-02-23
     tag: part-2
 ---
 
@@ -19,12 +19,14 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
-* Complete the [Mini-Project 2 Survey](https://goo.gl/forms/IVuPuA5de7OflI6m2).
+* Complete the [Mini-Project 1 Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
 
 
 ## Part 1
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
+
+<i>Your total out-of-class time for the reading, lab, and mini-project is not required to exceed eight hours.</i>
 
 * Demonstrable code in a GitHub repository.
 * A five-minute project review presentation.
@@ -34,12 +36,11 @@ parts:
 
 <i>Due {{ page.parts[2].due_date | date: '%a %b %-d' }}</i>
 
-<i><small>You may stop working on Part 2, regardless of state of completion, after eight hours of out-of-class effort, minus however long the lab work and readings took. (Your total out-of-class time is not required to total more than eight hours.)
-If your work is incomplete because you ran out of time, please make this known to me.</small></i>
+<i>Your total out-of-class time for the reading, lab, and mini-project is not required to exceed eight hours.
+You may stop working on Part 2, regardless of state of completion, after eight hours of out-of-class effort, minus however long the lab work and readings took.
+If your work is incomplete because you ran out of time, please make this known to me.</i>
 
 What to deliver:
-
-Slack or email me the URL of your project repository.
 
 The repository README should answer the questions below, or link to documents that do.
 
