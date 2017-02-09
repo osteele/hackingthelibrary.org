@@ -19,4 +19,5 @@ title: Day 8
 ## Upcoming
 
 1. [Lab 3]({% link _assignments/lab-3.md %}) is due Monday February 13.
+1. For Monday February 13: {{site.data.readings.can_I_help_you_find_something.reading}}
 2. [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Thursday February 16.
