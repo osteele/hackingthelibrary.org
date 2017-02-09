@@ -1,14 +1,17 @@
 /* text */
-p, li, dt, dd, h1, h2, h3, h4, h5, h6 {font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
-p, li, dt, dd {font-size: 17px; line-height: 26px; }
-dt { font-size: 20px; }
-dd { margin-left: 40px; }
+p, li, dt, dd, h1, h2, h3, h4, h5, h6 { font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
+p, li, dt, dd { font-size: 120%; line-height: 1.6; }
+dt { font-size: 140%; }
+dd { margin-left: 20px; }
 a:hover { text-decoration: underline; }
-a.active { font-weight: bold; }
 
 /* headers */
-h1, h2, h3, h4, h5, h6 {font-size: 40px; font-weight: bold; font-style: italic; }
-h2 { font-size: 30px; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; font-style: italic; }
+h1 { font-size: 4rem; }
+h2 { font-size: 2.82rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.41rem; }
+h5 { font-size: 1rem; }
 
 /* top navbar */
 .navbar { border: none; }
@@ -18,8 +21,12 @@ h2 { font-size: 30px; }
 
 /* side navbar */
 .sidebar-nav { text-transform: uppercase; font-weight: bold }
-.sidebar-nav a { padding: 5px !important; color: #ccc; font-size: 20px;
-	transition: color 0.25s; background-color: 1s;
+.sidebar-nav a {
+	background-color: 1s;
+	color: #ccc;
+	font-size: 20px;
+	padding: 5px !important;
+	transition: color 0.25s;
 }
 .sidebar-nav a:hover { padding: 5px !important; color: black; font-size: 20px; }
 
