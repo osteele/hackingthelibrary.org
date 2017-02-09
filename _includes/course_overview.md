@@ -1,5 +1,3 @@
-## Overview
-
 Let’s create a new kind of Library.
 
 In this studio course, teams will leverage the Library’s resources and institutional mandate to demonstrate the future of Olin’s Library and public libraries writ large.

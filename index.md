@@ -4,9 +4,8 @@ title: Hacking the Library
 ---
 
 <div class="jumbotron" markdown="1">
-{% include course_overview.md %}
+  {% include course_overview.md %}
 </div>
-
 
 <div class="row">
 

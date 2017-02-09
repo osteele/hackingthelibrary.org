@@ -37,6 +37,23 @@ h5 { font-size: 1rem; }
 .sidebar-nav a.active { color: #666; }
 .sidebar-nav a:hover { color: black; font-size: 20px; }
 
+.jumbotron {
+	position: relative;
+	background: url("/images/library-downstairs.jpg") 0 -65px;
+	color: #ddd;
+	font-weight: 900;
+	text-shadow: 3px 3px 0px #000;
+}
+
+.jumbotron p {
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.jumbotron:hover p {
+	opacity: 1;
+}
+
 #course-calendar {
 	width: 800px;
 	height: 800px;
