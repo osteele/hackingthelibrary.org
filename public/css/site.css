@@ -10,14 +10,12 @@ a:hover { text-decoration: underline; }
 a.active { font-weight: bold; }
 .sidebar-nav a { padding: 5px !important; }
 
+/* site-specific non-Hyde */
+.navbar { border: none; }
+.navbar, .navbar-brand img { height: 80px; }
 
-#logo {
-	width: 1566px;
-	height: 187px;
-	display: block;
-	background: url("/images/HtL_Banner.svg") -2px 0 no-repeat;
-	background-size: 60%;
-}
+/* to move the logo right and down, remove the following line and change class="container-fluid" to "container" in header.html */
+.navbar-brand { padding: 0; }
 
 #course-calendar {
 	width: 800px;
