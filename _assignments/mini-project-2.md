@@ -2,16 +2,16 @@
 title: Mini-Project 2
 description: 'The second mini-project'
 date: 2017-02-08
-due_date: 2017-02-23
+due_date: 2017-02-27
 parts:
   - name: Project Proposal
-    due_date: 2017-02-09
+    due_date: 2017-02-13
     tag: project-proposal
   - name: Part 1
-    due_date: 2017-02-16
+    due_date: 2017-02-22
     tag: part-1
   - name: Part 2
-    due_date: 2017-02-23
+    due_date: 2017-02-27
     tag: part-2
 ---
 

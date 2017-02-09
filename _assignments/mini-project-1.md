@@ -2,7 +2,7 @@
 title: Mini-Project 1
 description: 'The first mini-project'
 date: 2017-02-08
-due_date: 2017-02-09
+due_date: 2017-02-13
 parts:
   - name: Project Proposal
     due_date: 2017-01-30
@@ -11,7 +11,7 @@ parts:
     due_date: 2017-02-02
     tag: part-1
   - name: Part 2
-    due_date: 2017-02-09
+    due_date: 2017-02-13
     tag: part-2
 ---
 
