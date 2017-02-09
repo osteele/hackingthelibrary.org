@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Syllabus
+weight: 120
 ---
 
 ## Overview

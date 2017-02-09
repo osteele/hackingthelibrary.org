@@ -2,6 +2,7 @@
 layout: page
 title: Colophon
 permalink: /colophon/
+weight: 200
 ---
 
 This site is build on the following technologies:

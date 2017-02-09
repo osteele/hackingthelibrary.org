@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Assignments
+weight: 20
 ---
 
 <i><small>[Newest to oldest.]</small></i>

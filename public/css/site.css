@@ -20,7 +20,8 @@ h5 { font-size: 1rem; }
 .navbar-brand { padding: 0; }
 
 /* side navbar */
-.sidebar-nav { text-transform: uppercase; font-weight: bold }
+.sidebar-nav { text-transform: uppercase; font-weight: bold; }
+.sidebar-nav a.active { color: #666; }
 .sidebar-nav a {
 	background-color: 1s;
 	color: #ccc;

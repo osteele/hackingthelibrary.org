@@ -2,6 +2,7 @@
 layout: page
 title: Readings
 date: 2017-01-18
+weight: 10
 ---
 
 ## Book Club
