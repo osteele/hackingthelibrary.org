@@ -19,13 +19,14 @@ twelve_factor:
   reading: >
     Read the introduction to [The Twelve-Factor App](https://12factor.net), and sections II, III,
     V, and VI. Think about whether, how, and why these apply to (1) the Labs, and (2) your mini-projects.
-    Also consider (3) analogies between the twelve factors, and libraries and other institutions. 
+    Also consider (3) analogies between the twelve factors, and libraries and other institutions.
   due: 2017-02-06
 
 can_I_help_you_find_something:
   reading: >
-    Read [_Can I help you find something?_, by Rosten Woo](http://www.rostenwoo.biz/index.php/abouthaystacks) Atop being amazing at visualizing data for the civic good, Rosten's an old friend and super-interesting artist [who's work](http://www.rostenwoo.biz/) is worth a close look.
-    <br><b>_A discussion will follow about two topics in particular:_</b><br>
+    Read [_Can I help you find something?_](http://www.rostenwoo.biz/index.php/abouthaystacks), by Rosten Woo.<br>
+    Atop being amazing at visualizing data for the civic good, Rosten's an old friend and super-interesting artist [whose work](http://www.rostenwoo.biz/) is worth a close look.<br>
+    <b>_A discussion will follow about two topics in particular:_</b><br>
     &nbsp; &nbsp;I. Dewey Decimal vs. Library of Congress indexing systems <br>
     &nbsp; &nbsp;II. How the Sitterwork Library system works, be sure to [explore the catalog](http://www.sitterwerk-katalog.ch/controller/public/show_book.php?gm=661114) and dive into [how it works](http://www.sitterwerk.ch/en/art-library/dynamic-order.html)
-  due: 2017-02-13  
+  due: 2017-02-13
