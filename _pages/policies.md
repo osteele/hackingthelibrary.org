@@ -32,6 +32,7 @@ This includes anyone who has helped you with your work or contributed to it and 
 
 Your evaluated work in this course will include:
 
+{:.table}
 | Activity                          | Weight |
 | --------------------------------- | ------ |
 | Labs                              | 15%    |
