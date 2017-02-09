@@ -19,6 +19,11 @@ a.active { font-weight: bold; }
 	background-size: 60%;
 }
 
+#course-calendar {
+	width: 800px;
+	height: 800px;
+}
+
 .under-construction { margin: 20pt; border: 1px solid gray; background: #e8e8e8; }
 .under-construction img { float: left; margin: 10px; }
 .under-construction:after { clear: both; }
