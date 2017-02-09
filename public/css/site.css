@@ -1,21 +1,27 @@
-/* quick hacks to make this look like the Hyde theme that it replaced */
+/* text */
 p, li, dt, dd, h1, h2, h3, h4, h5, h6 {font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
-h1, h2, h3, h4, h5, h6 {font-size: 40px; font-weight: bold; }
-h2 { font-size: 30px; }
-p, li, dt, dd {font-size: 20px; line-height: 30px; }
+p, li, dt, dd {font-size: 17px; line-height: 26px; }
 dt { font-size: 20px; }
-.navbar a { color: gray; }
 dd { margin-left: 40px; }
 a:hover { text-decoration: underline; }
 a.active { font-weight: bold; }
-.sidebar-nav a { padding: 5px !important; }
 
-/* site-specific non-Hyde */
+/* headers */
+h1, h2, h3, h4, h5, h6 {font-size: 40px; font-weight: bold; font-style: italic; }
+h2 { font-size: 30px; }
+
+/* top navbar */
 .navbar { border: none; }
 .navbar, .navbar-brand img { height: 80px; }
-
 /* to move the logo right and down, remove the following line and change class="container-fluid" to "container" in header.html */
 .navbar-brand { padding: 0; }
+
+/* side navbar */
+.sidebar-nav { text-transform: uppercase; font-weight: bold }
+.sidebar-nav a { padding: 5px !important; color: #ccc; font-size: 20px;
+	transition: color 0.25s; background-color: 1s;
+}
+.sidebar-nav a:hover { padding: 5px !important; color: black; font-size: 20px; }
 
 #course-calendar {
 	width: 800px;
