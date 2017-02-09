@@ -29,8 +29,7 @@ Day    | Time          | Where | Notes
 ------ | ------------- | -------
 W 2/8  | 1-3pm         | Library
 W 2/8  | 5:30-6:30pm   | Library
-Th 2/9 | 4:30-6pm      | Library | Depending on the weather
-F 2/8  | 9-11am        | Library | Alternate time if Thursday doesn't work
+F 2/8  | 9-11am        | Library
 
 Duncan Hall <duncan.hall@students.olin.edu><br/>
 

@@ -9,6 +9,7 @@ title: Day 8
 
 * [Mini-Project 1 final deliverable]({% link _assignments/mini-project-1.md %}#part-2)
 * [Lab 3]({% link _assignments/lab-3.md %})
+* Tentative: {{site.data.readings.can_I_help_you_find_something.reading}}
 
 
 ## In Class
@@ -16,11 +17,9 @@ title: Day 8
 1. Present your project. Don't do any work to *prepare* for this beyond the [project deliverables]({% link _assignments/mini-project-1.md %}#part-2). This is your chance to share your work with your classmates.
 2. Mini-Project 2: Choose a *different* topic, and find a *different* team mate(s), from the first mini-project.
 3. Complete the [MP2 kick-off survey](https://goo.gl/forms/IVuPuA5de7OflI6m2)
-4. Reading?
+4. Book Club?
 
 
 ## Upcoming
 
-1. [Lab 3]({% link _assignments/lab-3.md %}) is due Monday February 13.
-1. For Monday February 13: {{site.data.readings.can_I_help_you_find_something.reading}}
-2. [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Thursday February 16.
+2. [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Tuesday February 21.
