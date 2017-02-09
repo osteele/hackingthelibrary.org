@@ -5,6 +5,8 @@ class_date: 2017-02-13
 title: Day 8
 ---
 
+{% include construction %}
+
 ## Due Today
 
 * [Mini-Project 1 final deliverable]({% link _assignments/mini-project-1.md %}#part-2)
@@ -22,4 +24,4 @@ title: Day 8
 
 ## Upcoming
 
-2. [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Tuesday February 21.
+* [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Tuesday February 21.
