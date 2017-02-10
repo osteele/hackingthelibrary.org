@@ -1,7 +1,7 @@
 ---
 title: Mini-Project 2
 description: 'The second mini-project'
-date: 2017-02-08
+date: 2017-02-10
 due_date: 2017-02-27
 parts:
   - name: Project Proposal
@@ -19,7 +19,8 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
-* Choose a *different* topic, and find a *different* team mate(s), from the first mini-project.
+* Choose a *different* team mate(s) from the first mini-project.
+* Jointly select a project based on a provocation from the [Course Book](files/HtL_web-book-1.pdf). This should be a *different* project from one that you or your team mates worked on for Mini Project 1.
 * Complete the [Mini-Project 1 Kick-Off Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
 
 
