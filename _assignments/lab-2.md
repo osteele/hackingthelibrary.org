@@ -1,7 +1,7 @@
 ---
 title: 'Lab 2: Deploying to the cloud'
 description: 'In which we use Heroku to host an instance of our app that has a publicly accessible URL'
-date: 2017-01-26
+date: 2017-02-10
 due_date: 2017-02-02
 ---
 
@@ -154,6 +154,16 @@ push to Heroku, and test again. You should see your application.
     port = int(os.environ.get('PORT', 5000)))
     app.run(host='0.0.0.0', debug=True, port=port)
 ```
+
+
+## Whitelist the Domain
+
+Problem: Olin's DNS provider blocks some new sites from the Olin network after a 1-3 day grace period.
+Your app may work for a while, and then stop working with the message below:
+
+![](/images/lab2/it_security_message.png)
+
+Solution: Send a message to <helpdesk@olin.edu>: “I am using the domain name myapp.herokuapp.com for a class project, and need access to it from within the Olin network. Please configure DNS so that it does not block this site.”
 
 
 ## (Optional) Going Beyond
