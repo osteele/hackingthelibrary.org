@@ -3,6 +3,7 @@ title: 'Lab 2: Deploying to the cloud'
 description: 'In which we use Heroku to host an instance of our app that has a publicly accessible URL'
 date: 2017-02-10
 due_date: 2017-02-02
+lab: 2
 ---
 
 {% include toc %}
