@@ -186,8 +186,8 @@ Here's how to add the link:
 Open your repo page on GitHub. Near the top of the page is an Edit button;
 this discloses text entry fields for a project Description and Website.
 
-![]({% link images/repo-description-1.png %})
+![]({% link images/lab2/repo-description-1.png %}){:class="img-responsive"}
 
 Paste your application URL into the Website field, and Save.
 
-![]({% link images/repo-description-2.png  %})
+![]({% link images/lab2/repo-description-2.png %}){:class="img-responsive"}
