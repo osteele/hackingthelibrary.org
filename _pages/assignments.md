@@ -2,6 +2,7 @@
 layout: page
 title: Assignments
 weight: 20
+breadcrumbs: true
 ---
 
 <i><small>[Newest to oldest.]</small></i>

@@ -2,6 +2,7 @@
 layout: page
 title: Lesson Plans
 weight: 30
+breadcrumbs: true
 ---
 
 {% for day in site.days reversed %}

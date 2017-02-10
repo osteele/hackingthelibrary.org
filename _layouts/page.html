@@ -2,5 +2,12 @@
 layout: default
 ---
 
+{% if page.breadcrumbs %}
+<ol class="breadcrumb">
+  <li><a href="/">Home</a></li>
+  <li class="active">{{ page.title }}</li>
+</ol>
+{% endif %}
+
 <h1>{{ page.title }}</h1>
 {{ content }}
