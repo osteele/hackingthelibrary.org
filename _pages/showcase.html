@@ -20,10 +20,13 @@ weight: 20
 {% if assignment.lab == 2 %}
 <div class="row">
 {% for site in site.data.lab2 %}
-<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-  <a class="thumbnail" href="{{ site.website_url }}">
-  <img src="/images/showcase/lab2/{{ site.image_name }}" class="img-responsive">
-</a>
+<div class="col-lg-3 col-md-4 col-xs-6 thumb" style="position:relative" >
+  <a href="{{ site.website_url }}" class="thumbnail">
+      <img src="/images/showcase/lab2/{{ site.image_name }}" class="img-responsive">
+  </a>
+  <div style="position: relative; top: -15px">
+    <a href="{{ site.github_url }}"><i class="fa fa-github" aria-hidden="true"></i> Repo</a>
+  </div>
 </div>
 {% endfor %}
 </div>
