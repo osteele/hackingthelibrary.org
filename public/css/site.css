@@ -1,8 +1,12 @@
 /* text */
-p, li, dt, dd, h1, h2, h3, h4, h5, h6 { font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
-p, li, dt, dd { font-size: 120%; line-height: 1.6; }
+p, li, dt, dd, h1, h2, h3, h4, h5, h6, blockquote { font-family: 'PT Sans', Helvetica, Arial, sans-serif; }
+p, li, dt, dd, blockquote { font-size: 120%; line-height: 1.6; }
 dt { font-size: 140%; }
 dd { margin-left: 20px; }
+
+blockquote { font-size: 100%; }
+cite { float: right; }
+cite:before { content: "–"; }
 
 a, a:hover { color: #26aaa5; font-weight: bold; }
 a:hover { text-decoration: underline; }
