@@ -22,20 +22,20 @@ h5 { font-size: 1rem; }
 .navbar-brand { padding: 0; }
 
 /* side navbar */
-.sidebar-nav {
+.nav-sidebar {
 	padding-top: 15px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-.sidebar-nav a {
+.nav-sidebar a {
 	background-color: 1s;
 	color: #ccc;
 	font-size: 20px;
 	transition: color 0.25s;
 }
-.sidebar-nav li a { padding: 0; line-height: 1.8; }
-.sidebar-nav a.active { color: #666; }
-.sidebar-nav a:hover { color: black; font-size: 20px; }
+.nav-sidebar li a { padding: 0; line-height: 1.8; }
+.nav-sidebar a.active { color: #666; }
+.nav-sidebar a:hover { color: black; font-size: 20px; }
 
 .jumbotron {
 	position: relative;
