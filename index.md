@@ -17,6 +17,7 @@ title: Hacking the Library
 [Mini-Project 1 final deliverable]({% link _assignments/mini-project-1.md %}#part-2) is due before the start of class.
 
 [Lab 3]({% link _assignments/lab-3.md %}) is due before the start of class.
+Please complete the [survey](https://goo.gl/forms/XfzEzyOp6FYZs9dL2).
 
 ### Evening
 

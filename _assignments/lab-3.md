@@ -194,7 +194,7 @@ Some ingredients you may find useful:
 
 ## What to Turn In
 
-1. Complete the survey (link TBD) before class on {{ page.due_date | date: '%A, %-d %b'}}. The survey questions will include:
+1. Complete the [survey](https://goo.gl/forms/XfzEzyOp6FYZs9dL2) before class on {{ page.due_date | date: '%A, %-d %b'}}. The survey questions will include:
    1. How long did the assignment take?
    2. All that stuff about environment variables – [] I already knew all that; [] I knew some of that but it was useful to see it; [] this was news to me but now I understand it; [] this was just confusing.
    3. Delta / plus
