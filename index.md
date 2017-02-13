@@ -20,7 +20,7 @@ title: Hacking the Library
 
 ### Evening
 
-[Sha Hwang](http://postarchitectural.com/) is giving a talk, "Beyond Desire",
+[Sha Hwang](http://postarchitectural.com/) is giving a talk
 on Monday at 7-8pm in the auditorium.
 There will be a reception starting around 8.
 
