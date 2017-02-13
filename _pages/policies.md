@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Policies
 date: 2017-01-18
 weight: 90

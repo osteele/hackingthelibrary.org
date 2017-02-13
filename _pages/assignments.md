@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Assignments
 weight: 20
 breadcrumbs: true

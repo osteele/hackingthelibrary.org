@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Colophon
 permalink: /colophon/
 weight: 200

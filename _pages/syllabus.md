@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Syllabus
 weight: 120
 ---
