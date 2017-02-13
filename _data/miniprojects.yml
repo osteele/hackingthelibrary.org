@@ -1,3 +1,7 @@
 - github_url: https://github.com/leonjunwei/htl-calendar/
   title: Community Calendar
   image_name: community_calendar.png
+
+- github_url: https://github.com/aloverso/heartbot
+  title: Heartbot
+  image_name: heartbot.png
