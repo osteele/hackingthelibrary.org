@@ -19,8 +19,8 @@ parts:
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
-* Choose a *different* team mate(s) from the first mini-project.
-* Jointly select a project based on a provocation from the [Course Book](files/HtL_web-book-1.pdf). This should be a *different* project from one that you or your team mates worked on for Mini Project 1.
+* Choose a *different* teammate(s) from the first mini-project.
+* Jointly select a project based on a provocation from the [Course Book](/files/HtL_web-book-1.pdf). This should be a *different* project from one that you or your team mates worked on for Mini Project 1.
 * Complete the [Mini-Project 1 Kick-Off Survey](https://goo.gl/forms/EmirMhWuj9UdYSTb2).
 
 

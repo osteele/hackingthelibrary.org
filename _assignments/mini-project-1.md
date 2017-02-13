@@ -20,7 +20,7 @@ parts:
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
 * Find a team mate(s).
-* Jointly select a project based on the provocations from the [Course Book](files/HtL_web-book-1.pdf).
+* Jointly select a project based on the provocations from the [Course Book](/files/HtL_web-book-1.pdf).
 * Complete the [Mini-Project 2 Survey](https://goo.gl/forms/IVuPuA5de7OflI6m2).
 
 
