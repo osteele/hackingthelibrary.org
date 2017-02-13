@@ -17,6 +17,9 @@ If your application lives at a public URL, we will be able to display it on the
 digital signs in the lobby. Depending on the project, we may extend this basic API
 to allow for controlling applications.
 
+The library has two iPads and two Samsung tablets that can be positioned as temporary signs
+during development.
+
 
 ## Sonos (music and audio)
 
@@ -54,6 +57,12 @@ Twilio also provides programmatic support for speech, using the same library.
 A tutorial is [here](https://www.twilio.com/docs/quickstart/python/twiml).
 
 
-## Door Counters
+## People Counters
 
-As a means for exploring door counter or other CV functionality, we can set up a loaner laptop or laptops with a webcab in a fixed location in the library.
+The library has two [All-Tag Bi-Directional People Counters](http://all-tag.com/product-category/people-counters/), one at each entrance.
+
+We haven't explored gaining programmatic access to this –
+some altnernatives with less risk for a mini-project exploration:
+
+* Install laptops with webcams
+* Install motion detectors or proximity sensors
