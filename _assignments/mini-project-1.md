@@ -13,6 +13,7 @@ parts:
   - name: Part 2
     due_date: 2017-02-13
     tag: part-2
+start_survey_url: https://goo.gl/forms/IVuPuA5de7OflI6m2
 ---
 
 ## Project Proposal
@@ -21,7 +22,7 @@ parts:
 
 * Find a team mate(s).
 * Jointly select a project based on the provocations from the [Course Book](/files/HtL_web-book-1.pdf).
-* Complete the [Mini-Project 2 Survey](https://goo.gl/forms/IVuPuA5de7OflI6m2).
+* Complete the [Mini-Project 2 Survey]({{ page.start_survey_url }}).
 
 
 ## Part 1
