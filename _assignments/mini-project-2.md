@@ -13,7 +13,7 @@ parts:
   - name: Part 2
     due_date: 2017-02-27
     tag: part-2
-start_survey_url: https://goo.gl/forms/EmirMhWuj9UdYSTb2
+start_survey_url: https://goo.gl/forms/IVuPuA5de7OflI6m2
 ---
 
 ## Project Proposal
@@ -22,7 +22,7 @@ start_survey_url: https://goo.gl/forms/EmirMhWuj9UdYSTb2
 
 * Choose a *different* teammate(s) from the first mini-project.
 * Jointly select a project based on a provocation from the [Course Book](/files/HtL_web-book-1.pdf). This should be a *different* project from one that you or your team mates worked on for Mini Project 1.
-* Complete the [Mini-Project 1 Kick-Off Survey]({{ page.start_survey_url }}).
+* Complete the [Mini-Project 2 Proposal Survey]({{ page.start_survey_url }}).
 
 
 ## Part 1
