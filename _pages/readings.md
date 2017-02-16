@@ -48,7 +48,7 @@ A catalog of software pattern catalogs.
 
 * *Everything is Miscellaneous: The Power of the New Digital Disorder*, David Weinberger
 * *The Knowledge: How to Rebuild Civilization in the Aftermath of a Cataclysm*, Lewis Dartnell.
-* "Annals of Scholarship: Discards", Nicholson Baker, _The New Yorker_, April 4, 1994
+* ["Annals of Scholarship: Discards"](http://www.newyorker.com/magazine/1994/04/04/discards), Nicholson Baker, _The New Yorker_, April 4, 1994
 
 ### Fiction
 
