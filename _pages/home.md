@@ -15,11 +15,16 @@ title: Hacking the Library
 
 ### Thursday 2/16
 
-Come to class having read {{site.data.readings.can_I_help_you_find_something.reading}}{{site.data.readings.can_I_help_you_find_something.assignment}}
+{% assign reading = site.data.readings.can_I_help_you_find_something %}
+Come to class having read {{reading.reading}}{{reading.assignment}}
 
 ### Wednesday 2/22
 
 MP2 mid-project presentations.
+
+{% assign reading = site.data.readings.opensource_guide %}
+Come to class having reviewed the topics in
+{{reading.reading}}{{reading.assignment}}
 
 ### Thursday 2/23
 
