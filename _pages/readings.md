@@ -49,8 +49,10 @@ A catalog of software pattern catalogs.
 * *Everything is Miscellaneous: The Power of the New Digital Disorder*, David Weinberger
 * *The Knowledge: How to Rebuild Civilization in the Aftermath of a Cataclysm*, Lewis Dartnell.
 
+
 ### Fiction
 
 * "The Library of Babel", Jorge Luis Borges. Magical realist fiction, around some issues involving cataloging a library that contains all possible boooks.
 * _A Canticle for Leibowitz_,  Walter M. Miller, Jr. Monks preserve scientific knowledge after an apocalpyse.
 * _The Diamond Age_, Neal Stephenson. Features a (physical) interactive book, backed by AI, that attempts to impart contextually relevant knowledge.
+* [_Sum: Forty Tales from the Afterlives_](https://en.wikipedia.org/wiki/Sum:_Forty_Tales_from_the_Afterlives), David Eagleman.
