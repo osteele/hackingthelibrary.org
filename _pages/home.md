@@ -13,22 +13,17 @@ title: Hacking the Library
 <div class="col-lg-4" markdown="1">
 ## Coming Up
 
-### Thursday 2/16
-
-{% assign reading = site.data.readings.can_I_help_you_find_something %}
-Come to class having read {{reading.reading}}{{reading.assignment}}
-
 ### Wednesday 2/22
 
-MP2 mid-project presentations.
+* MP2 mid-project presentations.
 
-{% assign reading = site.data.readings.opensource_guide %}
+* {% assign reading = site.data.readings.opensource_guide %}
 Come to class having reviewed the topics in
 {{reading.reading}}{{reading.assignment}}
 
 ### Thursday 2/23
 
-Lab 4 is due. (Lab 4 will be published on Tuesday 2/14.)
+Lab 4 is due. (Lab 4 will be published by Saturday 2/18, or else it will not be due.)
 </div>
 
 
