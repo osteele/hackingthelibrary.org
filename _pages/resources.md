@@ -66,3 +66,7 @@ some altnernatives with less risk for a mini-project exploration:
 
 * Install laptops with webcams
 * Install motion detectors or proximity sensors
+
+
+## Design Patterns
+🎉 Ultra-simplified explanation to design patterns! 🎉 A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by [explaining them in the simplest way possible](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md).
