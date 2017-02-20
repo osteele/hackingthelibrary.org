@@ -21,9 +21,12 @@ title: Hacking the Library
 Come to class having reviewed the topics in
 {{reading.reading}}{{reading.assignment}}
 
+{% comment %}
 ### Thursday 2/23
 
-Lab 4 is due. (Lab 4 will be published by Saturday 2/18, or else it will not be due.)
+Lab 4 is due.
+(Lab 4 will be published by Saturday 2/18, or else it will not be due.)
+{% endcomment %}
 </div>
 
 
