@@ -10,6 +10,15 @@ project; some are suitable for prototyping with during exploration, and can be r
 by supported hardware for projects that are selected for further development.
 
 
+## Slack and Chat
+
+This [wiki page](https://github.com/olinlibrary/hackingthelibrary.org/wiki/Chat-resources) collects Slack and chat / conversation agent libraries and services.
+
+During exploration, we have a sandbox Slack domain https://olin-library.slack.com that we can make
+everyone an adminstrator of. Once a project is developed, we can connect a production version to the
+Olin Slack team.
+
+
 ## Digital Signage
 
 Duncan is developing software to integrate class projects with digital signage.
@@ -31,16 +40,6 @@ or an audio synthesis program.
 
 The library has Sonos speakers.
 
-
-## Slack
-
-It's easy to write a Slack bot. A couple of Python libraries are [here](https://github.com/os/slacker)
-and [here](https://github.com/slackapi/python-slackclient).  [Here's](https://realpython.com/blog/python/getting-started-with-the-slack-api-using-python-and-flask/)
-a tutorial on using Slack with Flask.
-
-During exploration, we have a sandbox Slack domain https://olin-library.slack.com that we can make
-everyone an adminstrator of. Once a project is developed, we can connect a production version to the
-Olin Slack team.
 
 
 ## SMS
