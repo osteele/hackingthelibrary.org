@@ -21,6 +21,7 @@ title: Hacking the Library
 
 
 <div class="col-lg-4" markdown="1">
+{% comment %}
 ## Assignments
 
 Thursday, Feb 16
@@ -31,6 +32,7 @@ Wednesday, Feb 22
 
 Thursday, Feb 23
 : Lab 4
+{% endcomment %}
 </div>
 
 <div class="col-lg-4" markdown="1">

@@ -15,7 +15,7 @@ Oliver Steele <oliver.steele@olin.edu>
 
 {:.table}
 Day    | Time          | Where
------- | ------------- | -------
-W 2/15  | 2-4pm        | Library
-F 2/17  | 9:30-11:30am | Library
-F 2/17  | 2:15-4pm     | Library
+-------|---------------|--------
+T 2/28 | 2-4pm         | Library
+Th 3/1 | 10:30-12:30am | Library
+Th 3/2 | 1:30-3:30pm   | AC328
