@@ -13,10 +13,9 @@ title: Hacking the Library
 <div class="col-lg-4" markdown="1">
 ## Coming Up
 
-### Monday 2/27
+### Monday 3/6
 
-* MP2 final project presentations.
-* In class: select final projects
+* Plan [final projects](https://docs.google.com/document/d/1gRQQKo0gmyGN3_ZILPiyABKDC5CXMUaj4yWyfbLxm9I/edit).
 </div>
 
 
