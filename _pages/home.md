@@ -16,6 +16,7 @@ title: Hacking the Library
 ### Monday 3/6
 
 * [Final Product](https://docs.google.com/document/d/1gRQQKo0gmyGN3_ZILPiyABKDC5CXMUaj4yWyfbLxm9I/edit) planning
+* Prepare for [Product Proposal Review]({% link _assignments/final-product/proposal-review.md %}
 
 ### Thursday 3/9
 
