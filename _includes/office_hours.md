@@ -13,9 +13,4 @@ Wed   | 7-9pm   | WH3 AL
 
 Oliver Steele <oliver.steele@olin.edu>
 
-{:.table}
-Day    | Time          | Where
--------|---------------|--------
-T 2/28 | 2-4pm         | Library
-Th 3/1 | 10:30-12:30am | Library
-Th 3/2 | 1:30-3:30pm   | AC328
+<iframe src="https://docs.google.com/spreadsheets/d/1n1hu2Pi_HmkT91HpOgOqtyDYezA4QhHlhPDfoVhOPz4/pubhtml?gid=0&single=true&headers=false&widget=true"></iframe>
