@@ -1,9 +1,10 @@
 ---
-layout: post
-date: 2017-01-09T18:49:40Z
-title: "Sample Announcement"
-categories: announcement
+title: Sample Announcement
+date: 2017-01-09 13:49:40 -05:00
 published: false
+categories:
+- announcement
+layout: post
 ---
 
 This is an example announcement.

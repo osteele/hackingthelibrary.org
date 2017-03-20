@@ -1,24 +1,24 @@
 ---
-layout: default
 title: Final Project
-due_date: 2017-01-31
 published: false
+layout: default
+due_date: 2017-01-30 19:00:00 -05:00
 parts:
-  - name: Project Proposal
-    due_date: 2017-01-30
-    tag: project-proposal
-  - name: Sprint 1 Review
-    due_date: 2017-02-02
-    tag: part-1
-  - name: Feature Complete
-    due_date: 2017-02-02
-    tag: part-1
-  - name: Deliverables
-    due_date: 2017-02-02
-    tag: part-1
-  - name: Final
-    due_date: 2017-02-02
-    tag: part-1
+- name: Project Proposal
+  due_date: 2017-01-29 19:00:00 -05:00
+  tag: project-proposal
+- name: Sprint 1 Review
+  due_date: 2017-02-01 19:00:00 -05:00
+  tag: part-1
+- name: Feature Complete
+  due_date: 2017-02-01 19:00:00 -05:00
+  tag: part-1
+- name: Deliverables
+  due_date: 2017-02-01 19:00:00 -05:00
+  tag: part-1
+- name: Final
+  due_date: 2017-02-01 19:00:00 -05:00
+  tag: part-1
 ---
 
 ## Prototype and Pitch

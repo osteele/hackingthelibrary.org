@@ -1,7 +1,7 @@
 ---
-layout: default
-permalink: /
 title: Hacking the Library
+permalink: "/"
+layout: default
 ---
 
 <div class="jumbotron" markdown="1">

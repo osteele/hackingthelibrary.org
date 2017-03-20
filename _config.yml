@@ -1,50 +1,50 @@
-# Site settings
-title: "Hacking the Library"
-email: steele@osteele.com
-description: >
-  Let’s create a new kind of Library.
-
-baseurl: "/" # the subpath of your site, e.g. /blog/
-# url: "http://hackingthelibrary.org"
+---
+title: Hacking the Library
 timezone: America/New_York
-
-# Google Custom Search Engine
-# gcse_id: 011154276211498969066:uccvhxtwt-q
-
 collections:
-  days:
-    output: true
-    permalink: /day/:path/
   assignments:
+    title: Assignments
     output: true
-    permalink: /assignments/:path/
+    permalink: "/assignments/:path/"
+  days:
+    title: Days
+    output: true
+    permalink: "/day/:path/"
   pages:
+    title: Pages
     output: true
-    permalink: /:path/
-
-course:
-  title: "Special Topics in Computing: Hacking the Library"
-  number: ENGR3599
-
+    permalink: "/:path/"
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: ""
-      type: assignments
-    values:
-      layout: assignment
-  - scope:
-      path: ""
-      type: days
-    values:
-      layout: day
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: page
+- scope:
+    path: ''
+    type: assignments
+  values:
+    layout: assignment
+- scope:
+    path: ''
+    type: days
+  values:
+    layout: day
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+email: steele@osteele.com
+description: 'Let’s create a new kind of Library.
 
+'
+baseurl: "/"
+course:
+  title: 'Special Topics in Computing: Hacking the Library'
+  number: ENGR3599
 gems:
-  - jekyll-redirect-from
-
+- jekyll-redirect-from
 whitelist:
-  - jekyll-redirect-from
+- jekyll-redirect-from

@@ -1,6 +1,6 @@
 ---
 title: Policies
-date: 2017-01-18
+date: 2017-01-18 00:00:00 -05:00
 weight: 90
 ---
 

@@ -1,11 +1,10 @@
 ---
 title: 'Lab 1: A Web App'
-description: 'In which we decorate and extend a course listing application.'
-date: 2017-01-22
-due_date: 2017-01-26
+date: 2017-01-22 00:00:00 -05:00
+description: In which we decorate and extend a course listing application.
+due_date: 2017-01-25 19:00:00 -05:00
 lab: 1
 ---
-
 
 ## Overview
 

@@ -1,7 +1,7 @@
 ---
 title: Project Plan Review
-due_date: 2017-02-09
-time_of_day: ' '
+due_date: 2017-02-08 19:00:00 -05:00
+time_of_day: " "
 ---
 
 Your team will have 20 minutes to present your project plan.

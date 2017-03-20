@@ -1,8 +1,8 @@
 ---
-date: 2017-01-30
-description: 'The 12-Factor App'
-class_date: 2017-02-06
 title: Day 7
+date: 2017-01-30 00:00:00 -05:00
+description: The 12-Factor App
+class_date: 2017-02-05 19:00:00 -05:00
 ---
 
 ## Due Today

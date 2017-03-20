@@ -1,6 +1,6 @@
 ---
 title: Colophon
-permalink: /colophon/
+permalink: "/colophon/"
 weight: 200
 ---
 

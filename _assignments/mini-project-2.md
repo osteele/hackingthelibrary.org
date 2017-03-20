@@ -1,18 +1,18 @@
 ---
 title: Mini-Project 2
-description: 'The second mini-project'
-date: 2017-02-10
-due_date: 2017-02-27
+date: 2017-02-10 00:00:00 -05:00
+description: The second mini-project
+due_date: 2017-02-26 19:00:00 -05:00
 parts:
-  - name: Project Proposal
-    due_date: 2017-02-13
-    tag: project-proposal
-  - name: Part 1
-    due_date: 2017-02-22
-    tag: part-1
-  - name: Part 2
-    due_date: 2017-02-27
-    tag: part-2
+- name: Project Proposal
+  due_date: 2017-02-12 19:00:00 -05:00
+  tag: project-proposal
+- name: Part 1
+  due_date: 2017-02-21 19:00:00 -05:00
+  tag: part-1
+- name: Part 2
+  due_date: 2017-02-26 19:00:00 -05:00
+  tag: part-2
 start_survey_url: https://goo.gl/forms/IVuPuA5de7OflI6m2
 ---
 

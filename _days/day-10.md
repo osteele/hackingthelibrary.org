@@ -1,9 +1,9 @@
 ---
-date: 2017-02-27
-description: ''
-class_date: 2017-02-19
-published: false
 title: Day 10
+date: 2017-02-27 00:00:00 -05:00
+published: false
+description: ''
+class_date: 2017-02-18 19:00:00 -05:00
 ---
 
 ## Due Today

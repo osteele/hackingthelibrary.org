@@ -1,9 +1,9 @@
 ---
-date: 2017-01-19
-class_date: 2017-01-19
-description: Course Overview
 title: Day 1
-redirect_from: /day/day-1/
+date: 2017-01-19 00:00:00 -05:00
+class_date: 2017-01-18 19:00:00 -05:00
+description: Course Overview
+redirect_from: "/day/day-1/"
 ---
 
 ## In Class

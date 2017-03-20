@@ -1,8 +1,9 @@
 ---
 title: 'Lab 2: Deploying to the cloud'
-description: 'In which we use Heroku to host an instance of our app that has a publicly accessible URL'
-date: 2017-02-10
-due_date: 2017-02-02
+date: 2017-02-10 00:00:00 -05:00
+description: In which we use Heroku to host an instance of our app that has a publicly
+  accessible URL
+due_date: 2017-02-01 19:00:00 -05:00
 lab: 2
 ---
 

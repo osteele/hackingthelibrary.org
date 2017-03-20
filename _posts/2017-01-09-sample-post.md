@@ -1,8 +1,8 @@
 ---
-layout: post
-date: 2017-01-09T18:38:39Z
-title: "Sample Post"
+title: Sample Post
+date: 2017-01-09 13:38:39 -05:00
 published: false
+layout: post
 ---
 
 This is an example post, as documented [here](https://jekyllrb.com/docs/posts/).

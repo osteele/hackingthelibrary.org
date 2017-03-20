@@ -1,8 +1,8 @@
 ---
 title: 'Lab 3: Deployment Environments'
-description: 'In which we use environment variables to configure deployment environments'
-date: 2017-02-03
-due_date: 2017-02-13
+date: 2017-02-03 00:00:00 -05:00
+description: In which we use environment variables to configure deployment environments
+due_date: 2017-02-12 19:00:00 -05:00
 lab: 3
 ---
 
