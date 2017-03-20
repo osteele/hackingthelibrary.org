@@ -11,14 +11,11 @@ title: Hacking the Library
 <div class="row">
 
 <div class="col-lg-4" markdown="1">
-## Coming Up
+## Today
 
-### Thursday 3/9
-
-* [Product Proposal Review]({% link _assignments/final-product/proposal-review.md %})
+* Please submit the [Final Project Entry Survey](https://goo.gl/forms/wqGT4R8RvJZGU4B03)
 
 </div>
-
 
 <div class="col-lg-4" markdown="1">
 {% comment %}
