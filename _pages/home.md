@@ -13,11 +13,16 @@ layout: default
 <div class="col-lg-4" markdown="1">
 ## Today
 
-* Please submit the [Final Project Entry Survey](https://goo.gl/forms/wqGT4R8RvJZGU4B03)
+* Project sprint reviews. Be prepared to present the state of your project, plans for the next week of work.
+* For this first review, also discuss: [What is the absolute minimum feature set to test this hypothesis by DEMO DAY](https://docs.google.com/document/d/1lKjSNhOvP_AT0b1sS8yqe9WZwH20uewuPEh_jUyzXGA/edit)
 
 </div>
 
 <div class="col-lg-4" markdown="1">
+## Monday
+
+Documentation workshop. During class, we will set projects up with infrastructure documentation.
+
 {% comment %}
 ## Assignments
 
