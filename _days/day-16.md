@@ -2,7 +2,7 @@
 title: Day 16
 date: 2017-03-27 08:00:00 -04:00
 description: Initial Project Review
-activity_date: 2017-03-23
+activity_date: 2017-03-22 20:00:00 -04:00
 ---
 
 * Project sprint reviews. Be prepared to present the state of your project, plans for the next week of work.

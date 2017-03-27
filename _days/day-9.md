@@ -3,7 +3,7 @@ title: Day 9
 date: 2017-02-08 00:00:00 -05:00
 published: false
 description: ''
-activity_date: 2017-02-11
+activity_date: 2017-02-10 19:00:00 -05:00
 ---
 
 ## Due Today
