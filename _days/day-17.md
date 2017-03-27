@@ -119,6 +119,30 @@ To take advantage of this, you will use the [Sphinx autodoc](http://www.sphinx-d
 
 2. Follow the instructions in the [Sphinx autodoc tutorial]( http://www.sphinx-doc.org/en/stable/tutorial.html#autodoc).
 
+## Optional tip: Live rebuild
+
+You can set the documentation up to build whenever a doc file changes:
+
+1. Install [`entr`](http://entrproject.org).
+
+  Ubuntu: `sudo apt-get install entr`
+
+  MacOS with Homebrew; `brew install entr`
+
+2. Instead of `make html`, use the following command:
+
+    ``` bash
+    $ find . -type f ! -path './_build/*' | entr make html
+    ```
+
+    While you leave this command running, it will rebuild the documentation whenever a file in the `docs` directory changes.
+
+3. In order to pick up changes to your source files (outside the `docs` directory), use this instead:
+
+    ```bash
+    $ find .. -type f ! -path '../docs/_build/*' ! -path '../.git' | entr make html
+    ```
+
 ## Document JavaScript Code
 
 Hey Project Projects – I'm looking at you!
