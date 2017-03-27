@@ -11,19 +11,20 @@ layout: default
 <div class="row">
 
 <div class="col-lg-4" markdown="1">
-## Today
+## Today: Documentation Workshop
 
-* Project sprint reviews. Be prepared to present the state of your project, plans for the next week of work.
-* For this first review, also discuss: [What is the absolute minimum feature set to test this hypothesis by DEMO DAY](https://docs.google.com/document/d/1lKjSNhOvP_AT0b1sS8yqe9WZwH20uewuPEh_jUyzXGA/edit)
+During class, we will set projects up with infrastructure documentation.
 
-By the end of today, your Project Definition and Project Plan should accord with what you discussed today. If you need to replace the URLs, enter them on [this form](https://goo.gl/forms/7ctoaF3ZMIBN4Ee42).
+Follow the [day 17 instructions]({% link _days/day-17.md %}).
 
 </div>
 
 <div class="col-lg-4" markdown="1">
-## Monday
+## Thursday: Sprint Reviews
 
-Documentation workshop. During class, we will set projects up with infrastructure documentation.
+Be prepared to present the state of your project, progress since last week, and plans for the next week of work.
+
+In keeping with the "more frequent, shorter reviews" experiment, reviews need be no longer than 5-10 minutes. You can take up to twenty minutes if it will be helpful.
 
 {% comment %}
 ## Assignments
