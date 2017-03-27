@@ -69,14 +69,14 @@ These JavaScript projects use Sphinx:
 
 2. Execute the following. (Omit the `sudo` if you are using Python with **conda** or **virtualenv**.)
 
-        $ sudo pip install -r requirements-dev.txt
+        $ sudo pip3 install -r requirements-dev.txt
 
-3. Follow the "Write Your Docs" instructions in [Read the Docs: Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html).
+3. Follow the "Write Your Docs" instructions in [Read the Docs: Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html). Follow the "In reStructuredText" portion of the instructions. We'll get to the "In Markdown" section later; it won't work if you skip to it first.
 
   Notes:
 
   * `sphinx-quickstart` asks a *lot* of questions. You can just press <kbd>Return</kbd> repeatedly. Anything that `sphinx-quickstart` actually requires, it will ask you again, in red.
-  * You will already have `sphinx` and `sphinx-autobuild` installed. Repeating the `pip install` step from the "Write Your Docs" instructions is unnecessary but harmless.
+  * You will already have `sphinx` and `sphinx-autobuild` installed. Skip the `pip install` step from the "Write Your Docs" instructions.
 
 ## Markdown versus reStructuredText
 
@@ -86,9 +86,22 @@ The rest of the programming world is trending towards **Markdown** ([Wikipedia](
 
 You can use both reStructuredText files (that end in `.rst`), or Markdown files (that end in `.md`) with Sphinx:
 
-To use Markdown, follow [these instructions](https://docs.readthedocs.io/en/latest/getting_started.html#in-markdown) from "Read the Docs: Getting Started".
+To use Markdown, follow [these instructions](https://docs.readthedocs.io/en/latest/getting_started.html#in-markdown) from "Read the Docs: Getting Started". Skip the `pip install recommonmark` step.
+          This tries to step tries to install the `recommonmark` package into the Python 2 site directory; `pip3 install -r requirements-dev.txt`, above, already it into the Python 3 site directory.
 
-(If you followed the instructions above, you already installed `recommonnmark`. This package was included in the `requirements-dev.txt` that you installed. The `pip install recommonmark` instructions from "Getting Started" are unnecessary but harmless).
+## Add a file
+
+1. Create a new file in the `docs` directory: for example, `docs/overview.md` or `docs/overview.rst`.
+
+2. Add the filename *without the file extension*, to `index.rst`. For example in (1), add a line `overview`, preceded by four spaces.
+
+## View your documentation
+
+1. In a terminal in the `docs` directory, run `make html`.
+
+2. Your documentation is in `docs/_build`. To view your documentation home page, open `docs/_build/index.html`.
+
+  (Depending on your operating system, you may be able to do this by executing `open _build/index.html` from a terminal within the `docs` directory.)
 
 ## Document your API
 
@@ -98,11 +111,11 @@ To take advantage of this, you will use the [Sphinx autodoc](http://www.sphinx-d
 
 1. Uncomment the following lines in `docs/conf.py`. This will allow Sphinx to find your program sources.
 
-  ``` python
-  import os
-  import sys
-  sys.path.insert(0, os.path.abspath('..'))
-  ```
+    ``` python
+    import os
+    import sys
+    sys.path.insert(0, os.path.abspath('..'))
+    ```
 
 2. Follow the instructions in the [Sphinx autodoc tutorial]( http://www.sphinx-doc.org/en/stable/tutorial.html#autodoc).
 
