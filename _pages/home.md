@@ -13,9 +13,9 @@ layout: default
 <div class="col-lg-4" markdown="1">
 ## Today: Documentation Workshop
 
-During class, we will set projects up with infrastructure documentation.
+During class, we will set our projects up with documentation infrastructure.
 
-Follow the [day 17 instructions]({% link _days/day-17.md %}).
+Follow the [day 17 instructions]({% link _days/day-17.md %}) to get started on your project documentation.
 
 </div>
 
