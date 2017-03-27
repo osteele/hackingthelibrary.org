@@ -30,7 +30,7 @@ Stretch goals:
 * Your project documentation is published on <https://readthedocs.org>. (See below.)
 * The GitHub project page contains a link to an online version of the documentation. (See below.)
 * You may prefer a different theme. The setup instructions below install the Read the Docs theme. Read more online to see how to configure your project documentationt to use it; or, select a different theme.
-* Figure out if any [Sphinx extensions](http://www.sphinx-doc.org/en/stable/extensions.html) would improve the quality of your code, or your productivity in writing it. (I tend towards the [Napoleon](http://www.sphinx-doc.org/en/stable/ext/napoleon.html) extension, for more legible docstrings.)
+* Figure out if any [Sphinx extensions](http://www.sphinx-doc.org/en/stable/extensions.html) would improve the quality of your code, or your productivity in writing it. (I tend towards the [Napoleon](http://www.sphinx-doc.org/en/stable/ext/napoleon.html) extension, for more legible docstrings. *flask-autodoc* has a [bad rep](https://github.com/acoomans/flask-autodoc).)
 
 ## Examples
 
@@ -80,7 +80,7 @@ These JavaScript projects use Sphinx:
 
 ## Markdown versus reStructuredText
 
-The Python ecosystem uses **reStructuredText** ([home page](http://docutils.sourceforge.net/rst.html); [Wikipedia](https://en.wikipedia.org/wiki/ReStructuredText); [online editor](http://rst.ninjs.org)) for technical documentation.
+The Python ecosystem uses **reStructuredText** ([home page](http://docutils.sourceforge.net/rst.html); [primer](https://docs.python.org/devguide/documenting.html#restructuredtext-primer); [Wikipedia](https://en.wikipedia.org/wiki/ReStructuredText); [online editor](http://rst.ninjs.org)) for technical documentation.
 
 The rest of the programming world is trending towards **Markdown** ([Wikipedia](https://en.wikipedia.org/wiki/Markdown); [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet); [shorter cheat sheet](http://matplotlib.org/sampledoc/cheatsheet.html); [online editors](http://lmgtfy.com/?q=online+markdown+editor)).
 
@@ -108,7 +108,7 @@ To take advantage of this, you will use the [Sphinx autodoc](http://www.sphinx-d
 
 ## Document JavaScript Code
 
-Hey JavaScript project – I'm looking at you!
+Hey Project Projects – I'm looking at you!
 
 There are a variety of tools for documenting JavaScript projects, including Sphinx (as illustrated in the JavaScript example projects above).
 
@@ -122,6 +122,12 @@ For this assignment, pick one of:
 and see how far you get today.
 
 The final project should include both architectural and API documentation, but coming to completion on this may be out of scope for today. In that case I recommend a modified form of ["timeboxing"](https://en.wikipedia.org/wiki/Timeboxing): allocate a fixed amount of time – e.g. ten minutes a day (or an hour a week) – towards setting up a framework, so that you continue to make progress without letting it hold up feature development.
+
+## Document a REST API
+
+Hey Olin API – I'm looking at you!
+
+For a Flask application, [autohttp.flask](http://pythonhosted.org/sphinxcontrib-httpdomain/#module-sphinxcontrib.autohttp.flask) is worth a looksie.
 
 ## Publish your documentation
 
