@@ -2,7 +2,7 @@
 title: Day 2
 date: 2017-01-22 00:00:00 -05:00
 description: APIs
-class_date: 2017-01-22 19:00:00 -05:00
+activity_date: 2017-01-22
 ---
 
 ## In Class
