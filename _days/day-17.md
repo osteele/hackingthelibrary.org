@@ -93,7 +93,18 @@ To use Markdown, follow [these instructions](https://docs.readthedocs.io/en/late
 
 1. Create a new file in the `docs` directory: for example, `docs/overview.md` or `docs/overview.rst`.
 
-2. Add the filename *without the file extension*, to `index.rst`. For example in (1), add a line `overview`, preceded by four spaces.
+2. Add the filename *without the file extension*, and *with indentation*, to `index.rst`, beneath the `.. toctree::` section.
+
+  For example, my `overview.rst` includes:
+
+    ```
+    .. toctree::
+       :maxdepth: 2
+       :caption: Contents:
+
+       overview
+    ```
+
 
 ## View your documentation
 
