@@ -10,13 +10,8 @@
 {% endif %}
 
 <ul class="nav nav-sidebar hidden-print hidden-sm hidden-xs affix">
+  {% comment %} FIXME DRY w/ copy in header.html {% endcomment %}
   <li><a class="{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a></li>
-
-  {% comment %}
-    The code below dynamically generates a sidebar nav of pages with
-    `layout: page` in the front-matter. See readme for usage.
-  {% endcomment %}
-
   {% assign pages_list = site.pages | sort: 'url' | sort: 'weight' %}
   {% for node in pages_list %}
     {% if node.title != null %}
