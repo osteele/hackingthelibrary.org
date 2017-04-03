@@ -11,19 +11,17 @@ layout: default
 <div class="row">
 
 <div class="col-lg-4" markdown="1">
-## Today: Sprint Reviews
-Be prepared to present the state of your project, progress since last week, and plans for the next week of work.
+## Today (Monday): Test Suite Workshop
+During class, we will set our projects up with testing infrastructure.
 
-In keeping with the "more frequent, shorter reviews" experiment, reviews need be no longer than 5-10 minutes. You can take up to twenty minutes if it will be helpful.
-
+Follow the [day 19 instructions]({% link _days/day-19.md %}) to get started on your test suite.
 </div>
 
 <div class="col-lg-4" markdown="1">
-## Today: Test Suite Workshop
+## Thursday
+Be prepared to present the state of your project, progress since last week, and plans for the next week of work.
 
-During class, we will set our projects up with testing infrastructure.
-
-Follow the day 19 instructions (TBD) to get started on your test suite.
+In keeping with the "more frequent, shorter reviews" experiment, reviews need be no longer than 5-10 minutes. You can take up to twenty minutes if it will be helpful.
 
 {% comment %}
 ## Assignments
