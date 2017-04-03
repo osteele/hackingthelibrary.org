@@ -2,7 +2,7 @@
 title: Day 17
 date: 2017-03-27 08:00:00 -04:00
 description: Documentation Workshop
-activity_date: 2017-03-26 20:00:00 -04:00
+activity_date: 2017-03-27
 ---
 
 {% include toc %}
@@ -11,6 +11,7 @@ activity_date: 2017-03-26 20:00:00 -04:00
 
 Today we are going to create a scaffold for project documentation.
 You will add to this over the course of your project.
+
 The motivation is to make project documentation a first-class element of your deliverables, so that (1) you deliver a project that can be not just executed but maintained, and so that (2) thought that goes into the documentation can inform the organization of your code.
 
 For Python projects, we will use the [Sphinx](http://www.sphinx-doc.org/en/stable/) documentaton framework, which enables for themes, indexed hierarchical documentation, API documentation, and a variety of output formats.
