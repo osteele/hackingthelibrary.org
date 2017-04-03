@@ -2,7 +2,7 @@
 title: Day 4
 date: 2017-01-26 00:00:00 -05:00
 description: Lab 1 Gallery; MP1 Kick-off
-activity_date: 2017-01-25 19:00:00 -05:00
+activity_date: 2017-01-26
 ---
 
 ## In Class

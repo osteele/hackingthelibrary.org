@@ -2,7 +2,7 @@
 title: Day 6
 date: 2017-01-30 00:00:00 -05:00
 description: MP1 Mid-Project Presentation
-activity_date: 2017-02-01 19:00:00 -05:00
+activity_date: 2017-02-02
 ---
 
 ## In Class

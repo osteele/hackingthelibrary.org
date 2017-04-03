@@ -2,7 +2,7 @@
 title: Day 8
 date: 2017-02-13 00:00:00 -05:00
 description: MP 1 Due; MP2 Kick-off
-activity_date: 2017-02-12 19:00:00 -05:00
+activity_date: 2017-02-13
 ---
 
 {% include construction %}

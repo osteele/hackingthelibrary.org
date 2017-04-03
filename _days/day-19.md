@@ -2,7 +2,7 @@
 title: Day 19
 date: 2017-04-03 10:26:00 -04:00
 description: Testing Workshop
-activity_date: 2017-04-02 20:00:00 -04:00
+activity_date: 2017-04-03
 ---
 
 Today we are going to create a scaffold for project testing.
