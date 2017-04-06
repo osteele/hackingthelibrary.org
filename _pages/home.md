@@ -11,17 +11,23 @@ layout: default
 <div class="row">
 
 <div class="col-lg-4" markdown="1">
-## Today (Monday): Test Suite Workshop
-During class, we will set our projects up with testing infrastructure.
-
-Follow the [day 19 instructions]({% link _days/day-19.md %}) to get started on your test suite.
+## (Today) Thursday
+For [Sprint Review desk visits](https://docs.google.com/document/d/1p9FJwQCaWu5qD90a5xMgP_z_cGQ3y8K54vf9gB3X_ss/edit), please bring:
+* Product definition. What features will the end-of-semester software implement?
+* Project risks. What risks, technical or otherwise, could keep this project from demonstrating that this is a viable direction, and from being adorable and adoptable.
+* Project roadmap. What features will come in over what time; what technical work supports these?
+* One week plan. What will you work on over the coming week?
 </div>
 
 <div class="col-lg-4" markdown="1">
-## Thursday
-Be prepared to present the state of your project, progress since last week, and plans for the next week of work.
+## Monday, April 10
+During class, we will set our projects up for Continuous Integration.
 
-In keeping with the "more frequent, shorter reviews" experiment, reviews need be no longer than 5-10 minutes. You can take up to twenty minutes if it will be helpful.
+Follow the day 21 instructions (TBD).
+
+## Monday, April 24
+DEMO DAY!
+</div>
 
 {% comment %}
 ## Assignments
@@ -35,7 +41,6 @@ Wednesday, Feb 22
 Thursday, Feb 23
 : Lab 4
 {% endcomment %}
-</div>
 
 <div class="col-lg-4" markdown="1">
 {% include office_hours.md %}
