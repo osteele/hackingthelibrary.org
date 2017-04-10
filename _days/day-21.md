@@ -86,14 +86,6 @@ Here's how to do **B**:
 
 ![]({% link images/ci-workshop/heroku-automatic-deploys.png %})
 
-## Extras: Fun with badges
-
-Build status is an example of a README badge. The README for the [Python Requests Library](https://github.com/kennethreitz/requests) includes other badges, that include [code coverage](https://en.wikipedia.org/wiki/Code_coverage), as well as supported Python versions.
-
-![https://github.com/kennethreitz/requests/blob/master/README.rst]({% link images/ci-workshop/requests-badges.png %})
-
-The [Jupyter notebook](https://github.com/jupyter/notebook) project also has bling: the familiar CI badge, plus a docs badge that links to Read the Docs.
-
 ## Extras: Notifications
 
 There are some tools to make it easier to keep on eye on your build status. These are for Travis; many of them also work with other CI servers too.
@@ -103,10 +95,18 @@ There are some tools to make it easier to keep on eye on your build status. Thes
 * Atom: the [Travis CI Status plug-in](https://atom.io/packages/travis-ci-status)
 * Slack, email (and other) [notifications](https://docs.travis-ci.com/user/notifications/)
 
+## Extras: Fun with badges
+
+Build status is an example of a README badge. The README for the [Python Requests Library](https://github.com/kennethreitz/requests) includes other badges, that include [code coverage](https://en.wikipedia.org/wiki/Code_coverage), as well as supported Python versions.
+
+![https://github.com/kennethreitz/requests/blob/master/README.rst]({% link images/ci-workshop/requests-badges.png %})
+
+The [Jupyter notebook](https://github.com/jupyter/notebook) project also has bling: the familiar CI badge, plus a docs badge that links to Read the Docs.
+
 ## Appendix: Other CI services
 
 In this workshop, we used the Travis CI service. This service is provided by free for open source projects.
 
-There are a number of good commercial alternatives (some are listed [here](https://github.com/integrations/feature/continuous-integration)), that mostly are also free for open source projects. Most open source projects in the Python and JavaScript communities, and many startups, use Travis, which is why I've selected this one.
+There are a number of good commercial alternatives (some are listed [here](https://github.com/integrations/feature/continuous-integration)), that mostly are also free for open source projects. Even though it's a commercial product, most open source projects in the Python and JavaScript communities use Travis, which is why I've selected this one.
 
-There are also open source and commercial servers that can be installed on a private server. [Jenkins](https://jenkins.io) is the most popular open source CI server. [TeamCity](https://en.wikipedia.org/wiki/TeamCity) and [Bamboo](https://en.wikipedia.org/wiki/Bamboo_(software))) are popular commercial offerings.
+There are also open source and commercial servers that can be installed on "on premise" (on a local server, or a private server in the cloud). [Jenkins](https://jenkins.io) is by far the most popular open source CI server. [TeamCity](https://en.wikipedia.org/wiki/TeamCity) and [Bamboo](https://en.wikipedia.org/wiki/Bamboo_(software)) are popular commercial offerings.
