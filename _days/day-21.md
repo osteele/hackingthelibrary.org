@@ -18,12 +18,13 @@ You will also have configured your project with the pre-requisites for [Continuo
 
 ## Add your project to Travis
 
-    1. [Sign into Travis CI](https://travis-ci.org/auth) with your GitHub account.
+  1. [Sign into Travis CI](https://travis-ci.org/auth) with your GitHub account.
   2. On your [Travis profile page](https://travis-ci.org/profile), enable Travis CI builds for your project.
   3. Find your project, and toggle it to on. ![]({% link images/ci-workshop/travis-toggle-on.png %})
   4. Create a file `.travis.yml` with the contents given below. (Note that the file name begins with a dot!) Add this file, commit it, and push it.
+  5. Visit your project page on Travis, and watch it build.
 
-`.travis.yml` (for Python)
+### `.travis.yml` (for Python)
 
 ``` yaml
 language: python
@@ -36,7 +37,7 @@ script: python test.py
 
 This Python configuration file installs the packages in `requirements.txt`, and runs the command on the `script:` line to test your code. If you are using a different test command, for example [pytest](https://docs.pytest.org/en/latest/), change this line accordingly.
 
-`.travis.yml` (for node)
+### `.travis.yml` (for node)
 
 ``` yaml
 language: node_js
@@ -45,8 +46,6 @@ node_js:
 ```
 
 This node configuration file assumes that your `package.json` is configured with a `tests` script, that runs your tests.
-
-5\. Visit your project page on Travis, and watch it build.
 
 ## Badge your README
 
@@ -60,9 +59,32 @@ You can also request RST (reStructuredText), for use in Sphinx RST files.
 
 ![]({% link images/ci-workshop/request-badge-rst.png %})
 
-## Going Beyond: Continuous Delivery
+## Extras: Continuous Delivery
 
-TBD
+Now that you've configured your project for Continuous Integration, you could also configure it for [Continuous Delivery](https://continuousdelivery.com). Read on; then decide (1) whether you want to do this; (2) what it would take to get there.
+
+If you've followed along with the Lab instructions, your workflow is something like this: make changes on your laptop → test on your laptop (if you're able) → commit → push to Heroku → **deploy to web server** → manually test web server → push changes to GitHub → repeat -- where the **bolded item*** is done automatically.
+
+The Continuous Delivery workflow is: make changes on your laptop → test on your laptop → push to GitHub → **test on CI server** → **deploy to web server** → [*manually test web server*] → repeat -- where the **bolded item** is automatic, and the [*bracketed item*] is optional.
+
+There's three parts to this:
+
+**A**. Configure a CI server to test your project (done);
+
+**B**. Configure (in our case) Heroku to automatically deploy builds that pass CI (below); and
+
+**C**. Create a test suite that instills you with the confidence to omit [*test web server*] (aspirational).
+
+Here's how to do **B**:
+
+1. Visit your project page on Heroku.
+2. Click the Deploy tab.
+3. In the "Deployment Method" section, click "GitHub".
+4. In the "Connect to GitHub" section that is now disclosed, search for your repository, and click "connect".
+5. In the "Automatic Deploys" section, select "Wait for CI to pass before deploy"
+6. Click "Enable Automatic Deploys"
+
+![]({% link images/ci-workshop/heroku-automatic-deploys.png %})
 
 ## Extras: Fun with badges
 
