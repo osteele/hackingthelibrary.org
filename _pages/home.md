@@ -12,9 +12,9 @@ layout: default
 
 <div class="col-lg-4" markdown="1">
 ## Monday, April 10
-During class, we will set our projects up for [Continuous Integration](https://www.thoughtworks.com/continuous-integration) (CI).
+During class, we will set our projects up for Continuous Integration (CI).
 
-Follow the [day 21 instructions]({% link _days/day-21.md %}).
+Follow the [Workshop 3 instructions]({% link _assignments/workshop-3-continuous-integration.md %}).
 </div>
 
 <div class="col-lg-4" markdown="1">
