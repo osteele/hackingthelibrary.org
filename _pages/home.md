@@ -12,7 +12,7 @@ layout: default
 
 <div class="col-lg-4" markdown="1">
 ## Monday, April 10
-During class, we will set our projects up for Continuous Integration (CI).
+During class today, we set our projects up for Continuous Integration (CI).
 
 Follow the [Workshop 3 instructions]({% link _assignments/workshop-3-continuous-integration.md %}).
 </div>
