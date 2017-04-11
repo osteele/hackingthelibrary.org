@@ -1,10 +1,11 @@
 version: "2.1"
+
 services:
-    jekyll:
-        image: jekyll/jekyll
-        container_name: htl-website
-        command: jekyll serve --watch --incremental --destination /tmp/jekyll-pages
-        ports:
-            - 4000:4000
-        volumes:
-            - .:/srv/jekyll
+  jekyll:
+    build: .
+    container_name: softdes-web
+    command: serve --host 0.0.0.0 --watch --incremental --destination /tmp/jekyll-pages
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/srv/jekyll
