@@ -12,31 +12,31 @@
 {% assign image_paths = image_path_concat | remove_first: ':'  | split: ':' %}
 
 <div class="jumbotron">
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    {% for image in image_paths %}
-      <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}"{% if forloop.index == 1 %} class="active"{% endif %}></li>
-    {% endfor %}
-  </ol>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      {% for image in image_paths %}
+        <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}"{% if forloop.index == 1 %} class="active"{% endif %}></li>
+      {% endfor %}
+    </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    {% for image_path in image_paths %}
-      <div class="item{% if forloop.index == 1  %} active{% endif %}"/>
-      <img src="{{ image_path | strip }}" style="height:450px">
-      </div>
-    {% endfor %}
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      {% for image_path in image_paths %}
+        <div class="item{% if forloop.index == 1  %} active{% endif %}"/>
+          <img src="{{ image_path | strip }}" style="height:450px">
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
 </div>
