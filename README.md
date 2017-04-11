@@ -6,14 +6,15 @@ The source to <http://hackingthelibrary.org>.
 ## Setup
 
 1. [Install Jekyll](https://jekyllrb.com/docs/installation/)
-2. `gem install jekyll-redirect-from`
+2. `gem install bundler`
+3. `bundle install`
 
 Alternate: Install [Docker Compose](https://docs.docker.com/compose/install/)
 
 
 ## Develop
 
-1. `jekyll serve`
+1. `bundle exec jekyll serve`
 2. Browse to <http://localhost:4000>
 
 Alternate:
@@ -22,9 +23,14 @@ Alternate:
 2. Browse to <http://localhost:4000>
 
 
+## Check HTML
+
+`./scripts/check-html`
+
+
 ## Publish
 
-1. git push
+1. `git push` to GitHub
 2. Browse to <http://hackingthelibrary.org>
 
 

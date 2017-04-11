@@ -52,6 +52,8 @@ whitelist:
 - jekyll-redirect-from
 
 exclude:
+- Gemfile
+- Gemfile.lock
 - README.md
 - scripts
 - docker-compose.yml

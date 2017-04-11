@@ -1,0 +1,12 @@
+#!/usr/bin/env bash -e
+
+bundle exec jekyll build
+bundle exec htmlproofer \
+  --alt-ignore /images/HtL_Banner.svg \
+  --assume-extension \
+  --check-external-hash \
+  --check-html \
+  --empty-alt-ignore \
+  --report-missing-names \
+  --report-script-embeds \
+  ./_site
