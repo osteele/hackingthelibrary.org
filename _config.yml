@@ -1,6 +1,13 @@
----
 title: Hacking the Library
+baseurl: "/"
 timezone: America/New_York
+email: steele@osteele.com
+description: 'Let’s create a new kind of Library.'
+
+course:
+  title: 'Special Topics in Computing: Hacking the Library'
+  number: ENGR3599
+
 collections:
   assignments:
     title: Assignments
@@ -20,6 +27,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+
 defaults:
 - scope:
     path: ''
@@ -36,15 +44,9 @@ defaults:
     type: pages
   values:
     layout: page
-email: steele@osteele.com
-description: 'Let’s create a new kind of Library.
 
-'
-baseurl: "/"
-course:
-  title: 'Special Topics in Computing: Hacking the Library'
-  number: ENGR3599
 gems:
 - jekyll-redirect-from
+
 whitelist:
 - jekyll-redirect-from
