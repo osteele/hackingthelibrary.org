@@ -18,7 +18,7 @@ As with previous labs, track your time.
 
 ## Framing the Problem
 
-In Lab 2, you [modified your application](http://localhost:4000/assignments/lab-2/#why-doesnt-it-work-2-configuring-your-server-to-accept-remote-connections)  to run on port `0.0.0.0`, so that it would accept connections from remote clients such as a web browser running on a different machine.
+In Lab 2, you [modified your application]({% link _assignments/lab-2.md%}#why-doesnt-it-work-2-configuring-your-server-to-accept-remote-connections) to run on port `0.0.0.0`, so that it would accept connections from remote clients such as a web browser running on a different machine.
 
 This is the correct configuration for a server running in the cloud. It is not necessarily correct for a development server running on your laptop.
 

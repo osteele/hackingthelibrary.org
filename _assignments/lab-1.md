@@ -27,7 +27,7 @@ If Python 3 is not installed, you have several alternatives:
 This is a one-click installer, available for Linux, macOS, and Windows.
 * If you have a Ubuntu from SoftDes: Run `sudo apt-get install -y python3 python3-pip python3-tk python3-dev`.
 This installs Python 3 (accessible via python3) alongside with the existing Python 2.6 (accessible via python [without a number]).
-* If you’ve lost your Ubuntu and would like it back: Follow the [Get Set](http://softdes.website/assignments/setup-your-environment/) instructions from this year’s SoftDes class.
+* If you’ve lost your Ubuntu and would like it back: Follow the [Get Set](https://sd17spring.github.io/assignments/setup-your-environment/) instructions from this year’s SoftDes class.
 This installs both Python 3 (which this year’s SoftDes students are using), and Python 2.
 
 
