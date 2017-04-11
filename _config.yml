@@ -50,3 +50,8 @@ gems:
 
 whitelist:
 - jekyll-redirect-from
+
+exclude:
+- README.md
+- scripts
+- docker-compose.yml
