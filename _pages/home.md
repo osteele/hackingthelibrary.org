@@ -11,19 +11,25 @@ layout: default
 <div class="row">
 
 <div class="col-lg-4" markdown="1">
-## Monday, April 10
-During class today, we set our projects up for Continuous Integration (CI).
+## Thursday
 
-Follow the [Workshop 3 instructions]({% link _assignments/workshop-3-continuous-integration.md %}).
+**Before class**
+
+* Submit the [Project Planning form](https://goo.gl/forms/KLOnNBPgKgDf8bCl1).
+
+**During Class**
+
+*Part I.* Demo Day: discussion of format and planning
+
+*Break into Teams*
+
+*Part IIa.* Studio time. Use this to [get started on your demo scripts](https://docs.google.com/document/d/1n8wElknf4g3NchZzqgr_Nu-tIdK7v9JUrgqSZ690QUQ/edit#bookmark=id.fgey914ugmdv).
+
+*Part IIb.* Sprint Review and Demo Planning Review desk visits
+
 </div>
 
 <div class="col-lg-4" markdown="1">
-## (Today) Thursday
-For [Sprint Review desk visits](https://docs.google.com/document/d/1p9FJwQCaWu5qD90a5xMgP_z_cGQ3y8K54vf9gB3X_ss/edit), please bring:
-* Product definition. What features will the end-of-semester software implement?
-* Project risks. What risks, technical or otherwise, could keep this project from demonstrating that this is a viable direction, and from being adorable and adoptable.
-* Project roadmap. What features will come in over what time; what technical work supports these?
-* One week plan. What will you work on over the coming week?
 
 ## Monday, April 24
 DEMO DAY!
