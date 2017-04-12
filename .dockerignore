@@ -1,3 +1,5 @@
 .git
 .sass_cache
 _site
+Dockerfile
+docker-compose.yml
