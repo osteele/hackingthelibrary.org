@@ -4,9 +4,12 @@ bundle exec jekyll build
 bundle exec htmlproofer \
   --alt-ignore /images/HtL_Banner.svg \
   --assume-extension \
-  --check-external-hash \
   --check-html \
   --empty-alt-ignore \
   --report-missing-names \
   --report-script-embeds \
+  --url-ignore http://aloverso-htl-lab2.herokuapp.com \
   ./_site
+
+# --check-external-hash because of Google doc URLs' ?gid=0
+# doesn't name an anchor location.
