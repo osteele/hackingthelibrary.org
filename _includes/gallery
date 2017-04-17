@@ -13,7 +13,7 @@
     {% endif %}
 
     <a {% if site.website_url %}href="{{ site.website_url }}"{% endif %} class="thumbnail">
-      <img src="/images{{ include.image_path }}{{ site.image_name | replace: '.png', '-thumb.png' }}" class="img-responsive">
+      <img alt="thumbnail of screenshot" src="/images{{ include.image_path }}{{ site.image_name | replace: '.png', '-thumb.png' }}" class="img-responsive">
     </a>
     <div style="position: relative; top: -15px">
       <a href="{{ site.github_url }}"><i class="fa fa-github" aria-hidden="true"></i> Repo</a>
