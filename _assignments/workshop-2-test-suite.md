@@ -19,7 +19,7 @@ For Python projects, we will use the [unittest](https://docs.python.org/3/librar
 
 Create a file `tests.py`:
 
-``` python
+```python
 #!flask/bin/python
 import unittest
 
@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
 Test this file by running:
 
-``` bash
+```bash
 $ python3 test.py
 ```
 

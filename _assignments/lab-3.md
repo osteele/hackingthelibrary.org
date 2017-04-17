@@ -42,14 +42,14 @@ and launches the program that implements that command.
 
 1\. In a UNIX / Linux / macOS terminal window, execute:
 
-    ``` bash
+    ```bash
     $ printenv USER
     osteele
     ```
 
 2\. Launch a Python REPL:
 
-    ``` bash
+    ```bash
     $ python3
     >>> import os
     >>> os.environ['USER'] # this would error if USER weren't set
@@ -63,20 +63,20 @@ This Python code can be smushed into a single line, so that we can run it non-in
 
 The following line has the same effect as `printenv USER`, but verifies that the environment variable is available to programs launched from the terminal, not just to the terminal itself.
 
-``` bash
+```bash
 $ python3 -c 'import os; print(os.environ.get("USER", ""))'
 osteele
 ```
 
 You can also print all the environment variables:
 
-``` bash
+```bash
 $ printenv
 ```
 
 or:
 
-``` bash
+```bash
 $ python3
 >>> import os
 >>> os.environ
@@ -90,7 +90,7 @@ Now let's look at how to *set* environment variables:
 
 In a terminal window:
 
-``` bash
+```bash
 $ setenv LAB_NO=3
 ```
 
@@ -98,7 +98,7 @@ The variable is now set *in this terminal session*, and *in any programs launche
 
 You can test that the environment variable is set:
 
-``` bash
+```bash
 $ printenv LAB_NO
 3
 $ python3 -c 'import os; print(os.environ.get("LAB_NO", ""))'
@@ -109,7 +109,7 @@ $ python3 -c 'import os; print(os.environ.get("LAB_NO", ""))'
 
 To set an environment variable for a single command, use the syntax:
 
-``` bash
+```bash
 $ HELLO=world python3 -c 'import os; print(os.environ.get("HELLO", ""))'
 world
 $ python3 -c 'import os; print(os.environ.get("HELLO", ""))'
@@ -129,7 +129,7 @@ When you create a terminal window or tab, your shell executes the commands in a 
 
 Add the following to one of your shell startup files*:
 
-``` bash
+```bash
 setenv LAB_NO=1
 ```
 
@@ -143,7 +143,7 @@ The above syntax lets you set or get environment variables on your laptop (or an
 
 You will need a different set of commands for manipulating environment variables on Heroku. In your project directory (so that Heroku knows which application to operate on):
 
-``` bash
+```bash
 $ heroku config:set HELLO=world
 $ heroku config:get HELLO
 world
@@ -167,7 +167,7 @@ Take your code from Lab 2, and modify it to use host 127.0.0.1 on your local hos
 
 Your output should look something like this:
 
-``` bash
+```bash
 $ heroku local
 [WARN] No ENV file found
 12:18:59 PM web.1 |   * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
@@ -180,7 +180,7 @@ $ heroku local
 
 And:
 
-``` bash
+```bash
 $ git push heroku master
 […]
 $ heroku logs -n 10

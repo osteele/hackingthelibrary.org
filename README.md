@@ -26,13 +26,13 @@ Alternate:
 
 Lint the markdown:
 
-``` bash
+```bash
 $ ./scripts/lint-markdown
 ```
 
 Check HTML and Links:
 
-``` bash
+```bash
 $ ./scripts/check-html
 ```
 

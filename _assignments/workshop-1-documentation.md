@@ -70,7 +70,7 @@ These JavaScript projects use Sphinx:
 
 2. Execute the following. (Omit the `sudo` if you are using Python with **conda** or **virtualenv**.)
 
-  ``` bash
+  ```bash
   $ sudo pip3 install -r requirements-dev.txt
   ```
 
@@ -124,7 +124,7 @@ To take advantage of this, you will use the [Sphinx autodoc](http://www.sphinx-d
 
 1. Uncomment the following lines in `docs/conf.py`. This will allow Sphinx to find your program sources.
 
-    ``` python
+    ```python
     import os
     import sys
     sys.path.insert(0, os.path.abspath('..'))
@@ -144,7 +144,7 @@ You can set the documentation up to build whenever a doc file changes:
 
 2. Instead of `make html`, use the following command:
 
-    ``` bash
+    ```bash
     $ find . -type f ! -path './_build/*' | entr make html
     ```
 

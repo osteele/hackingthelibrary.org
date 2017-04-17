@@ -44,7 +44,7 @@ among all Heroku applications (for all users). For example, `heroku app:create h
 
 ## Publish Your Application to Heroku
 
-``` bash
+```bash
 $ cd /path/to/htl-lab-1
 $ heroku git:remote -a my-heroku-app-name
 $ git push heroku master
@@ -109,7 +109,7 @@ Test your `Procfile` locally. The following line has the same effect as
 
 Now `git push heroku master` again. This time the deploy should succeed:
 
-``` bash
+```bash
 $ git push heroku master
 […]
 remote: -----> Launching...
@@ -141,7 +141,7 @@ This is appropriate for local development, but does not make for a web server in
 Define port then add `host` and `port` arguments to the last line of `server.py` as below, commit the change,
 push to Heroku, and test again. You should see your application.
 
-``` python
+```python
     port = int(os.environ.get('PORT', 5000)))
     app.run(host='0.0.0.0', debug=True, port=port)
 ```

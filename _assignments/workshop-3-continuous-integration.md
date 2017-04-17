@@ -28,7 +28,7 @@ You will also have configured your project with the pre-requisites for [Continuo
 
 ### `.travis.yml` (for Python)
 
-``` yaml
+```yaml
 language: python
 python:
   - 3.5
@@ -41,7 +41,7 @@ This Python configuration file installs the packages in `requirements.txt`, and 
 
 ### `.travis.yml` (for node)
 
-``` yaml
+```yaml
 language: node_js
 node_js:
   - 7.8
