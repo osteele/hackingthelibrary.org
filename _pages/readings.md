@@ -3,14 +3,12 @@ title: Readings
 date: 2017-01-18 00:00:00 -05:00
 weight: 10
 ---
-
 ## Book Club
 
 {% for reading in site.data.readings %}
 {{reading[1].due | date: '%A, %B %-d' }}
 : {{reading[1].preamble}} {{reading[1].reading}}{{reading[1].assignment}})
 {% endfor %}
-
 
 ## Optional Readings
 
@@ -32,6 +30,7 @@ non-optional).
 * *UML Distilled*, Martin Fowler
 
 ### Pattern Languages
+
 * _A Pattern Language_, Christopher Alexander
 * _The Timeless Way of Building_, Christopher Alexander
 * _Design Patterns: Elements of Reusable Object-Oriented Software_, by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. (The “Gang of Four”). The [Wikipedia page](https://en.wikipedia.org/wiki/Design_Patterns) contains a list of patterns.
@@ -42,7 +41,6 @@ non-optional).
 * ["Patterns in Enterprise Software"](https://www.martinfowler.com/articles/enterprisePatterns.html), Martin Fowler.
 A catalog of software pattern catalogs.
 * [Are Pattern Languages Missing Language Features](http://wiki.c2.com/?AreDesignPatternsMissingLanguageFeatures).
-
 
 ### Libraries and Knowledge
 

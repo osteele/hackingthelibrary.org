@@ -14,7 +14,6 @@ You will get this code running on your laptop. Then you will extend it.
 
 Future labs will build on this code to help you develop skills that will be useful in the main project.
 
-
 ## Set up your environemnt
 
 For this assignment, you will need a laptop with Python 3 installed.
@@ -30,11 +29,9 @@ This installs Python 3 (accessible via python3) alongside with the existing Pyth
 * If you’ve lost your Ubuntu and would like it back: Follow the [Get Set](https://sd17spring.github.io/assignments/setup-your-environment/) instructions from this year’s SoftDes class.
 This installs both Python 3 (which this year’s SoftDes students are using), and Python 2.
 
-
 ## Clone the repository
 
 Clone <https://github.com/olinlibrary/htl-lab1> to your own account.
-
 
 ## Make it beautiful
 
@@ -49,7 +46,6 @@ on a Content Delivery Network (CDN) – there's links [here](https://www.bootstr
 
 Advanced: make the pages look like (somewhat like) <http://www.olin.edu/course-listing/>.
 
-
 ## Make it functional
 
 Do at least two of:
@@ -62,7 +58,6 @@ Do at least two of:
 * Make the instructor names in course area view clickable.
 * Add area descriptions to the Course Area pages. Bring these in from a CSV or other data file, and get the values to the template file.
 * Something else – if you aren't sure whether your idea has enough to it, ask.
-
 
 ## What to Submit
 

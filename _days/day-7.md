@@ -10,12 +10,10 @@ activity_date: 2017-02-06
 1. {{site.data.readings.twelve_factor.reading}}
 2. Complete the [Office Hours Survey](https://docs.google.com/spreadsheets/d/1H0vha0_uumbFnhstNFzfGn7q41b6OrdzD3pzAWIqzAo/edit#gid=0)
 
-
 ## In Class
 
 1. Book Club
 3. Studio
-
 
 ## Homework
 

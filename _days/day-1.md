@@ -15,14 +15,12 @@ redirect_from: "/day/day-1/"
 * Project Book
 * [Course Catalog Exercise (Lab 1)]({% link _assignments/lab-1.md %})
 
-
 ## Homework
 
 ### For Monday
 
 1. Read a selection from {{site.data.readings.platform.reading}}{{site.data.readings.platform.assignment}}
 2. Review the [Course Policy]({% link _pages/policies.md %}).
-
 
 ### For Thursday
 

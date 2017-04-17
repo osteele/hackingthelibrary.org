@@ -10,7 +10,6 @@ Days  | Time    | Where
 Sun   | 7-9pm   | WH3 AL
 Wed   | 7-9pm   | WH3 AL
 
-
 Oliver Steele <oliver.steele@olin.edu>
 
 <iframe src="https://docs.google.com/spreadsheets/d/1n1hu2Pi_HmkT91HpOgOqtyDYezA4QhHlhPDfoVhOPz4/pubhtml?gid=0&single=true&headers=false&widget=true"></iframe>

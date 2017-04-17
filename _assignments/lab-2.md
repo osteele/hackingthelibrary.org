@@ -16,7 +16,6 @@ URL.
 
 As with Lab 1, track your time.
 
-
 ## Create an account on Heroku
 
 1. Follow the instructions [here](https://signup.heroku.com) to sign up for
@@ -27,22 +26,17 @@ run your app.
 
 3. Run `heroku login` with the credentials you created in step 1:
 
-    ```
-    Enter your Heroku credentials.
-    Email: frankly.olin@olin.edu
-    Password (typing will be hidden):
-    ```
-
+        Enter your Heroku credentials.
+        Email: frankly.olin@olin.edu
+        Password (typing will be hidden):
 
 ## Create a Heroku application
 
 Run `heroku apps:create` to create a Heroku **application**:
 
-```
-heroku apps:create                                                                              lab2 ◼
-Creating app... done, ⬢ boiling-brushlands-71788
-https://boiling-brushlands-71788.herokuapp.com/ | https://git.heroku.com/boiling-brushlands-71788.git
-```
+    heroku apps:create                                                                              lab2 ◼
+    Creating app... done, ⬢ boiling-brushlands-71788
+    https://boiling-brushlands-71788.herokuapp.com/ | https://git.heroku.com/boiling-brushlands-71788.git
 
 [`heroku apps:create` constructs a random name (above, "boiling-brushlands-71788")
 for your application. You can also specify a name, so long as it is unique
@@ -50,7 +44,7 @@ among all Heroku applications (for all users). For example, `heroku app:create h
 
 ## Publish Your Application to Heroku
 
-```
+``` bash
 $ cd /path/to/htl-lab-1
 $ heroku git:remote -a my-heroku-app-name
 $ git push heroku master
@@ -60,24 +54,21 @@ where `my-heroku-app-name` is the name of your Heroku application.
 
 You should see an error message:
 
-```
-Total 0 (delta 0), reused 0 (delta 0)
-remote: Compressing source files... done.
-remote: Building source:
-remote:
-remote: -----> Failed to detect set buildpack https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/python.tgz
-remote: More info: https://devcenter.heroku.com/articles/buildpacks#detection-failure
-remote:
-remote:  !     Push failed
-remote: Verifying deploy....
-remote:
-remote: !	Push rejected to my-heroku-app-name.
-remote:
-To https://git.heroku.com/my-heroku-app-name.git
- ! [remote rejected] 7039fff -> master (pre-receive hook declined)
-error: failed to push some refs to 'https://git.heroku.com/my-heroku-app-name.git'
-```
-
+    Total 0 (delta 0), reused 0 (delta 0)
+    remote: Compressing source files... done.
+    remote: Building source:
+    remote:
+    remote: -----> Failed to detect set buildpack https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/python.tgz
+    remote: More info: https://devcenter.heroku.com/articles/buildpacks#detection-failure
+    remote:
+    remote:  !     Push failed
+    remote: Verifying deploy....
+    remote:
+    remote: !  Push rejected to my-heroku-app-name.
+    remote:
+    To https://git.heroku.com/my-heroku-app-name.git
+    ! [remote rejected] 7039fff -> master (pre-receive hook declined)
+    error: failed to push some refs to 'https://git.heroku.com/my-heroku-app-name.git'
 
 ## Why Doesn't it Work? – Setting Your Repo Up for Heroku
 
@@ -118,7 +109,7 @@ Test your `Procfile` locally. The following line has the same effect as
 
 Now `git push heroku master` again. This time the deploy should succeed:
 
-```
+``` bash
 $ git push heroku master
 […]
 remote: -----> Launching...
@@ -127,7 +118,6 @@ remote:        https://htl-lab-osteele.herokuapp.com/ deployed to Heroku
 remote: Verifying deploy.... done.
 To https://git.heroku.com/my-heroku-app-name.git
 ```
-
 
 ## Open Your App in a Browser
 
@@ -141,7 +131,6 @@ in a browser. Or:
 
 You should see an “Application Error” page.
 
-
 ## Why Doesn't it Work (2)? Configuring Your Server to Accept Remote Connections
 
 By default, your application only accepts HTTP requests from the same machine.
@@ -152,11 +141,10 @@ This is appropriate for local development, but does not make for a web server in
 Define port then add `host` and `port` arguments to the last line of `server.py` as below, commit the change,
 push to Heroku, and test again. You should see your application.
 
-```
+``` python
     port = int(os.environ.get('PORT', 5000)))
     app.run(host='0.0.0.0', debug=True, port=port)
 ```
-
 
 ## Whitelist the Domain
 
@@ -167,7 +155,6 @@ Your app may work for a while, and then stop working with the message below:
 
 Solution: Send a message to <helpdesk@olin.edu>: “I am using the domain name myapp.herokuapp.com for a class project, and need access to it from within the Olin network. Please configure DNS so that it does not block this site.”
 
-
 ## (Optional) Going Beyond
 
 Some things you can do to learn more and/or have more fun:
@@ -176,7 +163,6 @@ Some things you can do to learn more and/or have more fun:
 * Modify your server so that it binds to `0.0.0.0` on Heroku but `127.0.0.1`
 on your laptop (even when you run it on your laptop with `heroku local`). This will be the topic of Lab 3.
 * Add an `app.json` file, and a ![](https://www.herokucdn.com/deploy/button.svg) button. [Instructions](https://devcenter.heroku.com/articles/heroku-button).
-
 
 ## What to Turn In
 

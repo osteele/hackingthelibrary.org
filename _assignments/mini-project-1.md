@@ -24,14 +24,12 @@ start_survey_url: https://goo.gl/forms/EmirMhWuj9UdYSTb2
 * Jointly select a project based on the provocations from the [Course Book](/files/HtL_web-book-1.pdf).
 * Complete the [Mini-Project 1 Kick-Off Survey]({{ page.start_survey_url }}).
 
-
 ## Part 1
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
 
 * Demonstrable code in a GitHub repository.
 * A five-minute project review presentation.
-
 
 ## Part 2
 

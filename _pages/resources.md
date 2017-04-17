@@ -9,15 +9,13 @@ This page lists resources that are available to for development of projects from
 project; some are suitable for prototyping with during exploration, and can be replaced
 by supported hardware for projects that are selected for further development.
 
-
 ## Slack and Chat
 
 This [wiki page](https://github.com/olinlibrary/hackingthelibrary.org/wiki/Chat-resources) collects Slack and chat / conversation agent libraries and services.
 
-During exploration, we have a sandbox Slack domain https://olin-library.slack.com that we can make
+During exploration, we have a sandbox Slack domain <https://olin-library.slack.com> that we can make
 everyone an adminstrator of. Once a project is developed, we can connect a production version to the
 Olin Slack team.
-
 
 ## Digital Signage
 
@@ -29,7 +27,6 @@ to allow for controlling applications.
 The library has two iPads and two Samsung tablets that can be positioned as temporary signs
 during development.
 
-
 ## Sonos (music and audio)
 
 [SoCo (Sonos Controller)](http://python-soco.com) is a simple Python class that allows you to programmatically control Sonos speakers.
@@ -40,8 +37,6 @@ or an audio synthesis program.
 
 The library has Sonos speakers.
 
-
-
 ## SMS
 
 There's also good support for writing an chat bot that uses SMS.
@@ -49,12 +44,10 @@ Twilio is a service that provides programmatic SMS and voice capabilities;
 the official Python library is [here](https://www.twilio.com/docs/libraries/python);
 a quick start tutorial is [here](https://www.twilio.com/docs/quickstart/python/sms).
 
-
 ## Voice over phone
 
 Twilio also provides programmatic support for speech, using the same library.
 A tutorial is [here](https://www.twilio.com/docs/quickstart/python/twiml).
-
 
 ## People Counters
 
@@ -66,14 +59,13 @@ some altnernatives with less risk for a mini-project exploration:
 * Install laptops with webcams
 * Install motion detectors or proximity sensors
 
-
 ## Domain Hosting
 
 Complete [this form](https://goo.gl/forms/4DexRE6gllYeUSmr1) to request an official-ish
 looking domain name for your site.
 
-
 ## Design Patterns
+
 This is a great resource to supplement our discussions, making th ideas more comprehensible:
 
 🎉 Ultra-simplified explanation to design patterns! 🎉 A topic that can easily make anyone's mind wobble. Here I try to make them stick in to your mind (and maybe mine) by [explaining them in the simplest way possible](https://github.com/kamranahmedse/design-patterns-for-humans/blob/master/README.md).

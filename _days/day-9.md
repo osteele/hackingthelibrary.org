@@ -12,10 +12,8 @@ activity_date: 2017-02-16
 
 ## In Class
 
-1. Reading Club
-2.
-
+* Reading Club
 
 ## Upcoming
 
-2. [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Thursday February 16.
+* [Mini-Project 2 part 1]({% link _assignments/mini-project-2.md %}#part-1) is due Thursday February 16.

@@ -24,7 +24,6 @@ start_survey_url: https://goo.gl/forms/IVuPuA5de7OflI6m2
 * Jointly select a project based on a provocation from the [Course Book](/files/HtL_web-book-1.pdf). This should be a *different* project from one that you or your team mates worked on for Mini Project 1.
 * Complete the [Mini-Project 2 Proposal Survey]({{ page.start_survey_url }}).
 
-
 ## Part 1
 
 <i>Due {{ page.parts[1].due_date | date: '%a %b %-d' }}</i>
@@ -36,7 +35,6 @@ start_survey_url: https://goo.gl/forms/IVuPuA5de7OflI6m2
 
 You may start from other otherwise incorporate code from MP1, so long as you are working on a different topic and
 you attribute any contributions.
-
 
 ## Part 2
 

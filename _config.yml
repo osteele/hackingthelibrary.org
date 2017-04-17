@@ -1,5 +1,4 @@
 title: Hacking the Library
-baseurl: "/"
 timezone: America/New_York
 email: steele@osteele.com
 description: 'Let’s create a new kind of Library.'
@@ -57,3 +56,4 @@ exclude:
 - README.md
 - scripts
 - docker-compose.yml
+- vendor

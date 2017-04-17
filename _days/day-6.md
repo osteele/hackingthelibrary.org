@@ -11,7 +11,6 @@ activity_date: 2017-02-02
 2. [MP1 mid-project presentations]({% link _assignments/mini-project-1.md %}#part-1)
 3. Studio
 
-
 ## Homework
 
 1. For Monday February 13: {{site.data.readings.twelve_factor.reading}}

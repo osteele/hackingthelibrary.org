@@ -12,13 +12,11 @@ activity_date: 2017-01-23
 * Studio time
 * Wrap up: Depository logistics
 
-
 ### For Tuesday
 
 * Reminder: we will visit the Harvard Depository on Tuesday.
 Please meet promptly at 10:50am at the circle.
 If you are delayed, call or text Oliver at (number to be provided).
-
 
 ### For Thursday
 

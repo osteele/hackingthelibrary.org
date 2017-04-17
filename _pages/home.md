@@ -11,6 +11,7 @@ layout: default
 <div class="row">
 
 <div class="col-lg-4" markdown="1">
+
 ## Thursday
 
 **Before class**
@@ -32,10 +33,12 @@ layout: default
 <div class="col-lg-4" markdown="1">
 
 ## Monday, April 24
+
 DEMO DAY!
 </div>
 
 {% comment %}
+
 ## Assignments
 
 Thursday, Feb 16

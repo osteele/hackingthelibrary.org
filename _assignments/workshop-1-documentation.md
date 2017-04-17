@@ -1,8 +1,7 @@
 ---
 title: 'Workshop 1: Documentation'
-date: 2017-03-27 08:00:00 -04:00
-description: |
-  In which we create documentation sets for our projects.
+date: 2017-04-12 20:10:00 -04:00
+description: In which we create documentation sets for our projects.
 due_date: 2017-03-27 12:30:00 -04:00
 ---
 
@@ -71,7 +70,9 @@ These JavaScript projects use Sphinx:
 
 2. Execute the following. (Omit the `sudo` if you are using Python with **conda** or **virtualenv**.)
 
-        $ sudo pip3 install -r requirements-dev.txt
+  ``` bash
+  $ sudo pip3 install -r requirements-dev.txt
+  ```
 
 3. Follow the "Write Your Docs" instructions in [Read the Docs: Getting Started](https://docs.readthedocs.io/en/latest/getting_started.html). Follow the "In reStructuredText" portion of the instructions. We'll get to the "In Markdown" section later; it won't work if you skip to it first.
 
@@ -106,7 +107,6 @@ To use Markdown, follow [these instructions](https://docs.readthedocs.io/en/late
 
        overview
     ```
-
 
 ## View your documentation
 

@@ -28,7 +28,6 @@ breadcrumbs: true
 {% endfor %}
 </dl>
 
-
 ## Readings
 
 <i><small>[Newest to oldest.]</small></i>

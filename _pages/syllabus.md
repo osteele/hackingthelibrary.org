@@ -26,7 +26,7 @@ Untapped information flows through the campus - from email to slack channels
 
 This is a studio course, with occasional readings and discussion around production development and operations as well as libraries. Topics will be guided by the specific projects chosen. Projects will be developed by individuals and teams, we will meet regularly to understand the goals and interactions between the projects. Instructors will guide learning of software development that supports both prototyping and robust working systems, as well as design methods.
 
-Students need not have taken Software Design, but should be comfortable coding. Talk to me if you have questions.
+Students need not have taken Software Design, but should be comfortable coding. Talk to me if you have questions.
 
 ## Objectives
 
