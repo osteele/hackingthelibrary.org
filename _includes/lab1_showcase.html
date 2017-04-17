@@ -23,7 +23,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       {% for image_path in image_paths %}
-        <div class="item{% if forloop.index == 1  %} active{% endif %}"/>
+        <div class="item{% if forloop.index == 1  %} active{% endif %}">
           <img src="{{ image_path | strip }}" style="height:450px">
         </div>
       {% endfor %}
