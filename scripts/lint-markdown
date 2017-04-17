@@ -1,0 +1,3 @@
+#!/bin/bash -eu
+
+mdl --style scripts/mdl-style.rb .
