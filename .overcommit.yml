@@ -1,0 +1,4 @@
+PreCommit:
+  CustomScript:
+    enabled: true
+    required_executable: './scripts/cibuild'
