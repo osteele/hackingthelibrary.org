@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e # halt script on error
+
+bundle exec mdl \
+  --git-recurse \
+  --style scripts/mdl-style.rb \
+  .
+echo "Markdown lint passed."
+
+./scripts/check-html --disable-external

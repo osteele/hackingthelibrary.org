@@ -1,6 +1,9 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
+
+set -e # halt script on error
 
 bundle exec jekyll build
+
 bundle exec htmlproofer \
   --alt-ignore /images/HtL_Banner.svg \
   --assume-extension \
@@ -9,6 +12,7 @@ bundle exec htmlproofer \
   --report-missing-names \
   --report-script-embeds \
   --url-ignore http://aloverso-htl-lab2.herokuapp.com \
+  "$@" \
   ./_site
 
 # --check-external-hash because of Google doc URLs' ?gid=0
