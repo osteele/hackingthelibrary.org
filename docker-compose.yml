@@ -4,8 +4,9 @@ services:
   jekyll:
     build: .
     container_name: htl-web
-    command: serve --host 0.0.0.0 --watch --incremental --destination /tmp/jekyll-pages
+    command: serve --host 0.0.0.0 --livereload --watch --destination /tmp/jekyll-pages
     ports:
       - 4000:4000
+      - 35729:35729
     volumes:
       - .:/app/
