@@ -1,4 +1,14 @@
 PreCommit:
   CustomScript:
     enabled: true
+    description: 'Run CI script'
     required_executable: './scripts/cibuild'
+  BundleCheck:
+    enabled: true
+  ExecutePermissions:
+    enabled: true
+    exclude: 'scripts/*'
+  Mdl:
+    enabled: true
+  TrailingWhitespace:
+    enabled: true
