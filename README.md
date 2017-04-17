@@ -1,5 +1,7 @@
 # Hacking the Library web site
 
+[![Build Status](https://travis-ci.org/olinlibrary/hackingthelibrary.org.svg?branch=master)](https://travis-ci.org/olinlibrary/hackingthelibrary.org)
+
 The source to <http://hackingthelibrary.org>.
 
 ## Setup
@@ -20,9 +22,19 @@ Alternate:
 1. `docker-compose up`
 2. Browse to <http://localhost:4000>
 
-## Check HTML
+## Testing
 
-`./scripts/check-html`
+Lint the markdown:
+
+``` bash
+$ ./scripts/lint-markdown
+```
+
+Check HTML and Links:
+
+``` bash
+$ ./scripts/check-html
+```
 
 ## Publish
 
