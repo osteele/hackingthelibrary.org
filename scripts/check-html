@@ -5,7 +5,6 @@ set -e # halt script on error
 bundle exec jekyll build
 
 bundle exec htmlproofer \
-  --alt-ignore /images/HtL_Banner.svg \
   --assume-extension \
   --check-html \
   --empty-alt-ignore \
