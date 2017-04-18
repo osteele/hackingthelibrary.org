@@ -27,7 +27,7 @@ Alternate:
 Lint the markdown:
 
 ```bash
-$ ./scripts/lint-markdown
+$ bundle exec mdl .
 ```
 
 Check HTML and Links:
