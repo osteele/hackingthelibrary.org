@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-set -e # halt script on error
+set -e # halt on error
 
-bundle exec mdl \
-  --git-recurse \
-  --style scripts/mdl-style.rb \
-  .
+bundle exec mdl --git-recurse .
 echo "Markdown lint passed."
 
+# External checks on a CI server hit rate-limits and IP blacklists
 ./scripts/check-html --disable-external

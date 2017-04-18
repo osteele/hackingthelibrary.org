@@ -14,5 +14,5 @@ bundle exec htmlproofer \
   "$@" \
   ./_site
 
-# --check-external-hash because of Google doc URLs' ?gid=0
-# doesn't name an anchor location.
+# --check-external-hash isn't included, because Google doc URL's
+# #gid=0 and #bookmark=... don't name anchor locations.
