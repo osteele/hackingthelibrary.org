@@ -16,17 +16,13 @@ layout: default
 
 **Before class**
 
-* Submit the [Project Planning form](https://goo.gl/forms/KLOnNBPgKgDf8bCl1).
+* Update your [Project Planning form](https://goo.gl/forms/KLOnNBPgKgDf8bCl1).
 
-**During Class**
+**[During Class]({% link _days/day-23.md %})**
 
-*Part I.* Demo Day: discussion of format and planning
+* Studio time. Use this to continue on your [get started on your demo scripts](https://docs.google.com/document/d/1n8wElknf4g3NchZzqgr_Nu-tIdK7v9JUrgqSZ690QUQ/edit#bookmark=id.fgey914ugmdv).
 
-*Break into Teams*
-
-*Part IIa.* Studio time. Use this to [get started on your demo scripts](https://docs.google.com/document/d/1n8wElknf4g3NchZzqgr_Nu-tIdK7v9JUrgqSZ690QUQ/edit#bookmark=id.fgey914ugmdv).
-
-*Part IIb.* Sprint Review and Demo Planning Review desk visits
+* Demo Planning desk visits.
 
 </div>
 
@@ -34,7 +30,7 @@ layout: default
 
 ## Monday, April 24
 
-DEMO DAY!
+[DEMO DAY!]({% link _days/day-24.md %})
 </div>
 
 {% comment %}
