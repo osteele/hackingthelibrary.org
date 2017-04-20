@@ -5,7 +5,8 @@ description: Continuous Integration Workshop
 activity_date: 2017-04-20
 ---
 
-Studio time, to work towards your project demonstrations.
+* Update your Project Planning documents.
+* Studio time, to work towards project demonstrations.
 
 ## Demo Planning Resources
 

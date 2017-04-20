@@ -12,16 +12,10 @@ layout: default
 
 <div class="col-lg-4" markdown="1">
 
-## Thursday
+## [Thursday, April 20]({% link _days/day-23.md %})**
 
-**Before class**
-
-* Update your [Project Planning form](https://goo.gl/forms/KLOnNBPgKgDf8bCl1).
-
-**[During Class]({% link _days/day-23.md %})**
-
+* Update your Project Planning documents.
 * Studio time. Use this to continue on your [get started on your demo scripts](https://docs.google.com/document/d/1n8wElknf4g3NchZzqgr_Nu-tIdK7v9JUrgqSZ690QUQ/edit#bookmark=id.fgey914ugmdv).
-
 * Demo Planning desk visits.
 
 </div>
