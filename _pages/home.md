@@ -12,34 +12,18 @@ layout: default
 
 <div class="col-lg-4" markdown="1">
 
-## [Thursday, April 20]({% link _days/day-23.md %})**
-
-* Update your Project Planning documents.
-* Studio time. Use this to continue on your [get started on your demo scripts](https://docs.google.com/document/d/1n8wElknf4g3NchZzqgr_Nu-tIdK7v9JUrgqSZ690QUQ/edit#bookmark=id.fgey914ugmdv).
-* Demo Planning desk visits.
-
-</div>
-
-<div class="col-lg-4" markdown="1">
-
 ## Monday, April 24
 
 [DEMO DAY!]({% link _days/day-24.md %})
 </div>
 
-{% comment %}
+<div class="col-lg-4" markdown="1">
 
-## Assignments
+## Thursday, April 27
 
-Thursday, Feb 16
-: Read {{site.data.readings.can_I_help_you_find_something.reading}}
+Putting a bow on your project
 
-Wednesday, Feb 22
-: Mid-project presentation.
-
-Thursday, Feb 23
-: Lab 4
-{% endcomment %}
+</div>
 
 <div class="col-lg-4" markdown="1">
 {% include office_hours.md %}
