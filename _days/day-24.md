@@ -5,9 +5,7 @@ description: Demo Day
 activity_date: 2017-04-24
 ---
 
-Demo Day!
-
-Each project will have 20 minutes to present.
+**Demo Day!**
 
 ## Program schedule
 
