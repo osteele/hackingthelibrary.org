@@ -12,16 +12,25 @@ layout: default
 
 <div class="col-lg-4" markdown="1">
 
-## Monday, April 24
+## [Thursday, April 27]({% link _days/day-25.md %})
 
-[DEMO DAY!]({% link _days/day-24.md %})
+[Day 25]({% link _days/day-25.md %}): Final Touches
+
 </div>
 
 <div class="col-lg-4" markdown="1">
 
-## Thursday, April 27
+## Final Event: Tuesday, May 2, 9-11 AM
 
-Putting a bow on your project
+* Final technical work is due
+* Final remarks
+* Demo hand-off
+* Meet the summer team
+* Course evaluation
+
+## Olin Expo: Monday, May 8
+
+Demo stations in the Library will run your projects during the entirety of the expo. We will take turns staffing them.
 
 </div>
 
