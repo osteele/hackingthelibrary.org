@@ -14,7 +14,7 @@ layout: default
 
 ## [Thursday, April 27]({% link _days/day-25.md %})
 
-[Day 25]({% link _days/day-25.md %}): Final Touches
+[Day 25]({% link _days/day-25.md %}): Wrapping Up
 
 </div>
 
