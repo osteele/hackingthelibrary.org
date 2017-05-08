@@ -1,8 +1,13 @@
 - name: FUTUREBOARD
-  tagline: A simple, interactive way to surface Olin’s culture in digital signage.
+  tagline: A simple, interactive way to surface Olin’s culture.
   repo: 'https://github.com/aidankmcl/futureboard'
   hosting: 'https://dashboard.heroku.com/pipelines/6fdd52f1-6c86-4671-9348-25c1b6e10ea2'
   website: 'http://futureboard.herokuapp.com'
+  description: |
+    FUTUREBOARD is a community board that runs on digital signage.
+    It that surfaces and organizes messages from Carpe; and combines these
+    with SMS and multimedia text messages that include image, videos, and links,
+    to collaboratively describe and archive an event.
 
 - name: Loan Wrangler
   tagline: A friendly chatbot that can help you with (almost) anything involving borrowing and using the library’s awesome tools and media equipment.
@@ -11,14 +16,28 @@
   docs: 'http://olin-loan-wrangler.readthedocs.io/en/latest/?badge=latest'
   hosting: 'https://dashboard.heroku.com/apps/olinloanbot'
   website: 'https://www.messenger.com/t/288095974955767'
+  description: |
+    Loan Wrangler is a chat interface to the library's inventory. It will answer
+    questions about the library's tools and media equipment, let you check out
+    items, and remind you when to return them. It can also let you know when someone
+    else is asking after a piece of equipment that isn't due yet, so that you can
+    decide how much longer to keep this.
 
 - name: 'Project: Projects'
   tagline: Record your projects, to keep track of all the cool stuff you’ve done at Olin, easily build your portfolio, and share your experiences.
   repo: 'https://github.com/MatthewBeaudouinLafon/Project-Projects'
   docs: 'https://project-projects-docs.herokuapp.com/index.html'
+  description: |
+    It's difficult to archive software projects (as opposed to just their source code).
+    Project: Projects captures information about student projects, for use in
+    classroom displays and student portfolios.
 
 - name: Olin API
   tagline: Programmatic access to the rich digital life and resources of Olin.
   repo: 'https://github.com/olinlibrary/olin-api'
   docs: 'http://olin-api.readthedocs.io/en/latest/'
   website: 'http://olin-api.herokuapps.com'
+  description: |
+    The Olin API project implements functionality and stores data that is used
+    by multiple projects. Currently it implements an Authentication API, for
+    projects that require identification and authorization; and a People API.

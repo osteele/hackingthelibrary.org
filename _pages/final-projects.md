@@ -4,8 +4,9 @@ title: Final Projects
 
 <dl>
 {% for project in site.data['final-projects'] %}
-<dt>{% if project.website %}<a href="{{ project.website }}">{{ project.name}}</a>{% else %}{{ project.name }}{% endif %}</dt>
-<dd>{{ project.tagline }}</dd>
+<dt>{% if project.website %}<a href="{{ project.website }}">{{ project.name}}</a>{% else %}<a href="{{ project.repo }}">{{ project.name }}</a>{% endif %}</dt>
+<dd style="font-style: italic; font-weight: bold">{{ project.tagline }}</dd>
+<dd>{{ project.description }}</dd>
 {% endfor %}
 </dl>
 
