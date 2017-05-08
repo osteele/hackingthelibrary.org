@@ -12,14 +12,6 @@ layout: default
 
 <div class="col-lg-4" markdown="1">
 
-## [Thursday, April 27]({% link _days/day-25.md %})
-
-[Day 25]({% link _days/day-25.md %}): Wrapping Up
-
-</div>
-
-<div class="col-lg-4" markdown="1">
-
 ## Final Event: Tuesday, May 2, 9-11 AM
 
 * Final technical work is due
@@ -31,6 +23,14 @@ layout: default
 ## Olin Expo: Monday, May 8
 
 Demo stations in the Library will run your projects during the entirety of the expo. We will take turns staffing them.
+
+</div>
+
+<div class="col-lg-4" markdown="1">
+
+## Thanks, everyone!
+
+Final projects are [here]({% link _pages/final-projects.md %}).
 
 </div>
 
