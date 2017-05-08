@@ -1,4 +1,4 @@
-- name: Futureboard
+- name: FUTUREBOARD
   tagline: A simple, interactive way to surface Olin’s culture in digital signage.
   repo: 'https://github.com/aidankmcl/futureboard'
   hosting: 'https://dashboard.heroku.com/pipelines/6fdd52f1-6c86-4671-9348-25c1b6e10ea2'
@@ -12,7 +12,7 @@
   hosting: 'https://dashboard.heroku.com/apps/olinloanbot'
   website: 'https://www.messenger.com/t/288095974955767'
 
-- name: Project Projects
+- name: 'Project: Projects'
   tagline: Record your projects, to keep track of all the cool stuff you’ve done at Olin, easily build your portfolio, and share your experiences.
   repo: 'https://github.com/MatthewBeaudouinLafon/Project-Projects'
   docs: 'https://project-projects-docs.herokuapp.com/index.html'
