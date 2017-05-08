@@ -2,6 +2,8 @@
 title: Final Projects
 ---
 
+(<a href="https://docs.google.com/presentation/d/1hLRqUG4K7Z7Jsi4cnGtdB_KASk1neezm5Z5Y810nAMg/edit#slide=id.g1f41a30438_2_120">(Slide show)</a>)
+
 <dl>
 {% for project in site.data['final-projects'] %}
 <dt>{% if project.website %}<a href="{{ project.website }}">{{ project.name}}</a>{% else %}<a href="{{ project.repo }}">{{ project.name }}</a>{% endif %}</dt>
