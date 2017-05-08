@@ -70,3 +70,18 @@ h5 { font-size: 1rem; }
 .nav-sidebar ul.list-inline li a {
 	line-height: 1;
 }
+
+.final-project-table th {
+	font-weight: normal;
+	font-style: italic;
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+.final-project-table td {
+	padding-right: 25px;
+}
+
+.final-project-table .project-name {
+	font-weight: bold;
+}

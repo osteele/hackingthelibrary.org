@@ -1,0 +1,24 @@
+- name: Futureboard
+  tagline: A simple, interactive way to surface Olin’s culture in digital signage.
+  repo: 'https://github.com/aidankmcl/futureboard'
+  hosting: 'https://dashboard.heroku.com/pipelines/6fdd52f1-6c86-4671-9348-25c1b6e10ea2'
+  website: 'http://futureboard.herokuapp.com'
+
+- name: Loan Wrangler
+  tagline: A friendly chatbot that can help you with (almost) anything involving borrowing and using the library’s awesome tools and media equipment.
+  repo: 'https://github.com/olinlibrary/loanbot'
+  ci: 'https://travis-ci.org/olinlibrary/loanbot'
+  docs: 'http://olin-loan-wrangler.readthedocs.io/en/latest/?badge=latest'
+  hosting: 'https://dashboard.heroku.com/apps/olinloanbot'
+  website: 'https://www.messenger.com/t/288095974955767'
+
+- name: Project Projects
+  tagline: Record your projects, to keep track of all the cool stuff you’ve done at Olin, easily build your portfolio, and share your experiences.
+  repo: 'https://github.com/MatthewBeaudouinLafon/Project-Projects'
+  docs: 'https://project-projects-docs.herokuapp.com/index.html'
+
+- name: Olin API
+  tagline: Programmatic access to the rich digital life and resources of Olin.
+  repo: 'https://github.com/olinlibrary/olin-api'
+  docs: 'http://olin-api.readthedocs.io/en/latest/'
+  website: 'http://olin-api.herokuapps.com'
