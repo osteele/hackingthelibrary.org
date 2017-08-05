@@ -1,6 +1,6 @@
 <div class="row">
 
-  {% for site in site.data.[include.data_key] %}
+  {% for site in site.data[include.data_key] %}
 
 {% if include.large %}
   <div class="col-lg-5 col-md-4 col-xs-9 thumb">
