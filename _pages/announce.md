@@ -1,7 +1,7 @@
 ---
 title: Hacking the Library
 permalink: /
-layout: null
+layout: announce
 ---
 
 **Help us create a new kind of Library**
@@ -16,15 +16,15 @@ This course begins where many courses leave off.  We will both start new project
 
 ## Prototype to Production
 
-* Documentation, Testing, and Continuous Integration: Techniques for developing test and documentation suites, that grow along with your software and guide its construction.
-* Identity, Authorization, Privacy, Security: How can code protect access to sensitive data? How can it it know who you are?
-* Dev Ops (staging and production environments; continuous delivery; logging and monitoring; analytics): It’s one thing to run code on your laptop. How can you understand and monitor what it does in the cloud?
+* **Documentation, Testing, and Continuous Integration**: Techniques for developing test and documentation suites, that grow along with your software and guide its construction.
+* **Identity, Authorization, Privacy, Security**: How can code protect access to sensitive data? How can it it know who you are?
+* **Dev Ops** (staging and production environments; continuous delivery; logging and monitoring; analytics): It’s one thing to run code on your laptop. How can you understand and monitor what it does in the cloud?
 
 ## Community Technology
 
-* Community Technology: What is the nature of software that grows out of Libraries, not Silicon Valley? Software that defies scalability - more intranet than internet?
-* Projects that Escape the Semester: Our ambition is to to create systems, artifacts, and smart spaces that impact the Olin community beyond the semester.
-* Standing on the Shoulders of: Projects will draw on work from last year’s course offering, from the Software of Summer, current Library Software and from select Open Source projects in the wild.
+* **Community Technology**: What is the nature of software that grows out of Libraries, not Silicon Valley? Software that defies scalability - more intranet than internet?
+* **Projects that Escape the Semester**: Our ambition is to to create systems, artifacts, and smart spaces that impact the Olin community beyond the semester.
+* **Standing on the Shoulders of**: Projects will draw on work from last year’s course offering, from the Software of Summer, current Library Software and from select Open Source projects in the wild.
 
 ## Prerequisites
 
