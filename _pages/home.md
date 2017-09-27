@@ -1,6 +1,6 @@
 ---
 title: Hacking the Library
-permalink: "/"
+permalink: 2017/
 layout: default
 ---
 
