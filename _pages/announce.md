@@ -4,8 +4,19 @@ permalink: /
 layout: announce
 ---
 
-**Help us create a new kind of Library**
+<div class="row" style="display: none">
+  <div class="col-md-9 main">
+    <div class="jumbotron" style="min-height:350px; font-size:24px;">
+        Help us create a new kind of Library
+    </div>
+  </div>
+</div>
 
+<i>Help us create a new kind of Library</i>
+
+<div class="row">
+
+<div class="col-md-6 main" markdown="1">
 ## Hacking the Library
 
 This course leverages the Olin Library and the areas of civic and community software as platforms on which to explore topics in software production, deployment, and operations.
@@ -13,7 +24,9 @@ This course leverages the Olin Library and the areas of civic and community soft
 This is a studio course, with workshops, readings, and discussion around production development and operations as well as libraries. Topics will be guided by the specific projects chosen. Projects will be developed by individuals and teams; we will meet regularly to understand the goals and interactions between the projects. Instructors will guide learning of software development that supports both prototyping and robust working systems, as well as design methods.
 
 This course begins where many courses leave off.  We will both start new projects and work with existing projects in order to learn concepts that apply to different stages of the software project lifecycle.
+</div>
 
+<div class="col-md-6" markdown="1">
 ## Prototype to Production
 
 * **Documentation, Testing, and Continuous Integration**: Techniques for developing test and documentation suites, that grow along with your software and guide its construction.
@@ -29,3 +42,7 @@ This course begins where many courses leave off.  We will both start new project
 ## Prerequisites
 
 Software Design or Permission of Instructor.  If you’re passionate, give us a call.
+
+</div>
+
+</div>
