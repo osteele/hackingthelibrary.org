@@ -10,17 +10,17 @@ import React from 'react'
 import config from '../../gatsby-config.js'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="sans-serif">
     <Helmet>
       <title>{`${config.siteMetadata.title}`}</title>
       <meta name="description" content={config.siteMetadata.description} />
     </Helmet>
     <Header />
-    <div className="sans-serif page-content">
+    <main className="page-content">
       <div className="wrapper lh-copy">
         {children()}
       </div>
-    </div>
+    </main>
   </div>
 )
 

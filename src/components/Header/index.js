@@ -3,32 +3,16 @@ import React from 'react'
 import config from '../../../gatsby-config.js'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {config.siteMetadata.title}
-        </Link>
+  <header className="mw8 center pa2 pa3-ns">
+    <nav className="">
+      <h1 className="lh-solid f5 f4-ns">
+        <a className="link dim black b dib mr3" href="/" title="Home">{config.siteMetadata.title}<br /> Olin College Engineering</a>
       </h1>
-    </div>
-  </div>
+      <div className="">
+        <a className="link dim f6 dib mr3" href="/" title="Home">Home</a>
+      </div>
+    </nav>
+  </header>
 )
 
 export default Header

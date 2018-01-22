@@ -3,7 +3,14 @@ title: Syllabus
 path: /
 ---
 
-Help us create a new kind of Library
+
+<div class="fl w-100 fl w-100-ns pr4-ns pl2-m pr0">
+
+*Help us create a new kind of Library.*
+
+</div>
+
+<div class="fl w-100 fl w-33-ns pr4-ns pl2-m pr0">
 
 This course leverages the Olin Library and the areas of civic and community
 software as platforms on which to explore topics in software production,
@@ -18,6 +25,10 @@ dimensions of our projects so they may attain a maturity surpassing traditional
 software coursework. Instructors will guide learning of software development
 that supports both prototyping and robust working systems, as well as design
 methods.
+
+</div>
+
+<div class="fl w-100 fl w-33-ns pr4-ns pl2-m pr0">
 
 ## Prototype to Production
 
@@ -34,6 +45,10 @@ to different stages of the software project lifecycle.
   and monitoring; analytics): It’s one thing to run code on your laptop. How can
   you understand and monitor what it does in the cloud?
 
+</div>
+
+<div class="fl w-100 fl w-33-ns pr4-ns pl2-m pr0">
+
 ## Community Technology
 
 Hacking the Library projects will be examples of “community technology.” Work is
@@ -49,7 +64,13 @@ expressly designed to enrich and augment the Olin community.
   course offering, from the Software of Summer, current Library Software and
   from select Open Source projects in the wild.
 
+</div>
+
+<div class="fl w-100 fl w-100-ns pr4-ns pl2-m pr0">
+
 ## Prerequisites
 
 Software Design or Permission of Instructor.  If you’re passionate, give us a
 call.
+
+</div>
