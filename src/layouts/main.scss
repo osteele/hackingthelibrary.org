@@ -1,0 +1,285 @@
+// @import 'tachyons';
+@import '~tachyons-sass/tachyons.scss';
+article.post {
+    h1 {
+        @extend .f1,
+        b;
+    }
+    h2 {
+        @extend .f2,
+        b,
+        .bb,
+        .b--light-gray,
+        .pb1,
+        .mt4;
+    }
+    h2:first-of-type {
+        @extend .mt0;
+    }
+    h3 {
+        @extend .f3,
+        b;
+    }
+    h4 {
+        @extend .f4,
+        b;
+    }
+    p {
+        @extend .lh-copy,
+        .pv2,
+        .mt0,
+        .f5,
+        .measure-wide,
+        .mb2;
+    }
+    ul.post-list {
+        @extend .ma0;
+    }
+    ul.post-list li a {
+        @extend .db;
+    }
+    iframe {
+        @extend .w-100,
+        .h5,
+        .mv4,
+        .ba,
+        .b--light-blue,
+        .bg-washed-blue,
+        .br1;
+    }
+    img {
+        @extend .db,
+        .br1,
+        .ba,
+        .b--light-blue,
+        .bg-light-gray
+    }
+    ul.post-list li {
+        @extend .mh0,
+        .pa2,
+        .pa3-ns,
+        .ba,
+        .b--black-10,
+        .bg-light-gray,
+        .br1,
+        .mb2,
+        .mb3-ns,
+        .mw8,
+        .db;
+    }
+}
+
+.post-meta {
+    @extend .black-20;
+}
+
+.rss-subscribe {
+    text-align: right;
+}
+
+article.markdown,
+article.page {
+    h1 {
+        @extend .f3,
+        .f1-ns,
+        b,
+        .measure-wide;
+    }
+    h2 {
+        @extend .f4,
+        .f2-ns,
+        b,
+        .measure-wide;
+    }
+    h3 {
+        @extend .f5,
+        .f3-ns,
+        b,
+        .measure-wide;
+    }
+    p {
+        @extend .lh-copy,
+        .pv2,
+        .measure-wide;
+    }
+    img {
+        @extend .db,
+        .br1;
+    }
+    em,
+    i,
+    dfn {
+        font-style: italic;
+    }
+    dfn {
+        font-weight: bold;
+    }
+    blockquote {
+        margin: 0 1.5em 1.5em 1.5em;
+        @extend .bl,
+        .b--moon-gray,
+        .pl3,
+        .bg-washed-blue;
+    }
+    code {
+        @extend .db,
+        .f6,
+        .ba,
+        .b--moon-gray,
+        .bg-light-gray,
+        .pa2,
+        .pl3,
+        .br2;
+        font-family: courier;
+    }
+    cite {
+        font-style: italic;
+    }
+    li ul,
+    li ol {
+        margin: 0 1.5em;
+    }
+    ul,
+    ol {
+        margin: 1em 1.5em 1.5em 1.5em;
+    }
+    ul {
+        list-style-type: disc;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    ol ol {
+        list-style: upper-alpha;
+    }
+    ol ol ol {
+        list-style: lower-roman;
+    }
+    ol ol ol ol {
+        list-style: lower-alpha;
+    }
+    dl {
+        margin: 0 0 1.5em 0;
+    }
+    dl dt {
+        font-weight: bold;
+    }
+    dd {
+        margin-left: 1.5em;
+    }
+    table {
+        margin-bottom: 1.4em;
+        width: 100%;
+    }
+    th {
+        font-weight: bold;
+    }
+    th,
+    td,
+    caption {
+        padding: 4px 10px 4px 5px;
+    }
+    tfoot {
+        font-style: italic;
+    }
+    sup,
+    sub {
+        line-height: 0;
+    }
+    abbr,
+    acronym {
+        border-bottom: 1px dotted;
+    }
+    address {
+        margin: 0 0 1.5em;
+        font-style: italic;
+    }
+    del {
+        text-decoration: line-through;
+    }
+    pre {
+        margin: 1.5em 0;
+        white-space: pre;
+    }
+    img.centered,
+    .aligncenter,
+    div.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img.alignright {
+        display: inline;
+    }
+    img.alignleft {
+        display: inline;
+    }
+    .alignright {
+        float: right;
+        margin-left: 10px;
+    }
+    .alignleft {
+        float: left;
+        margin-right: 10px;
+    }
+    img {
+        max-width: 100%;
+    }
+    * html .clearfix {
+        height: 1%;
+    }
+    *+html .clearfix {
+        display: inline-block;
+    }
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    * html .group {
+        height: 1%;
+    }
+    *+html .group {
+        display: inline-block;
+    }
+    .group:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    /**
+	* End Vanilla CSS
+	*/
+}
+
+article.page {
+    h3 {
+        @extend .f4,
+        .f3-ns,
+        .normal,
+        .measure-wide;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li ul,
+    li ol {
+        margin: 0em;
+    }
+    ul,
+    ol {
+        margin: 0em;
+    }
+}
+
+.accordion {
+    h3 {
+        @extend .pt2,
+        .pb3,
+        .f3;
+    }
+}

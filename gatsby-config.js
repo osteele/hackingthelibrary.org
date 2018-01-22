@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Hacking the Library',
+    description: "Let’s create a new kind of Library.",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,5 +13,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
   ],
 };

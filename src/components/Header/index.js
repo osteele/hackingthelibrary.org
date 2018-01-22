@@ -1,5 +1,6 @@
-import React from 'react'
 import Link from 'gatsby-link'
+import React from 'react'
+import config from '../../../gatsby-config.js'
 
 const Header = () => (
   <div
@@ -23,7 +24,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          {config.siteMetadata.title}
         </Link>
       </h1>
     </div>

@@ -1,5 +1,5 @@
 ---
-title: Hacking the Library
+title: Syllabus
 path: /
 ---
 
@@ -53,4 +53,3 @@ expressly designed to enrich and augment the Olin community.
 
 Software Design or Permission of Instructor.  If you’re passionate, give us a
 call.
-

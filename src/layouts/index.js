@@ -1,29 +1,25 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import './css/reset.css'
+import './css/tachyons.css'
+import './main.scss'
+import './css/custom.css'
 
 import Header from '../components/Header'
-import './index.css'
+import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
+import React from 'react'
+import config from '../../gatsby-config.js'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet
-      title="Gatsby Default Starter"
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
+    <Helmet>
+      <title>{`${config.siteMetadata.title}`}</title>
+      <meta name="description" content={config.siteMetadata.description} />
+    </Helmet>
     <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
+    <div className="sans-serif page-content">
+      <div className="wrapper lh-copy">
+        {children()}
+      </div>
     </div>
   </div>
 )
