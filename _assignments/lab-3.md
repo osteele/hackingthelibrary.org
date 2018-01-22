@@ -135,7 +135,7 @@ setenv LAB_NO=1
 
 Now any new terminal will start with `LAB_NO` already set. Test this by creating a new terminal window, and using one of the techniques above to verify the value of `LAB_NO`.
 
-\* The bash and zsh documentation recommends that you define environment variables in the *first* file in their respective lists of startup files: `.bash_profile` for bash, `.zshenv` for zsh. I more commonly see  them added to `.bashrc` and `.zshrc`, and the installation instructions for many utilties instruct you to plac definitions there.
+\* The bash and zsh documentation recommends that you define environment variables in the *first* file in their respective lists of startup files: `.bash_profile` for bash, `.zshenv` for zsh. I more commonly see  them added to `.bashrc` and `.zshrc`, and the installation instructions for many utilities instruct you to place definitions there.
 
 ### Part 4: Getting and setting environment variables on Heroku
 

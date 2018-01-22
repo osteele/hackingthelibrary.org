@@ -160,8 +160,7 @@ Solution: Send a message to <helpdesk@olin.edu>: “I am using the domain name m
 Some things you can do to learn more and/or have more fun:
 
 * Add more functionality to the application. ([Seaborn](http://seaborn.pydata.org)? [D3](https://d3js.org)?)
-* Modify your server so that it binds to `0.0.0.0` on Heroku but `127.0.0.1`
-on your laptop (even when you run it on your laptop with `heroku local`). This will be the topic of Lab 3.
+* Modify your server so that it binds to `0.0.0.0` on Heroku but `127.0.0.1` on your laptop (even when you run it on your laptop with `heroku local`). This will be the topic of Lab 3.
 * Add an `app.json` file, and a ![](https://www.herokucdn.com/deploy/button.svg) button. [Instructions](https://devcenter.heroku.com/articles/heroku-button).
 
 ## What to Turn In
