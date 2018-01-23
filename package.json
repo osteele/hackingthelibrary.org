@@ -22,6 +22,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "data": "python3 scripts/make_events.py > data/days.json",
     "start": "gatsby develop",
     "develop": "gatsby develop",
     "deploy": "gatsby build && netlify deploy",
