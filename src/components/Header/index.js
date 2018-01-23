@@ -12,6 +12,7 @@ const Header = () => (
         <a className="link dim f6 dib mr3" href="/">Home</a>
         <a className="link dim f6 dib mr3" href="/policies">Policies</a>
         <a className="link dim f6 dib mr3" href="/calendar">Calendar</a>
+        <a className="link dim f6 dib mr3" href="/colophon">Colophon</a>
       </div>
     </nav>
   </header>
