@@ -8,14 +8,10 @@ let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
 
 BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment))
 
-function parseDate(str) {
-  let components = str.match(/\d+/g).map(Number);
-  return new Date(...components);
-}
-
-events.forEach(event => {
-  event.start = parseDate(event.start);
-  event.end = parseDate(event.end);
+events.forEach((event, id) => {
+  event.id = id;
+  event.start = new Date(event.start);
+  event.end = new Date(event.end);
 });
 
 const CalendarPage = (props) => (
