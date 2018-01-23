@@ -4,14 +4,12 @@ import events from '../../data/days.json'
 import localizer from 'react-big-calendar/lib/localizers/globalize'
 import moment from 'moment'
 
-let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
+// let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
 
 BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment))
 
 events.forEach((event, id) => {
   event.id = id;
-  event.start = new Date(event.start);
-  event.end = new Date(event.end);
 });
 
 const CalendarPage = (props) => (
@@ -21,7 +19,7 @@ const CalendarPage = (props) => (
       <BigCalendar
         {...props}
         events={events}
-        views={allViews}
+        views={["month"]}
         step={60}
       />
     </div>
