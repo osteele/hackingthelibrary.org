@@ -22,6 +22,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "start": "gatsby develop",
     "develop": "gatsby develop",
     "deploy": "gatsby build && netlify deploy",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
