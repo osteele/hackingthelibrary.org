@@ -15,18 +15,17 @@ events.forEach((event, id) => {
 });
 
 const CalendarPage = (props) => (
-  <div>
-    <h1>A calendar</h1>
+  <div className="ph2 ph3-ns mw8 center">
+    <h1>Calendar</h1>
     <div style={{ height: '500px' }}>
       <BigCalendar
         {...props}
         events={events}
         views={allViews}
         step={60}
-        defaultDate={new Date(2018, 1, 1)}
       />
     </div>
-  </div>
+  </div >
 )
 
 export default CalendarPage
