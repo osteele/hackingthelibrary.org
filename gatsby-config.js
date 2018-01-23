@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Hacking the Library',
+    subtitle: 'Olin College of Engineering',
     description: "Let’s create a new kind of Library.",
   },
   plugins: [

@@ -6,7 +6,9 @@ const Header = () => (
   <header className="mw8 center pa2 pa3-ns">
     <nav className="">
       <h1 className="lh-solid f5 f4-ns">
-        <a className="link dim black b dib mr3" href="/" title="Home">{config.siteMetadata.title}<br /> Olin College Engineering</a>
+        <a className="link dim black b dib mr3" href="/" title="Home">
+          {config.siteMetadata.title}<br />
+          {config.siteMetadata.subtitle}</a>
       </h1>
       <div className="">
         <a className="link dim f6 dib mr3" href="/">Home</a>
