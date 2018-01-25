@@ -1,6 +1,6 @@
 ---
 title: Syllabus
-path: /syllabus
+path: /syllabus/old
 ---
 
 
