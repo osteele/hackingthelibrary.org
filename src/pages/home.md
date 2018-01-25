@@ -2,12 +2,24 @@
 path: /
 ---
 
+## Meeting Time and Place
+
 **Where**: The Library
 
 **When**: MR 3:20 - 5:00 PM
+## Assignments
 
-*Help us create a new kind of Library.*
+[Due Monday](./assignments/week-1)
 
-This course leverages the Olin Library and the areas of civic and community
-software as platforms on which to explore topics in software production,
-deployment, and operations. [more…](/syllabus)
+## Office Hours
+
+| WHo     | Where   | When                   |
+|---------|---------|------------------------|
+| Oliver  | Library | T 9-10                 |
+| &nbsp;  | Library | T 2-5                  |
+| &nbsp;  | Library | W TBD                  |
+| &nbsp;  | Library | R 10-1pm               |
+| &nbsp;  | Library | F 9-1pm by appointment |
+| Oliver  | MH 365  | By Appointment         |
+| Evan    | TBD     | TBD                    |
+| Seungin | TBD     | TBD                    |
