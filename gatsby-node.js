@@ -1,11 +1,11 @@
 const path = require("path");
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-    const { createPage } = boundActionCreators;
+  const { createPage } = boundActionCreators;
 
-    const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
+  const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
 
-    return graphql(`
+  return graphql(`
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [] }
@@ -13,6 +13,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       ) {
         edges {
           node {
+            fileAbsolutePath
             frontmatter {
               path
             }
@@ -21,16 +22,25 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
       }
     }
   `).then(result => {
-            if (result.errors) {
-                return Promise.reject(result.errors);
-            }
+      if (result.errors) {
+        return Promise.reject(result.errors);
+      }
 
-            result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-                createPage({
-                    path: node.frontmatter.path,
-                    component: pageTemplate,
-                    context: {}, // additional data can be passed via context
-                });
-            });
+      const prefix = path.join(__dirname, 'src', 'pages')
+
+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        let path = node.frontmatter.path;
+        // The following doesn't work, becuase pageTemplate queries on
+        // frontmatter.path
+        const { fileAbsolutePath: filePath } = node;
+        if (!path && filePath.startsWith(prefix)) {
+          path = filePath.slice(prefix.length).replace(/\.md$/, '');
+        }
+        createPage({
+          path: path,
+          component: pageTemplate,
+          context: {}, // additional data can be passed via context
         });
+      });
+    });
 };
