@@ -9,6 +9,7 @@ const links = [
   ["Calendar", '/calendar'],
   // ["Syllabus", 'https://docs.google.com/document/d/e/2PACX-1vT2lvYP2J2pLV4b2Ncvrl_EYhCot4kgobowZ7FS3qcDG17cuOHVi1MauSJs-xd9sxbw8wECEsidBHFV/pub'],
   // https://docs.google.com/document/d/19pcGJxmgfgK94Zx4M9XRpXx5TRRrSdE3JCSCRFLCJ8Q/edit?usp=drive_web&ouid=114980762230857786249
+  ["Lecture Notes", '/lecture-notes/'],
   ["Syllabus", '/syllabus'],
   ["Colophon", '/colophon'],
 ]
@@ -23,8 +24,8 @@ const Header = () => (
       </h1>
       <div className="">
         <a className="link dim f6 dib mr3" href="/">Home</a>
-        {links.map(([name, url]) =>
-          <a className="link dim f6 dib mr3" href={url}>{name}</a>)}
+        {links.map(([name, url], i) =>
+          <a key={i} className="link dim f6 dib mr3" href={url}>{name}</a>)}
       </div>
     </nav>
   </header>

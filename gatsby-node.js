@@ -15,6 +15,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           node {
             fileAbsolutePath
             frontmatter {
+              category
+              day
               path
             }
           }
