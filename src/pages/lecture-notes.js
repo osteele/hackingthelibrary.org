@@ -13,8 +13,8 @@ export default ({ data }) => {
             <h1 className="f2 f1-ns mb2 mb3-ns black b">Lecture Notes</h1>
             <ul>
                 {posts
-                    .map(({ frontmatter: fm }) =>
-                        <li><Link to={fm.path}>{fm.title}</Link></li>)}
+                    .map(({ frontmatter: fm, id }) =>
+                        <li key={id}><Link to={fm.path}>{fm.title}</Link></li>)}
             </ul>
         </ul>
     );
