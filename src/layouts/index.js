@@ -1,8 +1,9 @@
 import './css/reset.css'
 import './css/tachyons.css'
 import './main.scss'
-import './css/custom.css'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
+import './css/custom.css'
+import './css/site.scss'
 
 import Header from '../components/Header'
 import Helmet from 'react-helmet'

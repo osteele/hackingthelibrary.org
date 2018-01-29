@@ -1,0 +1,16 @@
+p code,
+li>code {
+    display: inline !important;
+    padding: 2px !important;
+}
+
+ul {
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+    li {
+        padding-bottom: 0.5em;
+        p {
+            display: inline !important
+        }
+    }
+}
