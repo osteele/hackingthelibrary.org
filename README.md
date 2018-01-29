@@ -1,10 +1,15 @@
-# hacking the library 2.0: teh web site
+s# hacking the library 2.0: teh web site
 
-## Develop
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+## Install
 
 ```bash
-$ npm install --global gatsby-cli
-$ gatsby develop
+$ yarn install
 ```
+
+## Run
+
+```bash
+$ yarn start
+```
+
+For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
