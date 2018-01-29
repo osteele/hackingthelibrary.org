@@ -3,7 +3,7 @@ import React from 'react'
 import config from '../../../gatsby-config.js'
 
 const links = [
-  ["Assignment", '/assignments/day-1'],
+  ["Assignments", '/assignments/'],
   ["Activity", '/activities/day-1'],
   // ["Policies", '/policies'],
   ["Calendar", '/calendar'],

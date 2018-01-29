@@ -1,5 +1,7 @@
 ---
 path: /assignments/day-1
+title: Day 1
+category: assignment
 ---
 
 ## Due Monday
