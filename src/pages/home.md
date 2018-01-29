@@ -9,7 +9,7 @@ path: /
 **When**: MR 3:20 - 5:00 PM
 ## Assignments
 
-[Due Monday](./assignments/week-1)
+[Due Monday](./assignments/day-1)
 
 ## Office Hours
 
