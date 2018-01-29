@@ -3,26 +3,32 @@ backend:
   repo: olinlibrary/htl2.web
 
 media_folder: static/assets
+public_folder: /assets
 
 collections:
   - name: page
     label: Page
-    folder: "src/pages"
+    folder: src/pages
     create: true
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: assignment
     label: Assignment
-    folder: "src/pages/assignments"
+    folder: src/pages/assignments
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, pattern: "/assignments/day-\\d+" }
       - { name: title, label: Title }
-  - name: class-note
-    label: Class Note
-    folder: "src/pages/class-notes"
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: lecture-notes
+    label: Lecture Notes
+    folder: src/pages/lecture-notes
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: path, label: Path, pattern: "/lecture-notes/day-\\d+" }
       - { name: title, label: Title }
+      - { label: "Body", name: "body", widget: "markdown" }

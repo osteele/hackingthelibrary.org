@@ -1,5 +1,6 @@
 ---
 path: /
+title: Home
 ---
 
 ## Meeting Time and Place
