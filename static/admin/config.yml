@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: olinlibrary/htl2.web
+  repo: olinlibrary/htl18.web
 
 media_folder: static/assets
 public_folder: /assets
