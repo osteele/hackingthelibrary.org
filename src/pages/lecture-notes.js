@@ -14,7 +14,7 @@ export default ({ data }) => {
             <ul>
                 {posts
                     .map(({ frontmatter: fm }) =>
-                        <li><a href={fm.path}>{fm.title}</a></li>)}
+                        <li><Link to={fm.path}>{fm.title}</Link></li>)}
             </ul>
         </ul>
     );

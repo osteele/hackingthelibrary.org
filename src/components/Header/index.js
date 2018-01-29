@@ -18,14 +18,14 @@ const Header = () => (
   <header className="mw8 center pa2 pa3-ns">
     <nav className="">
       <h1 className="lh-solid f5 f4-ns">
-        <a className="link dim black b dib mr3" href="/" title="Home">
+        <Link className="link dim black b dib mr3" to="/" title="Home">
           {config.siteMetadata.title}<br />
-          {config.siteMetadata.subtitle}</a>
+          {config.siteMetadata.subtitle}</Link>
       </h1>
       <div className="">
-        <a className="link dim f6 dib mr3" href="/">Home</a>
+        <Link className="link dim f6 dib mr3" to="/">Home</Link>
         {links.map(([name, url], i) =>
-          <a key={i} className="link dim f6 dib mr3" href={url}>{name}</a>)}
+          <Link key={i} className="link dim f6 dib mr3" to={url}>{name}</Link>)}
       </div>
     </nav>
   </header>
