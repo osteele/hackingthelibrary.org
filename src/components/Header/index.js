@@ -4,7 +4,7 @@ import config from '../../../gatsby-config.js'
 
 const links = [
   ["Assignment", '/assignments/day-1'],
-  ["Activity", '/assignments/day-1'],
+  ["Activity", '/activities/day-1'],
   // ["Policies", '/policies'],
   ["Calendar", '/calendar'],
   // ["Syllabus", 'https://docs.google.com/document/d/e/2PACX-1vT2lvYP2J2pLV4b2Ncvrl_EYhCot4kgobowZ7FS3qcDG17cuOHVi1MauSJs-xd9sxbw8wECEsidBHFV/pub'],
