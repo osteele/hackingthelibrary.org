@@ -1,5 +1,6 @@
 ---
 path: /lecture-notes/day-1
+title: Day 1
 day: 1
 category: lecture-note
 ---
@@ -26,13 +27,13 @@ category: lecture-note
 
 ### During Class
 
-* A **virtual environment** is a mechanism for creating *isolated Python environments*, each with its own version of Python and/or set of Python packages. 
+* A **virtual environment** is a mechanism for creating *isolated Python environments*, each with its own version of Python and/or set of Python packages.
   * This is useful for working on different projects on the same machine.
   * It also lets you install packages without using `sudo`. (This is the context in which this came up in class.)
 * PostgreSQL is a **relational database engine**.
   * A **relational database** is a kind of a programmatic multi-sheet spreadsheet, with support for efficiency, concurrency (many simultaneous readers and writers), and integrity constraints.
   * **SQL** (Structured Query Language) is a language for querying and modifying the data in a relational database.
-  * A **database constraint** is responsible for keeping bad data out of a database. In class 
+  * A **database constraint** is responsible for keeping bad data out of a database. In class
 * [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Cross-Origin Resource Sharing) lets one web site (the *Skillz* front end) make requests to another (the People API server).
 * A [web hook](https://en.wikipedia.org/wiki/Webhook) is a route (URL) on one server, that another service on the internet can request (as though it were a browser) in order to let the first server know that an event has happened. This is how Twilio lets our server know when an SMS message has been sent.
 * [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/#the-hitchhiker-s-guide-to-python) is the recommended guide to Python and its ecosystem.

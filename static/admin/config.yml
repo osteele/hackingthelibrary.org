@@ -13,22 +13,24 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { name: body, label: Body, widget: markdown }
 
   - name: assignment
     label: Assignment
     folder: src/pages/assignments
     create: true
     fields:
-      - { name: path, label: Path, pattern: "/assignments/day-\\d+" }
-      - { name: title, label: Title }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { name: path, label: Path, pattern: ["/assignments/day-\\d+", "/assignments/day-n"] }
+      - { name: title, label: Title, pattern: ["Day \\d+", "Must be 'Day n'"] }
+      - { name: body, label: Body, widget: markdown }
 
   - name: lecture-notes
     label: Lecture Notes
     folder: src/pages/lecture-notes
     create: true
     fields:
-      - { name: path, label: Path, pattern: "/lecture-notes/day-\\d+" }
-      - { name: title, label: Title }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { name: path, label: Path, pattern: ["/lecture-notes/day-\\d+", "/lecture-notes/day-n"] }
+      - { name: title, label: Title, pattern: ["Day \\d+", "Must be 'Day n'"] }
+      - { name: day, label: Day, widget: number, valueType: int, min: 1, max: 26 }
+      - { name: category, label: Category, widget: hidden, default: 'lecture-note' }
+      - { name: body, label: Body, widget: markdown }
