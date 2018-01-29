@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: olinlibrary/htl2.web
+
+media_folder: static/assets
+
+collections:
+  - name: page
+    label: Page
+    folder: "src/pages"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+  - name: assignment
+    label: Assignment
+    folder: "src/pages/assignments"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+  - name: class-note
+    label: Class Note
+    folder: "src/pages/class-notes"
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
