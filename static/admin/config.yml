@@ -11,8 +11,8 @@ collections:
     folder: src/pages
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: title, label: Title }
+      - { name: path, label: Path }
       - { name: body, label: Body, widget: markdown }
 
   - name: assignment
@@ -20,8 +20,9 @@ collections:
     folder: src/pages/assignments
     create: true
     fields:
-      - { name: path, label: Path, pattern: ["/assignments/day-\\d+", "/assignments/day-n"] }
       - { name: title, label: Title, pattern: ["Day \\d+", "Must be 'Day n'"] }
+      - { name: path, label: Path, pattern: ["/assignments/day-\\d+", "/assignments/day-n"] }
+      - { name: category, label: Category, widget: hidden, default: 'assignment' }
       - { name: body, label: Body, widget: markdown }
 
   - name: lecture-notes
@@ -29,8 +30,7 @@ collections:
     folder: src/pages/lecture-notes
     create: true
     fields:
-      - { name: path, label: Path, pattern: ["/lecture-notes/day-\\d+", "/lecture-notes/day-n"] }
       - { name: title, label: Title, pattern: ["Day \\d+", "Must be 'Day n'"] }
-      - { name: day, label: Day, widget: number, valueType: int, min: 1, max: 26 }
+      - { name: path, label: Path, pattern: ["/lecture-notes/day-\\d+", "/lecture-notes/day-n"] }
       - { name: category, label: Category, widget: hidden, default: 'lecture-note' }
       - { name: body, label: Body, widget: markdown }

@@ -1,7 +1,6 @@
 ---
 path: /lecture-notes/day-1
 title: Day 1
-day: 1
 category: lecture-note
 ---
 

@@ -14,22 +14,22 @@ export default ({ data }) => {
             <ul>
                 {posts
                     .map(({ frontmatter: fm }) =>
-                        <li><a href={fm.path}>Day {fm.day}</a></li>)}
+                        <li><a href={fm.path}>{fm.title}</a></li>)}
             </ul>
         </ul>
     );
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-                    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___day] }) {
-                    edges {
-                node {
-                    id
-          frontmatter {
+  query LectureNotesQuery {
+    allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___title] }) {
+        edges {
+            node {
+                id
+                frontmatter {
                     category
-            day
-                path
+                    path
+                    title
           }
         }
       }
