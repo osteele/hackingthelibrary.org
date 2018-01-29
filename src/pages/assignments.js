@@ -9,14 +9,12 @@ export default ({ data }) => {
         .filter((post) => post.frontmatter.category === 'assignment')
 
     return (
-        <ul className="ph2 ph3-ns mw8 center">
+        <div className="ph2 ph3-ns mw8 center">
             <h1 className="f2 f1-ns mb2 mb3-ns black b">Assignments</h1>
-            <ul>
-                {posts
-                    .map(({ frontmatter: fm, id }) =>
-                        <li key={id}><Link to={fm.path}>{fm.title}</Link></li>)}
-            </ul>
-        </ul>
+            <p>The day one assignment is <Link to="/assignments/day-1/">here</Link>.</p>
+            <p>Project One is <a href="https://docs.google.com/document/d/1mSKBAWpNFAy87jFA40eiX5ZLgKFt6nnwd4vUFF2t53M/edit#heading=h.4gstgyfur1e8">here</a>.</p>
+            <p>Remaining assignments are listed on the <a href="https://docs.google.com/document/d/19pcGJxmgfgK94Zx4M9XRpXx5TRRrSdE3JCSCRFLCJ8Q/edit#">course syllabus</a>.</p>
+        </div>
     );
 }
 
