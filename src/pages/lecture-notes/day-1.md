@@ -1,26 +1,38 @@
 ---
-path: /notes/day-1
+path: /lecture-notes/day-1
+day: 1
+category: lecture-note
 ---
 
-☐ this class is *opionated*
-☐ circles
-☐ triangle
-☐ lots of office hours
-☐ using things we don't understand; example from softdes, python before systems; different shapes
-☐ set your learning goals
-☐ running like an devops shop, shared secrets
+## Intro
 
-## What Happened?
+* [Oliver's slides](/files/lecture-notes/day-1-oliver.pdf)
 
+## Topics
 
+### Mentioned in the Activity
 
-## Accidental topics
+* A [message queue](https://en.wikipedia.org/wiki/Message_queue) is a queue used for inter-process communication. It decouples the sender and receiver in space, time, and code. See also [publish-subscribe](https://en.wikipedia.org/wiki/Publish–subscribe_pattern) ("pub/sub")
+  * A [messsage broker](https://en.wikipedia.org/wiki/Message_broker) connects message publishers and subscribers, often using queues.
+  * [MQTT](http://mqtt.org) is a message queue for Internet-of-Things (IoT). We're using it because I pulled this from another project; because it's arguably appropriate here; and because it may be appropriate depending on how we extend this.
+* [Twilio](https://www.twilio.com) provides programmatic access to phone numbers.
+* A **package** is a separately-distributable unit of software source, executables, assets, or a mixture of these.
+  * A [package manager](https://en.wikipedia.org/wiki/Package_manager) automates the installation of packages.
+  * `pip` is Python's package manager.
+  * A Python `requirements.txt` file specifies the packages that a Python project
+    depends on.
+* An [environment variable](https://en.wikipedia.org/wiki/Environment_variable) is a variable that are assigned *outside* of a program and process, but can be read *inside* it. They're useful (1) to keep secrets out of source control, and (2) to write code that behaves differently in development or production, or can otherwise be configured without editing the source code.
+* [JSON](https://www.json.org/) is a technology for **serializing** structured data.
 
-Messsage queues / MQTT
-PostgreSQL and database constraints
-CORS
-Twilio
-Webhooks
-Logging and testing (much more on that)
-Python requirements.txt file
-Environment variables
+### During Class
+
+* A **virtual environment** is a mechanism for creating *isolated Python environments*, each with its own version of Python and/or set of Python packages. 
+  * This is useful for working on different projects on the same machine.
+  * It also lets you install packages without using `sudo`. (This is the context in which this came up in class.)
+* PostgreSQL is a **relational database engine**.
+  * A **relational database** is a kind of a programmatic multi-sheet spreadsheet, with support for efficiency, concurrency (many simultaneous readers and writers), and integrity constraints.
+  * **SQL** (Structured Query Language) is a language for querying and modifying the data in a relational database.
+  * A **database constraint** is responsible for keeping bad data out of a database. In class 
+* [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Cross-Origin Resource Sharing) lets one web site (the *Skillz* front end) make requests to another (the People API server).
+* A [web hook](https://en.wikipedia.org/wiki/Webhook) is a route (URL) on one server, that another service on the internet can request (as though it were a browser) in order to let the first server know that an event has happened. This is how Twilio lets our server know when an SMS message has been sent.
+* [The Hitchhiker’s Guide to Python](http://docs.python-guide.org/en/latest/#the-hitchhiker-s-guide-to-python) is the recommended guide to Python and its ecosystem.
