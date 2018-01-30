@@ -17,6 +17,8 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             frontmatter {
               category
               path
+              google_doc
+              embed_doc
             }
           }
         }
