@@ -1,18 +1,7 @@
 import Link from 'gatsby-link'
 import React from 'react'
 import config from '../../../gatsby-config.js'
-
-const links = [
-  ["Assignments", '/assignments/'],
-  ["Activity", '/activities/day-1'],
-  // ["Policies", '/policies'],
-  ["Calendar", '/calendar'],
-  // ["Syllabus", 'https://docs.google.com/document/d/e/2PACX-1vT2lvYP2J2pLV4b2Ncvrl_EYhCot4kgobowZ7FS3qcDG17cuOHVi1MauSJs-xd9sxbw8wECEsidBHFV/pub'],
-  // https://docs.google.com/document/d/19pcGJxmgfgK94Zx4M9XRpXx5TRRrSdE3JCSCRFLCJ8Q/edit?usp=drive_web&ouid=114980762230857786249
-  ["Lecture Notes", '/lecture-notes'],
-  ["Syllabus", '/syllabus'],
-  ["Colophon", '/colophon'],
-]
+import { links } from '../../../data/header-links.js'
 
 const Header = () => (
   <header className="mw8 center pa2 pa3-ns">
