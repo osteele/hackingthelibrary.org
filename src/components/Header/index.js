@@ -9,7 +9,7 @@ const links = [
   ["Calendar", '/calendar'],
   // ["Syllabus", 'https://docs.google.com/document/d/e/2PACX-1vT2lvYP2J2pLV4b2Ncvrl_EYhCot4kgobowZ7FS3qcDG17cuOHVi1MauSJs-xd9sxbw8wECEsidBHFV/pub'],
   // https://docs.google.com/document/d/19pcGJxmgfgK94Zx4M9XRpXx5TRRrSdE3JCSCRFLCJ8Q/edit?usp=drive_web&ouid=114980762230857786249
-  ["Lecture Notes", '/lecture-notes/'],
+  ["Lecture Notes", 'https://docs.google.com/document/d/1sj7abIFVJpHEehSCFndmfpQYDxEEJaW9xM32KmYgKpo/edit#heading=h.b29bs66srg2w'],
   ["Syllabus", '/syllabus'],
   ["Colophon", '/colophon'],
 ]
@@ -25,7 +25,9 @@ const Header = () => (
       <div className="">
         <Link className="link dim f6 dib mr3" to="/">Home</Link>
         {links.map(([name, url], i) =>
-          <Link key={i} className="link dim f6 dib mr3" to={url}>{name}</Link>)}
+          url.match(/^https?:/)
+            ? <a key={i} href={url} className="link dim f6 dib mr3">{name}</a>
+            : <Link key={i} className="link dim f6 dib mr3" to={url}>{name}</Link>)}
       </div>
     </nav>
   </header>
