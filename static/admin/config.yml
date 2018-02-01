@@ -25,3 +25,14 @@ collections:
       - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
       - { name: category, label: Category, widget: hidden, default: 'lesson-plan' }
       - { name: body, label: Body, widget: markdown }
+
+  - name: post
+    label: Post
+    folder: src/pages/posts
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
+      - { name: category, label: Category, widget: hidden, default: 'post' }
+      - { name: body, label: Body, widget: markdown }
