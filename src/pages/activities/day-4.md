@@ -1,5 +1,6 @@
 ---
 title: Class Thursday
+path: /activities/day-4
 category: announcement
 ---
 
@@ -20,4 +21,3 @@ We will have studio time.  After some time of heads down work,  Oliver and I wil
 
 + Your proposal
 + The steps you will take to get there
-s

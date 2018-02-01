@@ -6,13 +6,13 @@ export default ({ data }) => {
     .filter((post) => post.frontmatter.category === 'announcement')
 
   return <div className="ph2 ph3-ns mw8 center">
-    <article className="center mw5 mw6-ns hidden ba mv4">
+    <article className="page">
       {blocks.map(({ frontmatter: fm, id, html }) =>
         <div key={id}>
-          <h1 className="f4 bg-near-black white mv0 pv2 ph3">{fm.title}</h1>
-          <div className="pa3 bt">
+          <h1 className="f2 f1-ns mb2 mb3-ns black b">{fm.title}</h1>
+          <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
             <div dangerouslySetInnerHTML={{ __html: html }} />
-          </div>
+          </section>
         </div>)
       }
     </article>
