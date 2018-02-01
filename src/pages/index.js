@@ -3,7 +3,7 @@ import React from 'react'
 export default ({ data }) => {
   const blocks = data.allMarkdownRemark.edges
     .map(({ node }) => node)
-    .filter((post) => post.frontmatter.category === 'announcement')
+    .filter((post) => post.frontmatter.category === 'lesson-plan')
 
   return <div className="ph2 ph3-ns mw8 center">
     <article className="page">

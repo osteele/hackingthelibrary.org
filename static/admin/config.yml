@@ -14,3 +14,14 @@ collections:
       - { name: title, label: Title }
       - { name: path, label: Path }
       - { name: body, label: Body, widget: markdown }
+
+  - name: lesson-plan
+    label: Lesson Plan
+    folder: src/pages/lesson-plans
+    create: true
+    fields:
+      - { name: title, label: Title, pattern: ["Day \\d+", "Must be 'Day n'"] }
+      - { name: path, label: Path, pattern: ["/lesson-plans/day-\\d+", "/lesson-plans/day-n"] }
+      - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
+      - { name: category, label: Category, widget: hidden, default: 'lesson-plan' }
+      - { name: body, label: Body, widget: markdown }
