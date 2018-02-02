@@ -1,8 +1,13 @@
 ---
-title: Class Thursday
+title: Day 4
 path: /assignments/day-4
 date: 2018-02-01
 ---
+
+* Come to class with a **list 5 jobs** the New York Public Library was "hired to do."
+* Read [Holding a Program in One's Head](http://paulgraham.com/head.html). Think about:
+  1. Is there one of these that you feel you've mastered?
+  2. Is there one you'd like to learn?
 
 ## Part I
 

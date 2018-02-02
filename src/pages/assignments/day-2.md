@@ -3,16 +3,8 @@ title: Day 2
 path: /assignments/day-2
 date: 2018-01-29
 ---
-## Due Wednesday
 
-* [Jobs to be Done Framework](https://www.youtube.com/watch?v=OzezRI9KNKY) Clayton Christensen, Harvard Business School (5 min video)
-
-## Due Thursday
-
-* Come to class with a **list 5 jobs** the New York Public Library was "hired to do."
-* Read [Holding a Program in One's Head](http://paulgraham.com/head.html). Think about:
-  1. Is there one of these that you feel you've mastered?
-  2. Is there one you'd like to learn?
-* Fill out your team's row on the [Team Spreadsheet](https://docs.google.com/spreadsheets/d/1NrAKDvwG1vEoD9GZaBf-LCuogwBVzA0khK1jYVhkvwk/edit?usp=sharing).
-  You don't have to use these team names!
-
+* Complete the [course entrance survey](https://goo.gl/forms/A6J4lgiUssZqN1Qg1).
+* Enter your [Skillz](https://skillz.olin.build).
+* Read  “[The Library Bill of Rights](http://www.ala.org/advocacy/intfreedom/librarybill)”
+* Come in with some ideas about what to do with the Bear — or, another object that is (or could be) in the classroom.
