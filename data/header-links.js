@@ -1,9 +1,9 @@
 export const links = [
+    ["Assignments", '/assignments'],
     ["Handouts", '/handouts'],
     ["Posts", '/posts'],
     ["Syllabus", '/syllabus'],
     ["Lecture Notes", '/lecture-notes'],
-    // ["Assignments", '/assignments'],
     // ["Past Activities", '/activities/day-1'],
     // ["Policies", '/policies'],
     // ["Calendar", '/calendar'],
