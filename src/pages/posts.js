@@ -7,18 +7,25 @@ export default ({ data }) => {
         .map(({ node }) => node)
         .filter(({ frontmatter: { path } }) => path.match(/\/posts\/./))
 
-    return <div className="ph2 ph3-ns mw8 center">
-        <article className="page">
-            <h1 className="f2 f1-ns mb2 mb3-ns black b">Posts</h1>
-            {posts.map(({ frontmatter: fm, id, excerpt }) =>
-                <div key={id}>
-                    <Link to={fm.path}>
+    // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
+    return <section className="mw8 center">
+        <h2 className="f2 f1-ns mb2 mb3-ns black b">Posts</h2>
+        {posts.map(({ frontmatter: fm, id, excerpt }) =>
+            <article className="pv4 bt bb b--black-10 ph3 ph0-l">
+                <Link className="link dim black" to={fm.path}>
+                    <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+                        <h2 key={id} className="f3 athelas mt0 lh-title link underline-hover blue">
+                            {fm.title}
+                        </h2>
+                        <p className="f5 f4-l lh-copy athelas"
+                            dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
+                    </div>
+                    <time className="f6 db gray">
                         {moment(fm.date).utc().format('dddd, MMM Do')}
-                    </Link>
-                    <div dangerouslySetInnerHTML={{ __html: excerpt }} />
-                </div>)}
-        </article>
-    </div>
+                    </time>
+                </Link>
+            </article>)}
+    </section >
 }
 
 export const postsQuery = graphql`
@@ -30,6 +37,7 @@ query postsQuery {
         excerpt
         frontmatter {
           date
+          description
           path
           title
         }
