@@ -1,5 +1,4 @@
 ---
-path: /posts/2-continuous-integration
 title: Continuous Integration
 author: Oliver
 date: 2018-02-02

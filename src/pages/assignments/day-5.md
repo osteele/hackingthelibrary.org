@@ -1,6 +1,5 @@
 ---
 title: Day 5
-path: /assignments/day-5
 date: 2018-02-05
 ---
 

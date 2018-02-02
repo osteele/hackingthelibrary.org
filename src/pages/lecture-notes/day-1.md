@@ -1,6 +1,5 @@
 ---
 title: Day 1
-path: /lecture-notes/day-1
 category: lecture-note
 ---
 ## Intro

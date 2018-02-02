@@ -2,32 +2,33 @@ const path = require("path");
 
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-
   const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
-
   const query = graphql(nodeQuery);
-  const result = await query
+  const result = await query;
+
   if (result.errors) {
     console.error(result.errors);
     return Promise.reject(result.errors);
   }
 
-  const prefix = path.join(__dirname, 'src', 'pages')
-
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     let path = node.frontmatter.path;
-    // The following doesn't work, becuase pageTemplate queries on
-    // frontmatter.path
-    const { fileAbsolutePath: filePath } = node;
-    if (!path && filePath.startsWith(prefix)) {
-      path = filePath.slice(prefix.length).replace(/\.md$/, '');
-    }
     createPage({
       path: path,
       component: pageTemplate,
       context: {}, // additional data can be passed via context
     });
   });
+};
+
+exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+  const { createNodeField } = boundActionCreators;
+  let { internal, fileAbsolutePath: filePath, frontmatter: fm } = node;
+
+  if (internal.type === `MarkdownRemark` && !fm.path) {
+    const prefix = path.join(__dirname, 'src', 'pages')
+    fm.path = filePath.slice(prefix.length).replace(/\.md$/, '');
+  }
 };
 
 const nodeQuery = `

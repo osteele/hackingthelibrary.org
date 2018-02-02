@@ -1,5 +1,4 @@
 ---
-path: /handouts/bear
 title: Bear as a Service
 date: 2018-01-25
 ---

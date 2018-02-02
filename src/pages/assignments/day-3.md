@@ -1,6 +1,5 @@
 ---
 title: Day 3
-path: /assignments/day-3
 date: 2018-01-31
 ---
 
