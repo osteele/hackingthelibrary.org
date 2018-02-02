@@ -6,12 +6,13 @@ export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
         .map(({ node }) => node)
         .filter(({ frontmatter: { path } }) => path.match(/\/posts\/./))
+    console.info(posts)
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw8 center">
         <h2 className="f2 f1-ns mb2 mb3-ns black b">Posts</h2>
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
-            <article className="pv4 bt bb b--black-10 ph3 ph0-l">
+            <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
                 <Link className="link dim black" to={fm.path}>
                     <div className="flex flex-column flex-row-ns">
                         <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
@@ -21,9 +22,7 @@ export default ({ data }) => {
                             <p className="f5 f4-l lh-copy athelas"
                                 dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
                         </div>
-                        <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-                            <img className="db w-50" src={`/assets/images/${fm.image}`} />
-                        </div>
+                        <Thumbnail thumbnail={fm.thumbnail} />
                         <time className="f6 db gray">
                             {moment(fm.date).utc().format('dddd, MMM Do')}
                         </time>
@@ -32,6 +31,11 @@ export default ({ data }) => {
             </article>)}
     </section>
 }
+
+const Thumbnail = ({ thumbnail }) =>
+    thumbnail && <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+        <img className="db w-50" src={`/assets/images/${thumbnail.path}`} />
+    </div>
 
 export const postsQuery = graphql`
 query postsQuery {
@@ -43,9 +47,9 @@ query postsQuery {
           frontmatter {
             date
             description
-            image
             path
             title
+            thumbnail { path }
           }
         }
       }

@@ -5,8 +5,10 @@ description: >
     Using a Continuous Integration server to run tests against every pushed
     commit.
 date: 2018-02-02
-image: Continuous_integration_-_build_light_indicator.jpg
-image_source: https://commons.wikimedia.org/wiki/File:Continuous_integration_-_build_light_indicator.jpg
+thumbnail:
+    path: Continuous_integration_-_build_light_indicator.jpg
+    source: Wikipedia
+    source_url: https://commons.wikimedia.org/wiki/File:Continuous_integration_-_build_light_indicator.jpg
 ---
 
 Yesterday's post was a whirlwind tour of using Pytest, `assert`, and mocks to add unit tests to a Python program.

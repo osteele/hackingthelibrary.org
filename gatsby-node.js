@@ -44,8 +44,7 @@ const nodeQuery = `
           description
           google_doc
           embed_doc
-          image
-          image_source
+          thumbnail { path source source_url }
         }
       }
     }

@@ -21,9 +21,10 @@ export default function Template({
         </div>}
 
       <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
-        {fm.image && <figure className="fr w5">
-          <img src={`/assets/images/${fm.image}`} />
-          {fm.image_source && <figcaption class="i">Image source: <a href={fm.image_source}>{fm.image_source}</a></figcaption>}
+        {fm.thumbnail && <figure className="fr w5">
+          <img src={`/assets/images/${fm.thumbnail.path}`} />
+          {fm.thumbnail.source_url
+            && <figcaption className="i">Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a></figcaption>}
         </figure>}
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -44,11 +45,10 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
-        image
-        image_source
         description
         google_doc
         embed_doc
+        thumbnail { path source source_url }
       }
     }
   }
