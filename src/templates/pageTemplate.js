@@ -21,9 +21,15 @@ export default function Template({
         </div>}
 
       <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
+        {fm.image && <div className="fr mw-50">
+          <img className="mw-50" src={`/assets/images/${fm.image}`} />
+          {fm.image_source && <p>Image source: <a href={fm.image_source}>{fm.image_source}</a></p>}
+        </div>}
+
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+
         {fm.google_doc
           && <a href={fm.embed_doc}>View in Google Docs</a>}
-        <div dangerouslySetInnerHTML={{ __html: html }} />
         {fm.embed_doc && <iframe src={fm.embed_doc}></iframe>}
       </section>
     </article>
@@ -38,6 +44,8 @@ export const pageQuery = graphql`
       frontmatter {
         path
         title
+        image
+        image_source
         description
         google_doc
         embed_doc

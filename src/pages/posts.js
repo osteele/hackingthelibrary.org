@@ -13,36 +13,44 @@ export default ({ data }) => {
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
             <article className="pv4 bt bb b--black-10 ph3 ph0-l">
                 <Link className="link dim black" to={fm.path}>
-                    <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-                        <h2 key={id} className="f3 athelas mt0 lh-title link underline-hover blue">
-                            {fm.title}
-                        </h2>
-                        <p className="f5 f4-l lh-copy athelas"
-                            dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
+                    <div className="flex flex-column flex-row-ns">
+                        <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
+                            <h2 key={id} className="f3 athelas mt0 lh-title link underline-hover blue">
+                                {fm.title}
+                            </h2>
+                            <p className="f5 f4-l lh-copy athelas"
+                                dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
+                        </div>
+                        <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+                            <img className="db w-50" src={`/assets/images/${fm.image}`} />
+                        </div>
+                        <time className="f6 db gray">
+                            {moment(fm.date).utc().format('dddd, MMM Do')}
+                        </time>
                     </div>
-                    <time className="f6 db gray">
-                        {moment(fm.date).utc().format('dddd, MMM Do')}
-                    </time>
                 </Link>
             </article>)}
-    </section >
+    </section>
 }
 
 export const postsQuery = graphql`
 query postsQuery {
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
-    edges {
-      node {
-        id
-        excerpt
-        frontmatter {
-          date
-          description
-          path
-          title
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+      edges {
+        node {
+          id
+          excerpt
+          frontmatter {
+            date
+            description
+            image
+            path
+            title
+          }
         }
       }
     }
   }
-}
+
+
 `;
