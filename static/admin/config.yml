@@ -33,6 +33,6 @@ collections:
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
+      - { name: date, label: Date, widget: datetime, format: "YYYY-MM-DD HH:MM:SS" }
       - { name: category, label: Category, widget: hidden, default: 'post' }
       - { name: body, label: Body, widget: markdown }

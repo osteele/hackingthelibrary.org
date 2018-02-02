@@ -1,7 +1,7 @@
 ---
 path: /posts/testing-1
 title: Python Unit Tests
-date: 2018-02-01
+date: 2018-02-01 18:44:00
 ---
 
 Yesterday I added unit tests and continuous integration to [Bear-as-a-Service](https://github.com/olinlibrary/bear-as-a-service). This post briefly describes the first half of this (unit testing). Tomorrow will describe the continuous integration piece.
