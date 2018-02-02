@@ -21,10 +21,10 @@ export default function Template({
         </div>}
 
       <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
-        {fm.image && <div className="fr mw-50">
-          <img className="mw-50" src={`/assets/images/${fm.image}`} />
-          {fm.image_source && <p>Image source: <a href={fm.image_source}>{fm.image_source}</a></p>}
-        </div>}
+        {fm.image && <figure className="fr w5">
+          <img src={`/assets/images/${fm.image}`} />
+          {fm.image_source && <figcaption class="i">Image source: <a href={fm.image_source}>{fm.image_source}</a></figcaption>}
+        </figure>}
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
 

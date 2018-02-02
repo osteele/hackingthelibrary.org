@@ -11,7 +11,7 @@ Yesterday I added unit tests and continuous integration to [Bear-as-a-Service](h
 
 ## Unit tests
 
-[Commit #d3930](https://github.com/olinlibrary/bear-as-a-service/commit/d393031b9988f18cf2050f7c2da1e4d629b5f4e0) adds unit tests for (some of) the functionality in the `mqtt_json` subdirectory.
+[Commit #`d393031`](https://github.com/olinlibrary/bear-as-a-service/commit/d393031b9988f18cf2050f7c2da1e4d629b5f4e0) adds unit tests for (some of) the functionality in the `mqtt_json` subdirectory.
 
 This uses the [pytest](https://docs.pytest.org/en/latest/) framework. Write a file that ends in `_test.py`, add functions that end in `_test`, and use [`assert` statements](https://wiki.python.org/moin/UsingAssertionsEffectively) in these functions. Then run `pytest` from the command line to run the tests.
 
@@ -31,4 +31,4 @@ In unit testing, it's useful to test one class or function without bringing in o
 
 Most languages' test runners have a "watch" option. This re-runs the test when a file changes. Watch mode lets you leave the test running in one pane, and see when your edits break the tests (turn the "red") or fix them (turn them "green").
 
-Pytest doesn't have a watch option. Commit #`d3930` therefore also includes [pytest-watch](https://github.com/joeyespo/pytest-watch) among the new package dependencies, and describes how to use in the README.
+Pytest doesn't have a watch option. Commit #`d393031` therefore also includes [pytest-watch](https://github.com/joeyespo/pytest-watch) among the new package dependencies, and describes how to use in the README.
