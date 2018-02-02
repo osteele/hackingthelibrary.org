@@ -5,15 +5,15 @@ import moment from 'moment'
 export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
         .map(({ node }) => node)
-        .filter(({ frontmatter: fm }) => fm.path.match(/\/posts\//))
+        .filter(({ frontmatter: { path } }) => path.match(/\/posts\/./))
 
     return <div className="ph2 ph3-ns mw8 center">
         <article className="page">
             <h1 className="f2 f1-ns mb2 mb3-ns black b">Posts</h1>
             {posts.map(({ frontmatter: fm, id, excerpt }) =>
                 <div key={id}>
-                    <Link style={{ boxShadow: 'none' }} to={fm.path}>
-                        {moment(fm.date).format('ddd, M/D')} — {fm.title}
+                    <Link to={fm.path}>
+                        {moment(fm.date).utc().format('dddd, MMM Do')}
                     </Link>
                     <div dangerouslySetInnerHTML={{ __html: excerpt }} />
                 </div>)}
@@ -29,7 +29,6 @@ query postsQuery {
         id
         excerpt
         frontmatter {
-          category
           date
           path
           title

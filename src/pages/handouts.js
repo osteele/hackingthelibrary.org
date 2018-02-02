@@ -5,7 +5,7 @@ import moment from 'moment'
 export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
         .map(({ node }) => node)
-        .filter(({ frontmatter: fm }) => fm.path.match(/\/handouts\//))
+        .filter(({ frontmatter: { path } }) => path.match(/\/handouts\//))
 
     return <div className="ph2 ph3-ns mw8 center">
         <article className="page">
@@ -13,7 +13,7 @@ export default ({ data }) => {
             {posts.map(({ frontmatter: fm, id }) =>
                 <div key={id}>
                     <Link style={{ boxShadow: 'none' }} to={fm.path}>
-                        {moment(fm.date).format('ddd, M/D')} — {fm.title}
+                        {moment(fm.date).utc().format('ddd, M/D')} — {fm.title}
                     </Link>
                 </div>)}
         </article>
@@ -26,9 +26,7 @@ query handoutsQuery {
     edges {
       node {
         id
-        excerpt
         frontmatter {
-          category
           date
           path
           title
