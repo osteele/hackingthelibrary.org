@@ -15,22 +15,22 @@ export default ({ data }) => {
         They're meant as discussion starters, not as final words.</p>
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
             <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
-                <Link className="link dim black db" to={fm.path}>
+                <Link className="link black db" to={fm.path}>
                     <div className="flex flex-column flex-row-ns">
                         <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
-                            <h2 key={id} className="f3 athelas mt0 lh-title link underline-hover blue">
+                            <h2 key={id} className="f3 athelas mt0 lh-title link blue underline-hover">
                                 {fm.title}
                             </h2>
                             <p className="f5 f4-l lh-copy athelas"
                                 dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
+                            <p className="f6 lh-copy gray mv0">
+                                By <span className="ttu">{fm.author}</span>
+                            </p>
+                            <time className="f6 db gray">
+                                {moment(fm.date).utc().format('dddd, MMM Do')}
+                            </time>
                         </div>
                         <Thumbnail thumbnail={fm.thumbnail} />
-                        <p className="f6 lh-copy gray mv0">
-                            By <span className="ttu">{fm.author}</span>
-                        </p>
-                        <time className="f6 db gray">
-                            {moment(fm.date).utc().format('dddd, MMM Do')}
-                        </time>
                     </div>
                 </Link>
             </article>)}
