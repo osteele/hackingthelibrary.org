@@ -26,11 +26,12 @@ collections:
       - { name: body, label: Body, widget: markdown }
 
   - name: post
-    label: Post
+    label: Essay
     folder: src/pages/posts
     create: true
     fields:
       - { name: title, label: Title }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
+      - { name: description, label: Description, widget: markdown }
       - { name: body, label: Body, widget: markdown }

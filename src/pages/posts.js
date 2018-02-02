@@ -6,11 +6,10 @@ export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
         .map(({ node }) => node)
         .filter(({ frontmatter: { path } }) => path.match(/\/posts\/./))
-    console.info(posts)
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw8 center">
-        <h2 className="f2 f1-ns mb2 mb3-ns black b">Posts</h2>
+        <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
             <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
                 <Link className="link dim black" to={fm.path}>
