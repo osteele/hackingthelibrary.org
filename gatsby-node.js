@@ -1,4 +1,6 @@
-const path = require("path");
+const path = require('path');
+const { createFilePath } = require(`gatsby-source-filesystem`);
+const moment = require('moment')
 
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -23,13 +25,24 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
-  let { internal, fileAbsolutePath: filePath, frontmatter: fm } = node;
+  let { internal, fileAbsolutePath: absolutePath, frontmatter: fm } = node;
 
   if (internal.type === `MarkdownRemark` && !fm.path) {
-    const prefix = path.join(__dirname, 'src', 'pages')
-    fm.path = filePath.slice(prefix.length).replace(/\.md$/, '');
+    const pagesPath = path.join(__dirname, 'src', 'pages');
+    let relativePath = createFilePath({ node, getNode, basePath: `pages` });
+    fm.path = relativePath.match(/\/posts\/./)
+      ? relativePath.replace(/\/([^/]+?)\/$/,
+        `/${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}/`)
+      : relativePath.match(/\/(handouts|posts)\/./)
+        ? relativePath.replace(/\/([^/]+?)\/$/,
+          `/${moment(fm.date).format('MM-DD')}-${slugify(fm.title)}/`)
+        : relativePath;
   }
 };
+
+const slugify = (s) =>
+  s.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+
 
 const nodeQuery = `
 {
