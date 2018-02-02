@@ -26,9 +26,7 @@ query assignmentsQuery {
     edges {
       node {
         id
-        excerpt
         frontmatter {
-          category
           date
           path
           title
