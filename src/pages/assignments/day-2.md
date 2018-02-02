@@ -1,11 +1,11 @@
 ---
 title: Day 2
 path: /assignments/day-2
-category: assignment
+date: 2018-01-29
 ---
 ## Due Wednesday
 
-* [Jobs to be Done Framework](https://www.youtube.com/watch?v=OzezRI9KNKY) Clayton Christensen, Harvard Business School (5 min video) 
+* [Jobs to be Done Framework](https://www.youtube.com/watch?v=OzezRI9KNKY) Clayton Christensen, Harvard Business School (5 min video)
 
 ## Due Thursday
 

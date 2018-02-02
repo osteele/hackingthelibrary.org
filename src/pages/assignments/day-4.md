@@ -1,7 +1,6 @@
 ---
 title: Class Thursday
-path: /activities/day-4
-category: lesson-plan
+path: /assignments/day-4
 date: 2018-02-01
 ---
 

@@ -2,13 +2,13 @@ import Link from 'gatsby-link'
 import React from 'react'
 
 export default ({ data }) => {
-  const announcements = data.allMarkdownRemark.edges
+  const assignments = data.allMarkdownRemark.edges
     .map(({ node }) => node)
-    .filter((post) => post.frontmatter.category === 'lesson-plan')
+    .filter(({ frontmatter: fm }) => fm.path.match(/\/assignments\/./))
 
   return <div className="ph2 ph3-ns mw8 center">
     <article className="page">
-      {announcements.map(({ frontmatter: fm, id, html }) =>
+      {assignments.slice(0, 1).map(({ frontmatter: fm, id, html }) =>
         <div key={id}>
           <h1 className="f2 f1-ns mb2 mb3-ns black b">{fm.title}</h1>
           <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
@@ -21,13 +21,13 @@ export default ({ data }) => {
 
 export const indexPageQuery = graphql`
 query indexPageQuery {
-  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___title]}) {
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
     edges {
       node {
         id
         html
         frontmatter {
-          category
+          date
           path
           title
         }
