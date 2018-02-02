@@ -1,10 +1,11 @@
 ---
 path: /posts/2-continuous-integration
 title: Continuous Integration
+author: Oliver
+date: 2018-02-02
 description: >
     Using a Continuous Integration server to run tests against every pushed
     commit.
-date: 2018-02-02
 thumbnail:
     path: Continuous_integration_-_build_light_indicator.jpg
     source: Wikipedia

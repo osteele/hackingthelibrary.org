@@ -31,7 +31,8 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
-      - { name: path, label: Path }
+      - { name: path, label: Path, pattern: ["/posts/.+", "/posts/something-something"] }
       - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
-      - { name: description, label: Description, widget: markdown }
+      - { name: author, label: Author, widget: string }
+      - { name: description, label: Description, widget: text }
       - { name: body, label: Body, widget: markdown }

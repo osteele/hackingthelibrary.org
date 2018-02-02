@@ -1,8 +1,9 @@
 ---
 path: /posts/1-testing
 title: Python Unit Tests
-description: Adding unit tests to a Python program.
+author: Oliver
 date: 2018-02-01
+description: Adding unit tests to a Python program.
 thumbnail:
     path: unit-test-parody.jpg
     source: "“Unit Testing in Swift — Part 1: The Philosophy”, Marin Benčević"

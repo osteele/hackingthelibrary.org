@@ -10,9 +10,12 @@ export default ({ data }) => {
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw8 center">
         <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
+        <p className="f7">These are (so far) notes about moves I've made with my own projects during class,
+        and how they relate to steps you may want to take with your projects.
+        They're meant as discussion starters, not as final words.</p>
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
             <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
-                <Link className="link dim black" to={fm.path}>
+                <Link className="link dim black db" to={fm.path}>
                     <div className="flex flex-column flex-row-ns">
                         <div className="w-100 w-60-ns pr3-ns order-2 order-1-ns">
                             <h2 key={id} className="f3 athelas mt0 lh-title link underline-hover blue">
@@ -22,6 +25,9 @@ export default ({ data }) => {
                                 dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
                         </div>
                         <Thumbnail thumbnail={fm.thumbnail} />
+                        <p className="f6 lh-copy gray mv0">
+                            By <span className="ttu">{fm.author}</span>
+                        </p>
                         <time className="f6 db gray">
                             {moment(fm.date).utc().format('dddd, MMM Do')}
                         </time>
@@ -44,6 +50,7 @@ query postsQuery {
           id
           excerpt
           frontmatter {
+            author
             date
             description
             path
@@ -54,6 +61,4 @@ query postsQuery {
       }
     }
   }
-
-
 `;
