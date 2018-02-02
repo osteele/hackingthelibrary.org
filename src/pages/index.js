@@ -1,5 +1,6 @@
 import Link from 'gatsby-link'
 import React from 'react'
+import moment from 'moment'
 
 export default ({ data }) => {
   const assignments = data.allMarkdownRemark.edges
@@ -10,7 +11,9 @@ export default ({ data }) => {
     <article className="page">
       {assignments.slice(0, 1).map(({ frontmatter: fm, id, html }) =>
         <div key={id}>
-          <h1 className="f2 f1-ns mb2 mb3-ns black b">{fm.title}</h1>
+          <h1 className="f2 f1-ns mb2 mb3-ns black b">
+            {moment(fm.date).add(12, 'hours').format('ddd M/D')}
+          </h1>
           <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </section>
