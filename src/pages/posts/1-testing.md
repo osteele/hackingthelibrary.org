@@ -1,5 +1,5 @@
 ---
-path: /posts/testing-1
+path: /posts/1-testing
 title: Python Unit Tests
 description: Adding unit tests to a Python program.
 date: 2018-02-01
