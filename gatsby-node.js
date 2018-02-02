@@ -41,6 +41,7 @@ const nodeQuery = `
         fileAbsolutePath
         frontmatter {
           path
+          description
           google_doc
           embed_doc
         }
