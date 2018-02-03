@@ -20,9 +20,9 @@ export default ({ data }) => {
                             <h2 key={id} className="f3 athelas mt0 lh-title link blue underline-hover">
                                 {fm.title}
                             </h2>
-                            <p className="f5 f4-l lh-copy athelas"
+                            <p className="f5 lh-copy athelas"
                                 dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
-                            <p className="f6 lh-copy gray mv0">
+                            <p className="f7 lh-copy gray mv0">
                                 By <span className="ttu">{fm.author}</span>
                             </p>
                             <time className="f6 db gray">

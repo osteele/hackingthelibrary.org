@@ -2,7 +2,9 @@
 title: Python Unit Tests
 author: Oliver
 date: 2018-02-01
-description: Adding unit tests to a Python program.
+description: >
+    Unit tests, stubs, mocks, and spies — oh my! We'll use PyTest to add unit
+    tests to Bear-as-a-Service.
 thumbnail:
     path: unit-test-parody.jpg
     source: "“Unit Testing in Swift — Part 1: The Philosophy”, Marin Benčević"

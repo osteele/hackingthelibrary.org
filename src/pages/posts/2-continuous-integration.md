@@ -3,8 +3,9 @@ title: Continuous Integration
 author: Oliver
 date: 2018-02-02
 description: >
-    Using a Continuous Integration server to run tests against every pushed
-    commit.
+    A Continuous Integration (CI) server to run tests against every pushed
+    commit. We'll add unit tests to Bear-as-a-Service, and connect the GitHub
+    repo to the Travis CI service.
 thumbnail:
     path: Continuous_integration_-_build_light_indicator.jpg
     source: Wikipedia
