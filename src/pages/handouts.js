@@ -4,8 +4,7 @@ import moment from 'moment'
 
 export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node)
-        .filter(({ frontmatter: { path } }) => path.match(/\/handouts\//))
+        .map(({ node }) => node);
 
     return <div className="ph2 ph3-ns mw8 center">
         <article className="page">
@@ -22,17 +21,17 @@ export default ({ data }) => {
 
 export const handoutsQuery = graphql`
 query handoutsQuery {
-  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
-    edges {
-      node {
-        id
-        frontmatter {
-          date
-          path
-          title
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {collection: {eq: "handouts"}}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            date
+            path
+            title
+          }
         }
       }
     }
   }
-}
 `;

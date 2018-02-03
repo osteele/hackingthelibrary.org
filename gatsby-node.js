@@ -28,14 +28,15 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   let { internal, fileAbsolutePath: absolutePath, frontmatter: fm } = node;
 
   if (internal.type === `MarkdownRemark` && !fm.path) {
-    const pagesPath = path.join(__dirname, 'src', 'pages');
-    let relativePath = createFilePath({ node, getNode, basePath: `pages` });
-    fm.path = relativePath.match(/\/posts\/./)
-      ? relativePath.replace(/\/([^/]+?)\/$/,
-        `/${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}/`)
-      : relativePath.match(/\/(handouts|posts)\/./)
-        ? relativePath.replace(/\/([^/]+?)\/$/,
-          `/${moment(fm.date).format('MM-DD')}-${slugify(fm.title)}/`)
+    const relativePath = createFilePath({ node, getNode, basePath: `pages` });
+    const collection = relativePath.split('/')[1]
+    fm.collection = collection;
+    fm.path = collection === 'posts'
+      ? replaceSlug(relativePath,
+        `${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}`)
+      : collection === 'handouts'
+        ? replaceSlug(relativePath,
+          `${moment(fm.date).format('MM-DD')}-${slugify(fm.title)}`)
         : relativePath;
   }
 };
@@ -43,6 +44,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 const slugify = (s) =>
   s.replace(/[^a-z0-9]/gi, '-').toLowerCase();
 
+const replaceSlug = (path, slug) => {
+  let components = path.split('/');
+  components[components.length - 2] = slug;
+  return components.join('/')
+}
 
 const nodeQuery = `
 {

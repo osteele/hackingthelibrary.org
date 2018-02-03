@@ -4,8 +4,7 @@ import moment from 'moment'
 
 export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node)
-        .filter(({ frontmatter: { path } }) => path.match(/\/posts\/./))
+        .map(({ node }) => node);
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw8 center">
@@ -44,18 +43,21 @@ const Thumbnail = ({ thumbnail }) =>
 
 export const postsQuery = graphql`
 query postsQuery {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {collection: {eq: "posts"}}}) {
       edges {
         node {
           id
           excerpt
           frontmatter {
             author
+            collection
             date
             description
             path
             title
-            thumbnail { path }
+            thumbnail {
+              path
+            }
           }
         }
       }
