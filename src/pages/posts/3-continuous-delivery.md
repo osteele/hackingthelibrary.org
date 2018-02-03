@@ -9,35 +9,39 @@ description: >
     deploying new versions that pass a quality checkpoint to a user-visible
     environment. We'll look at how to do this with a Flask (Python) application,
     the Travis CI server, and Heroku.
+thumbnail:
+    path: essays/cd-thumbnail.png
 ---
 
 ## Overview
 
 A basic software team collaboration workflow that uses GitHub looks like this:
 
-[github, and two laptops]
+![](/assets/images/essays/cd.png)
 
-If you followed [Heroku deployment instructions](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app), or the [web deployment toolbox]()https://toolboxes.olin.build/, you've got a deployment flow that looks like this:
+If you followed [Heroku deployment instructions](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app), or the [web deployment toolbox](https://toolboxes.olin.build/), you've got a deployment flow that looks like this:
 
-[picture of laptop -> ]
+![](/assets/images/essays/heroku.png)
 
 Finally, if you've set up a Continuous Integration (CI) server (such as
 was developed in yesterday's example), you've got a test flow:
 
-[in laptop: code -> pytest gate -> push -> github -> CI]
+![](/assets/images/essays/ci.png)
 
 These can be unified into this deployment diagram:
 
-[integrated]
+![](/assets/images/essays/heroku-and-ci.png)
 
 Continuous Delivery (CD) changes this diagram, where the deployed software is
 "the version that a team member most recently manually deployed", to the
 following, where the deployed software is "the latest version that passed
 automated testing":
 
-(Later in the course, we'll look at a couple of variants of this: where a
+![](/assets/images/essays/ci.png)
+
+\[Later in the course, we'll look at a couple of variants of diagram: where a
 CD server pulls from the repo instead of being pushed from the CI server; and
-where there's more than one deployment environment.)
+where there's more than one deployment environment.\]
 
 ## Twilio MQTT Gateway: Unit Tests
 
@@ -66,18 +70,16 @@ Gateway. This uses the same tools and techniques as discussed yesterday, with th
 [^2]: This took me about half an hour with print statements to figure out. Now that I'm more familiar with Python's mocks, hopefully I'll recognize this more quickly next time.
 
 These two steps are often necessary.
-1.  Code that's *functional* may need changes
-in order to be *testable*. In this case, these changes were trivial[^3]. In general, you may find that you need to
+*.  Code that's *functional* may need changes in order to be *testable*. In this case, these changes were trivial[^3]. In general, you may find that you need to
 refactor your code in order to expose the functionality that you want to test.
 Also in general, this refactoring improves the design of your system, even if
 you wouldn't have noticed this without the impetus of testing — or if you
 had noticed it, but wouldn't otherwise have paid for it.
-2. Frameworks that take charge of running your application often come with their
+* Frameworks that take charge of running your application often come with their
 own test instructions or utilities.
 
-[^3]: To make, if
-not — because of where I am on the learning curve for these particular
-tools and packages — to discover.
+[^3]: To make, if not — because of where I am on the learning curve for these particular
+      tools and packages — to discover.
 
 ## Twilio MQTT Gateway: Continuous Integration
 
