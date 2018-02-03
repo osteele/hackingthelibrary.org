@@ -43,14 +43,13 @@ const Thumbnail = ({ thumbnail }) =>
 
 export const postsQuery = graphql`
 query postsQuery {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {collection: {eq: "posts"}}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "posts"}}}) {
       edges {
         node {
           id
           excerpt
           frontmatter {
             author
-            collection
             date
             description
             path

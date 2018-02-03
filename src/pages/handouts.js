@@ -21,7 +21,7 @@ export default ({ data }) => {
 
 export const handoutsQuery = graphql`
 query handoutsQuery {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {collection: {eq: "handouts"}}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "handouts"}}}) {
       edges {
         node {
           id

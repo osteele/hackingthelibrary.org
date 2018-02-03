@@ -21,7 +21,7 @@ export default ({ data }) => {
 
 export const assignmentsQuery = graphql`
 query assignmentsQuery {
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {collection: {eq: "assignments"}}}) {
+    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "assignments"}}}) {
       edges {
         node {
           id
