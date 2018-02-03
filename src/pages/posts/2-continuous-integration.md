@@ -61,3 +61,14 @@ One more thing: The [Skillz repo](https://github.com/olin-build/skillz) demonstr
 [^2]: This is Continuous Delivery (CD). In this use case, the CI server is also managing CD.
 
 [^3]: You've probably seen these badges on other repos. This is the first of several badges we'll run across over the course of the semester.
+
+## References
+
+* [Continuous Integration](https://www.martinfowler.com/articles/continuousIntegration.html), Martin Fowler.
+* [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration), Wikipedia
+
+## Addenda
+
+The first version of this essay referred to CD as “Continuous Deployment”.
+I've changed it to “Continuous Delivery”. [This article](https://continuousdelivery.com/2010/08/continuous-delivery-vs-continuous-deployment/)
+describes the differences.
