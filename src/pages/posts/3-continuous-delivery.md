@@ -17,7 +17,7 @@ thumbnail:
 
 A basic software team collaboration workflow that uses GitHub looks like this:
 
-![](/assets/images/essays/cd.png)
+![](/assets/images/essays/two-laptops.png)
 
 If you followed [Heroku deployment instructions](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app), or the [web deployment toolbox](https://toolboxes.olin.build/), you've got a deployment flow that looks like this:
 
