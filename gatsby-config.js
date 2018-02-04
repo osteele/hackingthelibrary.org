@@ -15,7 +15,20 @@ module.exports = {
     }, {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-smartypants`],
+        plugins: [
+          `gatsby-plugin-sharp`,
+          `gatsby-remark-smartypants`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+              linkImagesToOriginal: true,
+            }
+          }
+        ],
         options: {
           dashes: "oldschool",
         },
@@ -24,5 +37,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-nprogress`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 };
