@@ -1,9 +1,9 @@
 import Link from 'gatsby-link'
 import React from 'react'
-import config from '../../../gatsby-config.js'
-import { links } from '../../../data/header-links.js'
+import config from '../../gatsby-config.js'
+import { links } from '../../data/header-links.js'
 
-const Header = () => (
+export default () => (
   <header className="mw8 center pa2 pa3-ns">
     <nav className="">
       <h1 className="lh-solid f5 f4-ns">
@@ -21,5 +21,3 @@ const Header = () => (
     </nav>
   </header>
 )
-
-export default Header
