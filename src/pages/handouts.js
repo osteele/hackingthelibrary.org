@@ -6,7 +6,7 @@ export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
         .map(({ node }) => node);
 
-    return <div className="ph2 ph3-ns mw8 center">
+    return <div className="ph2 ph3-ns mw7 center">
         <article className="page">
             <h1 className="f2 f1-ns mb2 mb3-ns black b">Handouts</h1>
             {posts.map(({ frontmatter: fm, id }) =>

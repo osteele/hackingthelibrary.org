@@ -4,7 +4,7 @@ import config from '../../gatsby-config.js'
 import { links } from '../../data/header-links.js'
 
 export default () => (
-  <header className="mw8 center pa2 pa3-ns">
+  <header className="mw7 center pa2 pa3-ns">
     <nav className="">
       <h1 className="lh-solid f5 f4-ns">
         <Link className="link dim black b dib mr3" to="/" title="Home">

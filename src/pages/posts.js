@@ -7,7 +7,7 @@ export default ({ data }) => {
         .map(({ node }) => node);
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
-    return <section className="mw8 center">
+    return <section className="mw7 center">
         <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
         <p className="f7">These are (so far) notes about moves I've made with my own projects during class,
         and how they relate to steps you may want to take with your projects.

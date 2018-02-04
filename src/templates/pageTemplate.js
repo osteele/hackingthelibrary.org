@@ -12,19 +12,22 @@ export default ({ data }) => {
       </Helmet>
 
       {fm.google_doc == null &&
-        <div className="ph2 ph3-ns mw8 center">
+        <div className=" mw7 center ph2 ph3-ns">
           <h1 className="f2 f1-ns mb2 mb3-ns black b">
             {fm.title}
           </h1>
         </div>}
 
-      <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
-        {fm.thumbnail && <figure className="fr w5">
+      {fm.thumbnail &&
+        <figure className="w5 fr">
           <img src={`/assets/images/${fm.thumbnail.path}`} />
           {fm.thumbnail.source_url
-            && <figcaption className="i">Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a></figcaption>}
+            && <figcaption className="i">
+              Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a>
+            </figcaption>}
         </figure>}
 
+      <section className="mw7 center cf ph2 ph3-ns mb5-ns mb3">
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
         {fm.google_doc
