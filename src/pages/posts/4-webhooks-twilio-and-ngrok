@@ -1,0 +1,26 @@
+---
+title: Twilio, Web Hooks, and ngrok
+author: Oliver
+date: 2018-02-03
+description: >
+    Web Hooks. Configuring Twilio to connect to your application.
+    Using ngrok to proxy web hooks to your development laptop.
+---
+
+web hooks
+
+twilio
+
+```python
+from twilio.rest import Client
+client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
+
+# https://www.twilio.com/docs/api/rest/incoming-phone-numbers
+number, = client.incoming_phone_numbers \
+                .list(phone_number="+16174465854")
+
+# https://www.twilio.com/docs/api/rest/incoming-phone-numbers
+number.update(voice_url="http://demo.twilio.com/docs/voice.xml")
+```
+
+ngrok

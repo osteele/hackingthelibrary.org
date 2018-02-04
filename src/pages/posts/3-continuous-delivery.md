@@ -17,27 +17,27 @@ thumbnail:
 
 A basic software team collaboration workflow that uses GitHub looks like this:
 
-![](/assets/images/essays/3-continuous-delivery/two-laptops.png)
+![](./3-continuous-delivery/two-laptops.png)
 
 If you followed [Heroku deployment instructions](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app), or the [web deployment toolbox](https://toolboxes.olin.build/), you've got a deployment flow that looks like this:
 
-![](/assets/images/essays/3-continuous-delivery/heroku.png)
+![](./3-continuous-delivery/heroku.png)
 
 Finally, if you've set up a Continuous Integration (CI) server (such as
 was developed in yesterday's example), you've got a test flow:
 
-![](/assets/images/essays/3-continuous-delivery/ci.png)
+![](./3-continuous-delivery/ci.png)
 
 These can be unified into this deployment diagram:
 
-![](/assets/images/essays/3-continuous-delivery/heroku-and-ci.png)
+![](./3-continuous-delivery/heroku-and-ci.png)
 
 Continuous Delivery (CD) changes this diagram, where the deployed software is
 "the version that a team member most recently manually deployed", to the
 following, where the deployed software is "the latest version that passed
 automated testing":
 
-![](/assets/images/essays/3-continuous-delivery/ci.png)
+![](./3-continuous-delivery/ci.png)
 
 \[Later in the course, we'll look at a couple of variants of diagram: where a
 CD server pulls from the repo instead of being pushed from the CI server; and
