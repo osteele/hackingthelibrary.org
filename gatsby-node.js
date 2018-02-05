@@ -70,7 +70,6 @@ const nodeQuery = `
           description
           google_doc
           embed_doc
-          thumbnail { path source source_url }
         }
       }
     }

@@ -5,10 +5,9 @@ date: 2018-02-01
 description: >
     Unit tests, stubs, mocks, and spies — oh my! We'll use PyTest to add unit
     tests to Bear-as-a-Service.
-thumbnail:
-    path: unit-test-parody.jpg
-    source: "“Unit Testing in Swift — Part 1: The Philosophy”, Marin Benčević"
-    source_url: https://medium.cobeisfresh.com/unit-testing-in-swift-part-1-the-philosophy-9bc85ed5001b
+thumbnail: ./img/unit-test-parody.jpg
+thumbnail_source: "“Unit Testing in Swift — Part 1: The Philosophy”, Marin Benčević"
+thumbnail_source_url: https://medium.cobeisfresh.com/unit-testing-in-swift-part-1-the-philosophy-9bc85ed5001b
 ---
 
 Yesterday I added unit tests and continuous integration to [Bear-as-a-Service](https://github.com/olinlibrary/bear-as-a-service). This post briefly describes the first half of this (unit testing). Tomorrow will describe the continuous integration piece.

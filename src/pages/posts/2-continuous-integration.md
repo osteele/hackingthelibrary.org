@@ -6,10 +6,9 @@ description: >
     A Continuous Integration (CI) server to run tests against every pushed
     commit. We'll add unit tests to Bear-as-a-Service, and connect the GitHub
     repo to the Travis CI service.
-thumbnail:
-    path: Continuous_integration_-_build_light_indicator.jpg
-    source: Wikipedia
-    source_url: https://commons.wikimedia.org/wiki/File:Continuous_integration_-_build_light_indicator.jpg
+thumbnail: ./img/Continuous_integration_-_build_light_indicator.jpg
+thumbnail_source: Wikipedia
+thumbnail_source_url: https://commons.wikimedia.org/wiki/File:Continuous_integration_-_build_light_indicator.jpg
 ---
 
 Yesterday's post was a whirlwind tour of using Pytest, `assert`, and mocks to add unit tests to a Python program.

@@ -12,7 +12,8 @@ module.exports = {
         path: `${__dirname}/src/pages`,
         name: "markdown-pages",
       },
-    }, {
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -34,7 +35,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-nprogress`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };

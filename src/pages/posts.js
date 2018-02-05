@@ -38,7 +38,7 @@ export default ({ data }) => {
 
 const Thumbnail = ({ thumbnail }) =>
     thumbnail && <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-        <img className="db w-50" src={`/assets/images/${thumbnail.path}`} />
+        <img className="db w-50" src={thumbnail.childImageSharp.responsiveSizes.src} />
     </div>
 
 export const postsQuery = graphql`
@@ -55,7 +55,13 @@ query postsQuery {
             path
             title
             thumbnail {
-              path
+              childImageSharp {
+                responsiveSizes(maxWidth: 600) {
+                  src
+                  srcSet
+                  sizes
+                }
+              }
             }
           }
         }

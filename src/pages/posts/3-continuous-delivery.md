@@ -9,8 +9,7 @@ description: >
     deploying new versions that pass a quality checkpoint to a user-visible
     environment. We'll look at how to do this with a Flask (Python) application,
     the Travis CI server, and Heroku.
-thumbnail:
-    path: essays/3-continuous-delivery/cd-thumbnail.png
+thumbnail: ./3-continuous-delivery/cd-thumbnail.png
 ---
 
 ## Overview

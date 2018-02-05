@@ -20,7 +20,7 @@ export default ({ data }) => {
 
       {fm.thumbnail &&
         <figure className="w5 fr">
-          <img src={`/assets/images/${fm.thumbnail.path}`} />
+          <img src={fm.thumbnail.childImageSharp.responsiveSizes.src} />
           {fm.thumbnail.source_url
             && <figcaption className="i">
               Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a>
@@ -39,7 +39,7 @@ export default ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query PageByPath($path: String!) {
+  query pageQuery($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt
@@ -49,7 +49,15 @@ export const pageQuery = graphql`
         description
         google_doc
         embed_doc
-        thumbnail { path source source_url }
+        thumbnail {
+          childImageSharp {
+            responsiveSizes(maxWidth: 400) {
+              src
+              srcSet
+              sizes
+            }
+          }
+        }
       }
     }
   }
