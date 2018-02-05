@@ -53,7 +53,7 @@ export const pageQuery = graphql`
         thumbnail {
           childImageSharp {
             sizes {
-              ...GatsbyImageSharpSizes
+              ...GatsbyImageSharpSizes_noBase64
             }
           }
         }

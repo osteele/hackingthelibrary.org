@@ -6,7 +6,10 @@ import moment from 'moment'
 
 export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node);
+        .map(({ node }) => node)
+    if (process.env.NODE_ENV === 'production') {
+        posts = posts.filter(node => !node.frontmatter.draft)
+    }
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw7 center">
@@ -41,8 +44,10 @@ export default ({ data }) => {
 
 const Thumbnail = ({ thumbnail }) =>
     thumbnail && <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-        <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
+        <img className="db w-50" src={thumbnail.childImageSharp.resolutions.src} />
     </div>
+
+// <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
 
 const description = `These are (so far) notes about recent changes to the
 example projects, and how they relate to steps you may want to take with your
@@ -59,12 +64,13 @@ query postsQuery {
             author
             date
             description
+            draft
             path
             title
             thumbnail {
               childImageSharp {
                 resolutions(width: 250) {
-                  ...GatsbyImageSharpResolutions
+                  ...GatsbyImageSharpResolutions_noBase64
                 }
               }
             }
