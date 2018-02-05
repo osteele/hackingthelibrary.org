@@ -6,11 +6,8 @@ import moment from 'moment'
 export default ({ data }) => {
   const assignments = data.allMarkdownRemark.edges
     .map(({ node }) => node)
-    .filter(({ frontmatter: fm }) => fm.path.match(/\/assignments\/./))
     .filter(({ frontmatter: fm }) =>
-      moment(fm.date).utc().endOf('day').isAfter(moment().startOf('day'))
-    )
-  // .filter(({ frontmatter: fm }) => fm.collection === 'assignments')
+      moment(fm.date).utc().endOf('day').isAfter(moment().startOf('day')));
 
   return <div className="ph2 ph3-ns mw8 mt3 center">
     <article className="page center mw7">
@@ -32,7 +29,7 @@ export default ({ data }) => {
 
 export const indexPageQuery = graphql`
 query indexPageQuery {
-  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}) {
+  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, , filter: {fields: {collection: {eq: "assignments"}}}) {
     edges {
       node {
         id
