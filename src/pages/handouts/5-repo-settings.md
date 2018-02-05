@@ -31,7 +31,14 @@ be redirected to the new repository location.
 
 ![](./img/repo-name.jpg)
 
-## 2. Add your collaborators
+## 2. Update the repo description
+
+Back to your repo's GitHub home page. Click the Description button, and update
+or remove the repo description.
+
+![](./img/repo-description.jpg)
+
+## 3. Add your repo collaborators
 
 Click "Collaborators & Teams", in the left hand nav. Add your team members.
 
@@ -41,14 +48,17 @@ This prevents some issues that we've seen more than once in SoftDes, involving
 late nights, last minute changes, and the flu. You're unlikely to run into this
 on this *particular* project, but it's a good habit to get into.
 
-## 3. Update the description
+## 6. Update the README
 
-Back to your repo's GitHub home page. Click the Description button, and update
-or remove the repo description.
+Remove everything from the README that is not true of *your* project.
 
-![](./img/repo-description.jpg)
+Create an "Credits" section. This is where you list outside help that you
+received, and any code in the repo that you didn't write[^1]. **This is very
+important.** Cite the forked repo here; update it with
 
-## 4. Remove unused files
+Create an "Authors" section. List yourselves.
+
+## 5. Remove unused files
 
 \[It may take you longer than today to figure out which forked files you're
 keeping. Do it before code complete.\]
@@ -60,16 +70,6 @@ that isn't used, or doesn't relate to your project's features. This invariant
 makes it easier to debug, maintain, and extend code in the future — there's less
 total code, and less guessing game about what *code* matches what *functionality
 and behavior*.
-
-## 5. Update the README
-
-Remove everything from the README that is not true of *your* project.
-
-Create an "Acknowledgements" section. This is where you list outside help that
-you received, and any code in the repo that you didn't write[^1]. **This is very
-important.** Cite the forked repo here; update it with
-
-Create an "Authors" section. List yourselves.
 
 ## Final Notes
 
