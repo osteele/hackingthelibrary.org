@@ -68,6 +68,7 @@ const nodeQuery = `
           path
           author
           description
+          draft
           google_doc
           embed_doc
         }
