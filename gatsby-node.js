@@ -45,7 +45,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 };
 
 const slugify = (s) =>
-  s.replace(/[^a-z0-9]/gi, '-').toLowerCase();
+  s.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
 
 const replaceLastComponent = (path, slug) => {
   let components = path.split('/');
