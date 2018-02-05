@@ -1,7 +1,7 @@
 ---
 title: Owning your repo
 date: 2018-02-05
-description: Rename your repo and add your teammates as collaborators.
+description: Rename your repo, and add your teammates as collaborators, and remove kruft.
 ---
 
 If you cloned `olinlibrary/bear-as-a-service`, your repo looks like this:
@@ -20,8 +20,14 @@ On the Github repo home page, click the "Settings" tab.
 
 ![](./img/repo-settings-tab.jpg)
 
-The top Setting is "Repository name". Rename your to something that reflects
-your project name.
+The top Setting is "Repository name". Rename your to something that reflects your project name.
+
+You *don't* need to update your bookmarks and git remotes (although you can). If
+you rename your repo from `bear-as-a-service` to `unbearably-clever-name`,
+`https://github.com/myname/bear-as-a-service` will redirect to
+`https://github.com/myname/unbearably-clever-name`, and local git repositories
+with a remote origin of `https://github.com/myname/bear-as-a-service.git` will
+be redirected to the new repository location.
 
 ![](./img/repo-name.jpg)
 
@@ -35,7 +41,14 @@ This prevents some issues that we've seen more than once in SoftDes, involving
 late nights, last minute changes, and the flu. You're unlikely to run into this
 on this *particular* project, but it's a good habit to get into.
 
-## 3. Remove unused files
+## 3. Update the description
+
+Back to your repo's GitHub home page. Click the Description button, and update
+or remove the repo description.
+
+![](./img/repo-description.jpg)
+
+## 4. Remove unused files
 
 \[It may take you longer than today to figure out which forked files you're
 keeping. Do it before code complete.\]
@@ -48,9 +61,15 @@ makes it easier to debug, maintain, and extend code in the future — there's le
 total code, and less guessing game about what *code* matches what *functionality
 and behavior*.
 
-## 4. Update the README and LICENSE
+## 5. Update the README
 
 Remove everything from the README that is not true of *your* project.
+
+Create an "Acknowledgements" section. This is where you list outside help that
+you received, and any code in the repo that you didn't write[^1]. **This is very
+important.** Cite the forked repo here; update it with
+
+Create an "Authors" section. List yourselves.
 
 ## Final Notes
 
@@ -60,3 +79,6 @@ prepare a pull request. They're necessary here because you're using creating a
 *different project*, with a different purpose and goals. In this case, you're
 using the repo as a *starter kit*. This is one common use of a repo, although
 often in this case you'll clone the repo instead of forking it.
+
+[^1]: You needn't list help from your professor and ninja's. You *should* list
+      *all code contributions*, and help from anyone beyond instructional staff.
