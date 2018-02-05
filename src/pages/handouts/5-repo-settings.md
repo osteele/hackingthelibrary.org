@@ -1,7 +1,7 @@
 ---
 title: Owning your repo
 date: 2018-02-05
-description: Rename your repo, and add your teammates as collaborators, and remove kruft.
+description: Rename your repo, update the README, add your teammates as collaborators, and remove kruft.
 ---
 
 If you cloned `olinlibrary/bear-as-a-service`, your repo looks like this:
