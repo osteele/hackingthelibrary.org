@@ -2,6 +2,7 @@
 title: Python Unit Tests
 author: Oliver
 date: 2018-02-01
+draft: false
 description: >
     Unit tests, stubs, mocks, and spies — oh my! We'll use PyTest to add unit
     tests to Bear-as-a-Service.
