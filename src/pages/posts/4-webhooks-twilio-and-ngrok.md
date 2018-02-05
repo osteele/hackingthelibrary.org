@@ -6,7 +6,6 @@ description: >
     Web Hooks. Configuring Twilio to connect to your application.
     Using ngrok to proxy web hooks to your development laptop.
 thumbnail: ./img/aaarr-webhooks-pirate.png
-draft: true
 ---
 
 The concept of a [web hook](https://en.wikipedia.org/wiki/Webhook) or *webhook*
