@@ -1,4 +1,5 @@
 import Helmet from 'react-helmet'
+import Img from "gatsby-image";
 import React from "react";
 
 export default ({ data }) => {
@@ -20,7 +21,7 @@ export default ({ data }) => {
 
       {fm.thumbnail &&
         <figure className="w5 fr">
-          <img src={fm.thumbnail.childImageSharp.responsiveSizes.src} />
+          <Img sizes={fm.thumbnail.childImageSharp.sizes} />
           {fm.thumbnail.source_url
             && <figcaption className="i">
               Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a>
@@ -51,10 +52,8 @@ export const pageQuery = graphql`
         embed_doc
         thumbnail {
           childImageSharp {
-            responsiveSizes(maxWidth: 400) {
-              src
-              srcSet
-              sizes
+            sizes {
+              ...GatsbyImageSharpSizes
             }
           }
         }

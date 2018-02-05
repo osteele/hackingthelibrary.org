@@ -1,3 +1,4 @@
+import Img from "gatsby-image"
 import Link from 'gatsby-link'
 import React from 'react'
 import moment from 'moment'
@@ -38,7 +39,7 @@ export default ({ data }) => {
 
 const Thumbnail = ({ thumbnail }) =>
     thumbnail && <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-        <img className="db w-50" src={thumbnail.childImageSharp.responsiveSizes.src} />
+        <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
     </div>
 
 export const postsQuery = graphql`
@@ -56,10 +57,8 @@ query postsQuery {
             title
             thumbnail {
               childImageSharp {
-                responsiveSizes(maxWidth: 600) {
-                  src
-                  srcSet
-                  sizes
+                resolutions(width: 250) {
+                  ...GatsbyImageSharpResolutions
                 }
               }
             }
