@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import Img from "gatsby-image"
 import Link from 'gatsby-link'
 import React from 'react'
@@ -9,10 +10,11 @@ export default ({ data }) => {
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw7 center">
+        <Helmet>
+            <meta name="description" content={description} />
+        </Helmet>
         <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
-        <p className="f7">These are (so far) notes about moves I've made with my own projects during class,
-        and how they relate to steps you may want to take with your projects.
-        They're meant as discussion starters, not as final words.</p>
+        <p className="f7 i">{description}</p>
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
             <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
                 <Link className="link black db" to={fm.path}>
@@ -21,7 +23,7 @@ export default ({ data }) => {
                             <h2 key={id} className="f3 athelas mt0 lh-title link blue underline-hover">
                                 {fm.title}
                             </h2>
-                            <p className="f5 lh-copy athelas"
+                            <p className="f6 lh-copy athelas"
                                 dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
                             <p className="f7 lh-copy gray mv0">
                                 By <span className="ttu">{fm.author}</span>
@@ -41,6 +43,10 @@ const Thumbnail = ({ thumbnail }) =>
     thumbnail && <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
         <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
     </div>
+
+const description = `These are (so far) notes about recent changes to the
+example projects, and how they relate to steps you may want to take with your
+projects. They're meant as discussion starters, not comprehensive guides.`
 
 export const postsQuery = graphql`
 query postsQuery {
