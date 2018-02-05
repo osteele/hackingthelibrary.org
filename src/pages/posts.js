@@ -51,7 +51,8 @@ const Thumbnail = ({ thumbnail }) =>
 
 const description = `These are (so far) notes about recent changes to the
 example projects, and how they relate to steps you may want to take with your
-projects. They're meant as discussion starters, not comprehensive guides.`
+projects. Thesey're meant to let you know about an area that you can ask me
+about or look up further, not as comprehensive guides.`
 
 export const postsQuery = graphql`
 query postsQuery {
