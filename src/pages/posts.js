@@ -1,4 +1,4 @@
-import Helmet from 'react-helmet'
+import HeadTitle from '../components/HeadTitle';
 import Img from "gatsby-image"
 import Link from 'gatsby-link'
 import React from 'react'
@@ -13,9 +13,7 @@ export default ({ data }) => {
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
     return <section className="mw7 center">
-        <Helmet>
-            <meta name="description" content={description} />
-        </Helmet>
+        <HeadTitle site={data.site} title="Essays" description={description} />
         <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
         <p className="f7 i">{description}</p>
         {posts.map(({ frontmatter: fm, id, excerpt }) =>
@@ -56,6 +54,11 @@ about or look up further, not as comprehensive guides.`
 
 export const postsQuery = graphql`
 query postsQuery {
+    site {
+        siteMetadata {
+            title
+        }
+    }
     allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "posts"}}}) {
       edges {
         node {

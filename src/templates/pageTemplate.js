@@ -1,16 +1,14 @@
-import Helmet from 'react-helmet'
+import HeadTitle from '../components/HeadTitle';
 import Img from "gatsby-image";
 import React from "react";
 
 export default ({ data }) => {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
+  const { markdownRemark } = data;
   const { frontmatter: fm, html, excerpt } = markdownRemark;
 
   return (
     <article className="page">
-      <Helmet>
-        <meta name="description" content={fm.description || excerpt} />
-      </Helmet>
+      <HeadTitle site={data.site} title={fm.title} description={fm.description || excerpt} />
 
       {fm.google_doc == null &&
         <div className=" mw7 center ph2 ph3-ns">
@@ -41,6 +39,11 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
   query pageQuery($path: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt

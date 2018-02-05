@@ -1,30 +1,33 @@
-import Helmet from 'react-helmet'
+import HeadTitle from '../components/HeadTitle';
 import Link from 'gatsby-link'
 import React from 'react'
 import moment from 'moment'
 
 export default ({ data }) => {
-    let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node);
+  let posts = data.allMarkdownRemark.edges
+    .map(({ node }) => node);
 
-    return <div className="ph2 ph3-ns mw7 center">
-        <Helmet>
-            <meta name="description" content="Class handouts, many of which are actually Google docs." />
-        </Helmet>
-        <article className="page">
-            <h1 className="f2 f1-ns mb2 mb3-ns black b">Handouts</h1>
-            {posts.map(({ frontmatter: fm, id }) =>
-                <div key={id}>
-                    <Link style={{ boxShadow: 'none' }} to={fm.path}>
-                        {moment(fm.date).utc().format('ddd, M/D')} — {fm.title}
-                    </Link>
-                </div>)}
-        </article>
-    </div>
+  return <div className="ph2 ph3-ns mw7 center">
+    <HeadTitle site={data.site} title="Handouts" description="Class handouts, many of which are actually Google docs." />
+    <article className="page">
+      <h1 className="f2 f1-ns mb2 mb3-ns black b">Handouts</h1>
+      {posts.map(({ frontmatter: fm, id }) =>
+        <div key={id}>
+          <Link style={{ boxShadow: 'none' }} to={fm.path}>
+            {moment(fm.date).utc().format('ddd, M/D')} — {fm.title}
+          </Link>
+        </div>)}
+    </article>
+  </div>
 }
 
 export const handoutsQuery = graphql`
 query handoutsQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "handouts"}}}) {
       edges {
         node {
