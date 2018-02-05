@@ -1,8 +1,8 @@
 import './css/reset.css'
 import './css/tachyons.css'
-import 'prismjs/themes/prism.css'
-import './main.scss'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
+import 'prismjs/themes/prism-twilight.css'
+import './main.scss'
 import './css/custom.css'
 import './css/site.scss'
 
