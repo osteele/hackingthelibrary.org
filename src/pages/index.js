@@ -1,5 +1,6 @@
 import Link from 'gatsby-link'
 import React from 'react'
+import deadline from './img/time-481444_1920.jpg' // https://pixabay.com/en/time-levy-deadline-hand-leave-pen-481444/
 import moment from 'moment'
 
 export default ({ data }) => {
@@ -7,17 +8,20 @@ export default ({ data }) => {
     .map(({ node }) => node)
     .filter(({ frontmatter: fm }) => fm.path.match(/\/assignments\/./))
 
-  return <div className="ph2 ph3-ns mw8 center">
-    <article className="page">
-      {assignments.slice(0, 1).map(({ frontmatter: fm, id, html }) =>
-        <div key={id}>
-          <h1 className="f2 f1-ns mb2 mb3-ns black b">
-            {moment(fm.date).add(12, 'hours').format('ddd M/D')}
-          </h1>
-          <section className="cf mw8 center ph2 ph3-ns mb5-ns mb3">
-            <div dangerouslySetInnerHTML={{ __html: html }} />
-          </section>
-        </div>)}
+  return <div className="ph2 ph3-ns mw8 mt3 center">
+    <article className="page center mw7">
+      <img className="fl w-30 pt2 pr3" src={deadline} />
+      <div className="fl w-70 ba">
+        {assignments.slice(0, 1).map(({ frontmatter: fm, id, html }) =>
+          <div key={id}>
+            <section className="ph3-ns mb5-ns ma0">
+              <h1 className="f1-ns mb3-ns ma0">
+                {moment(fm.date).add(12, 'hours').format('ddd M/D')}
+              </h1>
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+            </section>
+          </div>)}
+      </div>
     </article>
   </div>
 }
