@@ -38,5 +38,6 @@ module.exports = {
     `gatsby-plugin-nprogress`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 };
