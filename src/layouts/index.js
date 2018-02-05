@@ -1,5 +1,6 @@
 import './css/reset.css'
 import './css/tachyons.css'
+import 'prismjs/themes/prism.css'
 import './main.scss'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import './css/custom.css'
