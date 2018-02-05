@@ -1,6 +1,7 @@
 ---
 title: Policies
 path: /policies
+description: Course policies.
 ---
 
 ## Course Expectations

@@ -1,6 +1,7 @@
 ---
 title: Colophon
 path: /colophon
+description: Little lamb, who made thee?
 ---
 
 This site is built with [Gatsby](https://www.gatsbyjs.org). Gatsby uses

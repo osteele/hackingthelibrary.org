@@ -1,3 +1,4 @@
+import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import React from 'react'
 import moment from 'moment'
@@ -7,6 +8,9 @@ export default ({ data }) => {
         .map(({ node }) => node);
 
     return <div className="ph2 ph3-ns mw7 center">
+        <Helmet>
+            <meta name="description" content="Class handouts, many of which are actually Google docs." />
+        </Helmet>
         <article className="page">
             <h1 className="f2 f1-ns mb2 mb3-ns black b">Handouts</h1>
             {posts.map(({ frontmatter: fm, id }) =>
