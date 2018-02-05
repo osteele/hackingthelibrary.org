@@ -29,8 +29,8 @@ export default ({ data }) => {
       <section className="mw7 center cf ph2 ph3-ns mb5-ns mb3">
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
-        {fm.google_doc
-          && <a href={fm.embed_doc}>View in Google Docs</a>}
+        {(fm.google_doc || fm.embed_doc)
+          && <a href={fm.google_doc || fm.embed_doc}>View in Google Docs</a>}
         {fm.embed_doc && <iframe src={fm.embed_doc}></iframe>}
       </section>
     </article>
