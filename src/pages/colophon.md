@@ -14,3 +14,8 @@ It also uses these components:
 
 The site uses the Tachyons theme and additional styling from the
 [Olin Library web site](https://github.com/olinlibrary/library-website).
+
+The deadline image is from <https://pixabay.com/en/time-levy-deadline-hand-leave-pen-481444/>.
+Essay thumbnail images are credited in the frontmatter of their respective
+source pages; these credits used to be displayed in the presentation but this
+functionality is currently broken.

@@ -1,17 +1,16 @@
 import Link from 'gatsby-link'
 import React from 'react'
-import deadline from './img/time-481444_1920.jpg' // https://pixabay.com/en/time-levy-deadline-hand-leave-pen-481444/
 import moment from 'moment'
 
 export default ({ data }) => {
-  const assignments = data.allMarkdownRemark.edges
+  const now = moment().startOf('day');
+  let assignments = data.allMarkdownRemark.edges
     .map(({ node }) => node)
-    .filter(({ frontmatter: fm }) =>
-      moment(fm.date).utc().endOf('day').isAfter(moment().startOf('day')));
+    .filter(({ frontmatter: fm }) => moment(fm.date).utc().endOf('day').isAfter(now));
 
   return <div className="ph2 ph3-ns mw8 mt3 center">
     <article className="page center mw7">
-      <img className="fl w-30 pt2 pr3" src={deadline} />
+      <img className="fl w-30 pt2 pr3" src={data.deadlineImage.responsiveSizes.src} />
       <div className="fl w-70">
         {assignments.map(({ frontmatter: fm, id, html }) =>
           <div key={id} className="ba mb4">
@@ -27,9 +26,19 @@ export default ({ data }) => {
   </div>
 }
 
+
 export const indexPageQuery = graphql`
 query indexPageQuery {
-  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, , filter: {fields: {collection: {eq: "assignments"}}}) {
+  deadlineImage: imageSharp(id: { regex: "/time-481444_1920/" }) {
+    responsiveSizes {
+      aspectRatio
+      base64
+      src
+      srcSet
+      sizes
+    }
+  }
+  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "assignments"}}}) {
     edges {
       node {
         id
