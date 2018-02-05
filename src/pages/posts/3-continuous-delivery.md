@@ -42,7 +42,7 @@ automated testing":
 CD server pulls from the repo instead of being pushed from the CI server; and
 where there's more than one deployment environment.\]
 
-## Twilio MQTT Gateway: Unit Tests
+## Twilio → MQTT Gateway: Unit Tests
 
 In yesterday's post, we configured Bear-as-a-Service for CI by (1) adding unit
 tests, and (2) connecting the repository to a CI server (Travis). The first step
@@ -53,8 +53,8 @@ that we wrote. The second step involved adding a configuration file to the repo,
 and using the Travis web dashboard to tell Travis about the repo.
 
 Bear-as-a-Service doesn't have a component that runs in the cloud (this
-functionality was moved to the Twilio MQTT Gateway). So today we'll be using
-Twilio MQTT Gateway for Continuous Delivery. The first step is to add Continuous
+functionality was moved to the Twilio → MQTT Gateway). So today we'll be using
+Twilio → MQTT Gateway for Continuous Delivery. The first step is to add Continuous
 Integration to the Gateway. And the first step of *that* is to add unit tests.
 
 [Commit #`d2057f5`](https://github.com/olin-build/twilio-mqtt-gateway/commit/d2057f51f88589e36136f4dfc689084bc2bf1253) adds unit testing to the Twilio MQTT
@@ -80,7 +80,7 @@ own test instructions or utilities.
 [^3]: To make, if not — because of where I am on the learning curve for these particular
       tools and packages — to discover.
 
-## Twilio MQTT Gateway: Continuous Integration
+## Twilio → MQTT Gateway: Continuous Integration
 
 Once unit testing was set up, configuring Travis to run the repo was
 straightforward. [Commit #`e4aaf04`](https://github.com/olin-build/twilio-mqtt-gateway/commit/e4aaf043614ee60832cff1827f5a299e44af7adc) implements this configuration.
@@ -89,7 +89,7 @@ straightforward. [Commit #`e4aaf04`](https://github.com/olin-build/twilio-mqtt-g
 
 You can see the Travis build page [here](https://travis-ci.org/olin-build/twilio-mqtt-gateway).
 
-## Twilio MQTT Gateway: Continuous Delivery
+## Twilio → MQTT Gateway: Continuous Delivery
 
 Finally, we set Travis to push successful builds to Heroku. This final step just applies [Travis's Heroku deployment instructions](https://docs.travis-ci.com/user/deployment/heroku/).
 

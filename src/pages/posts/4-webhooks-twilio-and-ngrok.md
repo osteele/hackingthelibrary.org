@@ -13,8 +13,8 @@ has come up a couple of times in passing:
 
 * Travis uses a [GitHub webhook](https://developer.github.com/webhooks/), in
   order to learn when a new commit is pushed to a repository.
-* Our own Twilio MQTT Gateway uses a webhook, to learn when a Twilio phone
-  number receives an SMS.
+* The [Twilio → MQTT Gateway](https://github.com/olin-build/twilio-mqtt-gateway)
+  uses a webhook to learn when a Twilio phone number receives an SMS.
 
 Webhooks are a means of communication between multiple processes, generally
 running on different machines (or "nodes").[^1]
@@ -57,10 +57,10 @@ number, = client.incoming_phone_numbers \
 number.update(sms_url="https://twilio-gateway.herokuapp.com/sms_callback")
 ```
 
-The next section will replace step #2 with something that is more efficient
+The next section replaces step #2 with something that is more efficient
 during development.
 
-## Pro Tip: Using ngrok to avoid deployment
+## Pro Tip: Using `ngrok` to avoid deployment
 
 The edit/deploy-to-web/test cycle, that's required to test a webhook using steps
 (1-2) above, is slow. It's generally faster to do as much on your development
@@ -78,7 +78,7 @@ you deploy it.
 for a reserved subdomain). It's therefore handy to script setting the webhook
 callback URL; for example, using the Twilio code above.
 
-## Pro Tip: Using curl and httpie to call your webhook directly
+## Pro Tip: Using `curl` and `httpie` to call your webhook directly
 
 The [`curl`](https://curl.haxx.se/) command line tool is useful for sending
 requests to your web server, so that you don't have to induce the service that
@@ -102,6 +102,8 @@ faster yet.
 * Twilio's ["Receive and reply to SMS messages in
   Python"](https://www.twilio.com/docs/guides/how-to-receive-and-reply-in-python)
   is a complete (and very short) Flask application that replies when texted.
+* The [Twilio → MQTT Gateway](https://github.com/olin-build/twilio-mqtt-gateway)
+  source code is not long.
 
 [^1]: Webhooks are an instance of the
     [publish/subscribe](http://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html)
