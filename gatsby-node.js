@@ -1,6 +1,7 @@
 const path = require('path');
+
 const { createFilePath } = require(`gatsby-source-filesystem`);
-const moment = require('moment')
+const moment = require('moment');
 
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -14,18 +15,18 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    let path = node.frontmatter.path;
+    const path = node.frontmatter.path;
     createPage({
-      path: path,
+      path,
       component: pageTemplate,
-      context: {}, // additional data can be passed via context
+      context: {}, // Additional data can be passed via context
     });
   });
 };
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
-  let { internal, fileAbsolutePath: absolutePath, frontmatter: fm } = node;
+  const { internal, fileAbsolutePath: absolutePath, frontmatter: fm } = node;
 
   if (internal.type === `MarkdownRemark`) {
     const relativePath = createFilePath({ node, getNode, basePath: `pages` });
@@ -39,21 +40,23 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
             `${moment(fm.date).format('MM-DD')}-${slugify(fm.title)}`)
           : relativePath;
     }
-    createNodeField({ node, name: `collection`, value: collection })
-    createNodeField({ node, name: `slug`, value: fm.path })
+    createNodeField({ node, name: `collection`, value: collection });
+    createNodeField({ node, name: `slug`, value: fm.path });
   }
 };
 
-const slugify = (s) =>
+const slugify = s =>
   s.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
 
 const replaceLastComponent = (path, slug) => {
-  let components = path.split('/');
+  const components = path.split('/');
   let index = components.length - 1;
-  if (components[index] === '') { index -= 1; }
+  if (components[index] === '') {
+    index -= 1;
+  }
   components[index] = slug;
-  return components.join('/')
-}
+  return components.join('/');
+};
 
 const nodeQuery = `
 {
@@ -76,4 +79,4 @@ const nodeQuery = `
     }
   }
 }
-`
+`;

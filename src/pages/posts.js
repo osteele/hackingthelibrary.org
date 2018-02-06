@@ -1,18 +1,18 @@
 import HeadTitle from '../components/HeadTitle';
-import Img from "gatsby-image"
-import Link from 'gatsby-link'
-import React from 'react'
-import moment from 'moment'
+import Img from 'gatsby-image';
+import Link from 'gatsby-link';
+import React from 'react';
+import moment from 'moment';
 
 export default ({ data }) => {
-    let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node)
-    if (process.env.NODE_ENV === 'production') {
-        posts = posts.filter(node => !node.frontmatter.draft)
-    }
+  let posts = data.allMarkdownRemark.edges
+        .map(({ node }) => node);
+  if (process.env.NODE_ENV === 'production') {
+    posts = posts.filter(node => !node.frontmatter.draft);
+  }
 
     // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
-    return <section className="mw7 center">
+  return <section className="mw7 center">
         <HeadTitle site={data.site} title="Essays" description={description} />
         <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
         <p className="f7 i">{description}</p>
@@ -37,20 +37,20 @@ export default ({ data }) => {
                     </div>
                 </Link>
             </article>)}
-    </section>
-}
+    </section>;
+};
 
 const Thumbnail = ({ thumbnail }) =>
     thumbnail && <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
         <img className="db w-50" src={thumbnail.childImageSharp.resolutions.src} />
-    </div>
+    </div>;
 
 // <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
 
 const description = `These are (so far) notes about recent changes to the
 example projects, and how they relate to steps you may want to take with your
 projects. These are meant to let you know about an area that you can ask me
-about or look up further, not as comprehensive guides.`
+about or look up further, not as comprehensive guides.`;
 
 export const postsQuery = graphql`
 query postsQuery {

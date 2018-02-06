@@ -1,7 +1,7 @@
-import Link from 'gatsby-link'
-import React from 'react'
-import config from '../../gatsby-config.js'
-import { links } from '../../data/header-links.js'
+import Link from 'gatsby-link';
+import React from 'react';
+import config from '../../gatsby-config.js';
+import { links } from '../../data/header-links.js';
 
 export default () => (
   <header className="mw7 center pa2 pa3-ns">
@@ -20,4 +20,4 @@ export default () => (
       </div>
     </nav>
   </header>
-)
+);

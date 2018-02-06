@@ -1,10 +1,10 @@
 import HeadTitle from '../components/HeadTitle';
-import Link from 'gatsby-link'
-import React from 'react'
-import moment from 'moment'
+import Link from 'gatsby-link';
+import React from 'react';
+import moment from 'moment';
 
 export default ({ data }) => {
-  let posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges
     .map(({ node }) => node);
 
   return <div className="ph2 ph3-ns mw7 center">
@@ -21,8 +21,8 @@ export default ({ data }) => {
           <p dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
         </section>)}
     </article>
-  </div>
-}
+  </div>;
+};
 
 export const handoutsQuery = graphql`
 query handoutsQuery {

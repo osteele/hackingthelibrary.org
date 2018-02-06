@@ -1,11 +1,11 @@
-import Link from 'gatsby-link'
-import React from 'react'
-import moment from 'moment'
+import Link from 'gatsby-link';
+import React from 'react';
+import moment from 'moment';
 
 const now = moment().startOf('day');
 
 export default ({ data }) => {
-  let assignments = data.allMarkdownRemark.edges
+  const assignments = data.allMarkdownRemark.edges
     .map(({ node }) => node)
     .filter(({ frontmatter: fm }) => moment(fm.date).utc().endOf('day').isAfter(now));
 
@@ -24,9 +24,8 @@ export default ({ data }) => {
           </div>)}
       </div>
     </article>
-  </div>
-}
-
+  </div>;
+};
 
 export const indexPageQuery = graphql`
 query indexPageQuery {

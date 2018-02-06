@@ -1,6 +1,6 @@
 import HeadTitle from '../components/HeadTitle';
-import Img from "gatsby-image";
-import React from "react";
+import Img from 'gatsby-image';
+import React from 'react';
 
 export default ({ data }) => {
   const { markdownRemark } = data;
@@ -35,7 +35,7 @@ export default ({ data }) => {
       </section>
     </article>
   );
-}
+};
 
 export const pageQuery = graphql`
   query pageQuery($path: String!) {
