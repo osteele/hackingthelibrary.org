@@ -34,6 +34,13 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/img/Hacking-L.png",
+        icons: {},
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-nprogress`,
