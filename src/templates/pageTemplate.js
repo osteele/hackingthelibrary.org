@@ -20,8 +20,8 @@ export default ({ data }) => {
       {fm.thumbnail &&
         <figure className="w5 fr">
           <Img sizes={fm.thumbnail.childImageSharp.sizes} />
-          {fm.thumbnail.source_url
-            && <figcaption className="i">
+          {fm.thumbnail.source_url &&
+            <figcaption className="i">
               Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a>
             </figcaption>}
         </figure>}
@@ -31,7 +31,7 @@ export default ({ data }) => {
 
         {(fm.google_doc || fm.embed_doc)
           && <a href={fm.google_doc || fm.embed_doc}>View in Google Docs</a>}
-        {fm.embed_doc && <iframe src={fm.embed_doc}></iframe>}
+        {fm.embed_doc && <iframe src={fm.embed_doc} />}
       </section>
     </article>
   );

@@ -9,7 +9,8 @@ export default () => (
       <h1 className="lh-solid f5 f4-ns">
         <Link className="link dim black b dib mr3" to="/" title="Home">
           {config.siteMetadata.title}<br />
-          {config.siteMetadata.subtitle}</Link>
+          {config.siteMetadata.subtitle}
+        </Link>
       </h1>
       <div className="">
         <Link className="link dim f6 dib mr3" to="/">Home</Link>

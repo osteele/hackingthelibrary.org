@@ -23,5 +23,5 @@ export default props => (
         step={60}
       />
     </div>
-  </div >
+  </div>
 );
