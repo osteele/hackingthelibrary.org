@@ -2,8 +2,9 @@ import Link from 'gatsby-link'
 import React from 'react'
 import moment from 'moment'
 
+const now = moment().startOf('day');
+
 export default ({ data }) => {
-  const now = moment().startOf('day');
   let assignments = data.allMarkdownRemark.edges
     .map(({ node }) => node)
     .filter(({ frontmatter: fm }) => moment(fm.date).utc().endOf('day').isAfter(now));
@@ -29,7 +30,7 @@ export default ({ data }) => {
 
 export const indexPageQuery = graphql`
 query indexPageQuery {
-  deadlineImage: imageSharp(id: { regex: "/time-481444_1920/" }) {
+  deadlineImage: imageSharp(id: { regex: "/\/img\/time-481444_1920\\./" }) {
     responsiveSizes {
       aspectRatio
       base64

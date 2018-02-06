@@ -2,8 +2,8 @@ backend:
   name: github
   repo: olinlibrary/htl18.web
 
-media_folder: static/assets
-public_folder: /assets
+media_folder: src/pages/img
+public_folder: /img
 
 collections:
   - name: page
@@ -19,8 +19,9 @@ collections:
     label: Assignment
     folder: src/pages/assignments
     create: true
+    slug: "{{month}}-{{day}}-{{slug}}"
     fields:
-      - { name: title, label: Title, pattern: ["Day \\d+", "Must be 'Day n'"] }
+      - { name: title, label: Title }
       - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
       - { name: body, label: Body, widget: markdown }
 
@@ -28,9 +29,10 @@ collections:
     label: Essay
     folder: src/pages/posts
     create: true
+    slug: "{{month}}-{{day}}-{{slug}}"
     fields:
       - { name: title, label: Title }
-      - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
       - { name: author, label: Author, widget: string }
-      - { name: description, label: Description, widget: text }
+      - { name: date, label: Date, widget: date, format: "YYYY-MM-DD" }
+      - { name: description, label: Description, widget: text, required: false }
       - { name: body, label: Body, widget: markdown }
