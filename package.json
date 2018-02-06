@@ -6,6 +6,8 @@
   "homepage": "https://hackingthelibrary.org",
   "repository": "github:olinlibrary/htl18.org",
   "dependencies": {
+    "eslint-config-xo-react": "^0.16.0",
+    "eslint-plugin-react": "^7.6.1",
     "gatsby": "^1.9.158",
     "gatsby-image": "^1.0.34",
     "gatsby-link": "^1.6.34",
@@ -43,6 +45,7 @@
     "xo": "^0.18.2"
   },
   "xo": {
+    "extends": "xo-react",
     "space": true,
     "globals": [
       "graphql"
@@ -62,7 +65,15 @@
       ],
       "import/no-extraneous-dependencies": "off",
       "import/order": "off",
-      "no-unused-vars": "off",
+      "react/no-danger": "off",
+      "react/prop-types": "off",
+      "react/require-default-props": "off",
+      "react/jsx-tag-spacing": [
+        "warn",
+        {
+          "beforeSelfClosing": "always"
+        }
+      ],
       "no-use-before-define": "off",
       "operator-linebreak": "off",
       "unicorn/filename-case": "off"
@@ -72,6 +83,12 @@
         "files": "src/pages/calendar.js",
         "rules": {
           "import/extensions": "off"
+        }
+      },
+      {
+        "files": "src/components/Header.js",
+        "rules": {
+          "react/no-array-index-key": "off"
         }
       },
       {
