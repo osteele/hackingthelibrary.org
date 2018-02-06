@@ -10,7 +10,7 @@ export default ({ data }) => {
     <article className="page">
       <HeadTitle site={data.site} title={fm.title} description={fm.description || excerpt} />
 
-      {fm.google_doc == null &&
+      {fm.google_doc === null &&
         <div className=" mw7 center ph2 ph3-ns">
           <h1 className="f2 f1-ns mb2 mb3-ns black b">
             {fm.title}

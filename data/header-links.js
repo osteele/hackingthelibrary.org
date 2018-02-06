@@ -1,4 +1,4 @@
-export const links = [
+export default [
     ['Assignments', '/assignments'],
     ['Essays', '/posts'],
     ['Handouts', '/handouts'],

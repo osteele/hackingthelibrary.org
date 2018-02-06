@@ -26,7 +26,7 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
-  const { internal, fileAbsolutePath: absolutePath, frontmatter: fm } = node;
+  const { internal, frontmatter: fm } = node;
 
   if (internal.type === `MarkdownRemark`) {
     const relativePath = createFilePath({ node, getNode, basePath: `pages` });
@@ -66,7 +66,6 @@ const nodeQuery = `
   ) {
     edges {
       node {
-        fileAbsolutePath
         frontmatter {
           path
           author

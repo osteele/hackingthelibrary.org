@@ -10,7 +10,7 @@ import Header from '../components/Header';
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
-import config from '../../gatsby-config.js';
+import config from '../../gatsby-config';
 
 const TemplateWrapper = ({ children }) => (
   <div className="sans-serif">

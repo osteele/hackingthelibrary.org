@@ -1,5 +1,4 @@
 import HeadTitle from '../components/HeadTitle';
-import Img from 'gatsby-image';
 import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
