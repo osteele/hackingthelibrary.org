@@ -45,22 +45,24 @@
     "xo": "^0.18.2"
   },
   "xo": {
-    "extends": "xo-react",
-    "space": true,
+    "extends": [
+      "xo-react"
+    ],
+    "space": 2,
     "globals": [
       "graphql"
     ],
     "rules": {
       "arrow-parens": [
-        "warn",
+        "error",
         "as-needed"
       ],
       "object-curly-spacing": [
-        "warn",
+        "error",
         "always"
       ],
       "comma-dangle": [
-        "warn",
+        "error",
         "always-multiline"
       ],
       "import/no-extraneous-dependencies": "off",
@@ -69,7 +71,7 @@
       "react/prop-types": "off",
       "react/require-default-props": "off",
       "react/jsx-tag-spacing": [
-        "warn",
+        "error",
         {
           "beforeSelfClosing": "always"
         }
