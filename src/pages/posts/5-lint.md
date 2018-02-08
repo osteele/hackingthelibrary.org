@@ -73,7 +73,9 @@ If we had to fix 47 violations before we could start running the linter on a con
 
 ## Adding plugins
 
-Flake8 itself implements a baseline of style checks. Flake8 is also a *framework* for running static code checkers, which are implemented as Python packages, and called [plugins](http://flake8.pycqa.org/en/latest/user/using-plugins.html). [Commit #`e57c7d7`](https://github.com/olinlibrary/bear-as-a-service/commit/e57c7d7) adds a number of [flake8 *plugins*](https://pypi.python.org/pypi/flake8-isort/2.3), by adding them to the requirements file and configuring them. These plugins perform additional checks — for suspicious constructs, security violations, and properly-formatted docstrings:
+Flake8 itself implements a baseline of style checks. Flake8 is also a *framework* for running static code checkers, which are implemented as Python packages, and called [plugins](http://flake8.pycqa.org/en/latest/user/using-plugins.html).
+
+[Commit #`e57c7d7`](https://github.com/olinlibrary/bear-as-a-service/commit/e57c7d7) adds a number of [flake8 *plugins*](https://pypi.python.org/pypi/flake8-isort/2.3), by adding them to the requirements file and configuring them. These plugins perform additional checks — for suspicious constructs, security violations, and properly-formatted docstrings:
 
 | Package               | Description                              |
 | --------------------- | ---------------------------------------- |
@@ -84,6 +86,13 @@ Flake8 itself implements a baseline of style checks. Flake8 is also a *framework
 | flake8-docstrings     | doc string format                        |
 | flake8-comprehensions | recommend list/dict/set comprehensions   |
 | flake8-mock           | mock methods that don't look like they'd assert but don't |
+
+If you're following along in your own project, you'll need to *either*:
+
+* Install plugins via `pip3 install` from the command line, and then add the ones you keep to `requirements.txt`; or
+* Add plugins to `requirements.txt`, and then run `pip3 install -r requirements.txt` to install them in your local Python environment.
+
+\[Or, if you're using [Pipenv](https://docs.pipenv.org), it takes care of maintaining *its* requirements file (`Pipenv`) and your set of locally installed packages together. None of the instructions in this class refers to Pipenv, because I haven't had a chance to use it yet.\]
 
 ## Sorting imports
 
@@ -187,7 +196,7 @@ The web site uses the React framework, which has its own style guide and linter.
 * [Commit #`79d321f`](https://github.com/olinlibrary/htl18.org/commit/79d321f) adds [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react).
 * [Commit #`036f55e`](https://github.com/olinlibrary/htl18.org/commit/036f55e) fixes issues that `eslint-config-xo-react` reveals.
 
-## Alternatives to `flake8`
+##  `flake8` alternatives
 
 Flake8 is one of many Python linters. I selected it because of its extensibility, and because I've had issues installing the leading Python linter, [pylint](https://www.pylint.org/).
 
@@ -206,6 +215,6 @@ As well as a number of linters, there's even a number of linter *comparisons*:
 
 Many of these comparisons also include [mypy](http://mypy-lang.org/), which is a static type checker. I place this in a different category, and we'll get to type checking later.
 
-[^1]: Python has a number of near-standard linters. Other languages some fewer; some have only one. More on that in the section “Alternatives to `flake8`”.
+[^1]: Python has a number of near-standard linters. Other languages some fewer; some have only one. More on that in the section “ `flake8` alternatives”.
 [^2]: The Twilio MQTT Gateway repo distinguishes between `requirements.txt`, which lists only those packages necessary to *run* the code, and `requirements-dev.txt`, which also lists those packages required to *develop* the code. If we used that distinction here, we'd put `flake8` in `requirements-dev.txt`, not `requirements.txt`.
 
