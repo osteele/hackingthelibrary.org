@@ -17,15 +17,6 @@ export default ({ data }) => {
           </h1>
         </div>}
 
-      {fm.thumbnail &&
-        <figure className="w5 fr">
-          <Img sizes={fm.thumbnail.childImageSharp.sizes} />
-          {fm.thumbnail.source_url &&
-            <figcaption className="i">
-              Image source: <a href={fm.thumbnail.source_url}>{fm.thumbnail.source || fm.thumbnail.source_url}</a>
-            </figcaption>}
-        </figure>}
-
       <section className="mw7 center cf ph2 ph3-ns mb5-ns mb3">
         <div dangerouslySetInnerHTML={{ __html: html }} />
 
@@ -53,13 +44,6 @@ export const pageQuery = graphql`
         description
         google_doc
         embed_doc
-        thumbnail {
-          childImageSharp {
-            sizes {
-              ...GatsbyImageSharpSizes_noBase64
-            }
-          }
-        }
       }
     }
   }
