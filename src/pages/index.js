@@ -9,10 +9,16 @@ export default ({ data }) => {
     .filter(({ frontmatter: fm }) => moment(fm.date).utc().endOf('day').isAfter(now));
 
   return (
-    <div className="ph2 ph3-ns mw8 mt3 center">
+    <div className="ph2 ph3-ns mw9 mt3 center">
       <article className="page center mw7">
-        <img className="fl w-30 pt2 pr3" src={data.deadlineImage.responsiveSizes.src} />
-        <div className="fl w-70">
+        <div className="fl w-40 pt2 pr3 bg-white">
+          <img src={data.deadlineImage.responsiveSizes.src} />
+          <blockquote className="athelas ml0 mt0 black-90">
+            <p className="f5 f4-m f3-l">I love deadlines. I love the whooshing noise they make as they go by.</p>
+            <cite className="f6 ttu tracked fs-normal">—Douglas Adams</cite>
+          </blockquote>
+        </div>
+        <div className="fl w-60">
           {assignments.map(({ frontmatter: fm, id, html }) => (
             <div key={id} className="ba mb4">
               <section className="ph3-ns mb5-ns ma0">
@@ -22,7 +28,7 @@ export default ({ data }) => {
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </section>
             </div>
-))}
+          ))}
         </div>
       </article>
     </div>

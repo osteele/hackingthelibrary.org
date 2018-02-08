@@ -108,14 +108,13 @@ article.page {
     }
     dfn {
         font-weight: bold;
-    }
-    blockquote {
-        margin: 0 1.5em 1.5em 1.5em;
-        @extend .bl,
-        .b--moon-gray,
-        .pl3,
-        .bg-washed-blue;
-    }
+    } // blockquote {
+    // margin: 0 1.5em 1.5em 1.5em;
+    // @extend .bl,
+    // .b--moon-gray,
+    // .pl3,
+    // .bg-washed-blue;
+    // }
     code {
         @extend //.db,
         // .f6,
