@@ -2,7 +2,7 @@
 title: Linting Your Code
 author: Oliver
 date: 2018-02-08 09:00:00
-description: A linter is a code quality tool that examines your source against style guides, and looks for patterns associated with maintenance issues and outright bugs.
+description: A linter is a code quality tool that examines your source against style guides, and looks for patterns associated with maintenance issues and outright bugs. This post applies a linter to Bear-as-a-Service, Twilio → MQTT Gateway, Skillz, and the course website itself.
 thumbnail: ./img/Lint_770f5b_228401.jpg
 thumbnail_source_url: https://funnyjunk.com/funny_pictures/146095/Lint/
 ---
@@ -47,20 +47,20 @@ Adding `flake8` to the requirements file also ensures that it's available on the
 ./mqtt_json/mqtt_config.py:32:1: E305 expected 2 blank lines after class or function definition, found 1
 ```
 
-Each line consists of a source location, an error code (`D100`), and an error description. The location and description allow you to find and fix the actual violation; the error code is useful in order to ignore it, as we'll see next.
+Each line consists of a source location, an error code (`D100`), and an error description. The location and description allow you to *find and fix* the violation. The error code is useful in order to *ignore* it, as we'll see next.
 
 ## Configuring the linter
 
-If we had to fix 47 violations before we could start running the linter on a continuous basis — or, if running it reported so many errors that new violations got lost in the noise — adopting a linter wouldn't provide much bang for the buck. We want to *ignore* some violations — some for now, some forever.
+If we had to fix 47 violations before we could start running the linter on a continuous basis — or, if running it reported so many errors that new violations got lost in the noise — then adopting a linter wouldn't provide much bang for the buck. We want to *ignore* some violations — some for now, some forever.
 
 [There's two ways to ignore an violation](http://flake8.pycqa.org/en/latest/user/violations.html) (that we'll cover), and three reasons to do so.
 
-Ignoring violations:
+*How* to ignore:
 
 * An whole class of violations can be *completely ignored*, from all files, by adding its code to a `setup.cfg` file. [Commit #`303c296`](https://github.com/olinlibrary/bear-as-a-service/commit/303c296) implements this.
 * A particular violation can be ignored by placing a special comment, for example `#noqa: E402 `, on the line that causes the violation. [Commit #`b3f1b3b`](https://github.com/olinlibrary/bear-as-a-service/commit/b3f1b3b) has examples of this.
 
-Reasons to ignore a violation:
+*Why* to ignore:
 
 * *We aren't ready to fix it*. Running a code quality tool with some error checking turned off is still better than not running one at all. An example in `setup.cfg` is the ignore for `D100` “Missing docstring in public module”. I was already thinking I should at least add a module comment to each file; `flake8` reminds me that I haven't done so.
 * *We disagree with the recommendation*. I personally prefer self-documenting code (well-designed code with well-chosen names) to comments and doc-strings; I don't believe in documenting every class and function; hence, `ignore=D012` “Missing docstring in public method”[^2].
@@ -134,16 +134,29 @@ Import sorters:
 
 Many other languages have similar formatters and import managers, that run on the command line or with editor integration.
 
-## Examples with other projects
+## CI Integration
+
+In addition to running your test suite, a Continuous Integration server can run your linter (and, later, other code quality tools).
+
+This has the advantage that even if you forgot to do so, someone is keeping an eye on your code quality (at least the aspects that tooling can measure), and will alert you if it degrades.
+
+If your CI server is integrated with Github, it can also automatically run against branches and pull requests, and label the pull request as to whether it maintains whatever coding standards are codified in your linter configuration.
+
+[Commit #`730c1be`](https://github.com/olinlibrary/bear-as-a-service/commit/730c1be) configured Travis to run `flake8`. This is *almost* as simple as adding `flake8 .` to the `script` section of the file, but…
+
+When I tried this, I got an error ([here](https://travis-ci.org/olinlibrary/bear-as-a-service/builds/339071703)). Searching for the error messages revealed [this discussion](https://github.com/gforcada/flake8-isort/issues/27). I disagree with `flake8-isort`'s design here, but in interest of just getting it working: [commit #`79194f3`](https://github.com/olinlibrary/bear-as-a-service/commit/79194f3) fixes the issue, by adding an empty `[isort]` section to the configuration file.
+
+## Other projects
+
+Here the same sequence of changes — adding a linter, fixing the revealed violations, integrating with CI — applied to the other model projects.
 
 ### Twilio → MQTT Gateway
 
-Here's the same sequence of changes, applied to the Twilio → MQTT Gateway:
-
-* [Commit #`54a4d03`](https://github.com/olin-build/twilio-mqtt-gateway/commit/54a4d03)  `flake8` and my preferred plugin set, configures them, and fixes revealed issues in the source code.
-* [Commit #`76c6e46`](https://github.com/olin-build/twilio-mqtt-gateway/commit/76c6e46)  adds `flake8-isort` and updates the `import` order in the sources.
-* [Commit #`446327c`](https://github.com/olin-build/twilio-mqtt-gateway/commit/446327c)  updates the CI server (Travis) to run `flake8` as part of integration testing.
-* [Commit #`17e39da`](https://github.com/olin-build/twilio-mqtt-gateway/commit/17e39da)  updates the README to describe `pytest` and `flake8` as part of the development flow. I left this out earlier.
+* [Commit #`54a4d03`](https://github.com/olin-build/twilio-mqtt-gateway/commit/54a4d03)  adds `flake8` and my preferred plugin set, configures them, and ignores or fixes revealed violations.
+* [Commit #`76c6e46`](https://github.com/olin-build/twilio-mqtt-gateway/commit/76c6e46) adds `flake8-isort` and updates the `import` order in the sources.
+* [Commit #`446327c`](https://github.com/olin-build/twilio-mqtt-gateway/commit/446327c) updates the CI server (Travis) to run `flake8` as part of integration testing.
+* [Commit #`17e39da`](https://github.com/olin-build/twilio-mqtt-gateway/commit/17e39da) updates the README to describe `pytest` and `flake8` as part of the development flow.
+* Finally, remember that issue with `flake8-isort` and Travis? [Commit #`49b646c`](https://github.com/olin-build/twilio-mqtt-gateway/commit/49b646c) fixes that issue here. It also modifies the Travis configuration file to require `requirements-dev.txt` instead of `requirements.txt`. This wasn't necessary before, because Travis automatically install `pytest`. And it wasn't necessary in Bear-as-a-Service, because that project had a single requirements file. It's necessary here, in order to tell Travis to install `flake8` and its plugins (and whatever development tools we add later, that it doesn't automatically add).
 
 ### Skillz
 
@@ -166,17 +179,15 @@ Finally, [Commit #`7a1a9a4`](https://github.com/olin-build/skillz/commit/7a1a9a4
 
 [xo](https://github.com/sindresorhus/xo) is a wrapper for `eslint`, that comes with its own style guide and an alternate mechanism for configuration. [Commit #`5d52a29`](https://github.com/olinlibrary/htl18.org/commit/5d52a29) adds `xo` to the project and configures it.
 
-[Commit #`a82ae08`](https://github.com/olinlibrary/htl18.org/commit/a82ae08) applies `xo —fix` to fix those issues that can be fixed automatically.
-
-[Commit #`8e2fd68`](https://github.com/olinlibrary/htl18.org/commit/8e2fd68) fixes remaining issues.
+* [Commit #`a82ae08`](https://github.com/olinlibrary/htl18.org/commit/a82ae08) applies `xo —fix` to fix those issues that can be fixed automatically.
+* [Commit #`8e2fd68`](https://github.com/olinlibrary/htl18.org/commit/8e2fd68) fixes remaining issues.
 
 The web site uses the React framework, which has its own style guide and linter. (This is similar to what we saw earlier for testing, and is typical of large frameworks.)
 
-[Commit #`79d321f`](https://github.com/olinlibrary/htl18.org/commit/79d321f) adds [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react).
+* [Commit #`79d321f`](https://github.com/olinlibrary/htl18.org/commit/79d321f) adds [eslint-config-xo-react](https://github.com/sindresorhus/eslint-config-xo-react).
+* [Commit #`036f55e`](https://github.com/olinlibrary/htl18.org/commit/036f55e) fixes issues that `eslint-config-xo-react` reveals.
 
-[Commit #`036f55e`](https://github.com/olinlibrary/htl18.org/commit/036f55e) fixes issues that `eslint-config-xo-react` reveals.
-
-## Beyond Flake8
+## Alternatives to `flake8`
 
 Flake8 is one of many Python linters. I selected it because of its extensibility, and because I've had issues installing the leading Python linter, [pylint](https://www.pylint.org/).
 
@@ -194,3 +205,7 @@ As well as a number of linters, there's even a number of linter *comparisons*:
 * Slant: [Pylint vs. Flake8](https://www.slant.co/versus/12630/12632/~pylint_vs_flake8)
 
 Many of these comparisons also include [mypy](http://mypy-lang.org/), which is a static type checker. I place this in a different category, and we'll get to type checking later.
+
+[^1]: Python has a number of near-standard linters. Other languages some fewer; some have only one. More on that in the section “Alternatives to `flake8`”.
+[^2]: The Twilio MQTT Gateway repo distinguishes between `requirements.txt`, which lists only those packages necessary to *run* the code, and `requirements-dev.txt`, which also lists those packages required to *develop* the code. If we used that distinction here, we'd put `flake8` in `requirements-dev.txt`, not `requirements.txt`.
+
