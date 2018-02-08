@@ -5,7 +5,8 @@ const moment = require('moment');
 
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const pageTemplate = path.resolve(`src/templates/pageTemplate.js`);
+  const pageTemplate = path.resolve(`src/templates/page.js`);
+  const postTemplate = path.resolve(`src/templates/post.js`);
   const query = graphql(nodeQuery);
   const result = await query;
 
@@ -13,12 +14,16 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
     console.error(result.errors);
     return Promise.reject(result.errors);
   }
+  const baseAbsolutePath = path.join(__dirname, 'src', 'pages');
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const path = node.frontmatter.path;
+    const { path } = node.frontmatter;
+    const relativePath = node.fileAbsolutePath.slice(baseAbsolutePath.length);
+    const collection = relativePath.split('/')[1];  // FIXME path.sep
+    const component = { 'posts': postTemplate }[collection] || pageTemplate;
     createPage({
       path,
-      component: pageTemplate,
+      component,
       context: {}, // Additional data can be passed via context
     });
   });
@@ -66,13 +71,9 @@ const nodeQuery = `
   ) {
     edges {
       node {
+        fileAbsolutePath
         frontmatter {
           path
-          author
-          description
-          draft
-          google_doc
-          embed_doc
         }
       }
     }
