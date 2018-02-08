@@ -2,6 +2,7 @@
 title: Overview of Code Quality Tools
 author: Oliver
 date: 2018-02-08 08:00:00
+draft: true
 description: Code quality tools run in your editor, on the command line, or in the cloud.
 thumbnail: ./img/roses_are_red.jpg
 thumbnail_source: Mahdi Yusuf
