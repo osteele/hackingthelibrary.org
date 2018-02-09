@@ -30,15 +30,15 @@ In pseudo-math[^2]:
 
 ## Running the Coverage tool
 
-We will use the Coverage tool. [pytest-cov](https://pypi.python.org/pypi/pytest-cov) integrates this with pytest.
+We will use the Ned Batchelder's [Coverage.py](https://coverage.readthedocs.io/en/coverage-4.5/) to measure test coverage. Since we've been using the [`pytest` framework](https://docs.pytest.org/en/latest/), we'll use [pytest-cov](https://pypi.python.org/pypi/pytest-cov) to integrate Coverage.py with `pytest`.
 
-First, install them:
+First, install the `coverage` and `pytest-cov`:
 
 ```bash
 $ pip3 install coverage pytest-cov
 ```
 
-Now run `pytest` with the `—-cov` option, to enable test coverage:
+Now run `pytest` with the `—-cov` option, to print a code coverage report to the terminal:
 
 ```bash
 $ pytest --cov=.
@@ -66,17 +66,17 @@ TOTAL                                  128     25    80%
 
 ```
 
-This reports the number of statements, per file, that the test suite[^4]  invokes.
+This reports the number of statements, per file, that our existing test suite[^4]  invokes.
 
 You could add  `--cov-report term-missing` in order to see the line numbers of uncovered statements, next each file. See the [pytest-cov](https://pypi.python.org/pypi/pytest-cov) for more on this.
 
-We're going to go down a different route: creating an HTML file that displays the source code, annotated with coverage information:
+Instead, we're going to take a different path. The `—cov-report` option creates a set of HTML files, that present the source code annotated with coverage information.
 
 ```bash
 $ pytest --cov=. --cov-report html:coverage
 ```
 
-This places a report in the `coverage` subdirectory of the current directory. (That's the `coverage` in the `html:coverage` argument.) Open `./coverage/index.html` in a browser[^5]. It looks like this:
+This command creates a report in the `coverage` subdirectory of the current directory. (The `coverage` path, after the colon in `html:coverage` argument, specifies this.) Open `./coverage/index.html` in a browser[^5]. It looks like this:
 
 ![](./img/coverage-1.png)
 
@@ -126,7 +126,7 @@ We could also ignore the exception clause, although I don't recommend it. Add an
 
 ## Branch Coverage
 
-Did you read about [basic coverage critera](https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria), at the top of this post? What we've got now is statement coverage. The Coverage tool can be configured to record branch coverage as well. Add this to `setup.cfg`:
+Do you remember the [basic coverage critera](https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria) from the top of this post? What we've got now is statement coverage. The Coverage tool can be configured to record branch coverage as well. Add this to `setup.cfg`:
 
 ```ini
 [coverage:run]
