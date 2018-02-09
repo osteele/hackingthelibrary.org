@@ -21,6 +21,7 @@ module.exports = {
           `gatsby-plugin-sharp`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-smartypants`,
+          `gatsby-remark-katex`,
           {
             resolve: `gatsby-remark-images`,
             options: {
