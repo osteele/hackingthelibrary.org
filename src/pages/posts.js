@@ -15,7 +15,7 @@ export default ({ data }) => {
     <section className="mw7 center">
       <HeadTitle site={data.site} title="Posts" description={description} />
       <h2 className="f2 f1-ns mb2 mb3-ns black b">Posts</h2>
-      <p className="f7 i">{description}</p>
+      <p className="f7 i mb3">{description}</p>
       {posts.map(({ frontmatter: fm, id, excerpt }) => (
         <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
           <Link className="link black db" to={fm.path}>
@@ -51,10 +51,13 @@ const Thumbnail = ({ thumbnail }) =>
 // This doesn't work on Netlify:
 // <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
 
-const description = `These are (so far) notes about recent changes to the
-example projects, and how they relate to steps you may want to take with your
-projects. These are meant to let you know about an area that you can ask me
-about or look up further, not as comprehensive guides.`;
+const description = `These notes introduce software engineerng practices, and
+demonstrates their application to the example projects. They model steps you may
+want to take with your own projects, depending on your learning goals and
+practice areas. These notes are meant to inform you of the existence of topics,
+not as comprehensive guides to them. Follow the links, research them further,
+and/or ask me or the ninjas about them in class, by Slack, or during office
+hours.`;
 
 export const postsQuery = graphql`
 query postsQuery {
