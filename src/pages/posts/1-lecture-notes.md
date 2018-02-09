@@ -1,10 +1,9 @@
 ---
-title: Day 1
-category: lecture-note
+title: Day 1 Lecture Notes
+author: "Oliver & Jeff"
+date: 2018-01-25
+thumbnail: ./img/library-downstairs.jpg
 ---
-## Intro
-
-* [Oliver's slides](/files/lecture-notes/day-1-oliver.pdf)
 
 ## Engineering Topics
 
@@ -43,5 +42,3 @@ category: lecture-note
 * [Social Invention](https://www.innovation.cc/books/7_1_1+8_2_7social-inventions-isbn.pdf)
 * [Unconferences (based on Open Space Technology](https://en.wikipedia.org/wiki/Open_Space_Technology)
 * [Ex Libris, New York Public Library Documentary](http://www.zipporah.com/films/46)
-
-

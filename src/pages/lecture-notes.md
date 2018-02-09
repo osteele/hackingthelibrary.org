@@ -1,7 +1,9 @@
 ---
 path: /lecture-notes
 title: Lecture Notes
-description: Lectures notes. This includes slides.
-google_doc: https://docs.google.com/document/d/1sj7abIFVJpHEehSCFndmfpQYDxEEJaW9xM32KmYgKpo/edit#heading=h.b29bs66srg2w
-embed_doc: https://docs.google.com/document/d/e/2PACX-1vRKDV6LJmrNXzmIHWOdUmPMAEv_sU9vT5lU8fawVVsYtoN0EJK5AHuMy9rfY3Y9JIYY-HB3rilogmlL/pub?embedded=true
+description: Lectures notes and slides.
 ---
+
+Day 1 Lectures notes are in [this post](/posts/2018/01/24/day-1-lecture-notes/).
+
+Slide decks are in [this Google Drive folder](https://drive.google.com/drive/folders/15LAwfEWHyMxIJ9qom1TzqWsUH7nJ4PqF).
