@@ -38,7 +38,7 @@ First, install them:
 $ pip3 install coverage pytest-cov
 ```
 
-Now run `pytest` with the `—cov` option, to enable test coverage:
+Now run `pytest` with the `—-cov` option, to enable test coverage:
 
 ```bash
 $ pytest --cov=.
@@ -94,11 +94,15 @@ Takeways from this file:
 * The exception clause (`except socket.error`) isn't tested. This is typical. To make a robust proram I'd want to test this.
 * In fact, the exception clause doesn't look very well thought-out. Unlike the rest of the file, it prints directly to standard error instead of using the logger. And, continuing without subscriptions probably doesn't make sense here — it changes what should be a hard failure into a more subtle error, where things just don't work and you need to look back through the output to notice why. The function should throw an error instead (or just not catch this one). This issue — that the error case is underdesigned or absent — is also typical.
 
-## Configuring Coverage
+## Removing Clutter
 
-You may have noticed that the coverage tool reports the coverage of the test file itself. This is harmless, but annoying. It distracts from the code that's actually meant to be covered, and also gives misleading statistics, if you're tracking those.
+You may have noticed that the coverage tool reports the coverage of the test file itself.
 
-You can tell Coverage to ignore certain files, by adding a section to the project's  `setup.cfg`  file[⁶][⁷]. 
+This is harmless, but annoying. It distracts from the code that's actually meant to be covered, and also gives misleading statistics, if you're tracking those.
+
+If the only issues reported are the ones you care about, it's easier to tell what to focus on. And it's easier to tell when something turns red, than when a count increases by one.
+
+You can tell Coverage to ignore certain files by adding a section to the project's  `setup.cfg`  file[⁶][⁷]. 
 
 ```ini
 [coverage:report]
@@ -108,7 +112,7 @@ omit =
 
 Now `pytest --co=.` and `pytest --cov=. --cov-report html:coverage` will omit the file(s) in `./tests` from the coverage report. (Pytest still *runs* this file.)
 
-Similarly, maybe we don't care to test `logger.info` lines, and don't want them cluttering up our annotations and stats with false positives. (If the only issues reported are the ones you care about, it's easier to tell what to focus on. And it's easier to tell when something turns red, than when a count increases by one.) Add  `exclude_lines`  to the `[coverage:report]` section to ignore occurrences of `logger.info`.
+Similarly, maybe we don't care to test `logger.info` lines, and don't want them cluttering up our annotations and stats with false positives. Add  `exclude_lines`  to the `[coverage:report]` section to ignore occurrences of `logger.info`.
 
 ```ini
 [coverage:report]
@@ -132,6 +136,17 @@ branch = True
 Now your coverage reports will show per-branch coverage, with hover text that gives details.
 
 ![](./img/coverage-4.png)
+
+## Putting it all together
+
+[Commit #`c3e1a9a`](https://github.com/olinlibrary/bear-as-a-service/commit/c3e1a9a) adds test coverage to Bear-as-a-Service. It does these things:
+
+* Add `coverage` and `pytest-cov` to the requirements file.
+* Document them in the README.
+* [Optional] Add configuration information to `setup.cfg`.
+* Running the coverage tool as documented will place files in `./coverage`. These shouldn't be committed to the repo. Therefore, this commit also adds this directory to `.gitignore`.
+
+[Commit #`cbada69`](https://github.com/olinlibrary/bear-as-a-service/commit/cbada69) enables branch coverage.
 
 [^⁴]: Currently just the one file `tests/mqtt_json_test.py`.
 [^⁵]: On macOS, you can do this from the command line: `open ./coverage/index.html `. On Ubuntu, `firefox ./coverage/index.html` or `google-chrome ./coverage/index.html` may work.
