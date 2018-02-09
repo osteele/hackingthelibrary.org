@@ -21,9 +21,10 @@ running on different machines (or "nodes").[^1]
 
 In addition to receiving events from Github and Twilio, webhooks allow you to
 receive events from a number of other services. Examples include
-[Slack](https://api.slack.com/incoming-webhooks), [Facebook
-Messenger](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup),
+[Slack](https://api.slack.com/incoming-webhooks), [Facebook Messenger](https://developers.facebook.com/docs/messenger-platform/getting-started/webhook-setup),
 [IFTTT](https://ifttt.com/maker_webhooks), and [Zapier](https://zapier.com/).
+
+If you're familiar with web applications, you may know about HTTP requests. (If not, now's a good time to try the [web app toolbox](https://toolboxes.olin.build/).) Usually it's your browser that makes an HTTP request, when you type an URL into its address bar. Webhooks are an (ab?)use of that mechanism, to send data from one server to another. A webhook is just an HTTP POST to a route (path) on your web app, with data that depends on the service providing the webhook.
 
 ## Using a webhook
 
@@ -77,6 +78,8 @@ This doesn't work, because the Twilio servers can't make an inbound connection t
 
 ![](./img/ngrok-3.png)
 
+(Even if there weren't an explicit firewall, devices connected to an [*intranet*](https://en.wikipedia.org/wiki/Intranet) don't generally have addresses that work on the *internet*. This was originally a [technical limitation](https://en.wikipedia.org/wiki/IPv4_address_exhaustion), that people now count on for security. See also [NAT](https://en.wikipedia.org/wiki/Network_address_translation).)
+
 ## Using `ngrok` to avoid deploying between tests
 
 [ngrok](https://ngrok.com/) is a freemium service that makes a web server
@@ -87,6 +90,8 @@ the hostname that `ngrok` prints out. Now you can test the code *before*
 you deploy it.
 
 ![](./img/ngrok-4.png)
+
+This works because the (NAT part of the) firewall keeps devices on the internet from making a connection to your laptop, but it doesn't (generally) prevent your laptop from connecting to outside devices. Your laptop can open a connection to `ngrok`'s servers; once this connection is open, it can send information back to you. In this case, the server — which is on the open web, and which Twilio can therefore find — translates POSTs into messages that it sends to the `ngrok` program running on your development machine, which turns them back into POSTs.
 
 `ngrok` gives you a new public hostname each time you run it (unless you pay
 for a reserved subdomain). It's therefore handy to script setting the webhook
