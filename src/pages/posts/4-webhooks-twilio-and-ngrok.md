@@ -27,6 +27,8 @@ Messenger](https://developers.facebook.com/docs/messenger-platform/getting-start
 
 ## Using a webhook
 
+![](./img/ngrok-1.png)
+
 Connecting a service to webhook — we'll use Twilio as an example — requires
 these steps:
 
@@ -60,12 +62,22 @@ number.update(sms_url="https://twilio-gateway.herokuapp.com/sms_callback")
 The next section replaces step #2 with something that is more efficient
 during development.
 
-## Pro Tip: Using `ngrok` to avoid deployment
+## Why you can't connect a webhook to your laptop
 
-The edit/deploy-to-web/test cycle, that's required to test a webhook using steps
-(1-2) above, is slow. It's generally faster to do as much on your development
+The edit/deploy-to-web/test cycle that's required to test a webhook using steps
+(1-2) above is slow. It's generally faster to do as much on your development
 machine as possible, before you kick it off to the cloud. Working locally also
-gives you access to more debugging tools.
+gives you access to more debugging tools. You can use a debugger, if that's your jam, instead of adding `print` or other logging statements, pushing, and then looking at server logs.[^3]
+
+Here's what you'd like to do:
+
+![](./img/ngrok-2.png)
+
+This doesn't work, because the Twilio servers can't make an inbound connection to your laptop. The *actual* picture looks more like this:
+
+![](./img/ngrok-3.png)
+
+## Using `ngrok` to avoid deploying between tests
 
 [ngrok](https://ngrok.com/) is a freemium service that makes a web server
 running on your laptop accessible to code running in the cloud. This is
@@ -74,9 +86,21 @@ launch ngrok `ngrok http 3000`, and configure Twilio with a URL based on
 the hostname that `ngrok` prints out. Now you can test the code *before*
 you deploy it.
 
+![](./img/ngrok-4.png)
+
 `ngrok` gives you a new public hostname each time you run it (unless you pay
 for a reserved subdomain). It's therefore handy to script setting the webhook
 callback URL; for example, using the Twilio code above.
+
+More references about `ngrok`:
+
+* Twilio's [“Running Locally Using ngrok”](https://www.twilio.com/docs/guides/client/server#running-locally-using-ngrok)
+* [“6 awesome reasons to use ngrok when testing webhooks”](https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html) from the Twilio blog.
+* The [ngrok docs](https://ngrok.com/docs)
+
+As an alternatively to `ngrok`, you could run a reverse ssh proxy on a server running outside your firewall — for example, a Droplet, or an EC2 micro instance. This gives you a permanant public IP address or domain name. It's particular cost-effective if you already have an server running in the cloud. This will not, however, give you an `https://` address without further setup, and that's something you need in order to work with Twilio (and some other services that call webhooks).
+
+[³]: Setting up and using server logs is something you'll have to at *some* point anyway, with a cloud-based or production app. However, there's no reason to rush it.
 
 ## Pro Tip: Using `curl` and `httpie` to call your webhook directly
 
