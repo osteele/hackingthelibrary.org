@@ -5,16 +5,16 @@ import moment from 'moment';
 
 export default ({ data }) => {
   let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node);
+    .map(({ node }) => node);
   if (process.env.NODE_ENV === 'production') {
     posts = posts.filter(node => !node.frontmatter.draft);
   }
 
-    // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
+  // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
   return (
     <section className="mw7 center">
-      <HeadTitle site={data.site} title="Essays" description={description} />
-      <h2 className="f2 f1-ns mb2 mb3-ns black b">Essays</h2>
+      <HeadTitle site={data.site} title="Posts" description={description} />
+      <h2 className="f2 f1-ns mb2 mb3-ns black b">Posts</h2>
       <p className="f7 i">{description}</p>
       {posts.map(({ frontmatter: fm, id, excerpt }) => (
         <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
@@ -27,7 +27,7 @@ export default ({ data }) => {
                 <p className="f6 lh-copy athelas"
                   dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
                 <p className="f7 lh-copy gray mv0">
-                                    By <span className="ttu">{fm.author}</span>
+                  By <span className="ttu">{fm.author}</span>
                 </p>
                 <time className="f6 db gray">
                   {moment(fm.date).utc().format('dddd, MMM Do')}
@@ -37,17 +37,18 @@ export default ({ data }) => {
             </div>
           </Link>
         </article>
-            ))}
+      ))}
     </section>
   );
 };
 
 const Thumbnail = ({ thumbnail }) =>
-    thumbnail &&
-    <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
-      <img className="db w-50" src={thumbnail.childImageSharp.resolutions.src} />
-    </div>;
+  thumbnail &&
+  <div className="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+    <img className="db w-50" src={thumbnail.childImageSharp.resolutions.src} />
+  </div>;
 
+// This doesn't work on Netlify:
 // <Img className="db w-50" resolutions={thumbnail.childImageSharp.resolutions} />
 
 const description = `These are (so far) notes about recent changes to the
@@ -57,28 +58,27 @@ about or look up further, not as comprehensive guides.`;
 
 export const postsQuery = graphql`
 query postsQuery {
-    site {
-        siteMetadata {
-            title
-        }
+  site {
+    siteMetadata {
+      title
     }
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "posts"}}}) {
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            author
-            date
-            description
-            draft
-            path
-            title
-            thumbnail {
-              childImageSharp {
-                resolutions(width: 250) {
-                  ...GatsbyImageSharpResolutions_noBase64
-                }
+  }
+  allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "posts"}}}) {
+    edges {
+      node {
+        id
+        excerpt
+        frontmatter {
+          author
+          date
+          description
+          draft
+          path
+          title
+          thumbnail {
+            childImageSharp {
+              resolutions(width: 250) {
+                ...GatsbyImageSharpResolutions_noBase64
               }
             }
           }
@@ -86,4 +86,5 @@ query postsQuery {
       }
     }
   }
+}
 `;

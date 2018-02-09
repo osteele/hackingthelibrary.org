@@ -1,6 +1,6 @@
 export default [
     ['Assignments', '/assignments'],
-    ['Essays', '/posts'],
+    ['Posts', '/posts'],
     ['Handouts', '/handouts'],
     ['Lecture Notes', '/lecture-notes'],
     ['Syllabus', '/syllabus'],
