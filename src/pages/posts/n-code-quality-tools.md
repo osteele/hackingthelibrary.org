@@ -1,7 +1,7 @@
 ---
 title: Overview of Code Quality Tools
 author: Oliver
-date: 2018-02-08 08:00:00
+date: 2018-02-08
 draft: true
 description: Code quality tools run in your editor, on the command line, or in the cloud.
 thumbnail: ./img/roses_are_red.jpg
@@ -29,7 +29,7 @@ Code quality tools are pieces of software that run in your editor, on the comman
 
 ### Static analysis tools
 
-Static analysis examine your *source code*. 
+Static analysis examine your *source code*.
 
 * Linters. “Linting” is a general term for a program that examines source code for compliance with style and coding guides. They also detect patterns (ignoring a return value; an undefined or unused variable; an `except` clause with no body) that are generally associated with errors. Often linters are formatters or format checkers too.
 * Type checkers. Tools that test whether any type annotations in your code (below) are consistent with each other and with named and computed values; and whether the types of expressions are consistent with each other. A type checker would detect if . (In compiled languages, such as C/C++, Go, and Rust, the compiler also does this, whether or not you run a separate type checker.)
@@ -44,7 +44,7 @@ Dynamic analysis tools *run* your program, and examine its runtime (“dyamic”
 
 
 * Profilers measure the runtime and resource consumption of your program. These can be used in conjunction with testing and CI to detect performance regressions.
-* Leak detectors. Tools such as [valgrind](http://valgrind.org), and functionality that is built into IDEs such as Visual Studio (not Visual Studio *Code*) and XCode, can detect memory leaks (memory that is allocated but never released), and invalid memory references (memory that is released and subject to reclamation, but subsequently referenced anyway)  in compiled languages. This can't happen in Python. The more general case of *resource* leaks (database connections, file descriptors, or file storage, that increases without bound over the life of the program) can. There are 
+* Leak detectors. Tools such as [valgrind](http://valgrind.org), and functionality that is built into IDEs such as Visual Studio (not Visual Studio *Code*) and XCode, can detect memory leaks (memory that is allocated but never released), and invalid memory references (memory that is released and subject to reclamation, but subsequently referenced anyway)  in compiled languages. This can't happen in Python. The more general case of *resource* leaks (database connections, file descriptors, or file storage, that increases without bound over the life of the program) can. There are
 * Code coverage tools. These work in conjunction with your test suite. They run an *instrumented* version of your code and tests, and report which elements of your program aren't tested.
 * Additional instrumentation tools too numerous to mention.
 

@@ -1,7 +1,7 @@
 ---
 title: Linting Your Code
 author: Oliver
-date: 2018-02-08 09:00:00
+date: 2018-02-08
 description: A linter is a code quality tool that examines your source against style guides, and looks for patterns associated with maintenance issues and outright bugs. This post applies a linter to Bear-as-a-Service, Twilio → MQTT Gateway, Skillz, and the course website itself.
 thumbnail: ./img/Lint_770f5b_228401.jpg
 thumbnail_source_url: https://funnyjunk.com/funny_pictures/146095/Lint/
@@ -77,14 +77,14 @@ Flake8 itself implements a baseline of style checks. Flake8 is also a *framework
 
 [Commit #`e57c7d7`](https://github.com/olinlibrary/bear-as-a-service/commit/e57c7d7) adds a number of [flake8 *plugins*](https://pypi.python.org/pypi/flake8-isort/2.3), by adding them to the requirements file and configuring them. These plugins perform additional checks — for suspicious constructs, security violations, and properly-formatted docstrings:
 
-| Package               | Description                              |
-| --------------------- | ---------------------------------------- |
-| mccabe                | report functions with high complexity    |
-| flake8-bandit         | security testing                         |
-| flake8-bugbear        | likely bugs and design problems          |
-| flake8-builtins       | using a Python built-in as a variable name |
-| flake8-docstrings     | doc string format                        |
-| flake8-comprehensions | recommend list/dict/set comprehensions   |
+| Package               | Description                                               |
+|-----------------------|-----------------------------------------------------------|
+| mccabe                | report functions with high complexity                     |
+| flake8-bandit         | security testing                                          |
+| flake8-bugbear        | likely bugs and design problems                           |
+| flake8-builtins       | using a Python built-in as a variable name                |
+| flake8-docstrings     | doc string format                                         |
+| flake8-comprehensions | recommend list/dict/set comprehensions                    |
 | flake8-mock           | mock methods that don't look like they'd assert but don't |
 
 If you're following along in your own project, you'll need to *either*:
