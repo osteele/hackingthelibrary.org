@@ -118,7 +118,20 @@ omit =
     tests/*
 ```
 
+We could also ignore the exception clause, although I don't recommend it. Add another pattern to `exclude_lines` to ignore *all* lines that match a pattern, or add a `#pragma` comment to an individual source file. (You may notice a parallel with our lint tool, that could use either a line in the configuration file or `#noqa` comments in the source.) See [the docs on excluding files](https://coverage.readthedocs.io/en/coverage-4.5/excluding.html) for more information.
 
+## Branch Coverage
+
+Did you read about [basic coverage critera](https://en.wikipedia.org/wiki/Code_coverage#Basic_coverage_criteria), at the top of this post? What we've got now is statement coverage. The Coverage tool can be configured to record branch coverage as well. Add this to `setup.cfg`:
+
+```ini
+[coverage:run]
+branch = True
+```
+
+Now your coverage reports will show per-branch coverage, with hover text that gives details.
+
+![](./img/coverage-4.png)
 
 [^⁴]: Currently just the one file `tests/mqtt_json_test.py`.
 [^⁵]: On macOS, you can do this from the command line: `open ./coverage/index.html `. On Ubuntu, `firefox ./coverage/index.html` or `google-chrome ./coverage/index.html` may work.
