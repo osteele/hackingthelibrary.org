@@ -5,8 +5,6 @@ date: 2018-02-10 12:30:00
 author: Oliver
 ---
 
-## Property-Based Testing
-
 If you’re set with unit tests, I strongly encourage you to look at **property-based testing**. The [Hypothesis library README](https://hypothesis.readthedocs.io/en/latest/index.html)’s  has an excellent explanation, and this library is easy to use.
 
 Our example projects aren’t doing the kind of algorithmic work[^1] that this kind of testing most applies to, so, unlike some other course topics, I’m not going to use them to demonstrate this kind of testing, but there’s plenty of great examples in the Hypothesis docs.
