@@ -24,6 +24,8 @@ In pseudo-math[^2]:
 
 ![](./img/code-coverage.png)
 
+In our example projects, we're using pytest as a test runner. The `assert` commands, that do the work of comparing the actual to the expected results, *look* like they're part of the test code, but when they're run Pytest, they're actually part of the test *framework*  — because Pytest intercepts failures and reports the actual and expected results itself, which the built-in `assert expected == actual` can't do.
+
 [^1]: Therefore it's important to say things in two *different* ways. One way to write a bad test is to use the same code in the test that you used in the code being tested. One way around this is for the test to implement a different algorithm that implements the same functionality as the code being tested — but this is very expensive, and error prone. More common is to write the test at a *different level of generality and abstraction* — the code being tested works for all values, but the test just spot checks a few, and uses a hard-coded value that you've manually verified.
 [^2]: Pseudo-math is great for making hacking look more engineering-y. But for extra fake legitimacy, nothing beats applying *physics* terms to programming. [And this has been done])()https://en.wikipedia.org/wiki/Heisenbug!
 [^³]: We just don't know what's lurking in here, except through manual testing — and then only the version we manually tested.
@@ -91,7 +93,7 @@ The red shows code that the test suite doesn't cover. The main function code is 
 Takeways from this file:
 
 * The logging code isn't executed. The test suite could test these by setting the logging level.
-* The exception clause (`except socket.error`) isn't tested. This is typical. To make a robust proram I'd want to test this.
+* The exception clause (`except socket.error`) isn't tested. This is a typical finding for an initial coverage test. To make a robust program I'd want to test this.
 * In fact, the exception clause doesn't look very well thought-out. Unlike the rest of the file, it prints directly to standard error instead of using the logger. And, continuing without subscriptions probably doesn't make sense here — it changes what should be a hard failure into a more subtle error, where things just don't work and you need to look back through the output to notice why. The function should throw an error instead (or just not catch this one). This issue — that the error case is underdesigned or absent — is also typical.
 
 ## Removing Clutter

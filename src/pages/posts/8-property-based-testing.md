@@ -1,33 +1,21 @@
 ---
 title: Property-Based Testing
-description: More unit tests for Bear. Property-based testing and the Hypothesis package. Property-based testing and fuzz testing. 
-date: 2018-02-10
+description: Property-based testing generates input values to test your functions with. The Hypothesis package implements property-based testing for Python. Fuzz testing is closely related.
+date: 2018-02-10 12:30:00
 author: Oliver
 ---
 
-## More Unit Tests
-
-Today added unit-testing for more bear files, that you can use as an example.
-
-[Commit #`16c53d2`](https://github.com/olinlibrary/bear-as-a-service/commit/16c53d2) adds unit tests to  `tts_worker.py`. The final version of the test file is [here](https://github.com/olinlibrary/bear-as-a-service/blob/master/tests/tts_worker_test.py).
-
-[Commit #`ea381ad`](https://github.com/olinlibrary/bear-as-a-service/commit/ea381ad) adds unit tests to `sms_bear_gateway.py`. The final version of the test file is [here](https://github.com/olinlibrary/bear-as-a-service/blob/master/tests/sms_bear_gateway_test.py).
-
-The commits are interesting to look at, because they show the changes that were made in the same commit as the tests, in order to make the code easier to test.
-
-Things to note:
-
-* I ended up refactoring some code in order to make it easier to test. This is typically happens when you add tests. 
-* As before, this makes heavy use of Python's mocks and `patch`.
-* The newest test file contains a couple of helper functions, to take some of the repetition out of running a bunch of similar tests.
-* I also added some docstrings and comments to the tested code. This was another side effect of testing (the first was refactoring the code) — in order to write tests, I had to remember/understand the code I’d previously written or borrowed, so I went ahead and wrote down what I’d figured out in order to reduce my cognitive load.
-* One style of unit tests is to write a separate function for each test, and give the function a descriptive name. I used a smaller number of larger functions instead, in order to get more tests onto the page where it’s easier to work with them all.
-
 ## Property-Based Testing
 
-If you’re set with unit tests, I strongly encourage you to look at property-based testing. The [Hypothesis library](https://hypothesis.readthedocs.io/en/latest/index.html)’s README has an excellent explanation, and is easy to use. My example projects aren’t doing the kind of algorithmic work that kind of testing most applies to (here’s how to tell: there’s aren’t many loops or conditionals in the code), so, unlike some other course topics, I’m not going to use them to demonstrate this kind of testing, but there’s plenty of great examples in the Hypothesis docs.
+If you’re set with unit tests, I strongly encourage you to look at **property-based testing**. The [Hypothesis library README](https://hypothesis.readthedocs.io/en/latest/index.html)’s  has an excellent explanation, and this library is easy to use.
 
-## Some Philosophy
+Our example projects aren’t doing the kind of algorithmic work[^1] that this kind of testing most applies to, so, unlike some other course topics, I’m not going to use them to demonstrate this kind of testing, but there’s plenty of great examples in the Hypothesis docs.
+
+[^1]: Here’s how to tell that the example projects aren't very algorithm-y: There aren’t many loops or conditionals in the code.
+
+## Yet Another Overview
+
+\[I recommend the links above over this section — so you might want to skip down to the final section, on Fuzz testing, if the linked reading material worked for you. I wrote this before I read them, and haven't decided what's worth keeping…\]
 
 In conventional testing, your test specifies the *input* and the *expected output*, and the test framework compares them.
 
@@ -48,9 +36,11 @@ You may know more about the relationship between the input and the output, that 
 
 With Pytest, we can spot-check some of these properties against individual strings.
 
-## Property Testing and Fuzz Testing
+With property-based testing, we can write code that tests whether the property is true of an $(\textrm{input}, \textrm{output})$ pair, and use Hypothesis to generate a wide range of inputs.
 
-Closely related to property testing is *fuzzing*, or [*fuzz testing*](https://en.wikipedia.org/wiki/Fuzzing). Here's a couple of good readings about the difference:
+## Fuzz Testing
+
+Closely related to property testing is *fuzzing*, or [*fuzz testing*](https://en.wikipedia.org/wiki/Fuzzing). Here's a couple of good readings about the difference between property testing and fuzz testing:
 
 * [What is Property Based Testing?](http://hypothesis.works/articles/what-is-property-based-testing/), David R. MacIver (the author of the Hypothesis library).
 * [Property-Based Testing Is Fuzzing](https://blog.nelhage.com/post/property-testing-is-fuzzing/), Nelson Elhage
