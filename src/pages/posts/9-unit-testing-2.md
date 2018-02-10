@@ -1,8 +1,9 @@
 ---
 title: Unit Testing, Continued
+author: Oliver
 description: More unit tests for Bear. Some things that typically happen to your code when you add unit tests. Testing exceptions (TBD).
 date: 2018-02-10 12:00:00
-author: Oliver
+thumbnail: ./img/unit-test-parody-2.png
 ---
 
 Today I added unit-testing for more bear files. You can use these as more examples of unit testing. 

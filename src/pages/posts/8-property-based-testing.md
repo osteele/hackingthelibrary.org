@@ -1,21 +1,23 @@
 ---
 title: Property-Based Testing
+author: Oliver
 description: Property-based testing generates input values to test your functions with. The Hypothesis package implements property-based testing for Python. Fuzz testing and property-based testing are closely related.
 date: 2018-02-10 12:30:00
-author: Oliver
+thumbnail: ./img/property-based-testing.png
 ---
 
-If you’re set with unit tests, I strongly encourage you to look at **property-based testing**. The [Hypothesis library README](https://hypothesis.readthedocs.io/en/latest/index.html)’s  has an excellent explanation of property-based testing, and the Hypothesis library itself is easy to use.
+If you’re set with unit tests, I strongly encourage you to look at **property-based testing**. The [Hypothesis library](https://hypothesis.readthedocs.io/en/latest/index.html) is easy to use with Python, and includes an excellent explanation of property-based testing.
 
-Hypothesis-based testing, or “Quickcheck-style testing”, is available for a number of languages. It originated with Haskell's Quickcheck.  [JSVerify](https://jsverify.github.io/) implements property-based testing for JavaScript.
+Property-based testing (aka [“quickcheck-style testing”](https://en.wikipedia.org/wiki/Model-based_testing)), is available for a number of languages[^1].    [JSVerify](https://jsverify.github.io/) implements property-based testing for JavaScript.
 
-Our example projects aren’t doing the kind of algorithmic work that this kind of testing most applies to[^1], so, unlike some other course topics, I’m not going to use these projects to demonstrate this kind of testing. Instead, there’s plenty of great examples in the Hypothesis docs.
+Our example projects aren’t doing the kind of algorithmic work that this kind of testing most applies to[^2], so, unlike some other course topics, I’m not going to use these projects to demonstrate this kind of testing. Instead, there’s plenty of great examples in the [Hypothesis docs](https://hypothesis.readthedocs.io/en/latest/index.html).
 
-[^1]: Here’s how to tell that the example projects aren't very algorithm-y: There aren’t many loops or conditionals in the code.
+[^1]: So far as I know, it originated with Haskell's [Quickcheck](https://www.schoolofhaskell.com/user/pbv/an-introduction-to-quickcheck-testing) (although it's also a special case of [“model-based testing”](https://en.wikipedia.org/wiki/Model-based_testing)), and was further popularized by [Scala](https://www.scalacheck.org/).
+[^2]: Here’s how to tell that the example projects aren't very algorithm-y: There aren’t many loops or conditionals in the code.
 
 ## Yet Another Overview
 
-\[I recommend the links above over the text in this section — so you might want to skip down to the final section, on Fuzz testing, if the linked reading material worked for you. I wrote this before I read them, and haven't decided what's worth keeping…\]
+\[I recommend the links above over the text in this section — so you might want to skip down to the final section, on Fuzz testing, if the linked reading material worked for you. I started writing this before I read them, and haven't decided what's worth keeping…\]
 
 In conventional testing, your test specifies the *input* and the *expected output*, and the test framework compares them.
 
