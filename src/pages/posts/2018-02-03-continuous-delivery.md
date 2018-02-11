@@ -9,34 +9,34 @@ description: >
     deploying new versions that pass a quality checkpoint to a user-visible
     environment. We'll look at how to do this with a Flask (Python) application,
     the Travis CI server, and Heroku.
-thumbnail: ./3-continuous-delivery/cd-thumbnail.png
+thumbnail: ./img/continuous-delivery/cd-thumbnail.png
 ---
 
 ## Overview
 
 A basic software team collaboration workflow that uses GitHub looks like this:
 
-![](./3-continuous-delivery/two-laptops.png)
+![](./img/continuous-delivery/two-laptops.png)
 
 If you followed [Heroku deployment instructions](https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app), or the [web deployment toolbox](https://toolboxes.olin.build/), you've got a deployment flow that looks like this:
 
-![](./3-continuous-delivery/heroku.png)
+![](./img/continuous-delivery/heroku.png)
 
 Finally, if you've set up a Continuous Integration (CI) server (such as
 was developed in yesterday's example), you've got a test flow:
 
-![](./3-continuous-delivery/ci.png)
+![](./img/continuous-delivery/ci.png)
 
 These can be unified into this deployment diagram:
 
-![](./3-continuous-delivery/heroku-and-ci.png)
+![](./img/continuous-delivery/heroku-and-ci.png)
 
 Continuous Delivery (CD) changes this diagram, where the deployed software is
 "the version that a team member most recently manually deployed", to the
 following, where the deployed software is "the latest version that passed
 automated testing":
 
-![](./3-continuous-delivery/ci.png)
+![](./img/continuous-delivery/ci.png)
 
 \[Later in the course, we'll look at a couple of variants of diagram: where a
 CD server pulls from the repo instead of being pushed from the CI server; and
