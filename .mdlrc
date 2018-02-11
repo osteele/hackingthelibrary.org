@@ -1,0 +1,11 @@
+# https://github.com/markdownlint/markdownlint/blob/master/docs/configuration.md
+
+ignore_front_matter true
+all
+rules '~MD002', # First header should be a top level header
+'~MD014', # Dollar signs used before commands without showing output
+'~MD013', # Line length
+'~MD026', # Trailing punctuation in header
+'~MD029', # Ordered list item prefix
+'~MD038', # Spaces inside code span elements
+'~MD039' # Spaces inside link text

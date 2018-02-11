@@ -69,13 +69,15 @@ Gateway. This uses the same tools and techniques as discussed yesterday, with th
 [^2]: This took me about half an hour with print statements to figure out. Now that I'm more familiar with Python's mocks, hopefully I'll recognize this more quickly next time.
 
 These two steps are often necessary.
-*.  Code that's *functional* may need changes in order to be *testable*. In this case, these changes were trivial[^3]. In general, you may find that you need to
-refactor your code in order to expose the functionality that you want to test.
-Also in general, this refactoring improves the design of your system, even if
-you wouldn't have noticed this without the impetus of testing — or if you
-had noticed it, but wouldn't otherwise have paid for it.
+
+* Code that's *functional* may need changes in order to be *testable*. In this
+  case, these changes were trivial[^3]. In general, you may find that you need
+  to refactor your code in order to expose the functionality that you want to
+  test. Also in general, this refactoring improves the design of your system,
+  even if you wouldn't have noticed this without the impetus of testing — or if
+  you had noticed it, but wouldn't otherwise have paid for it.
 * Frameworks that take charge of running your application often come with their
-own test instructions or utilities.
+  own test instructions or utilities.
 
 [^3]: To make, if not — because of where I am on the learning curve for these particular
       tools and packages — to discover.
@@ -163,8 +165,9 @@ to be [written in Go](https://github.com/inconshreveable/ngrok).\]
 ## Readings
 
 * [Continuous Delivery web site](https://continuousdelivery.com). Jeff Humble is
-the author of the _Continuous Delivery_ book, also recommended.
+  the author of the _Continuous Delivery_ book, also recommended.
 * [Continuous Delivery essay](https://martinfowler.com/bliki/ContinuousDelivery.html), Martin Fowler.
-* [Martin Fowler's Continuous Delivery page](https://martinfowler.com/delivery.html)
-has additional discussion and links to videos.
+* [Martin Fowler's Continuous Delivery
+  page](https://martinfowler.com/delivery.html) has additional discussion and
+  links to videos.
 * [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery), Wikipedia

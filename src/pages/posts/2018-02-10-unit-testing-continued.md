@@ -6,7 +6,7 @@ date: 2018-02-10 12:00:00
 thumbnail: ./img/unit-test-parody-2.png
 ---
 
-Today I added unit-testing for more Bear-as-Service files. You can use these as more examples of unit testing. 
+Today I added unit-testing for more Bear-as-Service files. You can use these as more examples of unit testing.
 
 (There's also plenty of information about Pytest and unit testing on the web. I'm calling these commits out in case you're now familiar enough with the Bear-as-a-Service code base to find it helpful to see some of this within that context.)
 
@@ -28,11 +28,10 @@ Some observations about the test files themselves:
 * `test_process_text_message` in  [`sms_bear_gateway_test.py`](https://github.com/olinlibrary/bear-as-a-service/blob/master/tests/sms_bear_gateway_test.py) defines a couple of helper functions. Adding these helpers removes some of the repetition out of running a bunch of similar tests. Making it easier to write more tests is generally good!
 * It's okay if your test code suite becomes a whole program itself — with multiple files, helpers, mocks, *etc.* — so long as it's providing more benefit than cost. The issue with large test suites is that they can weigh down development, because you have to make every change twice — once in the code, and once in the code that tests it. This weight is a function not just of size *per se*. It's also caused by a tight coupling between the tests and aspects of the program that don't matter[^1], or by the presence of low-yield tests against code that's matched to rapidly-changing spec[^2].
 
-
 * One style of unit testing is to write a separate function for each test, and give the function a descriptive name. This makes test failures easier to debug — you may be able to tell enough about what wrong from the name of the test itself, to go straight to the code being tested. It also makes for impressive stats and test reports. I used a *smaller* number of *larger* test functions instead, in order to get more tests onto the page. For me, this falls in the category of “making it easier to write [and maintain] more tests”.
 * As before, these unit tests make heavy use of Python's [mocks](https://docs.python.org/3/library/unittest.mock.html) and the [`patch` decorator](https://docs.python.org/3/library/unittest.mock.html#the-patchers). These tests use a new feature of mocks: the ability of a mock method to compute a return value based on its arguments (the same as a regular method!). `test_process_text_message` in  [`sms_bear_gateway_test.py`](https://github.com/olinlibrary/bear-as-a-service/blob/master/tests/sms_bear_gateway_test.py) uses this to replace the profanity filter with one that doesn't depend on the particular implementation, so that we can reliably test messages that are and aren't detected as profane.[^3] (And, admittedly, so that I don't need to include profane words in the test source.)
 
-[^1]: It's easy to implement dependencies on things that don't matter. The example tests' use of mocks, that hardcoded to specific MQTT and Twilio methods buried deep in methods of properties of mocks, are an example of this. A more developed example might separate out some of the dependencies of the code and the MQTT and Twilio libraries into an intermediate layer.
+[^1]: It's easy to implement dependencies on things that don't matter. The example tests' use of mocks, that hard-coded to specific MQTT and Twilio methods buried deep in methods of properties of mocks, are an example of this. A more developed example might separate out some of the dependencies of the code and the MQTT and Twilio libraries into an intermediate layer.
 [^2]: User-interface presentations are a prime example of this. We'll probably get to specific tools for testing user interfaces.
 
 [³]: Another strategy would be to use `with patch(…, return_value=True)` (or `…=False`) *context manager*, to return a constant value, around each call to a function that calls the filter; instead of the `@patch(…, wraps=lambda…)` *decorator* that computes a value each time it's called.

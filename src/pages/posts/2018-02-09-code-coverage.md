@@ -27,8 +27,8 @@ In pseudo-math[^2]:
 In our example projects, we're using pytest as a test runner. The `assert` commands, that do the work of comparing the actual to the expected results, *look* like they're part of the test code, but when they're run Pytest, they're actually part of the test *framework*  — because Pytest intercepts failures and reports the actual and expected results itself, which the built-in `assert expected == actual` can't do.
 
 [^1]: Therefore it's important to say things in two *different* ways. One way to write a bad test is to use the same code in the test that you used in the code being tested. One way around this is for the test to implement a different algorithm that implements the same functionality as the code being tested — but this is very expensive, and error prone. More common is to write the test at a *different level of generality and abstraction* — the code being tested works for all values, but the test just spot checks a few, and uses a hard-coded value that you've manually verified.
-[^2]: Pseudo-math is great for making hacking look more engineering-y. But for extra fake legitimacy, nothing beats applying *physics* terms to programming. [And this has been done])()https://en.wikipedia.org/wiki/Heisenbug!
-[^³]: We just don't know what's lurking in here, except through manual testing — and then only the version we manually tested.
+[^2]: Pseudo-math is great for making hacking look more engineering-y. But for extra fake legitimacy, nothing beats applying *physics* terms to programming. [And this has been done](https://en.wikipedia.org/wiki/Heisenbug)!
+[^3]: We just don't know what's lurking in here, except through manual testing — and then only the version we manually tested.
 
 ## Running the Coverage tool
 
@@ -104,7 +104,7 @@ This is harmless, but annoying. It distracts from the code that's actually meant
 
 If the only issues reported are the ones you care about, it's easier to tell what to focus on. And it's easier to tell when something turns red, than when a count increases by one.
 
-You can tell Coverage to ignore certain files by adding a section to the project's  `setup.cfg`  file[⁶][⁷]. 
+You can tell Coverage to ignore certain files by adding a section to the project's  `setup.cfg`  file[⁶][⁷].
 
 ```ini
 [coverage:report]
@@ -150,8 +150,7 @@ Now your coverage reports will show per-branch coverage, with hover text that gi
 
 [Commit #`cbada69`](https://github.com/olinlibrary/bear-as-a-service/commit/cbada69) enables branch coverage.
 
-[^⁴]: Currently just the one file `tests/mqtt_json_test.py`.
-[^⁵]: On macOS, you can do this from the command line: `open ./coverage/index.html `. On Ubuntu, `firefox ./coverage/index.html` or `google-chrome ./coverage/index.html` may work.
-[^⁶]: We created this file when we configured `flake8`, and updated it with an `[isort]` section in order to configure `flake8-isort`.
+[^4]: Currently just the one file `tests/mqtt_json_test.py`.
+[^5]: On macOS, you can do this from the command line: `open ./coverage/index.html`. On Ubuntu, `firefox ./coverage/index.html` or `google-chrome ./coverage/index.html` may work.
+[^6]: We created this file when we configured `flake8`, and updated it with an `[isort]` section in order to configure `flake8-isort`.
 [^7]: You could also specify the file(s) to omit as a command-line option to `pytest`. Putting it in the configuration file means it's shared across time — you'll get the benefit of the options later — and space — your collaborators and CI server will use the same options.
-
