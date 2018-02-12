@@ -45,7 +45,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           `${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}`)
         : collection === 'handouts'
           ? replaceLastComponent(relativePath,
-            `${moment(fm.date).format('MM-DD')}-${slugify(fm.title)}`)
+            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slugify(fm.title)}`)
           : relativePath;
     }
     if (collection === 'posts') {
