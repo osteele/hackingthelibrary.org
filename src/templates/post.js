@@ -14,7 +14,7 @@ export default ({ data }) => {
       <section className="mw7 center cf ph2 ph3-ns mb5-ns mb3">
         {fm.thumbnail &&
           <figure className="dn-s">
-            <img className="" style={{ maxHeight: 500 }} src={fm.thumbnail.childImageSharp.sizes.src} />
+            <img style={{ maxHeight: 500 }} src={fm.thumbnail.childImageSharp.sizes.src} />
             {thumbnail_source_url &&
               <figcaption className="i">
                 Image source: <a href={thumbnail_source_url}>{thumbnail_source_url}</a>
