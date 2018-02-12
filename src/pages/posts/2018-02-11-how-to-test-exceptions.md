@@ -1,9 +1,8 @@
 ---
 title: How to Test Exceptions
 author: Oliver
-description: Unit-testing code that raises exceptions. Refactoring unit tests. I was wrong about `logger.info`. Ignoring `if __name__ == "__main__"`.
+description: Unit-testing code that raises exceptions. Refactoring unit tests. Adding tests before you extend and refactor code.
 date: 2018-02-10 17:40:00
-thumbnail: ./img/unit-test-parody-2.png
 ---
 
 In yesterday's post on test coverage, I mentioned that:
@@ -17,25 +16,17 @@ In yesterday's post on test coverage, I mentioned that:
 * `create_subscription_queue` still catches `socket.error`, but instead of printing and otherwise ignoring it, it logs it and re-raises it.
 * `test_create_subscription_queue` used to include code to create a mock for `paho.mqtt.client.Client`. This is a complicated mock, because the API of the real `paho.mqtt.client.Client` is to call methods that are attached to the object that it creates, so the mock needs to do this too. Now that `test_create_subscription_queue` is joined by another function, I've factored the code that constructs this mock out into its own function.
 * It's easy to test that a function *doesn't* raise an exception. If it *does* raise an exception, this fails the test! (This is why `assert` fails the test, when the asserted value is false.) To reverse this, place the code that's expected to raise an exception inside a `with pytest.raises(…)` block, where `…` is the type of the expected error.
+* Remove `exclude_lines = except socket.error as err`. This code is now tested. Actually, I never meant to commit this exclusion. I used as an example of how you'd do an exclusion in the last article, and forgot to take it out — it's good that the coverage report said that the exception handler was untested, and I didn't mean to turn this off. The next article gives a better example of an exclusion.
 
-This commit both adds testing, and changes functionality, by changing `create_subscription_queue` not to swallow an underlying exception. The best practice is to keep your changes smaller: commit a test that *only* adds tests, and *follow this* by a commit that changes the code being tested (and updates the tests as necessary). I did this yesterday where one commit ([commit #`16c53d2`](https://github.com/olinlibrary/bear-as-a-service/commit/16c53d2) ) added tests, in order that the following commit ([commit #`23c883c`](https://github.com/olinlibrary/bear-as-a-service/commit/23c883c)) could change the functionality of the tested code, in the presence of already-tested test cases to catch regressions. Here I didn't do that, because I couldn't figure out how to test `create_subscription_queue`'s error condition — which was more evidence that it was poorly designed. This is another example where trying to write the test ended up improving the code.
+## The size of a test commit
 
-## Don't Ignore `logger.info`
+This commit both adds testing to existing code, and changes functionality, by changing `create_subscription_queue` not to swallow an underlying exception.
 
-I used `logger.info` as an example of code that can be excluded from test coverage, since with logging disabled, nothing is logged.
+I generally like to separate this kind of change across multiple commits: one that *only* adds tests, *followed by* a commit that changes the *code being tested* (and updates the tests as necessary).
 
-Oops.
+An example from yesterday: One commit ([commit #`16c53d2`](https://github.com/olinlibrary/bear-as-a-service/commit/16c53d2) ) added tests for `tts_worker.py` (and refactored the code in that — *without* changing its behavior — in order to make it testable). This laid the groundword for the following commit ([commit #`23c883c`](https://github.com/olinlibrary/bear-as-a-service/commit/23c883c)), which extended the functionality of the tested code. Since there were already test cases,  they could catch regressions — that is verify, that adding the new functionality didn't break the old.
 
-`logger.info` is still *called*, even if it decides, once called, to do nothing.
-
-The reason that the `logger.info` lines of code were showing up red in the test coverage reports was that the were in *methods* — `on_log`, `on_publish`, `on_disconnect`, all nested inside `create_subscription_queue` — that were never called.
-
-That's a legitimate gap in coverage. Maybe those methods would raise an exception if they were ever covered — for example, if they're defined with a different number of parameters than the number arguments the MQTT client calls them with.
-
-[Commit #`ba3d937`](https://github.com/olinlibrary/bear-as-a-service/commit/ba3d937)  therefore also removes `exclude_lines = logger.info` from `setup.cfg`.
-
-It also removes `exclude_lines = except socket.error as err`, which I used as an example in the last post, but didn't mean to actually include in the list of exclusions.
-
-In their place I've added an exclusion for blocks that begin `if __name__ == "__main__"`, since a test function can never call these, and therefore including them in the coverage statistics is not helpful.
+Today I didn't do this, because I couldn't figure out a reasonable way to test `create_subscription_queue`'s error condition[^2]. This is yet more evidence that that case was poorly designed, and is another example where trying to write the test ended up improving the design.
 
 [^1]: This degree of test coverage may not be worth it for one-offs or short-lived projects. In fact, not every project calls for unit tests at all. Although — even for one-offs and projects that you *expect* to be short-lived, your bias against unit tests is probably too strong, and using unit tests in even a small brief project will often save you net time and frustration. At least this continues to be true for me, and I was writing test frameworks while you were in middle school! ([one](https://github.com/osteele/lztestkit), [two](https://github.com/osteele/cl-spec)).
+[^2]: I could have patched `sys.stderr.write`, but this seems likely to interfere with the test runner's error reporting itself. Modifying the code to use the logger instead is not only the right thing, but would let me patch the just that module's logger in order verify that the error was logged. In this case I didn't end up adding even that check, because I'm not sure that the exception should even do its own error reporting, and didn't want to add to the body of code that assumes it will. I left the logging in as part of the principle of making the smallest (code and behavior) changes necessary in order to add testing at all.
