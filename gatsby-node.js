@@ -3,10 +3,14 @@ const path = require('path');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const moment = require('moment');
 
+const baseAbsolutePath = path.join(__dirname, 'src', 'pages');
+
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
   const pageTemplate = path.resolve(`src/templates/page.js`);
-  const postTemplate = path.resolve(`src/templates/post.js`);
+  const collectionTemplates = {
+    'posts': path.resolve(`src/templates/post.js`),
+  };
   const query = graphql(nodeQuery);
   const result = await query;
 
@@ -14,13 +18,12 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
     console.error(result.errors);
     return Promise.reject(result.errors);
   }
-  const baseAbsolutePath = path.join(__dirname, 'src', 'pages');
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { path } = node.frontmatter;
     const relativePath = node.fileAbsolutePath.slice(baseAbsolutePath.length);
-    const collection = relativePath.split('/')[1];  // FIXME path.sep
-    const component = { 'posts': postTemplate }[collection] || pageTemplate;
+    const collection = relativePath.split('/')[1];
+    const component = collectionTemplates[collection] || pageTemplate;
     createPage({
       path,
       component,
