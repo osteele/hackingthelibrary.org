@@ -13,8 +13,8 @@ export default ({ data }) => {
   // Adapted from http://tachyons.io/components/article-lists/title-preview-author-media-flipped/index.html
   return (
     <section className="mw7 center">
-      <HeadTitle site={data.site} title="Posts" description={description} />
-      <h2 className="f2 f1-ns mb2 mb3-ns black b">Posts</h2>
+      <HeadTitle site={data.site} title="Articles" description={description} />
+      <h2 className="f2 f1-ns mb2 mb3-ns black b">Articles</h2>
       <p className="f7 i mb3">{description}</p>
       {posts.map(({ frontmatter: fm, id, excerpt }) => (
         <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
@@ -26,9 +26,10 @@ export default ({ data }) => {
                 </h2>
                 <p className="f6 lh-copy athelas"
                   dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
-                <p className="f7 lh-copy gray mv0">
-                  By <span className="ttu">{fm.author}</span>
-                </p>
+                {fm.categories &&
+                  <p className="f7 lh-copy gray mv0">
+                    Categories: <span className="ttu">{fm.categories.join(' ')}</span>
+                  </p>}
                 <time className="f6 db gray">
                   {moment(fm.date).utc().format('dddd, MMM Do')}
                 </time>
