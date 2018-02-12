@@ -1,7 +1,5 @@
 ---
 title: Code Coverage
-date: 2018-02-09
-author: Oliver
 thumbnail: ./img/coverage-2.png
 ---
 

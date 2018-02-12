@@ -1,7 +1,5 @@
 ---
 title: Twilio, Web Hooks, and ngrok
-author: Oliver
-date: 2018-02-04
 description: >
     Web Hooks. Configuring Twilio to connect to your application.
     Using ngrok to proxy web hooks to your development laptop.

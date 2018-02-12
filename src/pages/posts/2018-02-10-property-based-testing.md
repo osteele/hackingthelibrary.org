@@ -1,8 +1,7 @@
 ---
 title: Property-Based Testing
-author: Oliver
-description: Property-based testing generates input values to test your functions with. The Hypothesis package implements property-based testing for Python. Fuzz testing and property-based testing are closely related.
-date: 2018-02-10 12:30:00
+description: >
+    Property-based testing generates input values to test your functions with. The Hypothesis package implements property-based testing for Python. Fuzz testing and property-based testing are closely related.
 thumbnail: ./img/property-based-testing.png
 ---
 
@@ -69,7 +68,7 @@ def test_string_reverse(s):
     assert string_reverse(string_reverse(s)) == s # (5)
 
 @given(text(min_size=1))
-def test_string_reverse_ends(s):    
+def test_string_reverse_ends(s):
     assert string_reverse(s)[0] == s[-1] # (6)
     assert string_reverse(s)[-1] == s[0] # (7)
 ```

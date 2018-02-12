@@ -1,7 +1,5 @@
 ---
 title: Continuous Delivery
-author: Oliver
-date: 2018-02-03
 description: >
     A Continuous Delivery system automatically (and continuously) delivers your
     application to the user. For an internet service such as a web application

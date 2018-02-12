@@ -1,8 +1,6 @@
 ---
 title: Keeping Secrets
 description: How to keep passwords, API keys, and other secrets out of GitHub.
-author: Oliver
-date: 2018-02-07
 thumbnail: ./img/keep-it-secret-keep-it-safe.jpg
 ---
 

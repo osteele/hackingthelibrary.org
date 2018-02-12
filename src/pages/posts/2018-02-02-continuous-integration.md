@@ -1,7 +1,5 @@
 ---
 title: Continuous Integration
-author: Oliver
-date: 2018-02-02
 description: >
     A Continuous Integration (CI) server to run tests against every pushed
     commit. We'll add unit tests to Bear-as-a-Service, and connect the GitHub
