@@ -12,4 +12,4 @@ date: 2018-02-15
   * [Version 1 Sucks, But Ship It Anyway](https://blog.codinghorror.com/version-1-sucks-but-ship-it-anyway/), Jeff Atwood[^creator of Stack Overflow]
 * Reading prompts:
   * Which tools and practices mentioned in this class relate to software entropy / technical debt?
-  * How can you reconcile “Version Sucks” with the other essays?
+  * Can “Version 1 Sucks” be reconciled with the other essays?
