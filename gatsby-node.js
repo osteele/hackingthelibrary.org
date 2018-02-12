@@ -68,8 +68,10 @@ const capitalize = s =>
 const titleize = s =>
   capitalize(s).replace(/-./g, s => ' ' + s.slice(1).toUpperCase());
 
-const getPathCollection = relativePath =>
-  relativePath.split('/').length > 3 ? relativePath.split('/')[1] : null;
+const getPathCollection = relativePath => {
+  const m = relativePath.match(/\/(.+?)\/[^\/]/);
+  return m && m[1];
+}
 
 const slugify = s =>
   s.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
