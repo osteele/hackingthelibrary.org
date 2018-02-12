@@ -76,7 +76,6 @@ query postsQuery {
         id
         excerpt
         frontmatter {
-          author
           categories
           date
           description
