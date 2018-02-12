@@ -1,8 +1,9 @@
 ---
 title: Code Coverage Revisited
 author: Oliver
-description: Unit-testing code that raises exceptions. Refactoring unit tests. I was wrong about `logger.info`. Ignoring `if __name__ == "__main__"`.
+description: I was wrong about `logger.info`. Ignoring `if __name__ == "__main__"`.
 date: 2018-02-10 20:00:00
+thumbnail: ./img/coverage-2.png
 ---
 
 I used `logger.info` as an example of code that can be excluded from test coverage, since with logging disabled, nothing is logged.

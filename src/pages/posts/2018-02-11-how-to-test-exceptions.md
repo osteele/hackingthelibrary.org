@@ -3,6 +3,8 @@ title: How to Test Exceptions
 author: Oliver
 description: Unit-testing code that raises exceptions. Refactoring unit tests. Adding tests before you extend and refactor code.
 date: 2018-02-10 17:40:00
+thumbnail: ./img/catch-general-exception.jpg
+thumbnail_source: https://helloacm.com/throw-often-catch-rarely/
 ---
 
 In yesterday's post on test coverage, I mentioned that:

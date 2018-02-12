@@ -2,7 +2,7 @@
 title: Code Coverage
 date: 2018-02-09
 author: Oliver
-thumbnail: ./img/code-coverage.png
+thumbnail: ./img/coverage-2.png
 ---
 
 Your *program* implements functionality, aka behavior.
