@@ -39,15 +39,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   if (internal.type === `MarkdownRemark`) {
     const relativePath = createFilePath({ node, getNode, basePath: `pages` });
     const collection = getPathCollection(relativePath);
-    if (!fm.path) {
-      fm.path = collection === 'posts'
-        ? replaceLastComponent(relativePath,
-          `${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}`)
-        : collection === 'handouts'
-          ? replaceLastComponent(relativePath,
-            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slugify(fm.title)}`)
-          : relativePath;
-    }
     if (collection === 'posts') {
       const m = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})-(.+)/);
       if (m) {
@@ -56,6 +47,17 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         if (!fm.date) fm.date = m[1];
         if (!fm.title) fm.title = m[2];
       }
+    }
+    // This needs to come after the previous block, since this block relies on
+    /// the frontmatter date that that block may have set.
+    if (!fm.path) {
+      fm.path = collection === 'posts'
+        ? replaceLastComponent(relativePath,
+          `${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}`)
+        : collection === 'handouts'
+          ? replaceLastComponent(relativePath,
+            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slugify(fm.title)}`)
+          : relativePath;
     }
     createNodeField({ node, name: `collection`, value: collection });
     createNodeField({ node, name: `slug`, value: fm.path });
