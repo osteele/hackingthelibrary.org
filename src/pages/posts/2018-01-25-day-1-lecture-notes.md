@@ -2,6 +2,7 @@
 title: Day 1 Lecture Notes
 author: "Oliver & Jeff"
 date: 2018-01-25
+draft: false  # so that graphql will infer this field exists
 thumbnail: ./img/library-downstairs.jpg
 ---
 
