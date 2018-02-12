@@ -4,6 +4,7 @@ author: Oliver
 description: More unit tests for Bear. Some things that typically happen to your code when you add unit tests.
 date: 2018-02-10 12:00:00
 thumbnail: ./img/unit-test-parody-2.png
+thumbnail_source_url: https://medium.cobeisfresh.com/unit-testing-in-swift-part-1-the-philosophy-9bc85ed5001b
 ---
 
 Today I added unit-testing for more Bear-as-Service files. You can use these as more examples of unit testing.

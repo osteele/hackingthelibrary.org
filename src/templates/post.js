@@ -5,6 +5,7 @@ import React from 'react';
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter: fm, html, excerpt } = markdownRemark;
+  const { thumbnail_source_url } = fm;
 
   return (
     <article className="page">
@@ -12,9 +13,13 @@ export default ({ data }) => {
 
       <section className="mw7 center cf ph2 ph3-ns mb5-ns mb3">
         {fm.thumbnail &&
-          <div className="dn-s">
-            <img className="h4" src={fm.thumbnail.childImageSharp.sizes.src} />
-          </div>}
+          <figure className="dn-s">
+            <img className="" style={{ maxHeight: 500 }} src={fm.thumbnail.childImageSharp.sizes.src} />
+            {thumbnail_source_url &&
+              <figcaption className="i">
+                Image source: <a href={thumbnail_source_url}>{thumbnail_source_url}</a>
+              </figcaption>}
+          </figure>}
 
         <h1 className="f2 f1-ns mb2 mb3-ns black b">
           {fm.title}
@@ -39,6 +44,7 @@ export const postQuery = graphql`
         path
         title
         description
+        thumbnail_source_url
         thumbnail {
           childImageSharp {
             sizes {
