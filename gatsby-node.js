@@ -22,7 +22,7 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { path } = node.frontmatter;
     const relativePath = node.fileAbsolutePath.slice(baseAbsolutePath.length);
-    const collection = relativePath.split('/')[1];
+    const collection = getPathCollection(relativePath);
     const component = collectionTemplates[collection] || pageTemplate;
     createPage({
       path,
@@ -38,7 +38,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
   if (internal.type === `MarkdownRemark`) {
     const relativePath = createFilePath({ node, getNode, basePath: `pages` });
-    const collection = relativePath.split('/').length > 3 ? relativePath.split('/')[1] : null;
+    const collection = getPathCollection(relativePath);
     if (!fm.path) {
       fm.path = collection === 'posts'
         ? replaceLastComponent(relativePath,
@@ -48,10 +48,28 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
             `${moment(fm.date).format('MM-DD')}-${slugify(fm.title)}`)
           : relativePath;
     }
+    if (collection === 'posts') {
+      const m = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})-(.+)/);
+      if (m) {
+        const date = moment(m[1]).format('YYYY-MM-DDTHH:mm:ss.SSS') + 'Z';
+        const title = titleize(m[2]);
+        if (!fm.date) fm.date = m[1];
+        if (!fm.title) fm.title = m[2];
+      }
+    }
     createNodeField({ node, name: `collection`, value: collection });
     createNodeField({ node, name: `slug`, value: fm.path });
   }
 };
+
+const capitalize = s =>
+  s.length > 0 ? s.slice(0, 1).toUpperCase() + s.slice(1) : s;
+
+const titleize = s =>
+  capitalize(s).replace(/-./g, s => ' ' + s.slice(1).toUpperCase());
+
+const getPathCollection = relativePath =>
+  relativePath.split('/').length > 3 ? relativePath.split('/')[1] : null;
 
 const slugify = s =>
   s.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
