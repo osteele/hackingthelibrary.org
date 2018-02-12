@@ -2,7 +2,7 @@
 title: Code Coverage Revisited
 author: Oliver
 description: I was wrong about `logger.info`. Ignoring `if __name__ == "__main__"`.
-date: 2018-02-10 20:00:00
+date: 2018-02-11 20:00:00
 thumbnail: ./img/coverage-2.png
 ---
 
