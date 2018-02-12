@@ -1,9 +1,9 @@
 ---
-title: Code Coverage Revisited
+title: Code Coverage, Revisited
 author: Oliver
-description: I was wrong about `logger.info`. Ignoring `if __name__ == "__main__"`.
+description: How I was wrong about logger.info. Excluding the "main" runner from coverage reports.
 date: 2018-02-11 20:00:00
-thumbnail: ./img/coverage-2.png
+thumbnail: ./img/coverage-revised.png
 ---
 
 I used `logger.info` as an example of code that can be excluded from test coverage, since with logging disabled, nothing is logged.
