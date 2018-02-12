@@ -1,5 +1,6 @@
 ---
 title: Python Unit Tests
+categories: ['testing', 'unit tests']
 description: >
     Unit tests, stubs, mocks, and spies — oh my! We'll use PyTest to add unit
     tests to Bear-as-a-Service.

@@ -1,5 +1,6 @@
 ---
 title: Code Coverage, Revisited
+categories: ['code coverage']
 description: How I was wrong about logger.info. Excluding the "main" runner from coverage reports.
 date: 2018-02-11 20:00:00
 thumbnail: ./img/coverage-revised.png

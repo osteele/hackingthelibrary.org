@@ -1,5 +1,6 @@
 ---
 title: Code Coverage
+categories: ['testing', 'code coverage']
 thumbnail: ./img/coverage-2.png
 ---
 

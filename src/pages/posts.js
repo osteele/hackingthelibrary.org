@@ -26,13 +26,16 @@ export default ({ data }) => {
                 </h2>
                 <p className="f6 lh-copy athelas"
                   dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
+                <p className="f7 lh-copy gray mt2">
+                  <span className="f7 ttu">Published: </span>
+                  <time className="f6 gray">
+                    {moment(fm.date).utc().format('dddd, MMM Do')}
+                  </time>
+                </p>
                 {fm.categories &&
                   <p className="f7 lh-copy gray mv0">
-                    Categories: <span className="ttu">{fm.categories.join(' ')}</span>
+                    <span className="f7 ttu">Categories:</span> {fm.categories.join(', ')}
                   </p>}
-                <time className="f6 db gray">
-                  {moment(fm.date).utc().format('dddd, MMM Do')}
-                </time>
               </div>
               <Thumbnail thumbnail={fm.thumbnail} />
             </div>
@@ -74,6 +77,7 @@ query postsQuery {
         excerpt
         frontmatter {
           author
+          categories
           date
           description
           draft
