@@ -1,6 +1,6 @@
 ---
 title: Continuous Delivery
-categories: ['continuous delivery']
+topics: ['continuous delivery', 'travis', 'heroku']
 description: >
     A Continuous Delivery system automatically (and continuously) delivers your
     application to the user. For an internet service such as a web application

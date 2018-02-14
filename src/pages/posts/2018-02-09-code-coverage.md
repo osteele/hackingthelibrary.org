@@ -1,6 +1,6 @@
 ---
 title: Code Coverage
-categories: ['testing', 'code coverage']
+topics: ['testing', 'coverage', 'quality']
 thumbnail: ./img/coverage-2.png
 ---
 

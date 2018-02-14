@@ -32,16 +32,16 @@ export default ({ data }) => {
                     {moment(fm.date).utc().format('dddd, MMM Do')}
                   </time>
                 </p>
-                {fm.categories &&
+                {fm.topics &&
                   <p className="f7 lh-copy gray mv0">
-                    <span className="f7 ttu">Categories:</span> {fm.categories.join(', ')}
+                    <span className="f7 ttu">Topics: </span>
+                    {fm.topics.sort().join(', ')}
                   </p>}
               </div>
               <Thumbnail thumbnail={fm.thumbnail} />
             </div>
           </Link>
-        </article>
-      ))}
+        </article>))}
     </section>
   );
 };
@@ -76,12 +76,12 @@ query postsQuery {
         id
         excerpt
         frontmatter {
-          categories
           date
           description
           draft
           path
           title
+          topics
           thumbnail {
             childImageSharp {
               resolutions(width: 250) {

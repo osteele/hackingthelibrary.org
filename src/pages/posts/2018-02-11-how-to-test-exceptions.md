@@ -1,6 +1,6 @@
 ---
 title: How to Test Exceptions
-categories: ['code coverage', 'testing', 'exceptions']
+topics: ['coverage', 'testing', 'exceptions', 'quality']
 description: Unit-testing code that raises exceptions. Refactoring unit tests. Adding tests before you extend and refactor code.
 date: 2018-02-11 17:40:00
 thumbnail: ./img/catch-general-exception.jpg

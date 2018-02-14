@@ -1,6 +1,6 @@
 ---
 title: Keeping Secrets
-categories: ['secrets', 'passwords', 'credentials', 'environment variables', 'heroku']
+topics: ['secrets', 'passwords', 'credentials', 'environment variables', 'heroku']
 description: How to keep passwords, API keys, and other secrets out of GitHub.
 thumbnail: ./img/keep-it-secret-keep-it-safe.jpg
 ---

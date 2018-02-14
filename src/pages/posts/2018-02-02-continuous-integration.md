@@ -1,6 +1,6 @@
 ---
 title: Continuous Integration
-categories: ['continuous integration']
+topics: ['continuous integration', 'travis']
 description: >
     A Continuous Integration (CI) server to run tests against every pushed
     commit. We'll add unit tests to Bear-as-a-Service, and connect the GitHub

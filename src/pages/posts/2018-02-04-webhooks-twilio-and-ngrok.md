@@ -1,6 +1,6 @@
 ---
 title: Twilio, Web Hooks, and ngrok
-categories: ['web hooks', 'twilio', 'ngrok']
+topics: ['web hooks', 'twilio', 'ngrok']
 description: >
     A web hooks notifies a web application of an external event. Configuring Twilio to connect to your application.
     Using ngrok to proxy web hooks to your development laptop.
