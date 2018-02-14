@@ -15,7 +15,10 @@ export default ({ data }) => {
     <section className="mw7 center">
       <HeadTitle site={data.site} title="Articles" description={description} />
       <h2 className="f2 f1-ns mb2 mb3-ns black b">Articles</h2>
-      <p className="f7 i mb3">{description}</p>
+      <p className="f7 i mb1">{description}</p>
+      <p className="f7 i mb3">
+        Also see these same articles <Link to="/topics">organized by topic</Link>.
+      </p>
       {posts.map(({ frontmatter: fm, id, excerpt }) => (
         <article key={id} className="pv4 bt bb b--black-10 ph3 ph0-l">
           <Link className="link black db" to={fm.path}>
