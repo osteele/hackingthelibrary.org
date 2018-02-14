@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 
 const { createFilePath } = require(`gatsby-source-filesystem`);
@@ -58,6 +59,12 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
           ? replaceLastComponent(relativePath,
             `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slugify(fm.title)}`)
           : relativePath;
+    }
+    if (fm.thumbnail) {
+      const thumbnailPath = path.join(path.dirname(node.fileAbsolutePath), fm.thumbnail);
+      if (!fs.existsSync(thumbnailPath)) {
+        console.error(`Missing image: ${relativePath} specifies ${fm.thumbnail}`);
+      }
     }
     createNodeField({ node, name: `collection`, value: collection });
     createNodeField({ node, name: `slug`, value: fm.path });
