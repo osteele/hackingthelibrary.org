@@ -45,8 +45,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       if (m) {
         const date = moment(m[1]).format('YYYY-MM-DDTHH:mm:ss.SSS') + 'Z';
         const title = titleize(m[2]);
-        if (!fm.date) fm.date = m[1];
-        if (!fm.title) fm.title = m[2];
+        if (!fm.date) fm.date = date;
+        if (!fm.title) fm.title = title;
       }
     }
     // This needs to come after the previous block, since this block relies on
