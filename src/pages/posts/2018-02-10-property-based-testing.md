@@ -1,8 +1,10 @@
 ---
 title: Property-Based Testing
-topics: ['testing', 'unit tests', 'property-based testing', 'quality']
 description: >
-    Property-based testing generates input values to test your functions with. The Hypothesis package implements property-based testing for Python. Fuzz testing and property-based testing are closely related.
+    Property-based testing generates input values with which to test your functions.
+    The Hypothesis package implements property-based testing for Python.
+    Fuzz testing and property-based testing are closely related.
+topics: ['testing', 'unit tests', 'property-based testing', 'quality']
 thumbnail: ./img/property-based-testing.png
 ---
 
