@@ -45,9 +45,9 @@ In order to maintain this invariant, you need to either: (1) never put a file in
 
 ## Things that don't belong in a repo
 
-Some files that end up in your *working directory*, should never go in your *repo*.
+Some files, that end up in your *working directory*, should never go in your *repo*.
 
-**Secrets** shouldn't go in the repo. These are discussed in [Keeping secrets](./2018-02-07-keeping-secrets).
+**Secrets** shouldn't go in the repo. These are discussed in [Keeping secrets](/posts/2018/02/07/keeping-secrets).
 
 Secrets shouldn't go in the repo because once you push to Github, those secrets accessible to the whole world. Even if your project sources aren't published to a public repo, they're better protected by [defense in depth](https://en.wikipedia.org/wiki/Defense_in_depth_(computing)).[^1] Also, you eventually want different secrets in your development environment from your staging, production, and possibly other environments, which makes this a special case of:
 
