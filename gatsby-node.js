@@ -46,18 +46,20 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         const date = moment(m[1]).format('YYYY-MM-DDTHH:mm:ss.SSS') + 'Z';
         const title = titleize(m[2]);
         if (!fm.date) fm.date = date;
+        if (!fm.slug) fm.slug = m[2];
         if (!fm.title) fm.title = title;
       }
     }
     // This needs to come after the previous block, since this block relies on
     /// the frontmatter date that that block may have set.
     if (!fm.path) {
+      const slug = fm.slug || slugify(fm.title);
       fm.path = collection === 'posts'
         ? replaceLastComponent(relativePath,
-          `${moment(fm.date).format('YYYY/MM/DD')}/${slugify(fm.title)}`)
+          `${moment(fm.date).format('YYYY/MM/DD')}/${slug}`)
         : collection === 'handouts'
           ? replaceLastComponent(relativePath,
-            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slugify(fm.title)}`)
+            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slug}`)
           : relativePath;
     }
     if (fm.thumbnail) {
