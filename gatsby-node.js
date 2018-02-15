@@ -56,7 +56,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       const slug = fm.slug || slugify(fm.title);
       fm.path = collection === 'posts'
         ? replaceLastComponent(relativePath,
-          `${moment(fm.date).format('YYYY/MM/DD')}/${slug}`)
+          `${moment(fm.date).utc().format('YYYY/MM/DD')}/${slug}`)
         : collection === 'handouts'
           ? replaceLastComponent(relativePath,
             `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slug}`)
