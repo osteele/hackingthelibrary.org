@@ -11,5 +11,6 @@ date: 2018-02-15
   We will review these in class.
 
 Optional reading:
+
 * Aristotle's [Classical Unities](https://en.wikipedia.org/wiki/Classical_unities), Wikipedia summary.
   Think about how the theater experience applies to installation software.
