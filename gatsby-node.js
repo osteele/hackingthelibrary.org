@@ -9,6 +9,7 @@ const baseAbsolutePath = path.join(__dirname, 'src', 'pages');
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
   const pageTemplate = path.resolve(`src/templates/page.js`);
+  const topicTemplate = path.resolve(`src/templates/topic.js`);
   const collectionTemplates = {
     'posts': path.resolve(`src/templates/post.js`),
   };
@@ -20,17 +21,30 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
     return Promise.reject(result.errors);
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
+  nodes.forEach(node => {
     const { path } = node.frontmatter;
     const relativePath = node.fileAbsolutePath.slice(baseAbsolutePath.length);
     const collection = getPathCollection(relativePath);
     const component = collectionTemplates[collection] || pageTemplate;
-    createPage({
-      path,
-      component,
-      context: {}, // Additional data can be passed via context
+    createPage({ path, component, context: {} });
+  });
+
+  const topics = {};
+  nodes.forEach(post => {
+    (post.frontmatter.topics || []).forEach(topic => {
+      const topicPosts = topics[topic] = topics[topic] || [];
+      topicPosts.push(post);
     });
   });
+  Object.keys(topics).forEach(topic => {
+    const path = `/topics/${topic}`;
+    createPage({
+      path,
+      component: topicTemplate,
+      context: { topic },
+    })
+  })
 };
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
@@ -108,6 +122,7 @@ const nodeQuery = `
         fileAbsolutePath
         frontmatter {
           path
+          topics
         }
       }
     }
