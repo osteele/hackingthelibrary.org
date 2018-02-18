@@ -14,7 +14,7 @@ export default ({ data }) => {
       <article className="page">
         <h1 className="f2 f1-ns mb2 mb3-ns black b">Assignments</h1>
         {currentProject &&
-        <p>Current project: <a href={currentProject}>Bear</a></p>}
+          <p>Current project: <a href={currentProjectUrl}>{currentProjectDescription}</a></p>}
         <ul>
           {posts.map(({ frontmatter: fm, id }) => (
             <li key={id}>
@@ -22,7 +22,7 @@ export default ({ data }) => {
                 {moment(fm.date).utc().format('dddd, MMM Do')}
               </Link>
             </li>
-))}
+          ))}
         </ul>
       </article>
     </div>
@@ -34,7 +34,8 @@ query assignmentsQuery {
     site {
       siteMetadata {
         title
-        currentProject
+        currentProjectDescription
+        currentProjectUrl
       }
     }
     allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "assignments"}}}) {
