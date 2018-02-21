@@ -1,7 +1,5 @@
 ---
-title: Idea Harvester
-date: 2018-02-12
-xembed_doc: /files/IdeaHarvester.pdf
+description: Our second project.
 ---
 
 <iframe src="/files/IdeaHarvester.pdf"/>
