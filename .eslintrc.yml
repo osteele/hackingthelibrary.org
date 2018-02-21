@@ -9,13 +9,17 @@ plugins:
 globals:
   graphql: true
 rules:
+  # lists false positives for react and other packages that gatsby and its
+  # plugins transitively include
+  import/no-extraneous-dependencies: 0
+  # useful and harmless in this particular project
   no-console: 0
+  # stylistic preferences
+  max-len: [error, {code: 120}]
+  no-confusing-arrow: 0
   no-nested-ternary: 0
   no-use-before-define: 0
-  import/no-extraneous-dependencies: 0
-  no-confusing-arrow: 0
   react/prop-types: 0
-  max-len: [error, {code: 120}]
 overrides:
   - files: gatsby-node.js
     rules:
