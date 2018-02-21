@@ -1,7 +1,7 @@
 import HeadTitle from '../components/HeadTitle';
 import React from 'react';
 
-export default ({ data }) => {
+const PostTemplate = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter: fm, html, excerpt } = markdownRemark;
   const { thumbnail_source_url: thumbnailSourceUrl } = fm;
@@ -28,6 +28,8 @@ export default ({ data }) => {
     </article>
   );
 };
+
+export default PostTemplate;
 
 export const postQuery = graphql`
   query postQuery($path: String!) {

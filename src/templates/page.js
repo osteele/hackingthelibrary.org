@@ -1,7 +1,7 @@
 import HeadTitle from '../components/HeadTitle';
 import React from 'react';
 
-export default ({ data }) => {
+const PageTemplate = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter: fm, html, excerpt } = markdownRemark;
 
@@ -26,6 +26,8 @@ export default ({ data }) => {
     </article>
   );
 };
+
+export default PageTemplate;
 
 export const pageQuery = graphql`
   query pageQuery($path: String!) {

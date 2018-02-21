@@ -13,7 +13,7 @@ events.forEach((event, id) => {
   event.id = id;
 });
 
-export default props => (
+const CalendarPage = props => (
   <div className="ph2 ph3-ns mw8 center">
     <h1>Calendar</h1>
     <div style={{ height: '500px' }}>
@@ -26,3 +26,5 @@ export default props => (
     </div>
   </div>
 );
+
+export default CalendarPage;

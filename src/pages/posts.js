@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
 
-export default ({ data }) => {
+const PostsPage = ({ data }) => {
   let posts = data.allMarkdownRemark.edges
     .map(({ node }) => node);
   if (process.env.NODE_ENV === 'production') {
@@ -48,6 +48,8 @@ export default ({ data }) => {
     </section>
   );
 };
+
+export default PostsPage;
 
 const Thumbnail = ({ thumbnail }) =>
   thumbnail &&

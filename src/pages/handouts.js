@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
 
-export default ({ data }) => {
+const HandoutsPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
     .map(({ node }) => node);
 
@@ -30,6 +30,8 @@ export default ({ data }) => {
     </div>
   );
 };
+
+export default HandoutsPage;
 
 export const handoutsQuery = graphql`
 query handoutsQuery {

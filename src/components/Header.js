@@ -3,7 +3,7 @@ import React from 'react';
 import config from '../../gatsby-config';
 import links from '../../data/header-links';
 
-export default () => (
+const Header = () => (
   <header className="mw7 center pa2 pa3-ns">
     <nav>
       <h1 className="lh-solid f5 f4-ns">
@@ -22,3 +22,5 @@ export default () => (
     </nav>
   </header>
 );
+
+export default Header;

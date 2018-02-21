@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const NotFoundPage = () => (
   <article className="page">
     <div className="ph2 ph3-ns mw7 center">
       <h1 className="f2 f1-ns mb2 mb3-ns black b ttu">Not Found</h1>
@@ -10,3 +10,5 @@ export default () => (
     </section>
   </article>
 );
+
+export default NotFoundPage;

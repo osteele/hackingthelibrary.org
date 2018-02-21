@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
 
-export default ({ data }) => {
+const AssignmentsPage = ({ data }) => {
   const { currentProject, currentProjectDescription, currentProjectUrl } = data.site.siteMetadata;
   const posts = data.allMarkdownRemark.edges
     .map(({ node }) => node);
@@ -28,6 +28,8 @@ export default ({ data }) => {
     </div>
   );
 };
+
+export default AssignmentsPage;
 
 export const assignmentsQuery = graphql`
 query assignmentsQuery {

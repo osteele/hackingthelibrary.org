@@ -3,7 +3,7 @@ import moment from 'moment';
 
 const now = moment().startOf('day');
 
-export default ({ data }) => {
+const IndexPage = ({ data }) => {
   const assignments = data.allMarkdownRemark.edges
     .map(({ node }) => node)
     .filter(({ frontmatter: fm }) => moment(fm.date).utc().endOf('day').isAfter(now));
@@ -36,6 +36,8 @@ export default ({ data }) => {
     </div>
   );
 };
+
+export default IndexPage;
 
 export const indexPageQuery = graphql`
 query indexPageQuery {
