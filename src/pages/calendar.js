@@ -9,6 +9,7 @@ import moment from 'moment';
 BigCalendar.setLocalizer(BigCalendar.momentLocalizer(moment));
 
 events.forEach((event, id) => {
+  // eslint-disable-next-line no-param-reassign
   event.id = id;
 });
 

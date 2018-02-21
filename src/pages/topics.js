@@ -1,7 +1,6 @@
 import HeadTitle from '../components/HeadTitle';
 import Link from 'gatsby-link';
 import React from 'react';
-import moment from 'moment';
 
 export default ({ data }) => {
     let posts = data.allMarkdownRemark.edges
@@ -11,8 +10,9 @@ export default ({ data }) => {
     }
 
     const topics = {};
-    posts.forEach(post => {
-        (post.frontmatter.topics || []).forEach(topic => {
+    posts.forEach((post) => {
+        (post.frontmatter.topics || []).forEach((topic) => {
+            // eslint-disable-next-line no-multi-assign
             const topicPosts = topics[topic] = topics[topic] || [];
             topicPosts.push(post);
         });
@@ -50,7 +50,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "posts"}}}) {
+    allMarkdownRemark(
+        sort: {order: DESC, fields: [frontmatter___date]},
+        filter: {fields: {collection: {eq: "posts"}}}
+    ) {
       edges {
         node {
           id

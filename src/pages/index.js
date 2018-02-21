@@ -14,7 +14,9 @@ export default ({ data }) => {
         <div className="fl w-40 pt2 pr3 bg-white">
           <img src={data.deadlineImage.responsiveSizes.src} />
           <blockquote className="athelas ml0 mt0 black-90">
-            <p className="f5 f4-m f3-l">I love deadlines. I love the whooshing noise they make as they go by.</p>
+            <p className="f5 f4-m f3-l">
+              I love deadlines. I love the whooshing noise they make as they go by.
+            </p>
             <cite className="f6 ttu tracked fs-normal">—Douglas Adams</cite>
           </blockquote>
         </div>
@@ -46,7 +48,10 @@ query indexPageQuery {
       sizes
     }
   }
-  allMarkdownRemark(sort: {order: ASC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "assignments"}}}) {
+  allMarkdownRemark(
+    sort: {order: ASC, fields: [frontmatter___date]},
+    filter: {fields: {collection: {eq: "assignments"}}}
+  ) {
     edges {
       node {
         id

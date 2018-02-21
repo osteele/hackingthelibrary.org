@@ -9,7 +9,11 @@ export default ({ data }) => {
 
   return (
     <div className="ph2 ph3-ns mw7 center">
-      <HeadTitle site={data.site} title="Handouts" description="Class handouts, many of which are actually Google docs." />
+      <HeadTitle
+        site={data.site}
+        title="Handouts"
+        description="Class handouts, many of which are actually Google docs."
+      />
       <article className="page">
         <h1 className="f2 f1-ns mb2 mb3-ns black b">Handouts</h1>
         {posts.map(({ frontmatter: fm, id, excerpt }) => (
@@ -34,7 +38,10 @@ query handoutsQuery {
         title
       }
     }
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "handouts"}}}) {
+    allMarkdownRemark(
+      sort: {order: DESC, fields: [frontmatter___date]},
+      filter: {fields: {collection: {eq: "handouts"}}}
+    ) {
       edges {
         node {
           id

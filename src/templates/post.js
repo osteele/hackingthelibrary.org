@@ -1,11 +1,10 @@
 import HeadTitle from '../components/HeadTitle';
-import Img from 'gatsby-image';
 import React from 'react';
 
 export default ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter: fm, html, excerpt } = markdownRemark;
-  const { thumbnail_source_url } = fm;
+  const { thumbnail_source_url: thumbnailSourceUrl } = fm;
 
   return (
     <article className="page">
@@ -15,9 +14,9 @@ export default ({ data }) => {
         {fm.thumbnail &&
           <figure className="dn-s">
             <img style={{ maxHeight: 500 }} src={fm.thumbnail.childImageSharp.sizes.src} />
-            {thumbnail_source_url &&
+            {thumbnailSourceUrl &&
               <figcaption className="i">
-                Image source: <a href={thumbnail_source_url}>{thumbnail_source_url}</a>
+                Image source: <a href={thumbnailSourceUrl}>{thumbnailSourceUrl}</a>
               </figcaption>}
           </figure>}
 

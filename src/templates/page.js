@@ -1,5 +1,4 @@
 import HeadTitle from '../components/HeadTitle';
-import Img from 'gatsby-image';
 import React from 'react';
 
 export default ({ data }) => {

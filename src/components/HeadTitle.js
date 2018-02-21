@@ -5,7 +5,7 @@ export default ({ site, title, description }) =>
     site && site.siteMetadata &&
     <Helmet>
         {title &&
-        <title>{`${site.siteMetadata.title} • ${title}`}</title>}
+            <title>{`${site.siteMetadata.title} • ${title}`}</title>}
         {description &&
-        <meta name="description" content={description} />}
+            <meta name="description" content={description} />}
     </Helmet>;

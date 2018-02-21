@@ -4,7 +4,7 @@ import React from 'react';
 import moment from 'moment';
 
 export default ({ data }) => {
-  const { currentProject } = data.site.siteMetadata;
+  const { currentProject, currentProjectDescription, currentProjectUrl } = data.site.siteMetadata;
   const posts = data.allMarkdownRemark.edges
     .map(({ node }) => node);
 
@@ -38,7 +38,10 @@ query assignmentsQuery {
         currentProjectUrl
       }
     }
-    allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {fields: {collection: {eq: "assignments"}}}) {
+    allMarkdownRemark(
+      sort: {order: DESC, fields: [frontmatter___date]},
+      filter: {fields: {collection: {eq: "assignments"}}}
+    ) {
       edges {
         node {
           id

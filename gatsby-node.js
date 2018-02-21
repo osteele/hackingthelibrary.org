@@ -11,7 +11,7 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
   const pageTemplate = path.resolve(`src/templates/page.js`);
   const topicTemplate = path.resolve(`src/templates/topic.js`);
   const collectionTemplates = {
-    'posts': path.resolve(`src/templates/post.js`),
+    posts: path.resolve(`src/templates/post.js`),
   };
   const query = graphql(nodeQuery);
   const result = await query;
@@ -33,6 +33,7 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
   const topics = {};
   nodes.forEach(post => {
     (post.frontmatter.topics || []).forEach(topic => {
+      // eslint-exclude-next-line no-multi-assign
       const topicPosts = topics[topic] = topics[topic] || [];
       topicPosts.push(post);
     });
@@ -69,11 +70,15 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     if (!fm.path) {
       const slug = fm.slug || slugify(fm.title);
       fm.path = collection === 'posts'
-        ? replaceLastComponent(relativePath,
-          `${moment(fm.date).utc().format('YYYY/MM/DD')}/${slug}`)
+        ? replaceLastComponent(
+          relativePath,
+          `${moment(fm.date).utc().format('YYYY/MM/DD')}/${slug}`
+        )
         : collection === 'handouts'
-          ? replaceLastComponent(relativePath,
-            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slug}`)
+          ? replaceLastComponent(
+            relativePath,
+            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slug}`
+          )
           : relativePath;
     }
     if (fm.thumbnail) {
@@ -87,14 +92,14 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 };
 
-const capitalize = s =>
-  s.length > 0 ? s.slice(0, 1).toUpperCase() + s.slice(1) : s;
+const capitalize = str =>
+  str.length > 0 ? str.slice(0, 1).toUpperCase() + str.slice(1) : str;
 
-const titleize = s =>
-  capitalize(s).replace(/-./g, s => ' ' + s.slice(1).toUpperCase());
+const titleize = str =>
+  capitalize(str).replace(/-./g, str => ' ' + str.slice(1).toUpperCase());
 
 const getPathCollection = relativePath => {
-  const m = relativePath.match(/\/(.+?)\/[^\/]/);
+  const m = relativePath.match(/\/(.+?)\/[^/]/);
   return m && m[1];
 }
 

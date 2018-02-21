@@ -1,10 +1,9 @@
 import HeadTitle from '../components/HeadTitle';
 import Link from 'gatsby-link';
 import React from 'react';
-import moment from 'moment';
 
 export default ({ pathContext, data }) => {
-    let { topic } = pathContext;
+    const { topic } = pathContext;
     let posts = data.allMarkdownRemark.edges
         .map(({ node }) => node);
     if (process.env.NODE_ENV === 'production') {
