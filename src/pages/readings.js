@@ -2,6 +2,7 @@ import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
 import HeadTitle from '../components/HeadTitle';
+import readings from '../../data/readings.yaml';
 
 const HandoutsPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -27,7 +28,7 @@ const HandoutsPage = ({ data }) => {
           </section>
         ))}
         <h2>On the Web</h2>
-        {readings.map(([title, url, author], i) => (
+        {readings.map(({title, url, author}, i) => (
           <h3 key={i}>
             <a href={url}>
               {title}
@@ -40,14 +41,6 @@ const HandoutsPage = ({ data }) => {
   );
 };
 
-const readings = [
-  ["The Library Bill of Rights", "http://www.ala.org/advocacy/intfreedom/librarybill"],
-  ["Holding a Program in One's Head", "http://paulgraham.com/head.html", "Paul Graham"],
-  ["Aristotle's Classical Unities (Wikipedia summary)", "https://en.wikipedia.org/wiki/Classical_unities"],
-  ["UML 2 Deployment Diagrams: An Agile Introduction", "http://www.agilemodeling.com/artifacts/deploymentDiagram.htm", "Scott W. Ambler"],
-  ["Agile Team Organisation: Squads, Chapters, Tribes and Guilds", "http://www.full-stackagile.com/2016/02/14/team-organisation-squads-chapters-tribes-and-guilds/", "Ashley-Christian Hardy"],
-  ["Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds (PDF)", "https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf", "Henrik Kniberg & Anders Ivarsson"],
-  ]
 export default HandoutsPage;
 
 export const readingsQuery = graphql`
