@@ -15,9 +15,7 @@ rules:
   no-console: 0
   no-nested-ternary: 0
   no-use-before-define: 0
-  quotes: 0
   import/no-extraneous-dependencies: 0
-  indent: 0
   no-confusing-arrow: 0
   import/first: 0
   react/display-name: 0
@@ -28,4 +26,3 @@ overrides:
     rules:
       consistent-return: 0
       no-shadow: 0
-

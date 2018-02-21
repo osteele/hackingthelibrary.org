@@ -1,17 +1,17 @@
 const fs = require('fs');
 const path = require('path');
 
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const { createFilePath } = require('gatsby-source-filesystem');
 const moment = require('moment');
 
 const baseAbsolutePath = path.join(__dirname, 'src', 'pages');
 
 exports.createPages = async ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  const pageTemplate = path.resolve(`src/templates/page.js`);
-  const topicTemplate = path.resolve(`src/templates/topic.js`);
+  const pageTemplate = path.resolve('src/templates/page.js');
+  const topicTemplate = path.resolve('src/templates/topic.js');
   const collectionTemplates = {
-    posts: path.resolve(`src/templates/post.js`),
+    posts: path.resolve('src/templates/post.js'),
   };
   const query = graphql(nodeQuery);
   const result = await query;
@@ -52,8 +52,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
   const { internal, frontmatter: fm } = node;
 
-  if (internal.type === `MarkdownRemark`) {
-    const relativePath = createFilePath({ node, getNode, basePath: `pages` });
+  if (internal.type === 'MarkdownRemark') {
+    const relativePath = createFilePath({ node, getNode, basePath: 'pages' });
     const collection = getPathCollection(relativePath);
     if (collection === 'posts') {
       const m = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})-(.+)/);
@@ -86,8 +86,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
         console.error(`Missing image: ${relativePath} specifies ${fm.thumbnail}`);
       }
     }
-    createNodeField({ node, name: `collection`, value: collection });
-    createNodeField({ node, name: `slug`, value: fm.path });
+    createNodeField({ node, name: 'collection', value: collection });
+    createNodeField({ node, name: 'slug', value: fm.path });
   }
 };
 

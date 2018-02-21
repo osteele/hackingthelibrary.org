@@ -3,22 +3,22 @@ import Link from 'gatsby-link';
 import React from 'react';
 
 export default ({ data }) => {
-    let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node);
-    if (process.env.NODE_ENV === 'production') {
-        posts = posts.filter(node => !node.frontmatter.draft);
-    }
+  let posts = data.allMarkdownRemark.edges
+    .map(({ node }) => node);
+  if (process.env.NODE_ENV === 'production') {
+    posts = posts.filter(node => !node.frontmatter.draft);
+  }
 
-    const topics = {};
-    posts.forEach((post) => {
-        (post.frontmatter.topics || []).forEach((topic) => {
-            // eslint-disable-next-line no-multi-assign
-            const topicPosts = topics[topic] = topics[topic] || [];
-            topicPosts.push(post);
-        });
+  const topics = {};
+  posts.forEach((post) => {
+    (post.frontmatter.topics || []).forEach((topic) => {
+      // eslint-disable-next-line no-multi-assign
+      const topicPosts = topics[topic] = topics[topic] || [];
+      topicPosts.push(post);
     });
+  });
 
-    return (
+  return (
         <section className="mw7 center">
             <HeadTitle site={data.site} title="Topics" description={data.description} />
             <h2 className="f2 f1-ns mb2 mb3-ns black b">Topics</h2>
@@ -39,7 +39,7 @@ export default ({ data }) => {
                         </article>))}
                 </section>))}
         </section>
-    );
+  );
 };
 
 export const pageQuery = graphql`

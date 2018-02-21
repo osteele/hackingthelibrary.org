@@ -3,14 +3,14 @@ import Link from 'gatsby-link';
 import React from 'react';
 
 export default ({ pathContext, data }) => {
-    const { topic } = pathContext;
-    let posts = data.allMarkdownRemark.edges
-        .map(({ node }) => node);
-    if (process.env.NODE_ENV === 'production') {
-        posts = posts.filter(node => !node.frontmatter.draft);
-    }
+  const { topic } = pathContext;
+  let posts = data.allMarkdownRemark.edges
+    .map(({ node }) => node);
+  if (process.env.NODE_ENV === 'production') {
+    posts = posts.filter(node => !node.frontmatter.draft);
+  }
 
-    return (
+  return (
         <section className="mw7 center">
             <HeadTitle site={data.site} title={topic} description={data.description} />
             <h2 className="f2 f1-ns mb2 mb3-ns black b">{topic}</h2>
@@ -27,7 +27,7 @@ export default ({ pathContext, data }) => {
                     </Link>
                 </article>))}
         </section>
-    );
+  );
 };
 
 export const topicsQuery = graphql`
