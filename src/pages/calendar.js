@@ -1,8 +1,8 @@
 import BigCalendar from 'react-big-calendar';
 import React from 'react';
+import moment from 'moment';
 import events from '../../data/days.json';
 // Import localizer from 'react-big-calendar/lib/localizers/globalize';
-import moment from 'moment';
 
 // Let allViews = Object.keys(BigCalendar.Views).map(k => BigCalendar.Views[k])
 

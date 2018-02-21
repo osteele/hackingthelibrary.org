@@ -1,5 +1,5 @@
-import HeadTitle from '../components/HeadTitle';
 import React from 'react';
+import HeadTitle from '../components/HeadTitle';
 
 const PageTemplate = ({ data }) => {
   const { markdownRemark } = data;

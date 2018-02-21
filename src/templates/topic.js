@@ -1,6 +1,6 @@
-import HeadTitle from '../components/HeadTitle';
 import Link from 'gatsby-link';
 import React from 'react';
+import HeadTitle from '../components/HeadTitle';
 
 const TopicTemplate = ({ pathContext, data }) => {
   const { topic } = pathContext;

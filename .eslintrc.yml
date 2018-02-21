@@ -14,11 +14,14 @@ rules:
   no-use-before-define: 0
   import/no-extraneous-dependencies: 0
   no-confusing-arrow: 0
-  import/first: 0
   react/prop-types: 0
   max-len: [error, {code: 120}]
 overrides:
   - files: gatsby-node.js
     rules:
-      consistent-return: 0
-      no-shadow: 0
+      consistent-return: 0  # inherited from starter
+      no-shadow: 0  # FIXME remove this
+  - files: src/layouts/index.js
+    rules:
+      import/first: 0  # doesn't make sense for css reset
+

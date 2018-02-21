@@ -1,7 +1,7 @@
-import HeadTitle from '../components/HeadTitle';
 import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
+import HeadTitle from '../components/HeadTitle';
 
 const AssignmentsPage = ({ data }) => {
   const { currentProject, currentProjectDescription, currentProjectUrl } = data.site.siteMetadata;
