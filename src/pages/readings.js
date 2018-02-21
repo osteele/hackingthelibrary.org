@@ -1,6 +1,6 @@
 import Link from 'gatsby-link';
 import React from 'react';
-import moment from 'moment';
+import { sortBy } from 'lodash';
 import HeadTitle from '../components/HeadTitle';
 import readings from '../../data/readings.yaml';
 
@@ -30,9 +30,9 @@ const HandoutsPage = ({ data }) => {
             </section>
           ))}
           <h2>On the Web</h2>
-          {readings.map(({title, url, author}, i) => (
-            <div>
-              <dt key={i}>
+          {sortBy(readings, 'title').map(({ title, url, author }, i) => (
+            <div key={i}>
+              <dt>
                 <a href={url}>
                   {title}
                 </a>
@@ -56,7 +56,7 @@ query readingsQuery {
       }
     }
     allMarkdownRemark(
-      sort: {order: DESC, fields: [frontmatter___date]},
+      sort: {order: ASC, fields: [frontmatter___title]},
       filter: {fields: {collection: {eq: "readings"}}}
     ) {
       edges {
