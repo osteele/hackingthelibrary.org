@@ -11,13 +11,11 @@
     "data": "python3 scripts/make_events.py > data/days.json",
     "start": "gatsby develop",
     "deploy": "gatsby build && netlify deploy",
-    "format": "xo --fix",
-    "lint": "xo",
+    "format": "eslint --fix --ext .jsx,.js *.js *.jsx src",
+    "lint": "eslint --cache --ext .jsx,.js *.js *.jsx src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "eslint-config-xo-react": "^0.16.0",
-    "eslint-plugin-react": "^7.6.1",
     "gatsby": "^1.9.158",
     "gatsby-image": "^1.0.34",
     "gatsby-link": "^1.6.34",
@@ -41,65 +39,10 @@
     "tachyons-sass": "^4.9.2"
   },
   "devDependencies": {
-    "gatsby-cli": "^1.1.32",
-    "prettier": "^1.10.2",
-    "xo": "^0.18.2"
-  },
-  "xo": {
-    "extends": [
-      "xo-react"
-    ],
-    "space": 2,
-    "globals": [
-      "graphql"
-    ],
-    "rules": {
-      "arrow-parens": [
-        "error",
-        "as-needed"
-      ],
-      "object-curly-spacing": [
-        "error",
-        "always"
-      ],
-      "comma-dangle": [
-        "error",
-        "always-multiline"
-      ],
-      "import/no-extraneous-dependencies": "off",
-      "import/order": "off",
-      "react/no-danger": "off",
-      "react/prop-types": "off",
-      "react/require-default-props": "off",
-      "react/jsx-tag-spacing": [
-        "error",
-        {
-          "beforeSelfClosing": "always"
-        }
-      ],
-      "no-use-before-define": "off",
-      "operator-linebreak": "off",
-      "unicorn/filename-case": "off"
-    },
-    "overrides": [
-      {
-        "files": "src/pages/calendar.js",
-        "rules": {
-          "import/extensions": "off"
-        }
-      },
-      {
-        "files": "src/components/Header.js",
-        "rules": {
-          "react/no-array-index-key": "off"
-        }
-      },
-      {
-        "files": "src/layouts/index.js",
-        "rules": {
-          "import/no-unassigned-import": "off"
-        }
-      }
-    ]
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.7.0",
+    "gatsby-cli": "^1.1.32"
   }
 }
