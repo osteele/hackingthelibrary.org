@@ -22,7 +22,7 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
   }
 
   const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
-  nodes.forEach(node => {
+  nodes.forEach((node) => {
     const { path } = node.frontmatter;
     const relativePath = node.fileAbsolutePath.slice(baseAbsolutePath.length);
     const collection = getPathCollection(relativePath);
@@ -31,21 +31,21 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
   });
 
   const topics = {};
-  nodes.forEach(post => {
-    (post.frontmatter.topics || []).forEach(topic => {
-      // eslint-exclude-next-line no-multi-assign
+  nodes.forEach((post) => {
+    (post.frontmatter.topics || []).forEach((topic) => {
+      // eslint-disable-next-line no-multi-assign
       const topicPosts = topics[topic] = topics[topic] || [];
       topicPosts.push(post);
     });
   });
-  Object.keys(topics).forEach(topic => {
+  Object.keys(topics).forEach((topic) => {
     const path = `/topics/${topic}`;
     createPage({
       path,
       component: topicTemplate,
       context: { topic },
-    })
-  })
+    });
+  });
 };
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
@@ -58,26 +58,25 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     if (collection === 'posts') {
       const m = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})-(.+)/);
       if (m) {
-        const date = moment(m[1]).format('YYYY-MM-DDTHH:mm:ss.SSS') + 'Z';
-        const title = titleize(m[2]);
-        if (!fm.date) fm.date = date;
-        if (!fm.slug) fm.slug = m[2];
-        if (!fm.title) fm.title = title;
+        const [, date, title] = m;
+        if (!fm.date) fm.date = `${moment(date).format('YYYY-MM-DDTHH:mm:ss.SSS')}Z`;
+        if (!fm.slug) fm.slug = slugify(title);
+        if (!fm.title) fm.title = titleize(title);
       }
     }
     // This needs to come after the previous block, since this block relies on
-    /// the frontmatter date that that block may have set.
+    // the frontmatter date that that block may have set.
     if (!fm.path) {
       const slug = fm.slug || slugify(fm.title);
       fm.path = collection === 'posts'
         ? replaceLastComponent(
           relativePath,
-          `${moment(fm.date).utc().format('YYYY/MM/DD')}/${slug}`
+          `${moment(fm.date).utc().format('YYYY/MM/DD')}/${slug}`,
         )
         : collection === 'handouts'
           ? replaceLastComponent(
             relativePath,
-            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slug}`
+            `${moment(fm.date).utc().format('YYYY-MM-DD')}-${slug}`,
           )
           : relativePath;
     }
@@ -96,12 +95,12 @@ const capitalize = str =>
   str.length > 0 ? str.slice(0, 1).toUpperCase() + str.slice(1) : str;
 
 const titleize = str =>
-  capitalize(str).replace(/-./g, str => ' ' + str.slice(1).toUpperCase());
+  capitalize(str).replace(/-./g, str => ` ${str.slice(1).toUpperCase()}`);
 
-const getPathCollection = relativePath => {
+const getPathCollection = (relativePath) => {
   const m = relativePath.match(/\/(.+?)\/[^/]/);
   return m && m[1];
-}
+};
 
 const slugify = s =>
   s.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
