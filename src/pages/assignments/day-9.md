@@ -5,7 +5,7 @@ date: 2018-02-20
 
 ### Readings
 
-* [“A Short Overview of Architecture Documentation”](/handouts/2018-02-16-architecture-documentation), from Clements, *Documenting Software Architectures: Views and Beyond*. \[Reading time: 4 minutes\]
+* [“A Short Overview of Architecture Documentation”](/readings/architecture-documentation/), from Clements, *Documenting Software Architectures: Views and Beyond*. \[Reading time: 4 minutes\]
 * [UML 2 Deployment Diagrams: An Agile Introduction](http://www.agilemodeling.com/artifacts/deploymentDiagram.htm)
 
 ### Writing (er, Drawing)

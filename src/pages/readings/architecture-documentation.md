@@ -1,8 +1,8 @@
 ---
 title: A Short Overview of Architecture Documentation
-slug: architecture-documentation
-date: 2018-02-16
 ---
+
+<cite>From Clements, Paul. *Documenting Software Architectures: Views and Beyond* (SEI Series in Software Engineering). Pearson Education.</cite>
 
 ## P.2.1 Why Document Software Architecture?
 
@@ -34,5 +34,3 @@ But the best architects also see documentation as delivering value to themselves
    * Architecture tells implementers what to implement.
    * For those interested in the ability of the design to meet the system’s quality objectives, the architecture documentation serves as the fodder for evaluation. The architecture documentation must contain the information necessary to evaluate a variety of attributes, such as security, performance, usability, availability, and modifiability. Analyses of each one of these attributes have their own information needs.
    * For system builders who use automatic code-generation tools, the documentation may incorporate the models used for generation.
-
-Clements, Paul. *Documenting Software Architectures: Views and Beyond* (SEI Series in Software Engineering). Pearson Education.

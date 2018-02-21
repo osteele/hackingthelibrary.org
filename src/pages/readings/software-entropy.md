@@ -1,9 +1,4 @@
----
-title: Software Entropy
-date: 2018-02-12
----
-
-> From Andrew Hunt and David Thomas. *The Pragmatic Programmer: From Journeyman to Master* (Kindle Locations 353-399). Pearson Education. Kindle Edition.
+<cite>From Andrew Hunt and David Thomas. *The Pragmatic Programmer: From Journeyman to Master* (Kindle Locations 353-399). Pearson Education. Kindle Edition.</cite>
 
 While software development is immune from almost all physical laws, *entropy* hits us hard. *Entropy* is a term from physics that refers to the amount of "disorder" in a system. Unfortunately, the laws of thermodynamics guarantee that the entropy in the universe tends toward a maximum. When disorder increases in software, programmers call it "software rot."
 

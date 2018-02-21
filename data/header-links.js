@@ -3,6 +3,7 @@ export default [
     ['Assignments', '/assignments'],
     ['Handouts', '/handouts'],
     ['Lecture Notes', '/lecture-notes'],
+    ['Readings', '/readings'],
     ['Resources', '/resources'],
     ['Syllabus', '/syllabus'],
     ['Topics', '/topics'],

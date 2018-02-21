@@ -1,4 +1,4 @@
-<cite>Hunt, Andrew. *The Pragmatic Programmer: From Journeyman to Master* (Kindle Locations 1062-1147). Pearson Education. Kindle Edition.</cite>
+<cite>From Hunt, Andrew. *The Pragmatic Programmer: From Journeyman to Master* (Kindle Locations 1062-1147). Pearson Education. Kindle Edition.</cite>
 
 **10. Tracer Bullets**
 
