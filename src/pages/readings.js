@@ -26,11 +26,13 @@ const HandoutsPage = ({ data }) => {
             <p dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
           </section>
         ))}
-        {readings.map(([title, url], i) => (
+        <h2>On the Web</h2>
+        {readings.map(([title, url, author], i) => (
           <h3 key={i}>
-            <Link to={url}>
+            <a href={url}>
               {title}
-              </Link>
+            </a>
+            {author && <span>, {author}</span>}
           </h3>
         ))}
       </article>
@@ -40,9 +42,9 @@ const HandoutsPage = ({ data }) => {
 
 const readings = [
   ["The Library Bill of Rights", "http://www.ala.org/advocacy/intfreedom/librarybill"],
-  ["Holding a Program in One's Head", "http://paulgraham.com/head.html"],
+  ["Holding a Program in One's Head", "http://paulgraham.com/head.html", "Paul Graham"],
   ["Aristotle's Classical Unities (Wikipedia summary)", "https://en.wikipedia.org/wiki/Classical_unities"],
-  ["UML 2 Deployment Diagrams: An Agile Introduction", "http://www.agilemodeling.com/artifacts/deploymentDiagram.htm"],
+  ["UML 2 Deployment Diagrams: An Agile Introduction", "http://www.agilemodeling.com/artifacts/deploymentDiagram.htm", "Scott W. Ambler"],
   ["Agile Team Organisation: Squads, Chapters, Tribes and Guilds", "http://www.full-stackagile.com/2016/02/14/team-organisation-squads-chapters-tribes-and-guilds/", "Ashley-Christian Hardy"],
   ["Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds (PDF)", "https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf", "Henrik Kniberg & Anders Ivarsson"],
   ]
