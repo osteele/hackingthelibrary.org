@@ -6,9 +6,6 @@ env:
   browser: true
 plugins:
   - react
-parserOptions:
-  ecmaFeatures:
-      jsx: true
 globals:
   graphql: true
 rules:
