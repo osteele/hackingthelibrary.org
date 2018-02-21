@@ -21,8 +21,9 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
     return Promise.reject(result.errors);
   }
 
-  const nodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
-  nodes.forEach((node) => {
+  // create markdown pages
+  const markdownNodes = result.data.allMarkdownRemark.edges.map(({ node }) => node);
+  markdownNodes.forEach((node) => {
     const { path } = node.frontmatter;
     const relativePath = node.fileAbsolutePath.slice(baseAbsolutePath.length);
     const collection = getPathCollection(relativePath);
@@ -30,14 +31,17 @@ exports.createPages = async ({ boundActionCreators, graphql }) => {
     createPage({ path, component, context: {} });
   });
 
+  // collect markdown page topics
   const topics = {};
-  nodes.forEach((post) => {
+  markdownNodes.forEach((post) => {
     (post.frontmatter.topics || []).forEach((topic) => {
       // eslint-disable-next-line no-multi-assign
       const topicPosts = topics[topic] = topics[topic] || [];
       topicPosts.push(post);
     });
   });
+
+  // create topic pages
   Object.keys(topics).forEach((topic) => {
     const path = `/topics/${topic}`;
     createPage({
@@ -52,10 +56,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
   const { internal, frontmatter: fm } = node;
 
+  // Set default frontmatter collection, date, slug, and title from pathname.
   if (internal.type === 'MarkdownRemark') {
     const relativePath = createFilePath({ node, getNode, basePath: 'pages' });
     const collection = getPathCollection(relativePath);
-    if (collection === 'posts') {
+    {
       const m = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})-(.+)/);
       if (m) {
         const [, date, title] = m;
