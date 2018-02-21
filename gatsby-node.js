@@ -63,10 +63,15 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     {
       const m = path.basename(relativePath).match(/^(\d{4}-\d{2}-\d{2})-(.+)/);
       if (m) {
-        const [, date, title] = m;
+        const [, date, slug] = m;
         if (!fm.date) fm.date = `${moment(date).format('YYYY-MM-DDTHH:mm:ss.SSS')}Z`;
-        if (!fm.slug) fm.slug = slugify(title);
-        if (!fm.title) fm.title = titleize(title);
+        if (!fm.slug) fm.slug = slugify(slug);
+        if (!fm.title) fm.title = titleize(slug);
+      } else {
+        const m = relativePath.match(/([^/]+)\/?$/);
+        const [, slug] = m;
+        if (!fm.slug) fm.slug = slugify(slug);
+        if (!fm.title) fm.title = titleize(slug);
       }
     }
     // This needs to come after the previous block, since this block relies on
