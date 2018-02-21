@@ -17,25 +17,30 @@ const HandoutsPage = ({ data }) => {
       />
       <article className="page">
         <h1 className="f2 f1-ns mb2 mb3-ns black b">Readings</h1>
-        {posts.map(({ frontmatter: fm, id, excerpt }) => (
-          <section key={id}>
-            <h3>
-              <Link to={fm.path}>
-                {fm.title}
-              </Link>
-            </h3>
-            <p dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
-          </section>
-        ))}
-        <h2>On the Web</h2>
-        {readings.map(({title, url, author}, i) => (
-          <h3 key={i}>
-            <a href={url}>
-              {title}
-            </a>
-            {author && <span>, {author}</span>}
-          </h3>
-        ))}
+        <h2>Excerpts</h2>
+        <dl>
+          {posts.map(({ frontmatter: fm, id, excerpt }) => (
+            <section key={id}>
+              <dt>
+                <Link to={fm.path}>
+                  {fm.title}
+                </Link>
+              </dt>
+              <dd dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />
+            </section>
+          ))}
+          <h2>On the Web</h2>
+          {readings.map(({title, url, author}, i) => (
+            <div>
+              <dt key={i}>
+                <a href={url}>
+                  {title}
+                </a>
+              </dt>
+              {author && <dd>{author}</dd>}
+            </div>
+          ))}
+        </dl>
       </article>
     </div>
   );
