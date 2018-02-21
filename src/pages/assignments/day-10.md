@@ -5,12 +5,13 @@ date: 2018-02-22
 
 ### Readings
 
-  * [Agile Team Organisation: Squads, Chapters, Tribes and Guilds](http://www.full-stackagile.com/2016/02/14/team-organisation-squads-chapters-tribes-and-guilds/), Ashley-Christian Hardy
-  * [Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds (PDF)](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf), Henrik Kniberg & Anders Ivarsson
+  * [Agile Team Organisation: Squads, Chapters, Tribes and Guilds](http://www.full-stackagile.com/2016/02/14/team-organisation-squads-chapters-tribes-and-guilds/), Ashley-Christian Hardy. \[Estimated reading time: 10 minutes\]
+  * [Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds (PDF)](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf), Henrik Kniberg & Anders Ivarsson. \[Estimated reading time: 15 minutes\]
 
 ### Optional reading
 
   * ["Tracer Bullets"](/readings/tracer-bullets/). From Andrew Hunt, *The Pragmatic Programmer*.
+  \[Estimated reading time: 8 minutes\]
 
 ### Discussion
 
