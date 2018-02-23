@@ -20,7 +20,7 @@ const HandoutsPage = ({ data }) => {
           <section key={id}>
             <h3>
               <Link to={fm.path}>
-                {moment(fm.date).utc().add(12, 'hours').format('ddd, M/D')} — {fm.title}
+                {moment(fm.date).utc().format('ddd, MMM Do')} — {fm.title}
               </Link>
             </h3>
             <p dangerouslySetInnerHTML={{ __html: fm.description || excerpt }} />

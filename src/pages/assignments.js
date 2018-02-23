@@ -19,7 +19,7 @@ const AssignmentsPage = ({ data }) => {
           {posts.map(({ frontmatter: fm, id }) => (
             <li key={id}>
               <Link to={fm.path}>
-                {moment(fm.date).utc().format('dddd, MMM Do')}
+                {moment(fm.date).utc().format('ddd, MMM Do')}
               </Link>
             </li>
           ))}

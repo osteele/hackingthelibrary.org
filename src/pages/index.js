@@ -25,7 +25,7 @@ const IndexPage = ({ data }) => {
             <div key={id} className="ba mb4">
               <section className="ph3-ns mb5-ns ma0">
                 <h1 className="f1-ns mb3-ns ma0">
-                  {moment(fm.date).add(12, 'hours').format('ddd M/D')}
+                  {moment(fm.date).utc().format('ddd, MMM Do')}
                 </h1>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </section>

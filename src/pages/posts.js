@@ -32,7 +32,7 @@ const PostsPage = ({ data }) => {
                 <p className="f7 lh-copy gray mt2">
                   <span className="f7 ttu">Published: </span>
                   <time className="f6 gray">
-                    {moment(fm.date).utc().format('dddd, MMM Do')}
+                    {moment(fm.date).utc().format('ddd, MMM Do')}
                   </time>
                 </p>
                 {fm.topics &&
