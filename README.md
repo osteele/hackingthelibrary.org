@@ -2,7 +2,7 @@
 
 ## Edit and Admin
 
-[Admin]http://hackingthelibrary.org/admin/
+[Admin](http://hackingthelibrary.org/admin/)
 
 ## Install
 
