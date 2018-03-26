@@ -5,7 +5,7 @@
   "author": "Oliver Steele <oliver.steele@olin.edu>",
   "homepage": "https://hackingthelibrary.org",
   "repository": "github:olinlibrary/htl18.org",
-  "license": "UNLICENSED",
+  "license": "CC-BY-NC-SA-4.0",
   "scripts": {
     "build": "gatsby build",
     "data": "python3 scripts/make_events.py > data/days.json",
