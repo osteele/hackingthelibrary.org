@@ -18,7 +18,7 @@ The goal of the following activities is to come into class ready to plan and beg
 * The previous exercise is intended to solicit thoughts about tasks that are required for launch. Add these tasks to your project tracker.
 * The answers to some questions are specific to a particular deployment, rather than to the project source repo. Blank starter documents for collecting information about our deployments are [here (ABE)](https://docs.google.com/document/d/1VJZyJAFj4AxppUNVnEn4desoa0Gz1LtF9Pl0M6Fvwt8/edit#) and [here (web calendar)](https://docs.google.com/document/d/1L6zezjW1n8rUYdlmn9YkkX2YdsfkpbY3c6Jqk1t1BYY/edit#). Don't put passwords and other secrets in them; another solution may be provided for that.
 
-**New **🎩 team:
+**New 🎩** team:
 
 Come in with a written document that answers:
 
