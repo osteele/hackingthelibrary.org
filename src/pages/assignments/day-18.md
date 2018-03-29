@@ -12,6 +12,7 @@ The goal of the following activities is to come into class ready to plan and beg
 * Each team member: select a [deployment question](https://docs.google.com/document/d/1dSL6GxbiXml-8EWrXcbJtWrEhM8BFYz4wnmFAcTc-0M/edit#), and answer it for your project. Enter your answers in [this document](https://docs.google.com/document/d/1dSL6GxbiXml-8EWrXcbJtWrEhM8BFYz4wnmFAcTc-0M/edit#heading=h.r21ypx9p7f44). You may work with other team members (or people not on your team too) — but acknowledge sources and contributors; and there should be (at least) one answer per person. Your answer should include:
   * What is the current answer?
   * What would a better answer be?
+  * What effort would be required to get from [current answer] to [better answer]?
   * Where did you look to find the answer?
   * What could or should be changed to make it easier for a future developer or operator to find the answer?
 * The previous exercise is intended to solicit thoughts about tasks that are required for launch. Add these tasks to your project tracker.
