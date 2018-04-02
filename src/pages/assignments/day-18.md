@@ -1,7 +1,15 @@
 ---
-title: Day 18
 date: 2018-04-02
 ---
+
+## In Class
+
+* Discussion: Production Deployment
+* Requirements Traceability
+* Project review / sprint planning
+* go forth and implement
+
+## Homework
 
 The goal of the following activities is to come into class ready to plan and begin work on a (probably one-week) project sprint. For Monday:
 
