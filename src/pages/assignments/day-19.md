@@ -26,5 +26,4 @@ The intent is that you engage with and contribute to the document.
 
 * Standup
 * Olin Snapshot demo
-* Brainwriting — ABE use cases
 * Engineering studio
