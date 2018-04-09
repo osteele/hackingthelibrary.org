@@ -25,5 +25,4 @@ The intent is that you engage with and contribute to the document.
 ## In Class
 
 * Standup
-* Olin Snapshot demo
 * Engineering studio
