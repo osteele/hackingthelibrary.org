@@ -5,9 +5,10 @@ date: 2018-04-26
 ## In Class
 
 * Stand-Up
-* Mini-Lecture
 * Feature Demos
-* Rest of the Semester
+* Mini-Lecture
+* Activity. Get final events from [here](https://drive.google.com/open?id=1i3qe4kojENFk4zBjenNqmPl3l6aBlCkx)
+* Semester Countdown
 * Team Planning & Plan Reviews
 * Studio
 
