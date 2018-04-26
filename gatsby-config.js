@@ -3,9 +3,10 @@ module.exports = {
     title: 'Hacking the Library',
     subtitle: 'Olin College of Engineering',
     description: 'Let’s create a new kind of Library.',
-    currentProjectDescription: 'Idea Harvester',
+    currentProjectDescription: 'ABE',
     // eslint-disable-next-line max-len
-    currentProjectUrl: 'https://docs.google.com/document/d/e/2PACX-1vSfrxVt9pepIYY1hbSr8P7mbzhpFuO-gzDMuK-tp1h-cIQw20EfRsjTULlAT706kree1f2WFYodiMRu/pub',
+    currentProjectUrl:
+      'https://docs.google.com/document/d/e/2PACX-1vSKq4xW2AZ2JGRycM_wiK2re6ODed2skPJVSJTnF7xHkBgMtHrYSorDms5bmxuxNbiXlbnxYdeJjJLb/pub',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
