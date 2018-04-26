@@ -4,7 +4,7 @@ home_module: 1
 
 ### Launch Schedule
 
-Click [here](https://docs.google.com/document/d/e/2PACX-1vQ-hx69HyQgaBz3M2sHw4UMZkHiyfQw6TzYIyzz5bWZwWibePIXjENWUTkl1AdG8b7FOmkLxFb21dc_/pub).
+Click [here](https://docs.google.com/document/d/1E_UCMG2Rj1QUFxPRi4O9wxjCDBw3B-RHRwX2GV9hqZ8/edit).
 
 ### ABE API Server
 
