@@ -1,3 +1,4 @@
+import Link from 'gatsby-link';
 import React from 'react';
 import moment from 'moment';
 
@@ -18,11 +19,13 @@ const IndexPage = ({ data }) => {
           {assignments.map(({ frontmatter: fm, id, html }) => (
             <div key={id} className="ba mb4">
               <section className="ph3-ns mb5-ns ma0">
-                <h1 className="f1-ns mb3-ns ma0">
-                  {moment(fm.date)
-                    .utc()
-                    .format('ddd, MMM Do')}
-                </h1>
+                <Link to={fm.path}>
+                  <h1 className="f1-ns mb3-ns ma0">
+                    {moment(fm.date)
+                      .utc()
+                      .format('ddd, MMM Do')}
+                  </h1>
+                </Link>
                 <div dangerouslySetInnerHTML={{ __html: html }} />
               </section>
             </div>
