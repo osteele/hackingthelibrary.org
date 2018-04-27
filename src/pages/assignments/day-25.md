@@ -7,9 +7,9 @@ date: 2018-04-30
 1. [The Broken Window
    Theory](https://blog.codinghorror.com/the-broken-window-theory/), Jeff
    Atwood, June 23, 2005.
-2. Read (at least) *one* of the articles below (depending on your interest). Be prepared to
-   tell the class something about it and how or whether it relates to our
-   projects.
+2. Read (at least) *one* of the articles below. (You may want to at least skim
+   other articles related to the same topic.) Be prepared to tell the class
+   something about it and how or whether it relates to our projects.
 
 ### Topics
 
@@ -22,7 +22,7 @@ date: 2018-04-30
   Scott Chacon, August 31, 2011.
 * [Trunk Based Development](https://trunkbaseddevelopment.com), Paul Hammant,
   Steve Smith, et al, 2017. (This is just the intro page. If you're really into
-  this, the rest of the site is worth reading too, whether or not you disagree
+  this, the rest of the site is worth reading too, whether or not you agree
   with it.)
 
 **Feature flags (aka “feature toggles”, “feature flippers”, etc.):**
@@ -30,14 +30,14 @@ date: 2018-04-30
 * [Feature Toggles](https://martinfowler.com/articles/feature-toggles.html),
   Pete Hodgson, October 9, 2017.
 * [Feature toggle](https://en.wikipedia.org/wiki/Feature_toggle), Wikipedia
-* <http://featureflags.io> OMG it has its own web site! Click the “Feature Flag
-  Guide” for an [intro](http://featureflags.io/feature-flag-introduction/),
+* <http://featureflags.io>. OMG it has its own web site! The “Feature Flag
+  Guide” menu item includes an [intro](http://featureflags.io/feature-flag-introduction/),
   [best practices](http://featureflags.io/feature-flags-best-practices/), [flags
   vs. branching](http://featureflags.io/feature-flags-vs-branching/), and other
   good stuff.
 * [Feature Flags: Smaller, Better, Faster Software Development](https://medium.com/@dehora/feature-flags-smaller-better-faster-software-development-f2eab58df0f9), Bill de hÓra, Apr 2, 2017.
 
-**Deployment environments and methodologies:**
+**Deployment environments:**
 
 * [Deployment
   environments](https://en.wikipedia.org/wiki/Deployment_environment),
@@ -50,16 +50,15 @@ date: 2018-04-30
 
 * [The Twelve-Factor App](http://12factor.net/), Adam Wiggins, last updated
   2017. Think about where our projects stand with respect to the “factors”
-  discussed here.
+  discussed here. This is a lot of material; pick two or three factors.
 
-### Optional
+### Optional (doesn't count as the second reading)
 
 **"If it hurts, do it more often"** – Jez Humble, _Continuous Delivery: Reliable
 Software Releases Through Build, Test, and Deployment Automation_
 
 * [Frequency Reduces Difficulty](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html),
   Martin Fowler,  July 28, 2011.
-
 
 ## In Class
 
