@@ -13,9 +13,9 @@ const IndexPage = ({ data }) => {
 
   return (
     <div className="ph2 ph3-ns mw9 mt3 center">
-      <article className="page center mw7">
-        <div className="fl w-50" dangerouslySetInnerHTML={{ __html: data.projectDashboard.html }} />
-        <div className="fl w-50">
+      <article className="page center">
+        <div className="fl w-20" dangerouslySetInnerHTML={{ __html: data.projectDashboard.html }} />
+        <div className="fl w-80">
           {assignments.map(({ frontmatter: fm, id, html }) => (
             <div key={id} className="ba mb4">
               <section className="ph3-ns mb5-ns ma0">
