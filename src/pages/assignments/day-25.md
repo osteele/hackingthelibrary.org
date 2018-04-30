@@ -64,8 +64,12 @@ Software Releases Through Build, Test, and Deployment Automation_
 
 1. Stand-up
 2. Reading discussion
-3. Small-group discussions. Depending on interest, these may happen consecutively.
-  * ABE branding
-  * API versioning
-  * Beyond the semester: Stewardship
-4. Studio / desk check-ins
+3. Business: Final Event content and schedule
+4. Small-group discussions. Depending on interest, these may happen consecutively.
+   * [ABE branding](https://docs.google.com/document/d/1XbhvhNplBTi9ub6cMCHH6hJiD415dAXpDrcTbYfP1rw/edit)
+   * API versioning. ABE issues [#135](https://github.com/olinlibrary/ABE/issues/135)
+     [#142](https://github.com/olinlibrary/ABE/issues/142)
+     [#191](https://github.com/olinlibrary/ABE/issues/191)
+   * Beyond the semester: Stewardship
+5. Bug triage. Sort newly files onto board.
+6. Studio
