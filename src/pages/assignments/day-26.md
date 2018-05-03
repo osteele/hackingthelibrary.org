@@ -22,7 +22,18 @@ date: 2018-05-03
 ## In Class
 
 1. Stand-up
-2. Listen to Jazz — in solidarity with Jeff
-3. Planning session: Final Countdown
-4. Small-group discussions
-5. Studio / desk check-ins
+2. Reading discussion
+3. Listen to Jazz (in solidarity with Jeff)
+4. Calendar entry — enter or update an event from [here](http://www.olin.edu/events/event-calendar/)
+5. Launch Check
+6. Course evaluation nag / plea
+7. Working groups
+   * Final Events announcement / marketing
+   * Authorization and authentication
+8. Studio / desk check-ins
+
+## Homework — Course Evaluation
+
+1. Sign into <http://my.olin.edu>.
+2. Click on the "Academic & Student Life" tab, and then click on "Course
+   Evaluations".
