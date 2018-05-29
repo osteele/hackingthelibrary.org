@@ -1,41 +1,60 @@
 ---
 title: Hacking the Library
-permalink: 2017/
-layout: default
+permalink: /
+layout: announce
 ---
 
-<div class="jumbotron" markdown="1">
-  {% include course_overview.md %}
+<div class="row" style="display: none">
+  <div class="col-md-9 main">
+    <div class="jumbotron" style="min-height:350px; font-size:24px;">
+        Help us create a new kind of Library
+    </div>
+  </div>
 </div>
 
 <div class="row">
 
-<div class="col-lg-4" markdown="1">
+<div class="col-md-4" markdown="1">
 
-## Final Event: Tuesday, May 2, 9-11 AM
+## Hacking the Library
 
-* Final technical work is due
-* Final remarks
-* Demo hand-off
-* Meet the summer team
-* Course evaluation
+<i>Help us create a new kind of Library</i>
 
-## Olin Expo: Monday, May 8
+This course leverages the Olin Library and the areas of civic and community software as platforms on which to explore topics in software production, deployment, and operations.
 
-Demo stations in the Library will run your projects during the entirety of the expo. We will take turns staffing them.
-
+This is a studio course, with workshops, readings, and discussion around production development and operations as well as libraries.
+Topics will be guided by the specific projects chosen.
+Projects will be developed by individuals and teams; we will meet regularly to understand the goals and interactions between the projects.
+Regular design reviews will help shape all dimensions of our projects so they may attain a maturity surpassing traditional software coursework.
+Instructors will guide learning of software development that supports both prototyping and robust working systems, as well as design methods.
 </div>
 
-<div class="col-lg-4" markdown="1">
+<div class="col-md-4" markdown="1">
 
-## Thanks, everyone!
+## Prototype to Production
 
-Final projects are [here]({% link _pages/final-projects.md %}).
+This course begins where many courses leave off.  We will both start new projects and work with existing projects in order to learn concepts that apply to different stages of the software project lifecycle.
 
+* **Documentation, Testing, and Continuous Integration**: Techniques for developing test and documentation suites, that grow along with your software and guide its construction.
+* **Identity, Authorization, Privacy, Security**: How can code protect access to sensitive data? How can it it know who you are?
+* **Dev Ops** (staging and production environments; continuous delivery; logging and monitoring; analytics): It’s one thing to run code on your laptop. How can you understand and monitor what it does in the cloud?
 </div>
 
-<div class="col-lg-4" markdown="1">
-{% include office_hours.md %}
+<div class="col-md-4" markdown="1">
+
+## Community Technology
+
+Hacking the Library projects will be examples of “community technology.”
+Work is expressly designed to enrich and augment the Olin community.
+
+* **Community Technology**: What is the nature of software that grows out of Libraries, not Silicon Valley? Software that defies scalability - more intranet than internet?
+* **Projects that Escape the Semester**: Our ambition is to to create systems, artifacts, and smart spaces that impact the Olin community beyond the semester.
+* **Standing on the Shoulders of**: Projects will draw on work from last year’s course offering, from the Software of Summer, current Library Software and from select Open Source projects in the wild.
+</div>
 </div>
 
+<div markdown="1">
+## Prerequisites
+
+Software Design or Permission of Instructor.  If you’re passionate, give us a call.
 </div>

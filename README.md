@@ -10,16 +10,9 @@ The source to <http://hackingthelibrary.org>.
 2. `gem install bundler`
 3. `bundle install`
 
-Alternate: Install [Docker Compose](https://docs.docker.com/compose/install/)
-
 ## Develop
 
 1. `bundle exec jekyll serve`
-2. Browse to <http://localhost:4000>
-
-Alternate:
-
-1. `docker-compose up`
 2. Browse to <http://localhost:4000>
 
 ## Testing
@@ -43,7 +36,7 @@ $ ./scripts/check-html
 
 ## Copyright and Credits
 
-The course material is Copyright (c) 2017 by the Franklin W. Olin College of Engineering.
+The course material is Copyright (c) 2017–2018 by the Oliver Steele.
 
 The web site uses:
 

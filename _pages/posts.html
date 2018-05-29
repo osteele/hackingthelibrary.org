@@ -1,9 +1,0 @@
----
-title: Blog
-published: false
----
-
-{% for post in site.posts %}
-<h2 href="{{ post.url }}">{{ post.title }} – {{ post.date | date: '%B %-d' }}</h2>
-{{ post.content }}
-{% endfor %}
