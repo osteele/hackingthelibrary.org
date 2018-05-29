@@ -4,15 +4,20 @@ permalink: /
 layout: announce
 ---
 
-<div class="row" style="display: none">
-  <div class="col-md-9 main">
-    <div class="jumbotron" style="min-height:350px; font-size:24px;">
-        Help us create a new kind of Library
-    </div>
-  </div>
+<div markdown="1">
+
+# Final Deliverables
+
+The [ABE community calendar](https://events.olin.build) was launched to the Olin
+Community. The source code is [here](https://github.com/olin-build/ABE) (ABE
+events database back end) and [here]((https://github.com/olin-build/ABE))
+(abe-web web calendar front end).
+
 </div>
 
-<div class="row">
+<div class="row" markdown="1">
+
+# Syllabus
 
 <div class="col-md-4" markdown="1">
 
@@ -33,11 +38,12 @@ Instructors will guide learning of software development that supports both proto
 
 ## Prototype to Production
 
-This course begins where many courses leave off.  We will both start new projects and work with existing projects in order to learn concepts that apply to different stages of the software project lifecycle.
+This course begins where many courses leave off.  We will both start new projects and work with existing projects in order to learn concepts that apply to different stages of the software project life cycle.
 
 * **Documentation, Testing, and Continuous Integration**: Techniques for developing test and documentation suites, that grow along with your software and guide its construction.
 * **Identity, Authorization, Privacy, Security**: How can code protect access to sensitive data? How can it it know who you are?
 * **Dev Ops** (staging and production environments; continuous delivery; logging and monitoring; analytics): It’s one thing to run code on your laptop. How can you understand and monitor what it does in the cloud?
+
 </div>
 
 <div class="col-md-4" markdown="1">
@@ -51,10 +57,4 @@ Work is expressly designed to enrich and augment the Olin community.
 * **Projects that Escape the Semester**: Our ambition is to to create systems, artifacts, and smart spaces that impact the Olin community beyond the semester.
 * **Standing on the Shoulders of**: Projects will draw on work from last year’s course offering, from the Software of Summer, current Library Software and from select Open Source projects in the wild.
 </div>
-</div>
-
-<div markdown="1">
-## Prerequisites
-
-Software Design or Permission of Instructor.  If you’re passionate, give us a call.
 </div>
