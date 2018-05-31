@@ -8,36 +8,21 @@ course:
   number: ENGR3599
 
 collections:
-  assignments:
-    title: Assignments
+  posts:
+    title: Dailies
     output: true
-    permalink: "/assignments/:path/"
-  days:
-    title: Days
-    output: true
-    permalink: "/day/:path/"
+    permalink: "/posts/:path/"
   pages:
     title: Pages
     output: true
     permalink: "/:path/"
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 
 defaults:
 - scope:
     path: ''
-    type: assignments
+    type: posts
   values:
-    layout: assignment
-- scope:
-    path: ''
-    type: days
-  values:
-    layout: day
+    layout: post
 - scope:
     path: ''
     type: pages
@@ -55,5 +40,4 @@ exclude:
 - Gemfile.lock
 - README.md
 - scripts
-- docker-compose.yml
 - vendor

@@ -7,23 +7,3 @@ weight: 20
 
 {% include gallery data_key="miniprojects" image_path="/showcase/miniprojects/" large="1" %}
 
-<dl>
-{% assign assignments = (site.assignments | filter: 'lab' | sort: 'lab') %}
-{% for assignment in assignments %}
-{% if assignment.lab %}
-
-<dt><h2><a href="{{ assignment.url }}">{{ assignment.title }}</a></h2></dt>
-<dd><small><i>{{ assignment.due_date | date: '%a, %b %-d' }}</i></small></dd>
-<dd>{{ assignment.description }}</dd>
-
-{% if assignment.lab == 1 %}
-{% include lab1_showcase.html %}
-{% endif %}
-
-{% if assignment.lab == 2 %}
-{% include gallery data_key="lab2" image_path="/showcase/lab2/" %}
-{% endif %}
-
-{% endif %}
-{% endfor %}
-</dl>
